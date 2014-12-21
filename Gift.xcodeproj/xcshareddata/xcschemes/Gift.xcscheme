@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DAB0F4C31A44FB7E0039310C"
+               BlueprintIdentifier = "DA9F36481A476AF7002F35D4"
                BuildableName = "Gift.framework"
                BlueprintName = "Gift"
                ReferencedContainer = "container:Gift.xcodeproj">
@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DAB0F4CE1A44FB7E0039310C"
+               BlueprintIdentifier = "DA9F36531A476AF7002F35D4"
                BuildableName = "GiftTests.xctest"
                BlueprintName = "GiftTests"
                ReferencedContainer = "container:Gift.xcodeproj">
@@ -46,7 +46,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DAB0F4CE1A44FB7E0039310C"
+               BlueprintIdentifier = "DA9F36531A476AF7002F35D4"
                BuildableName = "GiftTests.xctest"
                BlueprintName = "GiftTests"
                ReferencedContainer = "container:Gift.xcodeproj">
@@ -56,7 +56,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DAB0F4C31A44FB7E0039310C"
+            BlueprintIdentifier = "DA9F36481A476AF7002F35D4"
             BuildableName = "Gift.framework"
             BlueprintName = "Gift"
             ReferencedContainer = "container:Gift.xcodeproj">
@@ -75,7 +75,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DAB0F4C31A44FB7E0039310C"
+            BlueprintIdentifier = "DA9F36481A476AF7002F35D4"
             BuildableName = "Gift.framework"
             BlueprintName = "Gift"
             ReferencedContainer = "container:Gift.xcodeproj">
@@ -93,7 +93,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DAB0F4C31A44FB7E0039310C"
+            BlueprintIdentifier = "DA9F36481A476AF7002F35D4"
             BuildableName = "Gift.framework"
             BlueprintName = "Gift"
             ReferencedContainer = "container:Gift.xcodeproj">
