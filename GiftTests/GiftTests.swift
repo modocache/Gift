@@ -5,12 +5,9 @@ import LlamaKit
 class GiftTests: XCTestCase {
   func testExample() {
     let fileURL = NSURL(fileURLWithPath: "/Users/bgesiak/Desktop/RepositoryTest")
-    let result = initializeEmptyRepository(fileURL!, RepositoryOptions())
-    switch result {
-      case .Success(let repository):
-        XCTAssert(repository.unbox.gitDirectoryURL.isSuccess)
-      case .Failure(let _):
-        XCTFail("nope")
-    }
+    let path = initializeEmptyRepository(fileURL!, RepositoryOptions())
+      .flatMap { $0.gitDirectoryURL }
+      .map { $0.path! }
+    AssertSuccess(path, "/Users/bgesiak/Desktop/RepositoryTest/.git")
   }
 }
