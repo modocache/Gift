@@ -4,14 +4,16 @@ import git2
   A data structure representing an index, also referred to as
   a "staging area" for changes.
 */
-public struct Index {
+public class Index {
   private let cIndex: COpaquePointer
 
   internal init(cIndex: COpaquePointer) {
     self.cIndex = cIndex
   }
 
-  // TODO: git_index_free(cIndex) should be called when this struct is deinitialized.
+  deinit {
+    git_index_free(cIndex)
+  }
 }
 
 public extension Index {
