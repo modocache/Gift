@@ -8,11 +8,14 @@ import git2
         range of options made possible by git_repository_init_options.
 */
 public struct RepositoryOptions {
-  /** A combination of GIT_REPOSITORY_INIT flags. */
+  /** 
+    A combination of GIT_REPOSITORY_INIT flags.
+  */
   let flags: UInt32
+
   /**
-  The mode of permissions on the newly created Git repository and its files.
-  Either use one of the `git_repository_init_mode_t` constants, or define your own.
+    The mode of permissions on the newly created Git repository and its files.
+    Either use one of the `git_repository_init_mode_t` constants, or define your own.
   */
   let mode: UInt32
 
