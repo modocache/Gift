@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA98769D1A4B74260004AA17 /* Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9876971A4B74260004AA17 /* Index.swift */; };
+		DA98769E1A4B74260004AA17 /* Repository+Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9876991A4B74260004AA17 /* Repository+Index.swift */; };
+		DA98769F1A4B74260004AA17 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA98769A1A4B74260004AA17 /* Repository.swift */; };
+		DA9876A01A4B74260004AA17 /* RepositoryOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA98769B1A4B74260004AA17 /* RepositoryOptions+C.swift */; };
+		DA9876A11A4B74260004AA17 /* RepositoryOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA98769C1A4B74260004AA17 /* RepositoryOptions.swift */; };
+		DA9876A61A4B791E0004AA17 /* LlamaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9876A51A4B791E0004AA17 /* LlamaKit.framework */; };
+		DA9876A81A4B792F0004AA17 /* libgit2.0.21.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9876A71A4B792F0004AA17 /* libgit2.0.21.0.dylib */; };
 		DA9F364F1A476AF7002F35D4 /* Gift.h in Headers */ = {isa = PBXBuildFile; fileRef = DA9F364E1A476AF7002F35D4 /* Gift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA9F36551A476AF7002F35D4 /* Gift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9F36491A476AF7002F35D4 /* Gift.framework */; };
 		DA9F365C1A476AF7002F35D4 /* GiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9F365B1A476AF7002F35D4 /* GiftTests.swift */; };
-		DA9F36661A476B85002F35D4 /* libgit2.0.21.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9F36651A476B85002F35D4 /* libgit2.0.21.0.dylib */; };
-		DA9F36671A476B97002F35D4 /* libgit2.0.21.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9F36651A476B85002F35D4 /* libgit2.0.21.0.dylib */; };
 		DAC9DD101A4B0AD800436BA2 /* Gift.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC9DD0F1A4B0AD800436BA2 /* Gift.m */; };
-		DAC9DD1C1A4B56DB00436BA2 /* LlamaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC9DD1B1A4B56DB00436BA2 /* LlamaKit.framework */; };
-		DAC9DD1F1A4B5C5F00436BA2 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9DD1E1A4B5C5F00436BA2 /* Repository.swift */; };
-		DAC9DD211A4B5C7200436BA2 /* RepositoryOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9DD201A4B5C7200436BA2 /* RepositoryOptions.swift */; };
-		DAC9DD231A4B5CB300436BA2 /* RepositoryOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9DD221A4B5CB300436BA2 /* RepositoryOptions+C.swift */; };
 		DAC9DD251A4B67D700436BA2 /* ResultAssert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9DD241A4B67D700436BA2 /* ResultAssert.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,18 +32,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA9876971A4B74260004AA17 /* Index.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Index.swift; sourceTree = "<group>"; };
+		DA9876991A4B74260004AA17 /* Repository+Index.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Repository+Index.swift"; sourceTree = "<group>"; };
+		DA98769A1A4B74260004AA17 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		DA98769B1A4B74260004AA17 /* RepositoryOptions+C.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RepositoryOptions+C.swift"; sourceTree = "<group>"; };
+		DA98769C1A4B74260004AA17 /* RepositoryOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryOptions.swift; sourceTree = "<group>"; };
+		DA9876A51A4B791E0004AA17 /* LlamaKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LlamaKit.framework; path = ../External/LlamaKit/build/Debug/LlamaKit.framework; sourceTree = "<group>"; };
+		DA9876A71A4B792F0004AA17 /* libgit2.0.21.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libgit2.0.21.0.dylib; path = ../External/libgit2/build/libgit2.0.21.0.dylib; sourceTree = "<group>"; };
 		DA9F36491A476AF7002F35D4 /* Gift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Gift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA9F364D1A476AF7002F35D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA9F364E1A476AF7002F35D4 /* Gift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Gift.h; sourceTree = "<group>"; };
 		DA9F36541A476AF7002F35D4 /* GiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA9F365A1A476AF7002F35D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA9F365B1A476AF7002F35D4 /* GiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftTests.swift; sourceTree = "<group>"; };
-		DA9F36651A476B85002F35D4 /* libgit2.0.21.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libgit2.0.21.0.dylib; path = ../External/libgit2/build/libgit2.0.21.0.dylib; sourceTree = "<group>"; };
 		DAC9DD0F1A4B0AD800436BA2 /* Gift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gift.m; sourceTree = "<group>"; };
-		DAC9DD1B1A4B56DB00436BA2 /* LlamaKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LlamaKit.framework; path = ../External/LlamaKit/build/Debug/LlamaKit.framework; sourceTree = "<group>"; };
-		DAC9DD1E1A4B5C5F00436BA2 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
-		DAC9DD201A4B5C7200436BA2 /* RepositoryOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryOptions.swift; sourceTree = "<group>"; };
-		DAC9DD221A4B5CB300436BA2 /* RepositoryOptions+C.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RepositoryOptions+C.swift"; sourceTree = "<group>"; };
 		DAC9DD241A4B67D700436BA2 /* ResultAssert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultAssert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -51,8 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAC9DD1C1A4B56DB00436BA2 /* LlamaKit.framework in Frameworks */,
-				DA9F36661A476B85002F35D4 /* libgit2.0.21.0.dylib in Frameworks */,
+				DA9876A81A4B792F0004AA17 /* libgit2.0.21.0.dylib in Frameworks */,
+				DA9876A61A4B791E0004AA17 /* LlamaKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,7 +63,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA9F36671A476B97002F35D4 /* libgit2.0.21.0.dylib in Frameworks */,
 				DA9F36551A476AF7002F35D4 /* Gift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,6 +70,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA9876961A4B74260004AA17 /* Index */ = {
+			isa = PBXGroup;
+			children = (
+				DA9876971A4B74260004AA17 /* Index.swift */,
+			);
+			path = Index;
+			sourceTree = "<group>";
+		};
+		DA9876981A4B74260004AA17 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				DA98769A1A4B74260004AA17 /* Repository.swift */,
+				DA9876991A4B74260004AA17 /* Repository+Index.swift */,
+				DA98769B1A4B74260004AA17 /* RepositoryOptions+C.swift */,
+				DA98769C1A4B74260004AA17 /* RepositoryOptions.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
 		DA9F363F1A476AF7002F35D4 = {
 			isa = PBXGroup;
 			children = (
@@ -91,7 +112,8 @@
 			children = (
 				DA9F364E1A476AF7002F35D4 /* Gift.h */,
 				DAC9DD0F1A4B0AD800436BA2 /* Gift.m */,
-				DAC9DD1D1A4B5C5F00436BA2 /* Repository */,
+				DA9876961A4B74260004AA17 /* Index */,
+				DA9876981A4B74260004AA17 /* Repository */,
 				DA9F364C1A476AF7002F35D4 /* Supporting Files */,
 			);
 			path = Gift;
@@ -100,8 +122,8 @@
 		DA9F364C1A476AF7002F35D4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				DAC9DD1B1A4B56DB00436BA2 /* LlamaKit.framework */,
-				DA9F36651A476B85002F35D4 /* libgit2.0.21.0.dylib */,
+				DA9876A71A4B792F0004AA17 /* libgit2.0.21.0.dylib */,
+				DA9876A51A4B791E0004AA17 /* LlamaKit.framework */,
 				DA9F364D1A476AF7002F35D4 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -123,16 +145,6 @@
 				DA9F365A1A476AF7002F35D4 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		DAC9DD1D1A4B5C5F00436BA2 /* Repository */ = {
-			isa = PBXGroup;
-			children = (
-				DAC9DD1E1A4B5C5F00436BA2 /* Repository.swift */,
-				DAC9DD201A4B5C7200436BA2 /* RepositoryOptions.swift */,
-				DAC9DD221A4B5CB300436BA2 /* RepositoryOptions+C.swift */,
-			);
-			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,10 +253,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA98769D1A4B74260004AA17 /* Index.swift in Sources */,
+				DA9876A01A4B74260004AA17 /* RepositoryOptions+C.swift in Sources */,
 				DAC9DD101A4B0AD800436BA2 /* Gift.m in Sources */,
-				DAC9DD211A4B5C7200436BA2 /* RepositoryOptions.swift in Sources */,
-				DAC9DD231A4B5CB300436BA2 /* RepositoryOptions+C.swift in Sources */,
-				DAC9DD1F1A4B5C5F00436BA2 /* Repository.swift in Sources */,
+				DA98769E1A4B74260004AA17 /* Repository+Index.swift in Sources */,
+				DA9876A11A4B74260004AA17 /* RepositoryOptions.swift in Sources */,
+				DA98769F1A4B74260004AA17 /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,10 +436,6 @@
 				);
 				INFOPLIST_FILE = GiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/External/libgit2/build",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -440,10 +450,6 @@
 				);
 				INFOPLIST_FILE = GiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/External/libgit2/build",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

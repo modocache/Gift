@@ -6,11 +6,13 @@ import LlamaKit
   A data structure representing a Git repository.
 */
 public struct Repository {
-  private let cRepository: COpaquePointer
+  internal let cRepository: COpaquePointer
 
-  private init(cRepository: COpaquePointer) {
+  internal init(cRepository: COpaquePointer) {
     self.cRepository = cRepository
   }
+
+  // TODO: git_repository_free(cRepository) should be called when this struct is deinitialized.
 }
 
 public extension Repository {
