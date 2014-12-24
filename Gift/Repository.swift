@@ -2,7 +2,6 @@ import Foundation
 import git2
 
 public func initializeEmptyRepository(fileURL: NSURL) {
-  git_libgit2_init()
   if let repoPath = fileURL.path?.fileSystemRepresentation() {
     var out = COpaquePointer()
     var options = git_repository_init_options(
