@@ -2,6 +2,9 @@ import git2
 import LlamaKit
 
 public extension Repository {
+  /**
+    Creates and returns an index object for the repository.
+  */
   public var index: Result<Index> {
     var cIndex = COpaquePointer()
     let errorCode = git_repository_index(&cIndex, cRepository)
