@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA8368131A512397002E8BC1 /* CheckoutOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8368121A512397002E8BC1 /* CheckoutOptions.swift */; };
+		DA8368151A5123D3002E8BC1 /* CheckoutOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8368141A5123D3002E8BC1 /* CheckoutOptions+C.swift */; };
+		DA8368171A51241B002E8BC1 /* RemoteCallbacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8368161A51241B002E8BC1 /* RemoteCallbacks.swift */; };
+		DA8368191A5124B4002E8BC1 /* RemoteCallbacks+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8368181A5124B4002E8BC1 /* RemoteCallbacks+C.swift */; };
+		DA83681B1A5124D8002E8BC1 /* CloneOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA83681A1A5124D8002E8BC1 /* CloneOptions.swift */; };
+		DA83681D1A5124FC002E8BC1 /* CloneOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA83681C1A5124FC002E8BC1 /* CloneOptions+C.swift */; };
 		DA98769D1A4B74260004AA17 /* Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9876971A4B74260004AA17 /* Index.swift */; };
 		DA98769E1A4B74260004AA17 /* Repository+Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9876991A4B74260004AA17 /* Repository+Index.swift */; };
 		DA98769F1A4B74260004AA17 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA98769A1A4B74260004AA17 /* Repository.swift */; };
@@ -32,6 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA8368121A512397002E8BC1 /* CheckoutOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutOptions.swift; sourceTree = "<group>"; };
+		DA8368141A5123D3002E8BC1 /* CheckoutOptions+C.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CheckoutOptions+C.swift"; sourceTree = "<group>"; };
+		DA8368161A51241B002E8BC1 /* RemoteCallbacks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteCallbacks.swift; sourceTree = "<group>"; };
+		DA8368181A5124B4002E8BC1 /* RemoteCallbacks+C.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RemoteCallbacks+C.swift"; sourceTree = "<group>"; };
+		DA83681A1A5124D8002E8BC1 /* CloneOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloneOptions.swift; sourceTree = "<group>"; };
+		DA83681C1A5124FC002E8BC1 /* CloneOptions+C.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CloneOptions+C.swift"; sourceTree = "<group>"; };
 		DA9876971A4B74260004AA17 /* Index.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Index.swift; sourceTree = "<group>"; };
 		DA9876991A4B74260004AA17 /* Repository+Index.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Repository+Index.swift"; sourceTree = "<group>"; };
 		DA98769A1A4B74260004AA17 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
@@ -83,8 +95,14 @@
 			children = (
 				DA98769A1A4B74260004AA17 /* Repository.swift */,
 				DA9876991A4B74260004AA17 /* Repository+Index.swift */,
-				DA98769B1A4B74260004AA17 /* RepositoryOptions+C.swift */,
 				DA98769C1A4B74260004AA17 /* RepositoryOptions.swift */,
+				DA98769B1A4B74260004AA17 /* RepositoryOptions+C.swift */,
+				DA8368121A512397002E8BC1 /* CheckoutOptions.swift */,
+				DA8368141A5123D3002E8BC1 /* CheckoutOptions+C.swift */,
+				DA8368161A51241B002E8BC1 /* RemoteCallbacks.swift */,
+				DA8368181A5124B4002E8BC1 /* RemoteCallbacks+C.swift */,
+				DA83681A1A5124D8002E8BC1 /* CloneOptions.swift */,
+				DA83681C1A5124FC002E8BC1 /* CloneOptions+C.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -253,11 +271,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA8368171A51241B002E8BC1 /* RemoteCallbacks.swift in Sources */,
 				DA98769D1A4B74260004AA17 /* Index.swift in Sources */,
+				DA83681B1A5124D8002E8BC1 /* CloneOptions.swift in Sources */,
 				DA9876A01A4B74260004AA17 /* RepositoryOptions+C.swift in Sources */,
+				DA8368151A5123D3002E8BC1 /* CheckoutOptions+C.swift in Sources */,
 				DAC9DD101A4B0AD800436BA2 /* Gift.m in Sources */,
+				DA83681D1A5124FC002E8BC1 /* CloneOptions+C.swift in Sources */,
 				DA98769E1A4B74260004AA17 /* Repository+Index.swift in Sources */,
+				DA8368131A512397002E8BC1 /* CheckoutOptions.swift in Sources */,
 				DA9876A11A4B74260004AA17 /* RepositoryOptions.swift in Sources */,
+				DA8368191A5124B4002E8BC1 /* RemoteCallbacks+C.swift in Sources */,
 				DA98769F1A4B74260004AA17 /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

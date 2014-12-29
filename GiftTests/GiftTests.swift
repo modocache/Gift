@@ -12,5 +12,9 @@ class GiftTests: XCTestCase {
     )
 
     AssertSuccess(repository.flatMap { $0.index }.map { $0.entryCount }, 0)
+
+    let quickOriginURL = NSURL(string: "https://github.com/Quick/Quick.git")
+    let quickDestURL = NSURL(fileURLWithPath: "/Users/bgesiak/Desktop/ClonedQuick")
+    cloneRepository(quickOriginURL!, quickDestURL!, CloneOptions())
   }
 }

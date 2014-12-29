@@ -5,7 +5,7 @@ extension RepositoryOptions {
     Returns a C struct initialized with this options instance's values.
     Used by libgit2 functions.
   */
-  public var cOptions: git_repository_init_options {
+  internal var cOptions: git_repository_init_options {
     return git_repository_init_options(
       version: 1,
       flags: flags,
