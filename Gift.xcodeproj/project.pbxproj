@@ -25,6 +25,8 @@
 		DA9F365C1A476AF7002F35D4 /* GiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9F365B1A476AF7002F35D4 /* GiftTests.swift */; };
 		DAC9DD101A4B0AD800436BA2 /* Gift.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC9DD0F1A4B0AD800436BA2 /* Gift.m */; };
 		DAC9DD251A4B67D700436BA2 /* ResultAssert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9DD241A4B67D700436BA2 /* ResultAssert.swift */; };
+		E132E7751A63836100944D58 /* Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = E132E7741A63836100944D58 /* Reference.swift */; };
+		E132E7771A63845F00944D58 /* Repository+Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = E132E7761A63845F00944D58 /* Repository+Reference.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		DA9F365B1A476AF7002F35D4 /* GiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftTests.swift; sourceTree = "<group>"; };
 		DAC9DD0F1A4B0AD800436BA2 /* Gift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gift.m; sourceTree = "<group>"; };
 		DAC9DD241A4B67D700436BA2 /* ResultAssert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultAssert.swift; sourceTree = "<group>"; };
+		E132E7741A63836100944D58 /* Reference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reference.swift; sourceTree = "<group>"; };
+		E132E7761A63845F00944D58 /* Repository+Reference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Repository+Reference.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,7 @@
 			children = (
 				DA98769A1A4B74260004AA17 /* Repository.swift */,
 				DA9876991A4B74260004AA17 /* Repository+Index.swift */,
+				E132E7761A63845F00944D58 /* Repository+Reference.swift */,
 				DA98769C1A4B74260004AA17 /* RepositoryOptions.swift */,
 				DA98769B1A4B74260004AA17 /* RepositoryOptions+C.swift */,
 				DA8368121A512397002E8BC1 /* CheckoutOptions.swift */,
@@ -131,6 +136,7 @@
 				DA9F364E1A476AF7002F35D4 /* Gift.h */,
 				DAC9DD0F1A4B0AD800436BA2 /* Gift.m */,
 				DA9876961A4B74260004AA17 /* Index */,
+				E132E7731A63833100944D58 /* Reference */,
 				DA9876981A4B74260004AA17 /* Repository */,
 				DA9F364C1A476AF7002F35D4 /* Supporting Files */,
 			);
@@ -163,6 +169,14 @@
 				DA9F365A1A476AF7002F35D4 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E132E7731A63833100944D58 /* Reference */ = {
+			isa = PBXGroup;
+			children = (
+				E132E7741A63836100944D58 /* Reference.swift */,
+			);
+			path = Reference;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E132E7751A63836100944D58 /* Reference.swift in Sources */,
 				DA8368171A51241B002E8BC1 /* RemoteCallbacks.swift in Sources */,
 				DA98769D1A4B74260004AA17 /* Index.swift in Sources */,
 				DA83681B1A5124D8002E8BC1 /* CloneOptions.swift in Sources */,
@@ -283,6 +298,7 @@
 				DA9876A11A4B74260004AA17 /* RepositoryOptions.swift in Sources */,
 				DA8368191A5124B4002E8BC1 /* RemoteCallbacks+C.swift in Sources */,
 				DA98769F1A4B74260004AA17 /* Repository.swift in Sources */,
+				E132E7771A63845F00944D58 /* Repository+Reference.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

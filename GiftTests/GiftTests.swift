@@ -3,7 +3,8 @@ import Gift
 import LlamaKit
 
 class GiftTests: XCTestCase {
-  func testExample() {
+
+  func testRepo() {
     let desktopPath = "~/Desktop".stringByExpandingTildeInPath
     let repoPathString = "\(desktopPath)/RepositoryTest"
     let fileURL = NSURL(fileURLWithPath: repoPathString)
@@ -17,6 +18,8 @@ class GiftTests: XCTestCase {
 
     let quickOriginURL = NSURL(string: "https://github.com/Quick/Quick.git")
     let quickDestURL = NSURL(fileURLWithPath: "\(desktopPath)/ClonedQuick")
-    cloneRepository(quickOriginURL!, quickDestURL!, CloneOptions())
+    let quickRepo = cloneRepository(quickOriginURL!, quickDestURL!, CloneOptions())
+    let ref = repository.flatMap { $0.headReference }
+    AssertSuccess(ref.flatMap { $0.name }, "refs/heads/master")
   }
 }
