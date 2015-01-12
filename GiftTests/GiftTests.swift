@@ -2,11 +2,19 @@ import XCTest
 import Gift
 import LlamaKit
 
+var workspacePath = "/private/tmp"
+var repoPathString = "\(workspacePath)/RepositoryTest"
+var quickPathString = "\(workspacePath)/ClonedQuick"
+var quickRepoUrl = "https://github.com/Quick/Quick.git"
+
 class GiftTests: XCTestCase {
 
+  override func tearDown() {
+    system("rm -rf \(repoPathString)")
+    system("rm -rf \(quickPathString)")
+  }
+
   func testRepo() {
-    let desktopPath = "~/Desktop".stringByExpandingTildeInPath
-    let repoPathString = "\(desktopPath)/RepositoryTest"
     let fileURL = NSURL(fileURLWithPath: repoPathString)
     let repository = initializeEmptyRepository(fileURL!, RepositoryOptions())
     AssertSuccess(
@@ -16,10 +24,10 @@ class GiftTests: XCTestCase {
 
     AssertSuccess(repository.flatMap { $0.index }.map { $0.entryCount }, 0)
 
-    let quickOriginURL = NSURL(string: "https://github.com/Quick/Quick.git")
-    let quickDestURL = NSURL(fileURLWithPath: "\(desktopPath)/ClonedQuick")
+    let quickOriginURL = NSURL(string: quickRepoUrl)
+    let quickDestURL = NSURL(fileURLWithPath: quickPathString)
     let quickRepo = cloneRepository(quickOriginURL!, quickDestURL!, CloneOptions())
-    let ref = repository.flatMap { $0.headReference }
+    let ref = quickRepo.flatMap { $0.headReference }
     AssertSuccess(ref.flatMap { $0.name }, "refs/heads/master")
   }
 }
