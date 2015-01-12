@@ -13,7 +13,7 @@ available to Swift, create the following file at the submodule path
 ```
 # External/libgit2/module.map
 
-module git2 [system]
+module git2 [system] {
   header "include/git2.h"
   export *
 }
