@@ -8,7 +8,6 @@ var quickPathString = "\(workspacePath)/ClonedQuick"
 var quickRepoUrl = "https://github.com/Quick/Quick.git"
 
 class GiftTests: XCTestCase {
-
   override func tearDown() {
     system("rm -rf \(repoPathString)")
     system("rm -rf \(quickPathString)")
@@ -16,7 +15,7 @@ class GiftTests: XCTestCase {
 
   func testRepo() {
     let fileURL = NSURL(fileURLWithPath: repoPathString)
-    let repository = initializeEmptyRepository(fileURL!, RepositoryOptions())
+    let repository = initializeEmptyRepository(fileURL!)
     AssertSuccess(
       repository.flatMap { $0.gitDirectoryURL }.map { $0.path! },
       "\(repoPathString)/.git"
