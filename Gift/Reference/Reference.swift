@@ -2,7 +2,9 @@ import git2
 import LlamaKit
 
 /**
-  TODO: Documentation.
+  References point to a particular commit, but have more semantically
+  meaningful names. A branch, for example, is a named reference
+  pointing to the latest commit in a series of work.
 */
 public class Reference {
   private let cReference: COpaquePointer
@@ -18,7 +20,7 @@ public class Reference {
 
 public extension Reference {
   /**
-    TODO: Documentation.
+    The name of the reference.
   */
   public var name: Result<String> {
     if let name = String.fromCString(git_reference_name(cReference)) {
@@ -26,5 +28,12 @@ public extension Reference {
     } else {
       return failure("libgit2 error: git_reference_name failed")
     }
+  }
+
+  /**
+    Whether or not the reference is to a remote tracking branch.
+  */
+  public var isRemote: Bool {
+    return git_reference_is_remote(cReference) != 0
   }
 }

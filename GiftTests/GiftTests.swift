@@ -28,5 +28,6 @@ class GiftTests: XCTestCase {
     let quickRepo = cloneRepository(quickOriginURL!, quickDestURL!, CloneOptions())
     let ref = quickRepo.flatMap { $0.headReference }
     AssertSuccess(ref.flatMap { $0.name }, "refs/heads/master")
+    AssertSuccess(ref.map { $0.isRemote }, false)
   }
 }
