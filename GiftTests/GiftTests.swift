@@ -38,10 +38,20 @@ class GiftTests: XCTestCase {
       quickRepo.flatMap { $0.shouldIgnore("\(quickRepoUrl)/README.md") },
       false
     ))
-
     XCTAssert(isSuccessWithValue(
       quickRepo.flatMap { $0.shouldIgnore("\(quickRepoUrl)/.DS_Store") },
       true
+    ))
+
+    XCTAssert(isSuccessWithValue(
+      quickRepo.flatMap { $0.status("README.md") },
+      Status.Current
+    ))
+
+    system("echo 'test working tree modified' > \(quickPathString)/README.md")
+    XCTAssert(isSuccessWithValue(
+      quickRepo.flatMap { $0.status("README.md") },
+      Status.WorkingTreeModified
     ))
 
     let ref = quickRepo.flatMap { $0.headReference }

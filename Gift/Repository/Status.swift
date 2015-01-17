@@ -3,8 +3,8 @@ import git2
 public struct Status : RawOptionSetType, BooleanType {
   private let value: UInt = 0
 
-  public init(status: git_status_t) {
-    self.value = UInt(status.value)
+  public init(cStatus: git_status_t) {
+    self.init(rawValue: UInt(cStatus.value))
   }
 
   // MARK: NilLiteralConvertible Protocol Methods
@@ -37,18 +37,19 @@ public struct Status : RawOptionSetType, BooleanType {
 
   // MARK: Enum Values
 
-  public static var Current: Status { return self(rawValue: 0b00000000000) }
-  public static var IndexNew: Status { return self(rawValue: 0b00000000001) }
-  public static var IndexModified: Status { return self(rawValue: 0b00000000010) }
-  public static var IndexDeleted: Status { return self(rawValue: 0b00000000100) }
-  public static var IndexRenamed: Status { return self(rawValue: 0b00000001000) }
-  public static var IndexTypechanged: Status { return self(rawValue: 0b00000010000) }
+  public static var Current: Status { return self(rawValue: 0b00000000000000) }
 
-  public static var WorkingTreeNew: Status { return self(rawValue: 0b00000100000) }
-  public static var WorkingTreeModified: Status { return self(rawValue: 0b00001000000) }
-  public static var WorkingTreeDeleted: Status { return self(rawValue: 0b00010000000) }
-  public static var WorkingTreeTypechanged: Status { return self(rawValue: 0b00100000000) }
-  public static var WorkingTreeRenamed: Status { return self(rawValue: 0b01000000000) }
+  public static var IndexNew: Status { return self(rawValue: 0b00000000000001) }
+  public static var IndexModified: Status { return self(rawValue: 0b00000000000010) }
+  public static var IndexDeleted: Status { return self(rawValue: 0b00000000000100) }
+  public static var IndexRenamed: Status { return self(rawValue: 0b00000000001000) }
+  public static var IndexTypeChanged: Status { return self(rawValue: 0b00000000010000) }
 
-  public static var Ignored: Status { return self(rawValue: 0b10000000000) }
+  public static var WorkingTreeNew: Status { return self(rawValue: 0b00000010000000) }
+  public static var WorkingTreeModified: Status { return self(rawValue: 0b00000100000000) }
+  public static var WorkingTreeDeleted: Status { return self(rawValue: 0b00001000000000) }
+  public static var WorkingTreeTypeChanged: Status { return self(rawValue: 0b00010000000000) }
+  public static var WorkingTreeRenamed: Status { return self(rawValue: 0b00100000000000) }
+
+  public static var Ignored: Status { return self(rawValue: 0b10000000000000) }
 }
