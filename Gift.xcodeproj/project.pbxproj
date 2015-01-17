@@ -26,6 +26,7 @@
 		DA9F365C1A476AF7002F35D4 /* GiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9F365B1A476AF7002F35D4 /* GiftTests.swift */; };
 		DAC9DD101A4B0AD800436BA2 /* Gift.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC9DD0F1A4B0AD800436BA2 /* Gift.m */; };
 		DAC9DD251A4B67D700436BA2 /* ResultAssert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9DD241A4B67D700436BA2 /* ResultAssert.swift */; };
+		E118A0EB1A6A3B28003E1ECA /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = E118A0EA1A6A3B28003E1ECA /* Status.swift */; };
 		E132E7751A63836100944D58 /* Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = E132E7741A63836100944D58 /* Reference.swift */; };
 		E132E7771A63845F00944D58 /* Repository+Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = E132E7761A63845F00944D58 /* Repository+Reference.swift */; };
 /* End PBXBuildFile section */
@@ -63,6 +64,7 @@
 		DA9F365B1A476AF7002F35D4 /* GiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftTests.swift; sourceTree = "<group>"; };
 		DAC9DD0F1A4B0AD800436BA2 /* Gift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gift.m; sourceTree = "<group>"; };
 		DAC9DD241A4B67D700436BA2 /* ResultAssert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultAssert.swift; sourceTree = "<group>"; };
+		E118A0EA1A6A3B28003E1ECA /* Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		E132E7741A63836100944D58 /* Reference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reference.swift; sourceTree = "<group>"; };
 		E132E7761A63845F00944D58 /* Repository+Reference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Repository+Reference.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +113,7 @@
 				DA8368181A5124B4002E8BC1 /* RemoteCallbacks+C.swift */,
 				DA83681A1A5124D8002E8BC1 /* CloneOptions.swift */,
 				DA83681C1A5124FC002E8BC1 /* CloneOptions+C.swift */,
+				E118A0EA1A6A3B28003E1ECA /* Status.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				DA83681D1A5124FC002E8BC1 /* CloneOptions+C.swift in Sources */,
 				DA98769E1A4B74260004AA17 /* Repository+Index.swift in Sources */,
 				DA8368131A512397002E8BC1 /* CheckoutOptions.swift in Sources */,
+				E118A0EB1A6A3B28003E1ECA /* Status.swift in Sources */,
 				DA9876A11A4B74260004AA17 /* RepositoryOptions.swift in Sources */,
 				DA8368191A5124B4002E8BC1 /* RemoteCallbacks+C.swift in Sources */,
 				DA98769F1A4B74260004AA17 /* Repository.swift in Sources */,
