@@ -3,12 +3,31 @@ import LlamaKit
 
 public extension Repository {
   /**
+    The status of the file at the given path.
+
+    TODO: Do not return the libgit2 enum git_status_t to consumers.
+          Wrap the enum in a Swift struct, enum, or RawOptionSetType.
+
+    :param: path The path of the file.
+    :returns: The result of the operation: either a bitmask value that represents the
+              status of the file, or an error indicating what went wrong.
+  */
+  public func status(path: String) -> Result<git_status_t> {
+    var statusFlags: UInt32 = 0
+    let errorCode = git_status_file(&statusFlags, cRepository, path)
+    if errorCode == GIT_OK.value {
+      return success(git_status_t(statusFlags))
+    } else {
+      return failure("libgit2 error: git_status_file failed with code \(errorCode)")
+    }
+  }
+
+  /**
     Whether the file at the given path matches the ignore rules.
 
-    :param: path The path of the file being checked.
-    :returns: The result of the operation: either a boolean value
-              indicating whether the file is ignored, or an error
-              indicating what went wrong.
+    :param: path The path of the file.
+    :returns: The result of the operation: either a boolean value indicating whether
+              the file is ignored, or an error indicating what went wrong.
   */
   public func shouldIgnore(path: String) -> Result<Bool> {
     var ignored: Int32 = 0
