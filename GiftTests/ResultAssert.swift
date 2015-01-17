@@ -1,11 +1,11 @@
 import LlamaKit
 import XCTest
 
-internal func AssertSuccess<T: Equatable>(result: Result<T>, value: T) {
+internal func isSuccessWithValue<T: Equatable>(result: Result<T>, value: T) -> Bool {
   switch result {
-    case .Success(let box):
-      XCTAssertEqual(box.unbox, value)
-    case .Failure(let error):
-      XCTFail("Result was unsuccessful: \(error)")
+  case .Success(let box):
+    return box.unbox == value
+  case .Failure(let error):
+    return false
   }
 }
