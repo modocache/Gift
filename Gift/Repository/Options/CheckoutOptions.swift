@@ -8,13 +8,9 @@ import git2
         range of options made possible by git_checkout_options.
 */
 public struct CheckoutOptions {
-  /**
-    A collection of git_checkout_strategy_t flags.
-    Determines checkout behavior.
-  */
-  internal let strategy: UInt32
+  internal let strategy: CheckoutStrategy
 
-  public init(strategy: UInt32 = GIT_CHECKOUT_SAFE_CREATE.value) {
+  public init(strategy: CheckoutStrategy) {
     self.strategy = strategy
   }
 }

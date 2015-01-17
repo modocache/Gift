@@ -2,7 +2,15 @@ import git2
 
 /**
   A data structure representing an index, also referred to as
-  a "staging area" for changes.
+  a "staging area" for changes. The index is a temporary and
+  dynamic binary file that describes the directory structure
+  of the entire repository. The index captures a version of the
+  project’s overall structure at some moment in time.
+
+  The index allows a separation between incremental developmental
+  changes and the committal of those changes. Changes are "staged"
+  in an index, keeping those changes until they are ready to be
+  committed.
 */
 public class Index {
   private let cIndex: COpaquePointer

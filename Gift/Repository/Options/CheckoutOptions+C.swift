@@ -8,7 +8,7 @@ extension CheckoutOptions {
   internal var cOptions: git_checkout_options {
     return git_checkout_options(
       version: 1,
-      checkout_strategy: strategy,
+      checkout_strategy: UInt32(strategy.rawValue),
       disable_filters: 0,
       dir_mode: 0,
       file_mode: 0,

@@ -21,8 +21,13 @@ class GiftTests: XCTestCase {
   }
 
   func testRepo() {
-    let fileURL = NSURL(fileURLWithPath: repoPathString)
-    let repository = initializeEmptyRepository(fileURL!)
+    let repository = initializeEmptyRepository(
+      NSURL(fileURLWithPath: repoPathString)!,
+      RepositoryInitializationOptions(
+        optionsSet: RepositoryInitializationOptionSet.MakePath,
+        mode: .User
+      )
+    )
     XCTAssert(isSuccessWithValue(
       repository.flatMap { $0.gitDirectoryURL }.map { $0.path! },
       "\(repoPathString)/.git"
@@ -30,9 +35,14 @@ class GiftTests: XCTestCase {
 
     XCTAssert(isSuccessWithValue(repository.flatMap { $0.index }.map { $0.entryCount }, 0))
 
-    let quickOriginURL = NSURL(string: quickRepoUrl)
-    let quickDestURL = NSURL(fileURLWithPath: quickPathString)
-    let quickRepo = cloneRepository(quickOriginURL!, quickDestURL!, CloneOptions())
+    let quickRepo = cloneRepository(
+      NSURL(string: quickRepoUrl)!,
+      NSURL(fileURLWithPath: quickPathString)!,
+      CloneOptions(
+        checkoutOptions: CheckoutOptions(strategy: CheckoutStrategy.SafeCreate),
+        remoteCallbacks: RemoteCallbacks()
+      )
+    )
 
     XCTAssert(isSuccessWithValue(
       quickRepo.flatMap { $0.shouldIgnore("\(quickRepoUrl)/README.md") },
@@ -51,8 +61,20 @@ class GiftTests: XCTestCase {
     system("echo 'test working tree modified' > \(quickPathString)/README.md")
     XCTAssert(isSuccessWithValue(
       quickRepo.flatMap { $0.status("README.md") },
-      Status.WorkingTreeModified
+      Status.WorkingDirectoryModified
     ))
+
+    // TODO: Doesn't work--nothing is printed.
+    switch quickRepo {
+      case .Success(let repoBox):
+        let r = repoBox.unbox
+        r.status { (headToIndex: StatusDelta, indexToWorkingDirectory: StatusDelta) in
+          println(headToIndex.type)
+          return false
+        }
+      case .Failure(let error):
+        break
+    }
 
     let ref = quickRepo.flatMap { $0.headReference }
     XCTAssert(isSuccessWithValue(ref.flatMap { $0.name }, "refs/heads/master"))
