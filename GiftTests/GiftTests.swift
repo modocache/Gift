@@ -34,15 +34,13 @@ class GiftTests: XCTestCase {
     let quickDestURL = NSURL(fileURLWithPath: quickPathString)
     let quickRepo = cloneRepository(quickOriginURL!, quickDestURL!, CloneOptions())
 
-    let unignoredPath = "\(quickRepoUrl)/README.md"
     XCTAssert(isSuccessWithValue(
-      quickRepo.flatMap { $0.shouldIgnore(NSURL(fileURLWithPath: unignoredPath)!) },
+      quickRepo.flatMap { $0.shouldIgnore("\(quickRepoUrl)/README.md") },
       false
     ))
 
-    let ignoredPath = "\(quickRepoUrl)/.DS_Store"
     XCTAssert(isSuccessWithValue(
-      quickRepo.flatMap { $0.shouldIgnore(NSURL(fileURLWithPath: ignoredPath)!) },
+      quickRepo.flatMap { $0.shouldIgnore("\(quickRepoUrl)/.DS_Store") },
       true
     ))
 
