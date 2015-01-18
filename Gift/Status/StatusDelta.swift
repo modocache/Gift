@@ -28,11 +28,4 @@ public struct StatusDelta {
     TODO: Documentation. Only useful with certain types.
   */
   public let similarity: Double
-
-  internal init(cStatusDelta: git_diff_delta) {
-    oldFileDiff = FileDiff(cFileDiff: cStatusDelta.old_file)
-    newFileDiff = FileDiff(cFileDiff: cStatusDelta.new_file)
-    type = StatusDeltaType(rawValue: cStatusDelta.status.value)! // TODO: Raises if status is outside of known range.
-    similarity = Double(cStatusDelta.similarity)/100.0
-  }
 }

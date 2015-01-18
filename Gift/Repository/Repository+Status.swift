@@ -2,12 +2,11 @@ import Foundation
 import git2
 import LlamaKit
 
-public typealias StatusClosure = (headToIndex: StatusDelta, indexToWorkingDirectory: StatusDelta) -> Bool
+public typealias StatusClosure = (headToIndex: StatusDelta?, indexToWorkingDirectory: StatusDelta?) -> Bool
 
 public extension Repository {
   /**
     TODO: Documentation.
-    TODO: Does not work--git_status_list_entrycount always returns 0.
   */
   public func status(closure: StatusClosure, options: StatusOptions = StatusOptions()) -> Result<UInt> {
     var statusList = COpaquePointer()
@@ -22,8 +21,14 @@ public extension Repository {
         for statusIndex in 0..<statusCount {
           let entry = git_status_byindex(statusList, statusIndex)
           if entry != nil {
-            let headToIndex = StatusDelta(cStatusDelta: entry.memory.head_to_index.memory)
-            let indexToWorkingDirectory = StatusDelta(cStatusDelta: entry.memory.index_to_workdir.memory)
+            var headToIndex: StatusDelta?
+            if entry.memory.head_to_index != nil {
+              headToIndex = StatusDelta(cStatusDelta: entry.memory.head_to_index.memory)
+            }
+            var indexToWorkingDirectory: StatusDelta?
+            if entry.memory.index_to_workdir != nil {
+              indexToWorkingDirectory = StatusDelta(cStatusDelta: entry.memory.index_to_workdir.memory)
+            }
             if closure(headToIndex: headToIndex, indexToWorkingDirectory: indexToWorkingDirectory) {
               git_status_list_free(statusList)
               return success(statusIndex + 1)
@@ -71,5 +76,24 @@ public extension Repository {
     } else {
       return failure("libgit2 error: git_status_should_ignore failed with code \(errorCode)")
     }
+  }
+}
+
+// MARK: Private
+
+private extension StatusDelta {
+  /**
+    Marking this extension and its initializer as internal or public
+    causes a segmentation fault in the Swift compiler.
+
+    TODO: This issue may be fixed once the umbrella header for libgit2 is in place.
+  */
+  private init(cStatusDelta: git_diff_delta) {
+    self.init(
+      oldFileDiff: FileDiff(cFileDiff: cStatusDelta.old_file),
+      newFileDiff: FileDiff(cFileDiff: cStatusDelta.new_file),
+      type: StatusDeltaType(rawValue: cStatusDelta.status.value)!,
+      similarity: Double(cStatusDelta.similarity)/100.0
+    )
   }
 }
