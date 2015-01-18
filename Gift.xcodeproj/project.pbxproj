@@ -44,6 +44,7 @@
 		E19F05FD1A6C39FC00EF5BFA /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E19F05FB1A6C39FC00EF5BFA /* Nimble.framework */; };
 		E19F05FE1A6C39FC00EF5BFA /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E19F05FC1A6C39FC00EF5BFA /* Quick.framework */; };
 		E19F06011A6C3BC400EF5BFA /* RepositorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19F06001A6C3BC400EF5BFA /* RepositorySpec.swift */; };
+		E1BE9F1E1A6C4B7C003E87BB /* ResultMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BE9F1D1A6C4B7C003E87BB /* ResultMatchers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +125,7 @@
 		E19F05FB1A6C39FC00EF5BFA /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = ../External/Nimble/build/Debug/Nimble.framework; sourceTree = "<group>"; };
 		E19F05FC1A6C39FC00EF5BFA /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "../../../Library/Developer/Xcode/DerivedData/Gift-aawqlbmcaehhbtczebijfiwnpaqu/Build/Products/Debug/Quick.framework"; sourceTree = "<group>"; };
 		E19F06001A6C3BC400EF5BFA /* RepositorySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositorySpec.swift; sourceTree = "<group>"; };
+		E1BE9F1D1A6C4B7C003E87BB /* ResultMatchers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultMatchers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,6 +261,7 @@
 		DA9F36581A476AF7002F35D4 /* GiftTests */ = {
 			isa = PBXGroup;
 			children = (
+				E1BE9F1C1A6C4B6C003E87BB /* Matchers */,
 				E19F05FF1A6C3BA700EF5BFA /* Repository */,
 				DAC9DD241A4B67D700436BA2 /* ResultAssert.swift */,
 				DA9F365B1A476AF7002F35D4 /* GiftTests.swift */,
@@ -292,6 +295,14 @@
 				E19F06001A6C3BC400EF5BFA /* RepositorySpec.swift */,
 			);
 			path = Repository;
+			sourceTree = "<group>";
+		};
+		E1BE9F1C1A6C4B6C003E87BB /* Matchers */ = {
+			isa = PBXGroup;
+			children = (
+				E1BE9F1D1A6C4B7C003E87BB /* ResultMatchers.swift */,
+			);
+			path = Matchers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -427,6 +438,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAC9DD251A4B67D700436BA2 /* ResultAssert.swift in Sources */,
+				E1BE9F1E1A6C4B7C003E87BB /* ResultMatchers.swift in Sources */,
 				E19F06011A6C3BC400EF5BFA /* RepositorySpec.swift in Sources */,
 				DA9F365C1A476AF7002F35D4 /* GiftTests.swift in Sources */,
 			);
