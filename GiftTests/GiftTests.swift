@@ -80,4 +80,13 @@ class GiftTests: XCTestCase {
     XCTAssert(isSuccessWithValue(ref.flatMap { $0.name }, "refs/heads/master"))
     XCTAssert(isSuccessWithValue(ref.map { $0.isRemote }, false))
   }
+
+  func testRepositoryOpen() {
+    let path = "/Users/bgesiak/GitHub/modocache/Fox"
+    let repo = openRepository(NSURL(fileURLWithPath: path)!)
+    XCTAssert(isSuccessWithValue(
+      repo.flatMap { $0.gitDirectoryURL }.map { $0.path! },
+      "\(path)/.git"
+    ))
+  }
 }

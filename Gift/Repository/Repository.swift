@@ -62,6 +62,23 @@ public func initializeEmptyRepository(directoryURL: NSURL, options: RepositoryIn
 }
 
 /**
+  TODO: Documentation.
+*/
+public func openRepository(fileURL: NSURL) -> Result<Repository> {
+  if !fileURL.fileURL || fileURL.path == nil {
+    return failure("Invalid fileURL: \(fileURL)")
+  } else {
+    var out = COpaquePointer()
+    let errorCode = git_repository_open(&out, fileURL.path!)
+    if errorCode == GIT_OK.value {
+      return success(Repository(cRepository: out))
+    } else {
+      return failure("libgit2 error: git_repository_open failed with code \(errorCode)")
+    }
+  }
+}
+
+/**
   Clones a remote repository.
 
   :param: originURL The URL at which the remote repository is located.
