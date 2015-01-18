@@ -11,24 +11,37 @@ class RepositorySpec: QuickSpec {
           let repository = initializeEmptyRepository(newRepoURL)
 
           expect(repository.flatMap { $0.gitDirectoryURL }.map { $0.path!.stringByResolvingSymlinksInPath })
-            .to(beSuccessful(newRepoURL.URLByAppendingPathComponent(".git").path!.stringByResolvingSymlinksInPath))
+            .to(haveSucceeded(newRepoURL.URLByAppendingPathComponent(".git").path!.stringByResolvingSymlinksInPath))
         }
       }
     }
 
     describe("cloneRepository") {
-      context("with a remote on the local filesystem") {
+      context("on the local filesystem") {
         var remoteURL: NSURL!
+        var destinationURL: NSURL!
         beforeEach {
           remoteURL = temporaryDirectoryURL().URLByAppendingPathComponent("park-slope")
-          let _ = initializeEmptyRepository(remoteURL)
+          destinationURL = temporaryDirectoryURL().URLByAppendingPathComponent("sunset-park")
         }
 
-        it("is succesful") {
-          let localDestinationURL = temporaryDirectoryURL().URLByAppendingPathComponent("sunset-park")
-          let repository = cloneRepository(remoteURL, localDestinationURL)
+        context("but the remote does not exist") {
+          it("fails") {
+            let repository = cloneRepository(remoteURL, destinationURL)
+            let path = remoteURL.path!.stringByResolvingSymlinksInPath
+            let faiureMessage = "libgit2 error: Failed to resolve path '\(path)': No such file or directory"
+            expect(repository).to(haveFailed(faiureMessage))
+          }
+        }
 
-          expect(repository).to(beSuccessful())
+        context("and the remote exists") {
+          beforeEach {
+            let _ = initializeEmptyRepository(remoteURL)
+          }
+
+          it("is succesful") {
+            expect(cloneRepository(remoteURL, destinationURL)).to(haveSucceeded())
+          }
         }
       }
     }
