@@ -38,7 +38,7 @@ class RepositorySpec: QuickSpec {
 
         var remoteURL: NSURL!
         beforeEach {
-          let remoteURL = temporaryDirectoryURL().URLByAppendingPathComponent("park-slope")
+          remoteURL = temporaryDirectoryURL().URLByAppendingPathComponent("park-slope")
           let _ = initializeEmptyRepository(remoteURL)
         }
 
