@@ -6,13 +6,21 @@ progress!
 
 # How to Build
 
-`Gift.xcodeproj` links the libgit2.dylib as part of its build process.
-You'll need to build libgit2 in order to create the dylib at the expected path:
+`Gift.xcodeproj` links libgit2.a as part of its build process.
+You'll need to build libgit2 in order to create the static library at
+the expected path:
 
 ```
 $ cd External/libgit2
 $ mkdir build
 $ cd build
-$ cmake ..
+$ cmake -DBUILD_SHARED_LIBS:BOOL=OFF -DBUILD_CLAR:BOOL=OFF -DTHREADSAFE:BOOL=ON ..
 $ cmake --build .
+```
+
+You'll also need the latest version of libssh2:
+
+```
+$ brew install libssh2
+$ brew upgrade libssh2
 ```
