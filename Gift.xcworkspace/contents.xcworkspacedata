@@ -7,4 +7,10 @@
    <FileRef
       location = "group:External/LlamaKit/LlamaKit.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:External/Quick/Quick.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:External/Nimble/Nimble.xcodeproj">
+   </FileRef>
 </Workspace>

@@ -41,6 +41,8 @@
 		DA9F365C1A476AF7002F35D4 /* GiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9F365B1A476AF7002F35D4 /* GiftTests.swift */; };
 		DAC9DD101A4B0AD800436BA2 /* Gift.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC9DD0F1A4B0AD800436BA2 /* Gift.m */; };
 		DAC9DD251A4B67D700436BA2 /* ResultAssert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9DD241A4B67D700436BA2 /* ResultAssert.swift */; };
+		E19F05FD1A6C39FC00EF5BFA /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E19F05FB1A6C39FC00EF5BFA /* Nimble.framework */; };
+		E19F05FE1A6C39FC00EF5BFA /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E19F05FC1A6C39FC00EF5BFA /* Quick.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +120,8 @@
 		DAC9DD241A4B67D700436BA2 /* ResultAssert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultAssert.swift; sourceTree = "<group>"; };
 		DADB27271A6B8F620036225C /* git2 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = git2; path = External/libgit2/include/git2; sourceTree = SOURCE_ROOT; };
 		DADB27281A6B8F620036225C /* git2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = git2.h; path = External/libgit2/include/git2.h; sourceTree = SOURCE_ROOT; };
+		E19F05FB1A6C39FC00EF5BFA /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = ../External/Nimble/build/Debug/Nimble.framework; sourceTree = "<group>"; };
+		E19F05FC1A6C39FC00EF5BFA /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "../../../Library/Developer/Xcode/DerivedData/Gift-aawqlbmcaehhbtczebijfiwnpaqu/Build/Products/Debug/Quick.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E19F05FD1A6C39FC00EF5BFA /* Nimble.framework in Frameworks */,
+				E19F05FE1A6C39FC00EF5BFA /* Quick.framework in Frameworks */,
 				DA9F36551A476AF7002F35D4 /* Gift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +267,8 @@
 		DA9F36591A476AF7002F35D4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E19F05FC1A6C39FC00EF5BFA /* Quick.framework */,
+				E19F05FB1A6C39FC00EF5BFA /* Nimble.framework */,
 				DA9F365A1A476AF7002F35D4 /* Info.plist */,
 			);
 			name = "Supporting Files";

@@ -4,3 +4,9 @@
 [submodule "External/LlamaKit"]
 	path = External/LlamaKit
 	url = git@github.com:LlamaKit/LlamaKit.git
+[submodule "External/Quick"]
+	path = External/Quick
+	url = git@github.com:Quick/Quick.git
+[submodule "External/Nimble"]
+	path = External/Nimble
+	url = git@github.com:Quick/Nimble.git
