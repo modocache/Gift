@@ -42,6 +42,7 @@
 		DAA283941A6C5CE400F7B4C3 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA283931A6C5CE400F7B4C3 /* Error.swift */; };
 		DAC9DD101A4B0AD800436BA2 /* Gift.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC9DD0F1A4B0AD800436BA2 /* Gift.m */; };
 		DAC9DD251A4B67D700436BA2 /* ResultAssert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9DD241A4B67D700436BA2 /* ResultAssert.swift */; };
+		E11D6FDB1A6C6CB500F00863 /* NSError+Domains.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11D6FDA1A6C6CB500F00863 /* NSError+Domains.swift */; };
 		E19F05FD1A6C39FC00EF5BFA /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E19F05FB1A6C39FC00EF5BFA /* Nimble.framework */; };
 		E19F05FE1A6C39FC00EF5BFA /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E19F05FC1A6C39FC00EF5BFA /* Quick.framework */; };
 		E19F06011A6C3BC400EF5BFA /* RepositorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19F06001A6C3BC400EF5BFA /* RepositorySpec.swift */; };
@@ -125,6 +126,7 @@
 		DAC9DD241A4B67D700436BA2 /* ResultAssert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultAssert.swift; sourceTree = "<group>"; };
 		DADB27271A6B8F620036225C /* git2 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = git2; path = External/libgit2/include/git2; sourceTree = SOURCE_ROOT; };
 		DADB27281A6B8F620036225C /* git2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = git2.h; path = External/libgit2/include/git2.h; sourceTree = SOURCE_ROOT; };
+		E11D6FDA1A6C6CB500F00863 /* NSError+Domains.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSError+Domains.swift"; sourceTree = "<group>"; };
 		E19F05FB1A6C39FC00EF5BFA /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = ../External/Nimble/build/Debug/Nimble.framework; sourceTree = "<group>"; };
 		E19F05FC1A6C39FC00EF5BFA /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "../../../Library/Developer/Xcode/DerivedData/Gift-aawqlbmcaehhbtczebijfiwnpaqu/Build/Products/Debug/Quick.framework"; sourceTree = "<group>"; };
 		E19F06001A6C3BC400EF5BFA /* RepositorySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositorySpec.swift; sourceTree = "<group>"; };
@@ -290,6 +292,7 @@
 			isa = PBXGroup;
 			children = (
 				DAA283931A6C5CE400F7B4C3 /* Error.swift */,
+				E11D6FDA1A6C6CB500F00863 /* NSError+Domains.swift */,
 			);
 			path = Error;
 			sourceTree = "<group>";
@@ -448,6 +451,7 @@
 				DA90009E1A6B9B7900F43D4F /* RepositoryInitializationOptions.swift in Sources */,
 				DA9000911A6B9B7900F43D4F /* StatusOptions+C.swift in Sources */,
 				DAC9DD101A4B0AD800436BA2 /* Gift.m in Sources */,
+				E11D6FDB1A6C6CB500F00863 /* NSError+Domains.swift in Sources */,
 				DA9000921A6B9B7900F43D4F /* StatusOptions.swift in Sources */,
 				DA90009A1A6B9B7900F43D4F /* RemoteCallbacks+C.swift in Sources */,
 				DA9000961A6B9B7900F43D4F /* CheckoutOptions.swift in Sources */,

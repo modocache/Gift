@@ -96,11 +96,7 @@ public func cloneRepository(originURL: NSURL, destinationWorkingDirectory: NSURL
       if errorCode == GIT_OK.value {
         return success(Repository(cRepository: out))
       } else {
-        if let message = errorMessage(errorCode) {
-          return failure("libgit2 error: \(message)")
-        } else {
-          return failure("libgit2 error: git_clone failed with code \(errorCode)")
-        }
+        return failure(NSError.libGit2Error(errorCode, libGit2PointOfFailure: "git_clone"))
       }
     } else {
       return failure("Invalid destinationWorkingDirectory: \(destinationWorkingDirectory)")

@@ -29,7 +29,7 @@ class RepositorySpec: QuickSpec {
           it("fails") {
             let repository = cloneRepository(remoteURL, destinationURL)
             let path = remoteURL.path!.stringByResolvingSymlinksInPath
-            let faiureMessage = "libgit2 error: Failed to resolve path '\(path)': No such file or directory"
+            let faiureMessage = "Failed to resolve path '\(path)': No such file or directory"
             expect(repository).to(haveFailed(faiureMessage))
           }
         }
