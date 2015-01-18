@@ -6,10 +6,6 @@
 public struct RepositoryInitializationOptionSet : RawOptionSetType, BooleanType {
   private let value: UInt = 0
 
-  internal init(cRepositoryInitializationOptionSet: git_repository_init_flag_t) {
-    self.init(rawValue: UInt(cRepositoryInitializationOptionSet.value))
-  }
-
   // MARK: NilLiteralConvertible Protocol Methods
 
   public init(nilLiteral: ()) { }
