@@ -1,5 +1,4 @@
 #import <Foundation/Foundation.h>
-#import "git2.h"
 
 //! Project version number for Gift.
 FOUNDATION_EXPORT double GiftVersionNumber;
