@@ -86,7 +86,7 @@ public func openRepository(fileURL: NSURL) -> Result<Repository> {
   :options: A set of options used to configure how the repository will be cloned.
   :returns: The result of the operation: either the cloned repository, or an error explaining what went wrong.
 */
-public func cloneRepository(originURL: NSURL, destinationWorkingDirectory: NSURL, options: CloneOptions) -> Result<Repository> {
+public func cloneRepository(originURL: NSURL, destinationWorkingDirectory: NSURL, options: CloneOptions = CloneOptions()) -> Result<Repository> {
   if let url = cPath(originURL) {
     if let localPath = destinationWorkingDirectory.path?.fileSystemRepresentation() {
       var out = COpaquePointer()

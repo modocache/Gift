@@ -38,7 +38,7 @@ class GiftTests: XCTestCase {
     let quickRepo = cloneRepository(
       NSURL(string: quickRepoUrl)!,
       NSURL(fileURLWithPath: quickPathString)!,
-      CloneOptions(
+      options: CloneOptions(
         checkoutOptions: CheckoutOptions(strategy: CheckoutStrategy.SafeCreate),
         remoteCallbacks: RemoteCallbacks()
       )
