@@ -1,5 +1,3 @@
-import git2
-
 /**
   The difference in an entry between one snapshot and another.
   For example, the difference between an entry in HEAD and in the index,

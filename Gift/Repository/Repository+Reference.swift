@@ -1,4 +1,3 @@
-import git2
 import LlamaKit
 
 public extension Repository {

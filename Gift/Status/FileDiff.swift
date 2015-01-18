@@ -1,5 +1,3 @@
-import git2
-
 /**
   TODO: Documentation.
 */

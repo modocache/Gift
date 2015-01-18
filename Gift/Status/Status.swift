@@ -1,5 +1,3 @@
-import git2
-
 /**
   A set of flags indicating the status of an entry.
 

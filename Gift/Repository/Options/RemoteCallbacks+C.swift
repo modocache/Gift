@@ -1,5 +1,3 @@
-import git2
-
 extension RemoteCallbacks {
   /**
     Returns a C struct initialized with this callbacks instance's values.

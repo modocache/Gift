@@ -1,5 +1,3 @@
-import git2
-
 /**
   A set of options used to clone a repository.
 

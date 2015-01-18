@@ -1,5 +1,3 @@
-import git2
-
 /**
   A data structure representing an index, also referred to as
   a "staging area" for changes. The index is a temporary and

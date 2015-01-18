@@ -1,5 +1,3 @@
-import git2
-
 /**
   A set of options indicating how a repository should be initialized.
 

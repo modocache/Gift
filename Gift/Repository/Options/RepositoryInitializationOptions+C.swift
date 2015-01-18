@@ -1,5 +1,3 @@
-import git2
-
 extension RepositoryInitializationOptions {
   /**
     Returns a C struct initialized with this options instance's values.

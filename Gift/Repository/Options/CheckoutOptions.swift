@@ -1,5 +1,3 @@
-import git2
-
 /**
   A set of options used to perform a checkout.
   The designated initializer provides a set of reasonable defaults.

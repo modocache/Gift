@@ -1,5 +1,4 @@
 import Foundation
-import git2
 import LlamaKit
 
 public typealias StatusClosure = (headToIndex: StatusDelta?, indexToWorkingDirectory: StatusDelta?) -> Bool

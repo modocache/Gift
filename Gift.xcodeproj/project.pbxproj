@@ -7,30 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DA08701D1A6B07D600F210E4 /* FileDiff.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0870031A6B07D600F210E4 /* FileDiff.swift */; };
-		DA08701E1A6B07D600F210E4 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0870041A6B07D600F210E4 /* Status.swift */; };
-		DA08701F1A6B07D600F210E4 /* StatusDelta.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0870051A6B07D600F210E4 /* StatusDelta.swift */; };
-		DA0870201A6B07D600F210E4 /* StatusDeltaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0870061A6B07D600F210E4 /* StatusDeltaType.swift */; };
-		DA0870211A6B07D600F210E4 /* StatusOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0870071A6B07D600F210E4 /* StatusOptions+C.swift */; };
-		DA0870221A6B07D600F210E4 /* StatusOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0870081A6B07D600F210E4 /* StatusOptions.swift */; };
-		DA0870231A6B07D600F210E4 /* StatusShowOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0870091A6B07D600F210E4 /* StatusShowOptions.swift */; };
-		DA0870241A6B07D600F210E4 /* Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA08700B1A6B07D600F210E4 /* Reference.swift */; };
-		DA0870251A6B07D600F210E4 /* Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA08700D1A6B07D600F210E4 /* Index.swift */; };
-		DA0870261A6B07D600F210E4 /* CheckoutOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0870101A6B07D600F210E4 /* CheckoutOptions+C.swift */; };
-		DA0870271A6B07D600F210E4 /* CheckoutOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0870111A6B07D600F210E4 /* CheckoutOptions.swift */; };
-		DA0870281A6B07D600F210E4 /* CheckoutStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0870121A6B07D600F210E4 /* CheckoutStrategy.swift */; };
-		DA0870291A6B07D600F210E4 /* CloneOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0870131A6B07D600F210E4 /* CloneOptions+C.swift */; };
-		DA08702A1A6B07D600F210E4 /* CloneOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0870141A6B07D600F210E4 /* CloneOptions.swift */; };
-		DA08702B1A6B07D600F210E4 /* RemoteCallbacks+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0870151A6B07D600F210E4 /* RemoteCallbacks+C.swift */; };
-		DA08702C1A6B07D600F210E4 /* RemoteCallbacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0870161A6B07D600F210E4 /* RemoteCallbacks.swift */; };
-		DA08702D1A6B07D600F210E4 /* RepositoryInitializationOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0870171A6B07D600F210E4 /* RepositoryInitializationOptions+C.swift */; };
-		DA08702E1A6B07D600F210E4 /* RepositoryInitializationOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0870181A6B07D600F210E4 /* RepositoryInitializationOptions.swift */; };
-		DA08702F1A6B07D600F210E4 /* Repository+Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0870191A6B07D600F210E4 /* Repository+Index.swift */; };
-		DA0870301A6B07D600F210E4 /* Repository+Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA08701A1A6B07D600F210E4 /* Repository+Reference.swift */; };
-		DA0870311A6B07D600F210E4 /* Repository+Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA08701B1A6B07D600F210E4 /* Repository+Status.swift */; };
-		DA0870321A6B07D600F210E4 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA08701C1A6B07D600F210E4 /* Repository.swift */; };
-		DA1A68771A6B0BB00001B0CF /* RepositoryInitializationOptionSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1A68761A6B0BB00001B0CF /* RepositoryInitializationOptionSet.swift */; };
-		DA1A68791A6B101A0001B0CF /* RepositoryInitializationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1A68781A6B101A0001B0CF /* RepositoryInitializationMode.swift */; };
+		DA90006C1A6B9A4000F43D4F /* git2 in Copy git2 Headers */ = {isa = PBXBuildFile; fileRef = DADB27271A6B8F620036225C /* git2 */; };
+		DA90006E1A6B9A8700F43D4F /* git2 in Copy git2/sys Headers */ = {isa = PBXBuildFile; fileRef = DADB27271A6B8F620036225C /* git2 */; };
+		DA9000711A6B9B2D00F43D4F /* Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000701A6B9B2D00F43D4F /* Index.swift */; };
+		DA90008D1A6B9B7900F43D4F /* FileDiff.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000731A6B9B7900F43D4F /* FileDiff.swift */; };
+		DA90008E1A6B9B7900F43D4F /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000741A6B9B7900F43D4F /* Status.swift */; };
+		DA90008F1A6B9B7900F43D4F /* StatusDelta.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000751A6B9B7900F43D4F /* StatusDelta.swift */; };
+		DA9000901A6B9B7900F43D4F /* StatusDeltaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000761A6B9B7900F43D4F /* StatusDeltaType.swift */; };
+		DA9000911A6B9B7900F43D4F /* StatusOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000771A6B9B7900F43D4F /* StatusOptions+C.swift */; };
+		DA9000921A6B9B7900F43D4F /* StatusOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000781A6B9B7900F43D4F /* StatusOptions.swift */; };
+		DA9000931A6B9B7900F43D4F /* StatusShowOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000791A6B9B7900F43D4F /* StatusShowOptions.swift */; };
+		DA9000941A6B9B7900F43D4F /* Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90007B1A6B9B7900F43D4F /* Reference.swift */; };
+		DA9000951A6B9B7900F43D4F /* CheckoutOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90007E1A6B9B7900F43D4F /* CheckoutOptions+C.swift */; };
+		DA9000961A6B9B7900F43D4F /* CheckoutOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90007F1A6B9B7900F43D4F /* CheckoutOptions.swift */; };
+		DA9000971A6B9B7900F43D4F /* CheckoutStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000801A6B9B7900F43D4F /* CheckoutStrategy.swift */; };
+		DA9000981A6B9B7900F43D4F /* CloneOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000811A6B9B7900F43D4F /* CloneOptions+C.swift */; };
+		DA9000991A6B9B7900F43D4F /* CloneOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000821A6B9B7900F43D4F /* CloneOptions.swift */; };
+		DA90009A1A6B9B7900F43D4F /* RemoteCallbacks+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000831A6B9B7900F43D4F /* RemoteCallbacks+C.swift */; };
+		DA90009B1A6B9B7900F43D4F /* RemoteCallbacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000841A6B9B7900F43D4F /* RemoteCallbacks.swift */; };
+		DA90009C1A6B9B7900F43D4F /* RepositoryInitializationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000851A6B9B7900F43D4F /* RepositoryInitializationMode.swift */; };
+		DA90009D1A6B9B7900F43D4F /* RepositoryInitializationOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000861A6B9B7900F43D4F /* RepositoryInitializationOptions+C.swift */; };
+		DA90009E1A6B9B7900F43D4F /* RepositoryInitializationOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000871A6B9B7900F43D4F /* RepositoryInitializationOptions.swift */; };
+		DA90009F1A6B9B7900F43D4F /* RepositoryInitializationOptionSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000881A6B9B7900F43D4F /* RepositoryInitializationOptionSet.swift */; };
+		DA9000A01A6B9B7900F43D4F /* Repository+Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000891A6B9B7900F43D4F /* Repository+Index.swift */; };
+		DA9000A11A6B9B7900F43D4F /* Repository+Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90008A1A6B9B7900F43D4F /* Repository+Reference.swift */; };
+		DA9000A21A6B9B7900F43D4F /* Repository+Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90008B1A6B9B7900F43D4F /* Repository+Status.swift */; };
+		DA9000A31A6B9B7900F43D4F /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90008C1A6B9B7900F43D4F /* Repository.swift */; };
 		DA9876A61A4B791E0004AA17 /* LlamaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9876A51A4B791E0004AA17 /* LlamaKit.framework */; };
 		DA9876A81A4B792F0004AA17 /* libgit2.0.21.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9876A71A4B792F0004AA17 /* libgit2.0.21.0.dylib */; };
 		DA9F364F1A476AF7002F35D4 /* Gift.h in Headers */ = {isa = PBXBuildFile; fileRef = DA9F364E1A476AF7002F35D4 /* Gift.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -38,6 +40,7 @@
 		DA9F365C1A476AF7002F35D4 /* GiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9F365B1A476AF7002F35D4 /* GiftTests.swift */; };
 		DAC9DD101A4B0AD800436BA2 /* Gift.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC9DD0F1A4B0AD800436BA2 /* Gift.m */; };
 		DAC9DD251A4B67D700436BA2 /* ResultAssert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9DD241A4B67D700436BA2 /* ResultAssert.swift */; };
+		DADB272A1A6B8F620036225C /* git2.h in Headers */ = {isa = PBXBuildFile; fileRef = DADB27281A6B8F620036225C /* git2.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,33 +53,60 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		DA90006B1A6B9A2400F43D4F /* Copy git2 Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Headers;
+			dstSubfolderSpec = 1;
+			files = (
+				DA90006C1A6B9A4000F43D4F /* git2 in Copy git2 Headers */,
+			);
+			name = "Copy git2 Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA90006D1A6B9A5100F43D4F /* Copy git2/sys Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Headers/git2/sys;
+			dstSubfolderSpec = 1;
+			files = (
+				DA90006E1A6B9A8700F43D4F /* git2 in Copy git2/sys Headers */,
+			);
+			name = "Copy git2/sys Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		DA0870031A6B07D600F210E4 /* FileDiff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileDiff.swift; sourceTree = "<group>"; };
-		DA0870041A6B07D600F210E4 /* Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
-		DA0870051A6B07D600F210E4 /* StatusDelta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusDelta.swift; sourceTree = "<group>"; };
-		DA0870061A6B07D600F210E4 /* StatusDeltaType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusDeltaType.swift; sourceTree = "<group>"; };
-		DA0870071A6B07D600F210E4 /* StatusOptions+C.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StatusOptions+C.swift"; sourceTree = "<group>"; };
-		DA0870081A6B07D600F210E4 /* StatusOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusOptions.swift; sourceTree = "<group>"; };
-		DA0870091A6B07D600F210E4 /* StatusShowOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusShowOptions.swift; sourceTree = "<group>"; };
-		DA08700B1A6B07D600F210E4 /* Reference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reference.swift; sourceTree = "<group>"; };
-		DA08700D1A6B07D600F210E4 /* Index.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Index.swift; sourceTree = "<group>"; };
-		DA0870101A6B07D600F210E4 /* CheckoutOptions+C.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CheckoutOptions+C.swift"; sourceTree = "<group>"; };
-		DA0870111A6B07D600F210E4 /* CheckoutOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutOptions.swift; sourceTree = "<group>"; };
-		DA0870121A6B07D600F210E4 /* CheckoutStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutStrategy.swift; sourceTree = "<group>"; };
-		DA0870131A6B07D600F210E4 /* CloneOptions+C.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CloneOptions+C.swift"; sourceTree = "<group>"; };
-		DA0870141A6B07D600F210E4 /* CloneOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloneOptions.swift; sourceTree = "<group>"; };
-		DA0870151A6B07D600F210E4 /* RemoteCallbacks+C.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RemoteCallbacks+C.swift"; sourceTree = "<group>"; };
-		DA0870161A6B07D600F210E4 /* RemoteCallbacks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteCallbacks.swift; sourceTree = "<group>"; };
-		DA0870171A6B07D600F210E4 /* RepositoryInitializationOptions+C.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RepositoryInitializationOptions+C.swift"; sourceTree = "<group>"; };
-		DA0870181A6B07D600F210E4 /* RepositoryInitializationOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryInitializationOptions.swift; sourceTree = "<group>"; };
-		DA0870191A6B07D600F210E4 /* Repository+Index.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Repository+Index.swift"; sourceTree = "<group>"; };
-		DA08701A1A6B07D600F210E4 /* Repository+Reference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Repository+Reference.swift"; sourceTree = "<group>"; };
-		DA08701B1A6B07D600F210E4 /* Repository+Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Repository+Status.swift"; sourceTree = "<group>"; };
-		DA08701C1A6B07D600F210E4 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
-		DA1A68761A6B0BB00001B0CF /* RepositoryInitializationOptionSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryInitializationOptionSet.swift; sourceTree = "<group>"; };
-		DA1A68781A6B101A0001B0CF /* RepositoryInitializationMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryInitializationMode.swift; sourceTree = "<group>"; };
+		DA9000701A6B9B2D00F43D4F /* Index.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Index.swift; sourceTree = "<group>"; };
+		DA9000731A6B9B7900F43D4F /* FileDiff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileDiff.swift; sourceTree = "<group>"; };
+		DA9000741A6B9B7900F43D4F /* Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		DA9000751A6B9B7900F43D4F /* StatusDelta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusDelta.swift; sourceTree = "<group>"; };
+		DA9000761A6B9B7900F43D4F /* StatusDeltaType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusDeltaType.swift; sourceTree = "<group>"; };
+		DA9000771A6B9B7900F43D4F /* StatusOptions+C.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StatusOptions+C.swift"; sourceTree = "<group>"; };
+		DA9000781A6B9B7900F43D4F /* StatusOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusOptions.swift; sourceTree = "<group>"; };
+		DA9000791A6B9B7900F43D4F /* StatusShowOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusShowOptions.swift; sourceTree = "<group>"; };
+		DA90007B1A6B9B7900F43D4F /* Reference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reference.swift; sourceTree = "<group>"; };
+		DA90007E1A6B9B7900F43D4F /* CheckoutOptions+C.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CheckoutOptions+C.swift"; sourceTree = "<group>"; };
+		DA90007F1A6B9B7900F43D4F /* CheckoutOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutOptions.swift; sourceTree = "<group>"; };
+		DA9000801A6B9B7900F43D4F /* CheckoutStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutStrategy.swift; sourceTree = "<group>"; };
+		DA9000811A6B9B7900F43D4F /* CloneOptions+C.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CloneOptions+C.swift"; sourceTree = "<group>"; };
+		DA9000821A6B9B7900F43D4F /* CloneOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloneOptions.swift; sourceTree = "<group>"; };
+		DA9000831A6B9B7900F43D4F /* RemoteCallbacks+C.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RemoteCallbacks+C.swift"; sourceTree = "<group>"; };
+		DA9000841A6B9B7900F43D4F /* RemoteCallbacks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteCallbacks.swift; sourceTree = "<group>"; };
+		DA9000851A6B9B7900F43D4F /* RepositoryInitializationMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryInitializationMode.swift; sourceTree = "<group>"; };
+		DA9000861A6B9B7900F43D4F /* RepositoryInitializationOptions+C.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RepositoryInitializationOptions+C.swift"; sourceTree = "<group>"; };
+		DA9000871A6B9B7900F43D4F /* RepositoryInitializationOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryInitializationOptions.swift; sourceTree = "<group>"; };
+		DA9000881A6B9B7900F43D4F /* RepositoryInitializationOptionSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryInitializationOptionSet.swift; sourceTree = "<group>"; };
+		DA9000891A6B9B7900F43D4F /* Repository+Index.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Repository+Index.swift"; sourceTree = "<group>"; };
+		DA90008A1A6B9B7900F43D4F /* Repository+Reference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Repository+Reference.swift"; sourceTree = "<group>"; };
+		DA90008B1A6B9B7900F43D4F /* Repository+Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Repository+Status.swift"; sourceTree = "<group>"; };
+		DA90008C1A6B9B7900F43D4F /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		DA9000A41A6B9C5300F43D4F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DA9876A51A4B791E0004AA17 /* LlamaKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LlamaKit.framework; path = ../External/LlamaKit/build/Debug/LlamaKit.framework; sourceTree = "<group>"; };
 		DA9876A71A4B792F0004AA17 /* libgit2.0.21.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libgit2.0.21.0.dylib; path = ../External/libgit2/build/libgit2.0.21.0.dylib; sourceTree = "<group>"; };
+		DA9E6F9A1A6B9016001C5F7F /* Gift.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = Gift.modulemap; sourceTree = "<group>"; };
 		DA9F36491A476AF7002F35D4 /* Gift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Gift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA9F364D1A476AF7002F35D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA9F364E1A476AF7002F35D4 /* Gift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Gift.h; sourceTree = "<group>"; };
@@ -85,6 +115,8 @@
 		DA9F365B1A476AF7002F35D4 /* GiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftTests.swift; sourceTree = "<group>"; };
 		DAC9DD0F1A4B0AD800436BA2 /* Gift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gift.m; sourceTree = "<group>"; };
 		DAC9DD241A4B67D700436BA2 /* ResultAssert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultAssert.swift; sourceTree = "<group>"; };
+		DADB27271A6B8F620036225C /* git2 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = git2; path = External/libgit2/include/git2; sourceTree = SOURCE_ROOT; };
+		DADB27281A6B8F620036225C /* git2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = git2.h; path = External/libgit2/include/git2.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,62 +140,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DA0870021A6B07D600F210E4 /* Status */ = {
+		DA90006F1A6B9B2D00F43D4F /* Index */ = {
 			isa = PBXGroup;
 			children = (
-				DA0870041A6B07D600F210E4 /* Status.swift */,
-				DA0870051A6B07D600F210E4 /* StatusDelta.swift */,
-				DA0870061A6B07D600F210E4 /* StatusDeltaType.swift */,
-				DA0870031A6B07D600F210E4 /* FileDiff.swift */,
-				DA0870081A6B07D600F210E4 /* StatusOptions.swift */,
-				DA0870071A6B07D600F210E4 /* StatusOptions+C.swift */,
-				DA0870091A6B07D600F210E4 /* StatusShowOptions.swift */,
-			);
-			path = Status;
-			sourceTree = "<group>";
-		};
-		DA08700A1A6B07D600F210E4 /* Reference */ = {
-			isa = PBXGroup;
-			children = (
-				DA08700B1A6B07D600F210E4 /* Reference.swift */,
-			);
-			path = Reference;
-			sourceTree = "<group>";
-		};
-		DA08700C1A6B07D600F210E4 /* Index */ = {
-			isa = PBXGroup;
-			children = (
-				DA08700D1A6B07D600F210E4 /* Index.swift */,
+				DA9000701A6B9B2D00F43D4F /* Index.swift */,
 			);
 			path = Index;
 			sourceTree = "<group>";
 		};
-		DA08700E1A6B07D600F210E4 /* Repository */ = {
+		DA9000721A6B9B7900F43D4F /* Status */ = {
 			isa = PBXGroup;
 			children = (
-				DA08701C1A6B07D600F210E4 /* Repository.swift */,
-				DA0870191A6B07D600F210E4 /* Repository+Index.swift */,
-				DA08701A1A6B07D600F210E4 /* Repository+Reference.swift */,
-				DA08701B1A6B07D600F210E4 /* Repository+Status.swift */,
-				DA08700F1A6B07D600F210E4 /* Options */,
+				DA9000741A6B9B7900F43D4F /* Status.swift */,
+				DA9000751A6B9B7900F43D4F /* StatusDelta.swift */,
+				DA9000731A6B9B7900F43D4F /* FileDiff.swift */,
+				DA9000761A6B9B7900F43D4F /* StatusDeltaType.swift */,
+				DA9000781A6B9B7900F43D4F /* StatusOptions.swift */,
+				DA9000771A6B9B7900F43D4F /* StatusOptions+C.swift */,
+				DA9000791A6B9B7900F43D4F /* StatusShowOptions.swift */,
+			);
+			path = Status;
+			sourceTree = "<group>";
+		};
+		DA90007A1A6B9B7900F43D4F /* Reference */ = {
+			isa = PBXGroup;
+			children = (
+				DA90007B1A6B9B7900F43D4F /* Reference.swift */,
+			);
+			path = Reference;
+			sourceTree = "<group>";
+		};
+		DA90007C1A6B9B7900F43D4F /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				DA90008C1A6B9B7900F43D4F /* Repository.swift */,
+				DA9000891A6B9B7900F43D4F /* Repository+Index.swift */,
+				DA90008A1A6B9B7900F43D4F /* Repository+Reference.swift */,
+				DA90008B1A6B9B7900F43D4F /* Repository+Status.swift */,
+				DA90007D1A6B9B7900F43D4F /* Options */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
 		};
-		DA08700F1A6B07D600F210E4 /* Options */ = {
+		DA90007D1A6B9B7900F43D4F /* Options */ = {
 			isa = PBXGroup;
 			children = (
-				DA0870141A6B07D600F210E4 /* CloneOptions.swift */,
-				DA0870131A6B07D600F210E4 /* CloneOptions+C.swift */,
-				DA0870111A6B07D600F210E4 /* CheckoutOptions.swift */,
-				DA0870101A6B07D600F210E4 /* CheckoutOptions+C.swift */,
-				DA0870121A6B07D600F210E4 /* CheckoutStrategy.swift */,
-				DA0870161A6B07D600F210E4 /* RemoteCallbacks.swift */,
-				DA0870151A6B07D600F210E4 /* RemoteCallbacks+C.swift */,
-				DA0870181A6B07D600F210E4 /* RepositoryInitializationOptions.swift */,
-				DA0870171A6B07D600F210E4 /* RepositoryInitializationOptions+C.swift */,
-				DA1A68761A6B0BB00001B0CF /* RepositoryInitializationOptionSet.swift */,
-				DA1A68781A6B101A0001B0CF /* RepositoryInitializationMode.swift */,
+				DA9000821A6B9B7900F43D4F /* CloneOptions.swift */,
+				DA9000811A6B9B7900F43D4F /* CloneOptions+C.swift */,
+				DA90007F1A6B9B7900F43D4F /* CheckoutOptions.swift */,
+				DA90007E1A6B9B7900F43D4F /* CheckoutOptions+C.swift */,
+				DA9000801A6B9B7900F43D4F /* CheckoutStrategy.swift */,
+				DA9000841A6B9B7900F43D4F /* RemoteCallbacks.swift */,
+				DA9000831A6B9B7900F43D4F /* RemoteCallbacks+C.swift */,
+				DA9000871A6B9B7900F43D4F /* RepositoryInitializationOptions.swift */,
+				DA9000861A6B9B7900F43D4F /* RepositoryInitializationOptions+C.swift */,
+				DA9000881A6B9B7900F43D4F /* RepositoryInitializationOptionSet.swift */,
+				DA9000851A6B9B7900F43D4F /* RepositoryInitializationMode.swift */,
 			);
 			path = Options;
 			sourceTree = "<group>";
@@ -171,6 +203,8 @@
 		DA9F363F1A476AF7002F35D4 = {
 			isa = PBXGroup;
 			children = (
+				DA9000A41A6B9C5300F43D4F /* README.md */,
+				DA9E6F9A1A6B9016001C5F7F /* Gift.modulemap */,
 				DA9F364B1A476AF7002F35D4 /* Gift */,
 				DA9F36581A476AF7002F35D4 /* GiftTests */,
 				DA9F364A1A476AF7002F35D4 /* Products */,
@@ -191,10 +225,11 @@
 			children = (
 				DA9F364E1A476AF7002F35D4 /* Gift.h */,
 				DAC9DD0F1A4B0AD800436BA2 /* Gift.m */,
-				DA08700C1A6B07D600F210E4 /* Index */,
-				DA08700A1A6B07D600F210E4 /* Reference */,
-				DA08700E1A6B07D600F210E4 /* Repository */,
-				DA0870021A6B07D600F210E4 /* Status */,
+				DA90006F1A6B9B2D00F43D4F /* Index */,
+				DA90007A1A6B9B7900F43D4F /* Reference */,
+				DA90007C1A6B9B7900F43D4F /* Repository */,
+				DA9000721A6B9B7900F43D4F /* Status */,
+				DADB27261A6B8F470036225C /* Other Sources */,
 				DA9F364C1A476AF7002F35D4 /* Supporting Files */,
 			);
 			path = Gift;
@@ -228,6 +263,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		DADB27261A6B8F470036225C /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				DADB27271A6B8F620036225C /* git2 */,
+				DADB27281A6B8F620036225C /* git2.h */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -235,6 +279,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DADB272A1A6B8F620036225C /* git2.h in Headers */,
 				DA9F364F1A476AF7002F35D4 /* Gift.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,8 +293,9 @@
 			buildPhases = (
 				DA9F36441A476AF7002F35D4 /* Sources */,
 				DA9F36451A476AF7002F35D4 /* Frameworks */,
+				DA90006B1A6B9A2400F43D4F /* Copy git2 Headers */,
+				DA90006D1A6B9A5100F43D4F /* Copy git2/sys Headers */,
 				DA9F36461A476AF7002F35D4 /* Headers */,
-				DA9F36471A476AF7002F35D4 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -313,13 +359,6 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DA9F36471A476AF7002F35D4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		DA9F36521A476AF7002F35D4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -334,31 +373,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA08702F1A6B07D600F210E4 /* Repository+Index.swift in Sources */,
-				DA0870291A6B07D600F210E4 /* CloneOptions+C.swift in Sources */,
-				DA0870211A6B07D600F210E4 /* StatusOptions+C.swift in Sources */,
-				DA1A68771A6B0BB00001B0CF /* RepositoryInitializationOptionSet.swift in Sources */,
-				DA08701D1A6B07D600F210E4 /* FileDiff.swift in Sources */,
-				DA08702C1A6B07D600F210E4 /* RemoteCallbacks.swift in Sources */,
+				DA9000981A6B9B7900F43D4F /* CloneOptions+C.swift in Sources */,
+				DA9000A21A6B9B7900F43D4F /* Repository+Status.swift in Sources */,
+				DA90008D1A6B9B7900F43D4F /* FileDiff.swift in Sources */,
+				DA90009C1A6B9B7900F43D4F /* RepositoryInitializationMode.swift in Sources */,
+				DA90008F1A6B9B7900F43D4F /* StatusDelta.swift in Sources */,
+				DA90009D1A6B9B7900F43D4F /* RepositoryInitializationOptions+C.swift in Sources */,
+				DA90009B1A6B9B7900F43D4F /* RemoteCallbacks.swift in Sources */,
+				DA9000A31A6B9B7900F43D4F /* Repository.swift in Sources */,
+				DA9000A01A6B9B7900F43D4F /* Repository+Index.swift in Sources */,
+				DA9000A11A6B9B7900F43D4F /* Repository+Reference.swift in Sources */,
+				DA9000901A6B9B7900F43D4F /* StatusDeltaType.swift in Sources */,
+				DA90009F1A6B9B7900F43D4F /* RepositoryInitializationOptionSet.swift in Sources */,
+				DA9000711A6B9B2D00F43D4F /* Index.swift in Sources */,
+				DA9000951A6B9B7900F43D4F /* CheckoutOptions+C.swift in Sources */,
+				DA9000991A6B9B7900F43D4F /* CloneOptions.swift in Sources */,
+				DA9000931A6B9B7900F43D4F /* StatusShowOptions.swift in Sources */,
+				DA9000941A6B9B7900F43D4F /* Reference.swift in Sources */,
+				DA90009E1A6B9B7900F43D4F /* RepositoryInitializationOptions.swift in Sources */,
+				DA9000911A6B9B7900F43D4F /* StatusOptions+C.swift in Sources */,
 				DAC9DD101A4B0AD800436BA2 /* Gift.m in Sources */,
-				DA0870231A6B07D600F210E4 /* StatusShowOptions.swift in Sources */,
-				DA0870261A6B07D600F210E4 /* CheckoutOptions+C.swift in Sources */,
-				DA08702A1A6B07D600F210E4 /* CloneOptions.swift in Sources */,
-				DA0870321A6B07D600F210E4 /* Repository.swift in Sources */,
-				DA0870251A6B07D600F210E4 /* Index.swift in Sources */,
-				DA0870201A6B07D600F210E4 /* StatusDeltaType.swift in Sources */,
-				DA08701F1A6B07D600F210E4 /* StatusDelta.swift in Sources */,
-				DA0870241A6B07D600F210E4 /* Reference.swift in Sources */,
-				DA1A68791A6B101A0001B0CF /* RepositoryInitializationMode.swift in Sources */,
-				DA0870301A6B07D600F210E4 /* Repository+Reference.swift in Sources */,
-				DA08702D1A6B07D600F210E4 /* RepositoryInitializationOptions+C.swift in Sources */,
-				DA08702E1A6B07D600F210E4 /* RepositoryInitializationOptions.swift in Sources */,
-				DA0870221A6B07D600F210E4 /* StatusOptions.swift in Sources */,
-				DA08702B1A6B07D600F210E4 /* RemoteCallbacks+C.swift in Sources */,
-				DA0870271A6B07D600F210E4 /* CheckoutOptions.swift in Sources */,
-				DA08701E1A6B07D600F210E4 /* Status.swift in Sources */,
-				DA0870281A6B07D600F210E4 /* CheckoutStrategy.swift in Sources */,
-				DA0870311A6B07D600F210E4 /* Repository+Status.swift in Sources */,
+				DA9000921A6B9B7900F43D4F /* StatusOptions.swift in Sources */,
+				DA90009A1A6B9B7900F43D4F /* RemoteCallbacks+C.swift in Sources */,
+				DA9000961A6B9B7900F43D4F /* CheckoutOptions.swift in Sources */,
+				DA90008E1A6B9B7900F43D4F /* Status.swift in Sources */,
+				DA9000971A6B9B7900F43D4F /* CheckoutStrategy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,13 +456,20 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					External/libgit2/include,
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					.,
+					External/,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
-				SWIFT_INCLUDE_PATHS = "$(SOURCE_ROOT)/External/libgit2";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				USER_HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/External/libgit2/include";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -459,11 +505,18 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					External/libgit2/include,
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					.,
+					External/,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
-				SWIFT_INCLUDE_PATHS = "$(SOURCE_ROOT)/External/libgit2";
-				USER_HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/External/libgit2/include";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -490,6 +543,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/External/libgit2/build",
 				);
+				MODULEMAP_FILE = Gift.modulemap;
+				OTHER_LDFLAGS = "-lgit2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -517,6 +572,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/External/libgit2/build",
 				);
+				MODULEMAP_FILE = Gift.modulemap;
+				OTHER_LDFLAGS = "-lgit2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};

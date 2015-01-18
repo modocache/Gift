@@ -1,5 +1,3 @@
-import git2
-
 /**
   A set of flags indicating how a checkout should be performed.
 

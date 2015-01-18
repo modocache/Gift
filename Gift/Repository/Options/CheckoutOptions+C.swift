@@ -1,5 +1,3 @@
-import git2
-
 extension CheckoutOptions {
   /**
     Returns a C struct initialized with this options instance's values.

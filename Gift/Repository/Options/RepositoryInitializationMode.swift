@@ -1,5 +1,3 @@
-import git2
-
 /**
   File mode options for the files created when initializing a repository.
 */
