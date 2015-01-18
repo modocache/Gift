@@ -99,10 +99,10 @@ public func cloneRepository(originURL: NSURL, destinationWorkingDirectory: NSURL
         return failure(NSError.libGit2Error(errorCode, libGit2PointOfFailure: "git_clone"))
       }
     } else {
-      return failure("Invalid destinationWorkingDirectory: \(destinationWorkingDirectory)")
+      return failure(NSError.giftError(.InvalidURI, description: "Invalid destinationWorkingDirectory: \(destinationWorkingDirectory)"))
     }
   } else {
-    return failure("Invalid originURL: \(originURL)")
+    return failure(NSError.giftError(.InvalidURI, description: "Invalid originURL: \(originURL)"))
   }
 }
 

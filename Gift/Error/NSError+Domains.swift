@@ -1,6 +1,11 @@
 import Foundation
 
 public let libGit2ErrorDomain = "com.libgit2"
+public let giftErrorDomain = "com.libgit2.gift"
+
+public enum GiftErrorCode: Int {
+  case InvalidURI = 1
+}
 
 internal extension NSError {
   internal class func libGit2Error(errorCode: Int32, libGit2PointOfFailure: String? = nil) -> NSError {
@@ -18,5 +23,9 @@ internal extension NSError {
     }
 
     return NSError(domain: libGit2ErrorDomain, code: code, userInfo: userInfo)
+  }
+
+  internal class func giftError(code: GiftErrorCode, description: String) -> NSError {
+    return NSError(domain: giftErrorDomain, code: code.rawValue, userInfo: [NSLocalizedDescriptionKey: description])
   }
 }
