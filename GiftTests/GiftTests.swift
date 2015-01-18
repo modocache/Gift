@@ -23,7 +23,7 @@ class GiftTests: XCTestCase {
   func testRepo() {
     let repository = initializeEmptyRepository(
       NSURL(fileURLWithPath: repoPathString)!,
-      RepositoryInitializationOptions(
+      options: RepositoryInitializationOptions(
         optionsSet: RepositoryInitializationOptionSet.MakePath,
         mode: .User
       )

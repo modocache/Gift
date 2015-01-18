@@ -42,7 +42,7 @@ public extension Repository {
   :param: options A set of options used to customize the Git repository that is created.
   :returns: The result of the operation: either a newly created repository, or an error explaining what went wrong.
 */
-public func initializeEmptyRepository(directoryURL: NSURL, options: RepositoryInitializationOptions) -> Result<Repository> {
+public func initializeEmptyRepository(directoryURL: NSURL, options: RepositoryInitializationOptions = RepositoryInitializationOptions()) -> Result<Repository> {
   if let repoPath = directoryURL.path?.fileSystemRepresentation() {
     var out = COpaquePointer()
     var cOptions = options.cOptions
