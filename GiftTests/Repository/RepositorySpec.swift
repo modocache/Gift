@@ -18,15 +18,6 @@ class RepositorySpec: QuickSpec {
 
     describe("cloneRepository") {
       context("with a remote on the local filesystem") {
-        beforeEach {
-          // TODO: Removing this initialization (unused) causes references to
-          //       CloneOptions() to segfault.
-          let _ = CloneOptions(
-            checkoutOptions: CheckoutOptions(strategy: CheckoutStrategy.SafeCreate),
-            remoteCallbacks: RemoteCallbacks()
-          )
-        }
-
         var remoteURL: NSURL!
         beforeEach {
           remoteURL = temporaryDirectoryURL().URLByAppendingPathComponent("park-slope")

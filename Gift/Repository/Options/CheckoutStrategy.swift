@@ -6,10 +6,6 @@
 public struct CheckoutStrategy : RawOptionSetType, BooleanType {
   private let value: UInt = 0
 
-  internal init(cCheckoutStrategy: git_checkout_strategy_t) {
-    self.init(rawValue: UInt(cCheckoutStrategy.value))
-  }
-
   // MARK: NilLiteralConvertible Protocol Methods
 
   public init(nilLiteral: ()) { }
