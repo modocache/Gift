@@ -10,6 +10,7 @@
 		DA363DA41A6BAE160030BBCC /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DA363DA31A6BAE160030BBCC /* libiconv.dylib */; };
 		DA363DA61A6BAE1C0030BBCC /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DA363DA51A6BAE1C0030BBCC /* libz.dylib */; };
 		DA3EDDE11A6DA08E0027CEFB /* IndexSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3EDDE01A6DA08E0027CEFB /* IndexSpec.swift */; };
+		DA3EDDE41A6DA1130027CEFB /* ReferenceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3EDDE31A6DA1130027CEFB /* ReferenceSpec.swift */; };
 		DA90006C1A6B9A4000F43D4F /* git2 in Copy git2 Headers */ = {isa = PBXBuildFile; fileRef = DADB27271A6B8F620036225C /* git2 */; };
 		DA90006E1A6B9A8700F43D4F /* git2 in Copy git2/sys Headers */ = {isa = PBXBuildFile; fileRef = DADB27271A6B8F620036225C /* git2 */; };
 		DA9000711A6B9B2D00F43D4F /* Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000701A6B9B2D00F43D4F /* Index.swift */; };
@@ -92,6 +93,7 @@
 		DA363DA31A6BAE160030BBCC /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 		DA363DA51A6BAE1C0030BBCC /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		DA3EDDE01A6DA08E0027CEFB /* IndexSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexSpec.swift; sourceTree = "<group>"; };
+		DA3EDDE31A6DA1130027CEFB /* ReferenceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferenceSpec.swift; sourceTree = "<group>"; };
 		DA9000701A6B9B2D00F43D4F /* Index.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Index.swift; sourceTree = "<group>"; };
 		DA9000731A6B9B7900F43D4F /* FileDiff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileDiff.swift; sourceTree = "<group>"; };
 		DA9000741A6B9B7900F43D4F /* Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
@@ -170,6 +172,14 @@
 				DA3EDDE01A6DA08E0027CEFB /* IndexSpec.swift */,
 			);
 			path = Index;
+			sourceTree = "<group>";
+		};
+		DA3EDDE21A6DA0FF0027CEFB /* Reference */ = {
+			isa = PBXGroup;
+			children = (
+				DA3EDDE31A6DA1130027CEFB /* ReferenceSpec.swift */,
+			);
+			path = Reference;
 			sourceTree = "<group>";
 		};
 		DA90006F1A6B9B2D00F43D4F /* Index */ = {
@@ -286,6 +296,7 @@
 				E1BE9F1F1A6C4C13003E87BB /* Helpers */,
 				E1BE9F1C1A6C4B6C003E87BB /* Matchers */,
 				DA3EDDDF1A6DA08E0027CEFB /* Index */,
+				DA3EDDE21A6DA0FF0027CEFB /* Reference */,
 				E19F05FF1A6C3BA700EF5BFA /* Repository */,
 				DAC9DD241A4B67D700436BA2 /* ResultAssert.swift */,
 				DA9F365B1A476AF7002F35D4 /* GiftTests.swift */,
@@ -490,6 +501,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA3EDDE41A6DA1130027CEFB /* ReferenceSpec.swift in Sources */,
 				E1BE9F211A6C4C68003E87BB /* FilePathHelpers.swift in Sources */,
 				DAC9DD251A4B67D700436BA2 /* ResultAssert.swift in Sources */,
 				DAA283961A6D6E2100F7B4C3 /* Repository+StatusSpec.swift in Sources */,

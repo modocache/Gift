@@ -5,6 +5,7 @@ public let giftErrorDomain = "com.libgit2.gift"
 
 public enum GiftErrorCode: Int {
   case InvalidURI = 1
+  case StringConversionFailure = 2
 }
 
 internal extension NSError {

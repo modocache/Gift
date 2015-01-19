@@ -22,10 +22,13 @@ public extension Reference {
     The name of the reference.
   */
   public var name: Result<String> {
-    if let name = String.fromCString(git_reference_name(cReference)) {
+    let referenceName = git_reference_name(cReference)
+    if let name = String.fromCString(referenceName) {
       return success(name)
     } else {
-      return failure("libgit2 error: git_reference_name failed")
+      let description = "An error occurred when attempting to convert reference name \(referenceName) "
+                        + "provided by git_reference_name to a String."
+      return failure(NSError.giftError(.StringConversionFailure, description: description))
     }
   }
 
