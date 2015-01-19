@@ -40,12 +40,10 @@
 		DA9876A61A4B791E0004AA17 /* LlamaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9876A51A4B791E0004AA17 /* LlamaKit.framework */; };
 		DA9F364F1A476AF7002F35D4 /* Gift.h in Headers */ = {isa = PBXBuildFile; fileRef = DA9F364E1A476AF7002F35D4 /* Gift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA9F36551A476AF7002F35D4 /* Gift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9F36491A476AF7002F35D4 /* Gift.framework */; };
-		DA9F365C1A476AF7002F35D4 /* GiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9F365B1A476AF7002F35D4 /* GiftTests.swift */; };
 		DAA283941A6C5CE400F7B4C3 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA283931A6C5CE400F7B4C3 /* Error.swift */; };
 		DAA283961A6D6E2100F7B4C3 /* Repository+StatusSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA283951A6D6E2100F7B4C3 /* Repository+StatusSpec.swift */; };
 		DAA283A51A6D7A7E00F7B4C3 /* Fixtures.zip in Resources */ = {isa = PBXBuildFile; fileRef = DAA2839F1A6D7A7E00F7B4C3 /* Fixtures.zip */; };
 		DAC9DD101A4B0AD800436BA2 /* Gift.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC9DD0F1A4B0AD800436BA2 /* Gift.m */; };
-		DAC9DD251A4B67D700436BA2 /* ResultAssert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9DD241A4B67D700436BA2 /* ResultAssert.swift */; };
 		E11D6FDB1A6C6CB500F00863 /* NSError+Domains.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11D6FDA1A6C6CB500F00863 /* NSError+Domains.swift */; };
 		E19F05FD1A6C39FC00EF5BFA /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E19F05FB1A6C39FC00EF5BFA /* Nimble.framework */; };
 		E19F05FE1A6C39FC00EF5BFA /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E19F05FC1A6C39FC00EF5BFA /* Quick.framework */; };
@@ -126,12 +124,10 @@
 		DA9F364E1A476AF7002F35D4 /* Gift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Gift.h; sourceTree = "<group>"; };
 		DA9F36541A476AF7002F35D4 /* GiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA9F365A1A476AF7002F35D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA9F365B1A476AF7002F35D4 /* GiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftTests.swift; sourceTree = "<group>"; };
 		DAA283931A6C5CE400F7B4C3 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		DAA283951A6D6E2100F7B4C3 /* Repository+StatusSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Repository+StatusSpec.swift"; sourceTree = "<group>"; };
 		DAA2839F1A6D7A7E00F7B4C3 /* Fixtures.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = Fixtures.zip; sourceTree = "<group>"; };
 		DAC9DD0F1A4B0AD800436BA2 /* Gift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gift.m; sourceTree = "<group>"; };
-		DAC9DD241A4B67D700436BA2 /* ResultAssert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultAssert.swift; sourceTree = "<group>"; };
 		DADB27271A6B8F620036225C /* git2 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = git2; path = External/libgit2/include/git2; sourceTree = SOURCE_ROOT; };
 		DADB27281A6B8F620036225C /* git2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = git2.h; path = External/libgit2/include/git2.h; sourceTree = SOURCE_ROOT; };
 		E11D6FDA1A6C6CB500F00863 /* NSError+Domains.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSError+Domains.swift"; sourceTree = "<group>"; };
@@ -298,8 +294,6 @@
 				DA3EDDDF1A6DA08E0027CEFB /* Index */,
 				DA3EDDE21A6DA0FF0027CEFB /* Reference */,
 				E19F05FF1A6C3BA700EF5BFA /* Repository */,
-				DAC9DD241A4B67D700436BA2 /* ResultAssert.swift */,
-				DA9F365B1A476AF7002F35D4 /* GiftTests.swift */,
 				DA9F36591A476AF7002F35D4 /* Supporting Files */,
 			);
 			path = GiftTests;
@@ -503,12 +497,10 @@
 			files = (
 				DA3EDDE41A6DA1130027CEFB /* ReferenceSpec.swift in Sources */,
 				E1BE9F211A6C4C68003E87BB /* FilePathHelpers.swift in Sources */,
-				DAC9DD251A4B67D700436BA2 /* ResultAssert.swift in Sources */,
 				DAA283961A6D6E2100F7B4C3 /* Repository+StatusSpec.swift in Sources */,
 				DA3EDDE11A6DA08E0027CEFB /* IndexSpec.swift in Sources */,
 				E1BE9F1E1A6C4B7C003E87BB /* ResultMatchers.swift in Sources */,
 				E19F06011A6C3BC400EF5BFA /* RepositorySpec.swift in Sources */,
-				DA9F365C1A476AF7002F35D4 /* GiftTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
