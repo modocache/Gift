@@ -28,18 +28,7 @@ public func haveSucceeded<T: Equatable>(value: T) -> MatcherFunc<Result<T>> {
   }
 }
 
-public func haveFailed<T>() -> MatcherFunc<Result<T>> {
-  return MatcherFunc { actualExpression, failureMessage in
-    failureMessage.postfixMessage = "have failed"
-    if let result = actualExpression.evaluate() {
-      return !result.isSuccess
-    } else {
-      return false
-    }
-  }
-}
-
-public func haveFailed<T>(localizedDescription: String) -> MatcherFunc<Result<T>> {
+public func haveFailed<T>(domain: String? = nil, localizedDescription: String? = nil) -> MatcherFunc<Result<T>> {
   return MatcherFunc { actualExpression, failureMessage in
     failureMessage.postfixMessage = "have failed with a localized description of \(localizedDescription)"
     if let result = actualExpression.evaluate() {
@@ -48,7 +37,14 @@ public func haveFailed<T>(localizedDescription: String) -> MatcherFunc<Result<T>
         return false
       case .Failure(let llamaKitError):
         if let error = llamaKitError as? NSError {
-          return error.localizedDescription == localizedDescription
+          var allEqualityChecksAreTrue = true
+          if let someDomain = domain {
+            allEqualityChecksAreTrue = allEqualityChecksAreTrue && error.domain == someDomain
+          }
+          if let description = localizedDescription {
+            allEqualityChecksAreTrue = allEqualityChecksAreTrue && error.localizedDescription == description
+          }
+          return allEqualityChecksAreTrue
         } else {
           return false
         }

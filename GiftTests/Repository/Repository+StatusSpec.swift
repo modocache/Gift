@@ -28,6 +28,7 @@ class Repository_StatusSpec: QuickSpec {
           "head_to_index_added.txt": StatusDeltaType.Added,
           "head_to_index_deleted.txt": StatusDeltaType.Deleted,
           "head_to_index_modified.txt": StatusDeltaType.Modified,
+          "head_to_index_modified+index_to_working_directory_modified.txt": StatusDeltaType.Modified,
           // TODO: These two should be a StatusDeltaType.Renamed--not sure why they're reported this way.
           "head_to_index_named.txt": StatusDeltaType.Deleted,
           "head_to_index_renamed.txt": StatusDeltaType.Added
@@ -36,8 +37,32 @@ class Repository_StatusSpec: QuickSpec {
           ".DS_Store": StatusDeltaType.Ignored,
           "index_to_working_directory_ignored.txt": StatusDeltaType.Ignored,
           "index_to_working_directory_modified.txt": StatusDeltaType.Modified,
+          "head_to_index_modified+index_to_working_directory_modified.txt": StatusDeltaType.Modified,
           "index_to_working_directory_untracked.txt": StatusDeltaType.Untracked,
         ]))
+      }
+    }
+
+    describe("status (individual file)") {
+      context("when the file doesn't exist") {
+        it("returns a failing result") {
+          expect(repository.flatMap { $0.status("does-not-exist") })
+            .to(haveFailed(domain: libGit2ErrorDomain))
+        }
+      }
+
+      context("when the file exists and has a single status") {
+        it("returns a successful result with that status") {
+          expect(repository.flatMap { $0.status("head_to_index_unmodified.txt") })
+            .to(haveSucceeded(Status.Current))
+        }
+      }
+
+      context("when the file exists and has a set of statuses") {
+        it("returns a successful result with multiple statuses") {
+          expect(repository.flatMap { $0.status("head_to_index_modified+index_to_working_directory_modified.txt") })
+            .to(haveSucceeded(Status.IndexModified | Status.WorkingDirectoryModified))
+        }
       }
     }
 

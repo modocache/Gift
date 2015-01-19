@@ -30,7 +30,7 @@ class RepositorySpec: QuickSpec {
             let repository = cloneRepository(remoteURL, destinationURL)
             let path = remoteURL.path!.stringByResolvingSymlinksInPath
             let faiureMessage = "Failed to resolve path '\(path)': No such file or directory"
-            expect(repository).to(haveFailed(faiureMessage))
+            expect(repository).to(haveFailed(localizedDescription: faiureMessage))
           }
         }
 
