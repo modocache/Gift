@@ -10,7 +10,7 @@ public extension Repository {
     if errorCode == GIT_OK.value {
       return success(Index(cIndex: cIndex))
     } else {
-      return failure("libgit2 error: git_repository_index failed")
+      return failure(NSError.libGit2Error(errorCode, libGit2PointOfFailure: "git_repository_index"))
     }
   }
 }
