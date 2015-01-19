@@ -83,9 +83,11 @@ public extension Repository {
 private extension StatusDelta {
   /**
     Marking this extension and its initializer as internal or public
-    causes a segmentation fault in the Swift compiler.
+    causes a segmentation fault in the Swift compiler. In fact, any
+    internal or public initializer that references a C struct type causes
+    segfaults.
 
-    TODO: This issue may be fixed once the umbrella header for libgit2 is in place.
+    TODO: File Apple Radar.
   */
   private init(cStatusDelta: git_diff_delta) {
     self.init(
