@@ -374,9 +374,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		DA9F36481A476AF7002F35D4 /* Gift */ = {
+		DA9F36481A476AF7002F35D4 /* Gift-OSX */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DA9F365F1A476AF7002F35D4 /* Build configuration list for PBXNativeTarget "Gift" */;
+			buildConfigurationList = DA9F365F1A476AF7002F35D4 /* Build configuration list for PBXNativeTarget "Gift-OSX" */;
 			buildPhases = (
 				DA9F36441A476AF7002F35D4 /* Sources */,
 				DA9F36451A476AF7002F35D4 /* Frameworks */,
@@ -388,14 +388,14 @@
 			);
 			dependencies = (
 			);
-			name = Gift;
+			name = "Gift-OSX";
 			productName = Gift;
 			productReference = DA9F36491A476AF7002F35D4 /* Gift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		DA9F36531A476AF7002F35D4 /* GiftTests */ = {
+		DA9F36531A476AF7002F35D4 /* Gift-OSXTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DA9F36621A476AF7002F35D4 /* Build configuration list for PBXNativeTarget "GiftTests" */;
+			buildConfigurationList = DA9F36621A476AF7002F35D4 /* Build configuration list for PBXNativeTarget "Gift-OSXTests" */;
 			buildPhases = (
 				DA9F36501A476AF7002F35D4 /* Sources */,
 				DA9F36511A476AF7002F35D4 /* Frameworks */,
@@ -406,7 +406,7 @@
 			dependencies = (
 				DA9F36571A476AF7002F35D4 /* PBXTargetDependency */,
 			);
-			name = GiftTests;
+			name = "Gift-OSXTests";
 			productName = GiftTests;
 			productReference = DA9F36541A476AF7002F35D4 /* GiftTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -439,8 +439,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DA9F36481A476AF7002F35D4 /* Gift */,
-				DA9F36531A476AF7002F35D4 /* GiftTests */,
+				DA9F36481A476AF7002F35D4 /* Gift-OSX */,
+				DA9F36531A476AF7002F35D4 /* Gift-OSXTests */,
 			);
 		};
 /* End PBXProject section */
@@ -509,7 +509,7 @@
 /* Begin PBXTargetDependency section */
 		DA9F36571A476AF7002F35D4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DA9F36481A476AF7002F35D4 /* Gift */;
+			target = DA9F36481A476AF7002F35D4 /* Gift-OSX */;
 			targetProxy = DA9F36561A476AF7002F35D4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -632,7 +632,7 @@
 					/usr/local/Cellar/openssl/1.0.1l/lib/libssl.a,
 					/usr/local/Cellar/openssl/1.0.1l/lib/libcrypto.a,
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Gift;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -664,7 +664,7 @@
 					/usr/local/Cellar/openssl/1.0.1l/lib/libssl.a,
 					/usr/local/Cellar/openssl/1.0.1l/lib/libcrypto.a,
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Gift;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -713,7 +713,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DA9F365F1A476AF7002F35D4 /* Build configuration list for PBXNativeTarget "Gift" */ = {
+		DA9F365F1A476AF7002F35D4 /* Build configuration list for PBXNativeTarget "Gift-OSX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DA9F36601A476AF7002F35D4 /* Debug */,
@@ -722,7 +722,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DA9F36621A476AF7002F35D4 /* Build configuration list for PBXNativeTarget "GiftTests" */ = {
+		DA9F36621A476AF7002F35D4 /* Build configuration list for PBXNativeTarget "Gift-OSXTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DA9F36631A476AF7002F35D4 /* Debug */,
