@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		DA363DA41A6BAE160030BBCC /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DA363DA31A6BAE160030BBCC /* libiconv.dylib */; };
 		DA363DA61A6BAE1C0030BBCC /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DA363DA51A6BAE1C0030BBCC /* libz.dylib */; };
+		DA3EDDE11A6DA08E0027CEFB /* IndexSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3EDDE01A6DA08E0027CEFB /* IndexSpec.swift */; };
 		DA90006C1A6B9A4000F43D4F /* git2 in Copy git2 Headers */ = {isa = PBXBuildFile; fileRef = DADB27271A6B8F620036225C /* git2 */; };
 		DA90006E1A6B9A8700F43D4F /* git2 in Copy git2/sys Headers */ = {isa = PBXBuildFile; fileRef = DADB27271A6B8F620036225C /* git2 */; };
 		DA9000711A6B9B2D00F43D4F /* Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000701A6B9B2D00F43D4F /* Index.swift */; };
@@ -42,7 +43,6 @@
 		DAA283941A6C5CE400F7B4C3 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA283931A6C5CE400F7B4C3 /* Error.swift */; };
 		DAA283961A6D6E2100F7B4C3 /* Repository+StatusSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA283951A6D6E2100F7B4C3 /* Repository+StatusSpec.swift */; };
 		DAA283A51A6D7A7E00F7B4C3 /* Fixtures.zip in Resources */ = {isa = PBXBuildFile; fileRef = DAA2839F1A6D7A7E00F7B4C3 /* Fixtures.zip */; };
-		DAA283A71A6D950000F7B4C3 /* IndexSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA283A61A6D950000F7B4C3 /* IndexSpec.swift */; };
 		DAC9DD101A4B0AD800436BA2 /* Gift.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC9DD0F1A4B0AD800436BA2 /* Gift.m */; };
 		DAC9DD251A4B67D700436BA2 /* ResultAssert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9DD241A4B67D700436BA2 /* ResultAssert.swift */; };
 		E11D6FDB1A6C6CB500F00863 /* NSError+Domains.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11D6FDA1A6C6CB500F00863 /* NSError+Domains.swift */; };
@@ -91,6 +91,7 @@
 /* Begin PBXFileReference section */
 		DA363DA31A6BAE160030BBCC /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 		DA363DA51A6BAE1C0030BBCC /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		DA3EDDE01A6DA08E0027CEFB /* IndexSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexSpec.swift; sourceTree = "<group>"; };
 		DA9000701A6B9B2D00F43D4F /* Index.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Index.swift; sourceTree = "<group>"; };
 		DA9000731A6B9B7900F43D4F /* FileDiff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileDiff.swift; sourceTree = "<group>"; };
 		DA9000741A6B9B7900F43D4F /* Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
@@ -127,7 +128,6 @@
 		DAA283931A6C5CE400F7B4C3 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		DAA283951A6D6E2100F7B4C3 /* Repository+StatusSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Repository+StatusSpec.swift"; sourceTree = "<group>"; };
 		DAA2839F1A6D7A7E00F7B4C3 /* Fixtures.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = Fixtures.zip; sourceTree = "<group>"; };
-		DAA283A61A6D950000F7B4C3 /* IndexSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexSpec.swift; sourceTree = "<group>"; };
 		DAC9DD0F1A4B0AD800436BA2 /* Gift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gift.m; sourceTree = "<group>"; };
 		DAC9DD241A4B67D700436BA2 /* ResultAssert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultAssert.swift; sourceTree = "<group>"; };
 		DADB27271A6B8F620036225C /* git2 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = git2; path = External/libgit2/include/git2; sourceTree = SOURCE_ROOT; };
@@ -164,6 +164,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA3EDDDF1A6DA08E0027CEFB /* Index */ = {
+			isa = PBXGroup;
+			children = (
+				DA3EDDE01A6DA08E0027CEFB /* IndexSpec.swift */,
+			);
+			path = Index;
+			sourceTree = "<group>";
+		};
 		DA90006F1A6B9B2D00F43D4F /* Index */ = {
 			isa = PBXGroup;
 			children = (
@@ -277,6 +285,7 @@
 				DAA283971A6D7A7E00F7B4C3 /* Fixtures */,
 				E1BE9F1F1A6C4C13003E87BB /* Helpers */,
 				E1BE9F1C1A6C4B6C003E87BB /* Matchers */,
+				DA3EDDDF1A6DA08E0027CEFB /* Index */,
 				E19F05FF1A6C3BA700EF5BFA /* Repository */,
 				DAC9DD241A4B67D700436BA2 /* ResultAssert.swift */,
 				DA9F365B1A476AF7002F35D4 /* GiftTests.swift */,
@@ -326,7 +335,6 @@
 			children = (
 				E19F06001A6C3BC400EF5BFA /* RepositorySpec.swift */,
 				DAA283951A6D6E2100F7B4C3 /* Repository+StatusSpec.swift */,
-				DAA283A61A6D950000F7B4C3 /* IndexSpec.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -482,10 +490,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAA283A71A6D950000F7B4C3 /* IndexSpec.swift in Sources */,
 				E1BE9F211A6C4C68003E87BB /* FilePathHelpers.swift in Sources */,
 				DAC9DD251A4B67D700436BA2 /* ResultAssert.swift in Sources */,
 				DAA283961A6D6E2100F7B4C3 /* Repository+StatusSpec.swift in Sources */,
+				DA3EDDE11A6DA08E0027CEFB /* IndexSpec.swift in Sources */,
 				E1BE9F1E1A6C4B7C003E87BB /* ResultMatchers.swift in Sources */,
 				E19F06011A6C3BC400EF5BFA /* RepositorySpec.swift in Sources */,
 				DA9F365C1A476AF7002F35D4 /* GiftTests.swift in Sources */,
