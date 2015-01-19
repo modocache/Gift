@@ -11,7 +11,7 @@ public extension Repository {
     if errorCode == GIT_OK.value {
       return success(Reference(cReference: out))
     } else {
-      return failure("libgit2 error: git_repository_head failed with code \(errorCode)")
+      return failure(NSError.libGit2Error(errorCode, libGit2PointOfFailure: "git_repository_head"))
     }
   }
 }

@@ -26,7 +26,7 @@ public extension Repository {
       if let url = NSURL(fileURLWithPath: path, isDirectory: true) {
         return success(url)
       } else {
-        return failure("Could not create NSURL from path: \(path)")
+        return failure(NSError.giftError(.InvalidURI, description: "Could not create NSURL from path: \(path)"))
       }
     } else {
       return failure("libgit2 error: git_repository_path failed")
@@ -51,12 +51,10 @@ public func initializeEmptyRepository(directoryURL: NSURL, options: RepositoryIn
     if errorCode == GIT_OK.value {
       return success(Repository(cRepository: out))
     } else {
-      // TODO: Use giterr_last() for more descriptive error message.
-      return failure("libgit2 error: \(errorCode)")
+      return failure(NSError.libGit2Error(errorCode, libGit2PointOfFailure: "git_repository_init_ext"))
     }
   } else {
-    // TODO: Define more comprehensive set of error domains, codes.
-    return failure("Invalid directoryURL: \(directoryURL)")
+    return failure(NSError.giftError(.InvalidURI, description: "Invalid directoryURL: \(directoryURL)"))
   }
 }
 
@@ -65,14 +63,14 @@ public func initializeEmptyRepository(directoryURL: NSURL, options: RepositoryIn
 */
 public func openRepository(fileURL: NSURL) -> Result<Repository> {
   if !fileURL.fileURL || fileURL.path == nil {
-    return failure("Invalid fileURL: \(fileURL)")
+    return failure(NSError.giftError(.InvalidURI, description: "Invalid fileURL: \(fileURL)"))
   } else {
     var out = COpaquePointer()
     let errorCode = git_repository_open(&out, fileURL.path!)
     if errorCode == GIT_OK.value {
       return success(Repository(cRepository: out))
     } else {
-      return failure("libgit2 error: git_repository_open failed with code \(errorCode)")
+      return failure(NSError.libGit2Error(errorCode, libGit2PointOfFailure: "git_repository_open"))
     }
   }
 }

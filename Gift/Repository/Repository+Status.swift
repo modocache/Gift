@@ -39,7 +39,7 @@ public extension Repository {
       }
     } else {
       git_status_list_free(statusList)
-      return failure("libgit2 error: git_status_list_new failed with code \(errorCode)")
+      return failure(NSError.libGit2Error(errorCode, libGit2PointOfFailure: "git_status_list_new"))
     }
   }
 
@@ -56,7 +56,7 @@ public extension Repository {
     if errorCode == GIT_OK.value {
       return success(Status(cStatus: git_status_t(statusFlags)))
     } else {
-      return failure("libgit2 error: git_status_file failed with code \(errorCode)")
+      return failure(NSError.libGit2Error(errorCode, libGit2PointOfFailure: "git_status_file"))
     }
   }
 
@@ -73,7 +73,7 @@ public extension Repository {
     if errorCode == GIT_OK.value {
       return success(ignored != 0)
     } else {
-      return failure("libgit2 error: git_status_should_ignore failed with code \(errorCode)")
+      return failure(NSError.libGit2Error(errorCode, libGit2PointOfFailure: "git_status_should_ignore"))
     }
   }
 }
