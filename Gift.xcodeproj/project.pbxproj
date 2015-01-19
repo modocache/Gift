@@ -42,6 +42,7 @@
 		DAA283941A6C5CE400F7B4C3 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA283931A6C5CE400F7B4C3 /* Error.swift */; };
 		DAA283961A6D6E2100F7B4C3 /* Repository+StatusSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA283951A6D6E2100F7B4C3 /* Repository+StatusSpec.swift */; };
 		DAA283A51A6D7A7E00F7B4C3 /* Fixtures.zip in Resources */ = {isa = PBXBuildFile; fileRef = DAA2839F1A6D7A7E00F7B4C3 /* Fixtures.zip */; };
+		DAA283A71A6D950000F7B4C3 /* IndexSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA283A61A6D950000F7B4C3 /* IndexSpec.swift */; };
 		DAC9DD101A4B0AD800436BA2 /* Gift.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC9DD0F1A4B0AD800436BA2 /* Gift.m */; };
 		DAC9DD251A4B67D700436BA2 /* ResultAssert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9DD241A4B67D700436BA2 /* ResultAssert.swift */; };
 		E11D6FDB1A6C6CB500F00863 /* NSError+Domains.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11D6FDA1A6C6CB500F00863 /* NSError+Domains.swift */; };
@@ -126,6 +127,7 @@
 		DAA283931A6C5CE400F7B4C3 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		DAA283951A6D6E2100F7B4C3 /* Repository+StatusSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Repository+StatusSpec.swift"; sourceTree = "<group>"; };
 		DAA2839F1A6D7A7E00F7B4C3 /* Fixtures.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = Fixtures.zip; sourceTree = "<group>"; };
+		DAA283A61A6D950000F7B4C3 /* IndexSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexSpec.swift; sourceTree = "<group>"; };
 		DAC9DD0F1A4B0AD800436BA2 /* Gift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gift.m; sourceTree = "<group>"; };
 		DAC9DD241A4B67D700436BA2 /* ResultAssert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultAssert.swift; sourceTree = "<group>"; };
 		DADB27271A6B8F620036225C /* git2 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = git2; path = External/libgit2/include/git2; sourceTree = SOURCE_ROOT; };
@@ -324,6 +326,7 @@
 			children = (
 				E19F06001A6C3BC400EF5BFA /* RepositorySpec.swift */,
 				DAA283951A6D6E2100F7B4C3 /* Repository+StatusSpec.swift */,
+				DAA283A61A6D950000F7B4C3 /* IndexSpec.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -479,6 +482,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAA283A71A6D950000F7B4C3 /* IndexSpec.swift in Sources */,
 				E1BE9F211A6C4C68003E87BB /* FilePathHelpers.swift in Sources */,
 				DAC9DD251A4B67D700436BA2 /* ResultAssert.swift in Sources */,
 				DAA283961A6D6E2100F7B4C3 /* Repository+StatusSpec.swift in Sources */,
