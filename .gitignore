@@ -14,3 +14,11 @@ DerivedData
 *.hmap
 *.ipa
 *.xcuserstate
+
+# Unit tests make use of a set of prepared Git repositories.
+# There repositories are stored in a Fixtures directory.
+# The repositories themselves should not be tracked. Instead,
+# a zip file containing the repositories is checked into source
+# control. The tests then unzip that zip file as needed.
+GiftTests/Fixtures/Fixtures/ # Zipped to "GiftTests/Fixtures/Fixtures.zip"
+
