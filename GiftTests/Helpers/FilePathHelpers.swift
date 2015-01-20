@@ -41,7 +41,8 @@ internal func openFixturesRepository(name: String) -> Result<Repository> {
   let destination = temporaryDirectoryURL()
 
   // system() and NSTask() are not available when running tests in
-  // the iOS simulator, so we use zlib (wrapped by Sam Soffes) directly.
+  // the iOS simulator, so we use zlib (wrapped by Sam Soffes) directly
+  // instead of shelling out to /usr/bin/zip.
   SSZipArchive.unzipFileAtPath(source!, toDestination: destination.path!)
 
   return openRepository(destination
