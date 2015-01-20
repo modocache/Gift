@@ -39,7 +39,10 @@ internal func temporaryDirectoryURL() -> NSURL! {
 internal func openFixturesRepository(name: String) -> Result<Repository> {
   let source = NSBundle(forClass: TestBundleLocator.classForCoder()).pathForResource("Fixtures", ofType: "zip")
   let destination = temporaryDirectoryURL()
-  system("unzip -qq \(source!) -d \(destination.path!)")
+
+  // system() and NSTask() are not available when running tests in
+  // the iOS simulator, so we use zlib (wrapped by Sam Soffes) directly.
+  SSZipArchive.unzipFileAtPath(source!, toDestination: destination.path!)
 
   return openRepository(destination
     .URLByAppendingPathComponent("Fixtures")

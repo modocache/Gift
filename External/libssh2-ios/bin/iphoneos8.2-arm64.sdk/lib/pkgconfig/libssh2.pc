@@ -1,0 +1,17 @@
+###########################################################################
+# libssh2 installation details
+###########################################################################
+
+prefix=/Users/bgesiak/GitHub/modocache/objective-git/External/libssh2-ios/bin/iphoneos8.2-arm64.sdk
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libssh2
+URL: http://www.libssh2.org/
+Description: Library for SSH-based communication
+Version: 1.4.3_DEV
+Requires.private: libssl,libcrypto
+Libs: -L${libdir} -lssh2  
+Libs.private: 
+Cflags: -I${includedir}

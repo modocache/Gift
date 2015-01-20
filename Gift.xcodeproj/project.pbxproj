@@ -9,47 +9,105 @@
 /* Begin PBXBuildFile section */
 		DA363DA41A6BAE160030BBCC /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DA363DA31A6BAE160030BBCC /* libiconv.dylib */; };
 		DA363DA61A6BAE1C0030BBCC /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DA363DA51A6BAE1C0030BBCC /* libz.dylib */; };
-		DA3EDDE11A6DA08E0027CEFB /* IndexSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3EDDE01A6DA08E0027CEFB /* IndexSpec.swift */; };
-		DA3EDDE41A6DA1130027CEFB /* ReferenceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3EDDE31A6DA1130027CEFB /* ReferenceSpec.swift */; };
 		DA90006C1A6B9A4000F43D4F /* git2 in Copy git2 Headers */ = {isa = PBXBuildFile; fileRef = DADB27271A6B8F620036225C /* git2 */; };
 		DA90006E1A6B9A8700F43D4F /* git2 in Copy git2/sys Headers */ = {isa = PBXBuildFile; fileRef = DADB27271A6B8F620036225C /* git2 */; };
-		DA9000711A6B9B2D00F43D4F /* Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000701A6B9B2D00F43D4F /* Index.swift */; };
-		DA90008D1A6B9B7900F43D4F /* FileDiff.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000731A6B9B7900F43D4F /* FileDiff.swift */; };
-		DA90008E1A6B9B7900F43D4F /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000741A6B9B7900F43D4F /* Status.swift */; };
-		DA90008F1A6B9B7900F43D4F /* StatusDelta.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000751A6B9B7900F43D4F /* StatusDelta.swift */; };
-		DA9000901A6B9B7900F43D4F /* StatusDeltaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000761A6B9B7900F43D4F /* StatusDeltaType.swift */; };
-		DA9000911A6B9B7900F43D4F /* StatusOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000771A6B9B7900F43D4F /* StatusOptions+C.swift */; };
-		DA9000921A6B9B7900F43D4F /* StatusOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000781A6B9B7900F43D4F /* StatusOptions.swift */; };
-		DA9000931A6B9B7900F43D4F /* StatusShowOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000791A6B9B7900F43D4F /* StatusShowOptions.swift */; };
-		DA9000941A6B9B7900F43D4F /* Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90007B1A6B9B7900F43D4F /* Reference.swift */; };
-		DA9000951A6B9B7900F43D4F /* CheckoutOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90007E1A6B9B7900F43D4F /* CheckoutOptions+C.swift */; };
-		DA9000961A6B9B7900F43D4F /* CheckoutOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90007F1A6B9B7900F43D4F /* CheckoutOptions.swift */; };
-		DA9000971A6B9B7900F43D4F /* CheckoutStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000801A6B9B7900F43D4F /* CheckoutStrategy.swift */; };
-		DA9000981A6B9B7900F43D4F /* CloneOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000811A6B9B7900F43D4F /* CloneOptions+C.swift */; };
-		DA9000991A6B9B7900F43D4F /* CloneOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000821A6B9B7900F43D4F /* CloneOptions.swift */; };
-		DA90009A1A6B9B7900F43D4F /* RemoteCallbacks+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000831A6B9B7900F43D4F /* RemoteCallbacks+C.swift */; };
-		DA90009B1A6B9B7900F43D4F /* RemoteCallbacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000841A6B9B7900F43D4F /* RemoteCallbacks.swift */; };
-		DA90009C1A6B9B7900F43D4F /* RepositoryInitializationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000851A6B9B7900F43D4F /* RepositoryInitializationMode.swift */; };
-		DA90009D1A6B9B7900F43D4F /* RepositoryInitializationOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000861A6B9B7900F43D4F /* RepositoryInitializationOptions+C.swift */; };
-		DA90009E1A6B9B7900F43D4F /* RepositoryInitializationOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000871A6B9B7900F43D4F /* RepositoryInitializationOptions.swift */; };
-		DA90009F1A6B9B7900F43D4F /* RepositoryInitializationOptionSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000881A6B9B7900F43D4F /* RepositoryInitializationOptionSet.swift */; };
-		DA9000A01A6B9B7900F43D4F /* Repository+Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000891A6B9B7900F43D4F /* Repository+Index.swift */; };
-		DA9000A11A6B9B7900F43D4F /* Repository+Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90008A1A6B9B7900F43D4F /* Repository+Reference.swift */; };
-		DA9000A21A6B9B7900F43D4F /* Repository+Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90008B1A6B9B7900F43D4F /* Repository+Status.swift */; };
-		DA9000A31A6B9B7900F43D4F /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90008C1A6B9B7900F43D4F /* Repository.swift */; };
 		DA9876A61A4B791E0004AA17 /* LlamaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9876A51A4B791E0004AA17 /* LlamaKit.framework */; };
 		DA9F364F1A476AF7002F35D4 /* Gift.h in Headers */ = {isa = PBXBuildFile; fileRef = DA9F364E1A476AF7002F35D4 /* Gift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA9F36551A476AF7002F35D4 /* Gift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9F36491A476AF7002F35D4 /* Gift.framework */; };
-		DAA283941A6C5CE400F7B4C3 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA283931A6C5CE400F7B4C3 /* Error.swift */; };
-		DAA283961A6D6E2100F7B4C3 /* Repository+StatusSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA283951A6D6E2100F7B4C3 /* Repository+StatusSpec.swift */; };
 		DAA283A51A6D7A7E00F7B4C3 /* Fixtures.zip in Resources */ = {isa = PBXBuildFile; fileRef = DAA2839F1A6D7A7E00F7B4C3 /* Fixtures.zip */; };
-		DAC9DD101A4B0AD800436BA2 /* Gift.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC9DD0F1A4B0AD800436BA2 /* Gift.m */; };
-		E11D6FDB1A6C6CB500F00863 /* NSError+Domains.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11D6FDA1A6C6CB500F00863 /* NSError+Domains.swift */; };
+		DADD5F8F1A6E0CBA00F16FB3 /* Gift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADD5F841A6E0CBA00F16FB3 /* Gift.framework */; };
+		DADD5F9D1A6E0D2F00F16FB3 /* Gift.h in Headers */ = {isa = PBXBuildFile; fileRef = DA9F364E1A476AF7002F35D4 /* Gift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DADD5FC71A6E0E7600F16FB3 /* git2 in Copy git2 Headers */ = {isa = PBXBuildFile; fileRef = DADB27271A6B8F620036225C /* git2 */; };
+		DADD5FC91A6E0E7D00F16FB3 /* git2 in Copy git2/sys Headers */ = {isa = PBXBuildFile; fileRef = DADB27271A6B8F620036225C /* git2 */; };
+		DADD5FCD1A6E0FA800F16FB3 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DADD5FCC1A6E0FA800F16FB3 /* libiconv.dylib */; };
+		DADD5FCF1A6E0FAF00F16FB3 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DADD5FCE1A6E0FAF00F16FB3 /* libz.dylib */; };
+		DADD5FD11A6E115900F16FB3 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADD5FD01A6E115900F16FB3 /* Nimble.framework */; };
+		DADD5FD31A6E116100F16FB3 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADD5FD21A6E116100F16FB3 /* Quick.framework */; };
+		DADD5FD51A6E116B00F16FB3 /* LlamaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADD5FD41A6E116B00F16FB3 /* LlamaKit.framework */; };
+		DADD5FDC1A6E11CB00F16FB3 /* Fixtures.zip in Resources */ = {isa = PBXBuildFile; fileRef = DAA2839F1A6D7A7E00F7B4C3 /* Fixtures.zip */; };
+		DADD60021A6E14F100F16FB3 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DADD60001A6E14F100F16FB3 /* libcrypto.a */; };
+		DADD60031A6E14F100F16FB3 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DADD60011A6E14F100F16FB3 /* libssl.a */; };
+		DADD60051A6E150C00F16FB3 /* libssh2-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DADD60041A6E150C00F16FB3 /* libssh2-ios.a */; };
+		DADD60061A6E16AD00F16FB3 /* Gift.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC9DD0F1A4B0AD800436BA2 /* Gift.m */; };
+		DADD60071A6E16AD00F16FB3 /* Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000701A6B9B2D00F43D4F /* Index.swift */; };
+		DADD60081A6E16AD00F16FB3 /* Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90007B1A6B9B7900F43D4F /* Reference.swift */; };
+		DADD60091A6E16AD00F16FB3 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90008C1A6B9B7900F43D4F /* Repository.swift */; };
+		DADD600A1A6E16AD00F16FB3 /* Repository+Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000891A6B9B7900F43D4F /* Repository+Index.swift */; };
+		DADD600B1A6E16AD00F16FB3 /* Repository+Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90008A1A6B9B7900F43D4F /* Repository+Reference.swift */; };
+		DADD600C1A6E16AD00F16FB3 /* Repository+Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90008B1A6B9B7900F43D4F /* Repository+Status.swift */; };
+		DADD600D1A6E16AD00F16FB3 /* CloneOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000821A6B9B7900F43D4F /* CloneOptions.swift */; };
+		DADD600E1A6E16AD00F16FB3 /* CloneOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000811A6B9B7900F43D4F /* CloneOptions+C.swift */; };
+		DADD600F1A6E16AD00F16FB3 /* CheckoutOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90007F1A6B9B7900F43D4F /* CheckoutOptions.swift */; };
+		DADD60101A6E16AD00F16FB3 /* CheckoutOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90007E1A6B9B7900F43D4F /* CheckoutOptions+C.swift */; };
+		DADD60111A6E16AD00F16FB3 /* CheckoutStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000801A6B9B7900F43D4F /* CheckoutStrategy.swift */; };
+		DADD60121A6E16AD00F16FB3 /* RemoteCallbacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000841A6B9B7900F43D4F /* RemoteCallbacks.swift */; };
+		DADD60131A6E16AD00F16FB3 /* RemoteCallbacks+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000831A6B9B7900F43D4F /* RemoteCallbacks+C.swift */; };
+		DADD60141A6E16AD00F16FB3 /* RepositoryInitializationOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000871A6B9B7900F43D4F /* RepositoryInitializationOptions.swift */; };
+		DADD60151A6E16AD00F16FB3 /* RepositoryInitializationOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000861A6B9B7900F43D4F /* RepositoryInitializationOptions+C.swift */; };
+		DADD60161A6E16AD00F16FB3 /* RepositoryInitializationOptionSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000881A6B9B7900F43D4F /* RepositoryInitializationOptionSet.swift */; };
+		DADD60171A6E16AD00F16FB3 /* RepositoryInitializationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000851A6B9B7900F43D4F /* RepositoryInitializationMode.swift */; };
+		DADD60181A6E16AD00F16FB3 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000741A6B9B7900F43D4F /* Status.swift */; };
+		DADD60191A6E16AD00F16FB3 /* StatusDelta.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000751A6B9B7900F43D4F /* StatusDelta.swift */; };
+		DADD601A1A6E16AD00F16FB3 /* FileDiff.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000731A6B9B7900F43D4F /* FileDiff.swift */; };
+		DADD601B1A6E16AD00F16FB3 /* StatusDeltaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000761A6B9B7900F43D4F /* StatusDeltaType.swift */; };
+		DADD601C1A6E16AD00F16FB3 /* StatusOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000781A6B9B7900F43D4F /* StatusOptions.swift */; };
+		DADD601D1A6E16AD00F16FB3 /* StatusOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000771A6B9B7900F43D4F /* StatusOptions+C.swift */; };
+		DADD601E1A6E16AD00F16FB3 /* StatusShowOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000791A6B9B7900F43D4F /* StatusShowOptions.swift */; };
+		DADD601F1A6E16AD00F16FB3 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA283931A6C5CE400F7B4C3 /* Error.swift */; };
+		DADD60201A6E16AD00F16FB3 /* NSError+Domains.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11D6FDA1A6C6CB500F00863 /* NSError+Domains.swift */; };
+		DADD60211A6E16BE00F16FB3 /* FilePathHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BE9F201A6C4C68003E87BB /* FilePathHelpers.swift */; };
+		DADD60221A6E16BE00F16FB3 /* ResultMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BE9F1D1A6C4B7C003E87BB /* ResultMatchers.swift */; };
+		DADD60231A6E16BE00F16FB3 /* IndexSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3EDDE01A6DA08E0027CEFB /* IndexSpec.swift */; };
+		DADD60241A6E16BE00F16FB3 /* ReferenceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3EDDE31A6DA1130027CEFB /* ReferenceSpec.swift */; };
+		DADD60251A6E16BE00F16FB3 /* RepositorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19F06001A6C3BC400EF5BFA /* RepositorySpec.swift */; };
+		DADD60261A6E16BE00F16FB3 /* Repository+StatusSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA283951A6D6E2100F7B4C3 /* Repository+StatusSpec.swift */; };
+		DADD60271A6E1A7300F16FB3 /* Gift.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC9DD0F1A4B0AD800436BA2 /* Gift.m */; };
+		DADD60281A6E1A7300F16FB3 /* Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000701A6B9B2D00F43D4F /* Index.swift */; };
+		DADD60291A6E1A7300F16FB3 /* Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90007B1A6B9B7900F43D4F /* Reference.swift */; };
+		DADD602A1A6E1A7300F16FB3 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90008C1A6B9B7900F43D4F /* Repository.swift */; };
+		DADD602B1A6E1A7300F16FB3 /* Repository+Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000891A6B9B7900F43D4F /* Repository+Index.swift */; };
+		DADD602C1A6E1A7300F16FB3 /* Repository+Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90008A1A6B9B7900F43D4F /* Repository+Reference.swift */; };
+		DADD602D1A6E1A7300F16FB3 /* Repository+Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90008B1A6B9B7900F43D4F /* Repository+Status.swift */; };
+		DADD602E1A6E1A7300F16FB3 /* CloneOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000821A6B9B7900F43D4F /* CloneOptions.swift */; };
+		DADD602F1A6E1A7300F16FB3 /* CloneOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000811A6B9B7900F43D4F /* CloneOptions+C.swift */; };
+		DADD60301A6E1A7300F16FB3 /* CheckoutOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90007F1A6B9B7900F43D4F /* CheckoutOptions.swift */; };
+		DADD60311A6E1A7300F16FB3 /* CheckoutOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90007E1A6B9B7900F43D4F /* CheckoutOptions+C.swift */; };
+		DADD60321A6E1A7300F16FB3 /* CheckoutStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000801A6B9B7900F43D4F /* CheckoutStrategy.swift */; };
+		DADD60331A6E1A7300F16FB3 /* RemoteCallbacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000841A6B9B7900F43D4F /* RemoteCallbacks.swift */; };
+		DADD60341A6E1A7300F16FB3 /* RemoteCallbacks+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000831A6B9B7900F43D4F /* RemoteCallbacks+C.swift */; };
+		DADD60351A6E1A7300F16FB3 /* RepositoryInitializationOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000871A6B9B7900F43D4F /* RepositoryInitializationOptions.swift */; };
+		DADD60361A6E1A7300F16FB3 /* RepositoryInitializationOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000861A6B9B7900F43D4F /* RepositoryInitializationOptions+C.swift */; };
+		DADD60371A6E1A7300F16FB3 /* RepositoryInitializationOptionSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000881A6B9B7900F43D4F /* RepositoryInitializationOptionSet.swift */; };
+		DADD60381A6E1A7300F16FB3 /* RepositoryInitializationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000851A6B9B7900F43D4F /* RepositoryInitializationMode.swift */; };
+		DADD60391A6E1A7300F16FB3 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000741A6B9B7900F43D4F /* Status.swift */; };
+		DADD603A1A6E1A7300F16FB3 /* StatusDelta.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000751A6B9B7900F43D4F /* StatusDelta.swift */; };
+		DADD603B1A6E1A7300F16FB3 /* FileDiff.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000731A6B9B7900F43D4F /* FileDiff.swift */; };
+		DADD603C1A6E1A7300F16FB3 /* StatusDeltaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000761A6B9B7900F43D4F /* StatusDeltaType.swift */; };
+		DADD603D1A6E1A7300F16FB3 /* StatusOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000781A6B9B7900F43D4F /* StatusOptions.swift */; };
+		DADD603E1A6E1A7300F16FB3 /* StatusOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000771A6B9B7900F43D4F /* StatusOptions+C.swift */; };
+		DADD603F1A6E1A7300F16FB3 /* StatusShowOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000791A6B9B7900F43D4F /* StatusShowOptions.swift */; };
+		DADD60401A6E1A7300F16FB3 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA283931A6C5CE400F7B4C3 /* Error.swift */; };
+		DADD60411A6E1A7300F16FB3 /* NSError+Domains.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11D6FDA1A6C6CB500F00863 /* NSError+Domains.swift */; };
+		DADD60421A6E1A7E00F16FB3 /* FilePathHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BE9F201A6C4C68003E87BB /* FilePathHelpers.swift */; };
+		DADD60431A6E1A7E00F16FB3 /* ResultMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BE9F1D1A6C4B7C003E87BB /* ResultMatchers.swift */; };
+		DADD60441A6E1A7E00F16FB3 /* IndexSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3EDDE01A6DA08E0027CEFB /* IndexSpec.swift */; };
+		DADD60451A6E1A7E00F16FB3 /* ReferenceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3EDDE31A6DA1130027CEFB /* ReferenceSpec.swift */; };
+		DADD60461A6E1A7E00F16FB3 /* RepositorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19F06001A6C3BC400EF5BFA /* RepositorySpec.swift */; };
+		DADD60471A6E1A7E00F16FB3 /* Repository+StatusSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA283951A6D6E2100F7B4C3 /* Repository+StatusSpec.swift */; };
+		DADD604C1A6E1CD500F16FB3 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DADD5FCE1A6E0FAF00F16FB3 /* libz.dylib */; };
+		DADD605C1A6E1E0200F16FB3 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = DADD60521A6E1E0200F16FB3 /* ioapi.c */; };
+		DADD605D1A6E1E0200F16FB3 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = DADD60521A6E1E0200F16FB3 /* ioapi.c */; };
+		DADD605E1A6E1E0200F16FB3 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = DADD60541A6E1E0200F16FB3 /* mztools.c */; };
+		DADD605F1A6E1E0200F16FB3 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = DADD60541A6E1E0200F16FB3 /* mztools.c */; };
+		DADD60601A6E1E0200F16FB3 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = DADD60561A6E1E0200F16FB3 /* unzip.c */; };
+		DADD60611A6E1E0200F16FB3 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = DADD60561A6E1E0200F16FB3 /* unzip.c */; };
+		DADD60621A6E1E0200F16FB3 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = DADD60581A6E1E0200F16FB3 /* zip.c */; };
+		DADD60631A6E1E0200F16FB3 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = DADD60581A6E1E0200F16FB3 /* zip.c */; };
+		DADD60641A6E1E0200F16FB3 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = DADD605B1A6E1E0200F16FB3 /* SSZipArchive.m */; };
+		DADD60651A6E1E0200F16FB3 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = DADD605B1A6E1E0200F16FB3 /* SSZipArchive.m */; };
+		DADD60661A6E1E9C00F16FB3 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DA363DA51A6BAE1C0030BBCC /* libz.dylib */; };
 		E19F05FD1A6C39FC00EF5BFA /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E19F05FB1A6C39FC00EF5BFA /* Nimble.framework */; };
 		E19F05FE1A6C39FC00EF5BFA /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E19F05FC1A6C39FC00EF5BFA /* Quick.framework */; };
-		E19F06011A6C3BC400EF5BFA /* RepositorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19F06001A6C3BC400EF5BFA /* RepositorySpec.swift */; };
-		E1BE9F1E1A6C4B7C003E87BB /* ResultMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BE9F1D1A6C4B7C003E87BB /* ResultMatchers.swift */; };
-		E1BE9F211A6C4C68003E87BB /* FilePathHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BE9F201A6C4C68003E87BB /* FilePathHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +117,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = DA9F36481A476AF7002F35D4;
 			remoteInfo = Gift;
+		};
+		DADD5F901A6E0CBA00F16FB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA9F36401A476AF7002F35D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DADD5F831A6E0CBA00F16FB3;
+			remoteInfo = "Gift-iOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -81,6 +146,28 @@
 			dstSubfolderSpec = 1;
 			files = (
 				DA90006E1A6B9A8700F43D4F /* git2 in Copy git2/sys Headers */,
+			);
+			name = "Copy git2/sys Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DADD5FB91A6E0D7300F16FB3 /* Copy git2 Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Headers;
+			dstSubfolderSpec = 1;
+			files = (
+				DADD5FC71A6E0E7600F16FB3 /* git2 in Copy git2 Headers */,
+			);
+			name = "Copy git2 Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DADD5FC01A6E0DF400F16FB3 /* Copy git2/sys Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Headers/git2/sys;
+			dstSubfolderSpec = 1;
+			files = (
+				DADD5FC91A6E0E7D00F16FB3 /* git2 in Copy git2/sys Headers */,
 			);
 			name = "Copy git2/sys Headers";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -122,7 +209,7 @@
 		DA9F36491A476AF7002F35D4 /* Gift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Gift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA9F364D1A476AF7002F35D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA9F364E1A476AF7002F35D4 /* Gift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Gift.h; sourceTree = "<group>"; };
-		DA9F36541A476AF7002F35D4 /* GiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA9F36541A476AF7002F35D4 /* Gift-OSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gift-OSXTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA9F365A1A476AF7002F35D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAA283931A6C5CE400F7B4C3 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		DAA283951A6D6E2100F7B4C3 /* Repository+StatusSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Repository+StatusSpec.swift"; sourceTree = "<group>"; };
@@ -130,6 +217,29 @@
 		DAC9DD0F1A4B0AD800436BA2 /* Gift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gift.m; sourceTree = "<group>"; };
 		DADB27271A6B8F620036225C /* git2 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = git2; path = External/libgit2/include/git2; sourceTree = SOURCE_ROOT; };
 		DADB27281A6B8F620036225C /* git2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = git2.h; path = External/libgit2/include/git2.h; sourceTree = SOURCE_ROOT; };
+		DADD5F841A6E0CBA00F16FB3 /* Gift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Gift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DADD5F8E1A6E0CBA00F16FB3 /* Gift-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gift-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DADD5FCA1A6E0ED200F16FB3 /* LlamaKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LlamaKit.framework; path = "../External/LlamaKit/build/Debug-iphoneos/LlamaKit.framework"; sourceTree = "<group>"; };
+		DADD5FCC1A6E0FA800F16FB3 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.2.sdk/usr/lib/libiconv.dylib; sourceTree = DEVELOPER_DIR; };
+		DADD5FCE1A6E0FAF00F16FB3 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.2.sdk/usr/lib/libz.dylib; sourceTree = DEVELOPER_DIR; };
+		DADD5FD01A6E115900F16FB3 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "../External/Nimble/build/Debug-iphoneos/Nimble.framework"; sourceTree = "<group>"; };
+		DADD5FD21A6E116100F16FB3 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Gift-dgwchahhdqnxcmclexmexcticalo/Build/Products/Debug/Quick.framework"; sourceTree = "<group>"; };
+		DADD5FD41A6E116B00F16FB3 /* LlamaKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LlamaKit.framework; path = "../External/LlamaKit/build/Debug-iphoneos/LlamaKit.framework"; sourceTree = "<group>"; };
+		DADD60001A6E14F100F16FB3 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = "../External/ios-openssl/lib/libcrypto.a"; sourceTree = "<group>"; };
+		DADD60011A6E14F100F16FB3 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = "../External/ios-openssl/lib/libssl.a"; sourceTree = "<group>"; };
+		DADD60041A6E150C00F16FB3 /* libssh2-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libssh2-ios.a"; path = "../External/libssh2-ios/lib/libssh2-ios.a"; sourceTree = "<group>"; };
+		DADD604D1A6E1D1A00F16FB3 /* GiftTests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GiftTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		DADD60511A6E1E0200F16FB3 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		DADD60521A6E1E0200F16FB3 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		DADD60531A6E1E0200F16FB3 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		DADD60541A6E1E0200F16FB3 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		DADD60551A6E1E0200F16FB3 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		DADD60561A6E1E0200F16FB3 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		DADD60571A6E1E0200F16FB3 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		DADD60581A6E1E0200F16FB3 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		DADD60591A6E1E0200F16FB3 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		DADD605A1A6E1E0200F16FB3 /* SSZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipArchive.h; sourceTree = "<group>"; };
+		DADD605B1A6E1E0200F16FB3 /* SSZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSZipArchive.m; sourceTree = "<group>"; };
 		E11D6FDA1A6C6CB500F00863 /* NSError+Domains.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSError+Domains.swift"; sourceTree = "<group>"; };
 		E19F05FB1A6C39FC00EF5BFA /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = ../External/Nimble/build/Debug/Nimble.framework; sourceTree = "<group>"; };
 		E19F05FC1A6C39FC00EF5BFA /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "../../../Library/Developer/Xcode/DerivedData/Gift-aawqlbmcaehhbtczebijfiwnpaqu/Build/Products/Debug/Quick.framework"; sourceTree = "<group>"; };
@@ -153,9 +263,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DADD60661A6E1E9C00F16FB3 /* libz.dylib in Frameworks */,
 				E19F05FD1A6C39FC00EF5BFA /* Nimble.framework in Frameworks */,
 				E19F05FE1A6C39FC00EF5BFA /* Quick.framework in Frameworks */,
 				DA9F36551A476AF7002F35D4 /* Gift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DADD5F801A6E0CBA00F16FB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DADD60051A6E150C00F16FB3 /* libssh2-ios.a in Frameworks */,
+				DADD60021A6E14F100F16FB3 /* libcrypto.a in Frameworks */,
+				DADD60031A6E14F100F16FB3 /* libssl.a in Frameworks */,
+				DADD5FCD1A6E0FA800F16FB3 /* libiconv.dylib in Frameworks */,
+				DADD5FCF1A6E0FAF00F16FB3 /* libz.dylib in Frameworks */,
+				DADD5FD51A6E116B00F16FB3 /* LlamaKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DADD5F8B1A6E0CBA00F16FB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DADD604C1A6E1CD500F16FB3 /* libz.dylib in Frameworks */,
+				DADD5FD31A6E116100F16FB3 /* Quick.framework in Frameworks */,
+				DADD5FD11A6E115900F16FB3 /* Nimble.framework in Frameworks */,
+				DADD5F8F1A6E0CBA00F16FB3 /* Gift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,7 +388,9 @@
 			isa = PBXGroup;
 			children = (
 				DA9F36491A476AF7002F35D4 /* Gift.framework */,
-				DA9F36541A476AF7002F35D4 /* GiftTests.xctest */,
+				DA9F36541A476AF7002F35D4 /* Gift-OSXTests.xctest */,
+				DADD5F841A6E0CBA00F16FB3 /* Gift.framework */,
+				DADD5F8E1A6E0CBA00F16FB3 /* Gift-iOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -288,6 +425,7 @@
 		DA9F36581A476AF7002F35D4 /* GiftTests */ = {
 			isa = PBXGroup;
 			children = (
+				DADD604D1A6E1D1A00F16FB3 /* GiftTests-Bridging-Header.h */,
 				DAA283971A6D7A7E00F7B4C3 /* Fixtures */,
 				E1BE9F1F1A6C4C13003E87BB /* Helpers */,
 				E1BE9F1C1A6C4B6C003E87BB /* Matchers */,
@@ -295,6 +433,7 @@
 				DA3EDDE21A6DA0FF0027CEFB /* Reference */,
 				E19F05FF1A6C3BA700EF5BFA /* Repository */,
 				DA9F36591A476AF7002F35D4 /* Supporting Files */,
+				DADD60481A6E1C8300F16FB3 /* Other Sources */,
 			);
 			path = GiftTests;
 			sourceTree = "<group>";
@@ -302,6 +441,15 @@
 		DA9F36591A476AF7002F35D4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DADD60041A6E150C00F16FB3 /* libssh2-ios.a */,
+				DADD60001A6E14F100F16FB3 /* libcrypto.a */,
+				DADD60011A6E14F100F16FB3 /* libssl.a */,
+				DADD5FD41A6E116B00F16FB3 /* LlamaKit.framework */,
+				DADD5FD21A6E116100F16FB3 /* Quick.framework */,
+				DADD5FD01A6E115900F16FB3 /* Nimble.framework */,
+				DADD5FCE1A6E0FAF00F16FB3 /* libz.dylib */,
+				DADD5FCC1A6E0FA800F16FB3 /* libiconv.dylib */,
+				DADD5FCA1A6E0ED200F16FB3 /* LlamaKit.framework */,
 				E19F05FC1A6C39FC00EF5BFA /* Quick.framework */,
 				E19F05FB1A6C39FC00EF5BFA /* Nimble.framework */,
 				DA9F365A1A476AF7002F35D4 /* Info.plist */,
@@ -333,6 +481,41 @@
 				DADB27281A6B8F620036225C /* git2.h */,
 			);
 			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		DADD60481A6E1C8300F16FB3 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				DADD604F1A6E1E0200F16FB3 /* SSZipArchive */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		DADD604F1A6E1E0200F16FB3 /* SSZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				DADD60501A6E1E0200F16FB3 /* minizip */,
+				DADD605A1A6E1E0200F16FB3 /* SSZipArchive.h */,
+				DADD605B1A6E1E0200F16FB3 /* SSZipArchive.m */,
+			);
+			name = SSZipArchive;
+			path = External/ssziparchive/SSZipArchive;
+			sourceTree = SOURCE_ROOT;
+		};
+		DADD60501A6E1E0200F16FB3 /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				DADD60511A6E1E0200F16FB3 /* crypt.h */,
+				DADD60521A6E1E0200F16FB3 /* ioapi.c */,
+				DADD60531A6E1E0200F16FB3 /* ioapi.h */,
+				DADD60541A6E1E0200F16FB3 /* mztools.c */,
+				DADD60551A6E1E0200F16FB3 /* mztools.h */,
+				DADD60561A6E1E0200F16FB3 /* unzip.c */,
+				DADD60571A6E1E0200F16FB3 /* unzip.h */,
+				DADD60581A6E1E0200F16FB3 /* zip.c */,
+				DADD60591A6E1E0200F16FB3 /* zip.h */,
+			);
+			path = minizip;
 			sourceTree = "<group>";
 		};
 		E19F05FF1A6C3BA700EF5BFA /* Repository */ = {
@@ -368,6 +551,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA9F364F1A476AF7002F35D4 /* Gift.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DADD5F811A6E0CBA00F16FB3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DADD5F9D1A6E0D2F00F16FB3 /* Gift.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,7 +599,44 @@
 			);
 			name = "Gift-OSXTests";
 			productName = GiftTests;
-			productReference = DA9F36541A476AF7002F35D4 /* GiftTests.xctest */;
+			productReference = DA9F36541A476AF7002F35D4 /* Gift-OSXTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DADD5F831A6E0CBA00F16FB3 /* Gift-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DADD5F9B1A6E0CBA00F16FB3 /* Build configuration list for PBXNativeTarget "Gift-iOS" */;
+			buildPhases = (
+				DADD5F7F1A6E0CBA00F16FB3 /* Sources */,
+				DADD5F801A6E0CBA00F16FB3 /* Frameworks */,
+				DADD5FB91A6E0D7300F16FB3 /* Copy git2 Headers */,
+				DADD5FC01A6E0DF400F16FB3 /* Copy git2/sys Headers */,
+				DADD5F811A6E0CBA00F16FB3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Gift-iOS";
+			productName = "Gift-iOS";
+			productReference = DADD5F841A6E0CBA00F16FB3 /* Gift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DADD5F8D1A6E0CBA00F16FB3 /* Gift-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DADD5F9C1A6E0CBA00F16FB3 /* Build configuration list for PBXNativeTarget "Gift-iOSTests" */;
+			buildPhases = (
+				DADD5F8A1A6E0CBA00F16FB3 /* Sources */,
+				DADD5F8B1A6E0CBA00F16FB3 /* Frameworks */,
+				DADD5F8C1A6E0CBA00F16FB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DADD5F911A6E0CBA00F16FB3 /* PBXTargetDependency */,
+			);
+			name = "Gift-iOSTests";
+			productName = "Gift-iOSTests";
+			productReference = DADD5F8E1A6E0CBA00F16FB3 /* Gift-iOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -423,6 +651,12 @@
 						CreatedOnToolsVersion = 6.2;
 					};
 					DA9F36531A476AF7002F35D4 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					DADD5F831A6E0CBA00F16FB3 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					DADD5F8D1A6E0CBA00F16FB3 = {
 						CreatedOnToolsVersion = 6.2;
 					};
 				};
@@ -441,6 +675,8 @@
 			targets = (
 				DA9F36481A476AF7002F35D4 /* Gift-OSX */,
 				DA9F36531A476AF7002F35D4 /* Gift-OSXTests */,
+				DADD5F831A6E0CBA00F16FB3 /* Gift-iOS */,
+				DADD5F8D1A6E0CBA00F16FB3 /* Gift-iOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -454,6 +690,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DADD5F8C1A6E0CBA00F16FB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DADD5FDC1A6E11CB00F16FB3 /* Fixtures.zip in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -461,33 +705,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA9000981A6B9B7900F43D4F /* CloneOptions+C.swift in Sources */,
-				DA9000A21A6B9B7900F43D4F /* Repository+Status.swift in Sources */,
-				DA90008D1A6B9B7900F43D4F /* FileDiff.swift in Sources */,
-				DA90009C1A6B9B7900F43D4F /* RepositoryInitializationMode.swift in Sources */,
-				DA90008F1A6B9B7900F43D4F /* StatusDelta.swift in Sources */,
-				DA90009D1A6B9B7900F43D4F /* RepositoryInitializationOptions+C.swift in Sources */,
-				DA90009B1A6B9B7900F43D4F /* RemoteCallbacks.swift in Sources */,
-				DA9000A31A6B9B7900F43D4F /* Repository.swift in Sources */,
-				DA9000A01A6B9B7900F43D4F /* Repository+Index.swift in Sources */,
-				DA9000A11A6B9B7900F43D4F /* Repository+Reference.swift in Sources */,
-				DA9000901A6B9B7900F43D4F /* StatusDeltaType.swift in Sources */,
-				DA90009F1A6B9B7900F43D4F /* RepositoryInitializationOptionSet.swift in Sources */,
-				DA9000711A6B9B2D00F43D4F /* Index.swift in Sources */,
-				DA9000951A6B9B7900F43D4F /* CheckoutOptions+C.swift in Sources */,
-				DA9000991A6B9B7900F43D4F /* CloneOptions.swift in Sources */,
-				DA9000931A6B9B7900F43D4F /* StatusShowOptions.swift in Sources */,
-				DAA283941A6C5CE400F7B4C3 /* Error.swift in Sources */,
-				DA9000941A6B9B7900F43D4F /* Reference.swift in Sources */,
-				DA90009E1A6B9B7900F43D4F /* RepositoryInitializationOptions.swift in Sources */,
-				DA9000911A6B9B7900F43D4F /* StatusOptions+C.swift in Sources */,
-				DAC9DD101A4B0AD800436BA2 /* Gift.m in Sources */,
-				E11D6FDB1A6C6CB500F00863 /* NSError+Domains.swift in Sources */,
-				DA9000921A6B9B7900F43D4F /* StatusOptions.swift in Sources */,
-				DA90009A1A6B9B7900F43D4F /* RemoteCallbacks+C.swift in Sources */,
-				DA9000961A6B9B7900F43D4F /* CheckoutOptions.swift in Sources */,
-				DA90008E1A6B9B7900F43D4F /* Status.swift in Sources */,
-				DA9000971A6B9B7900F43D4F /* CheckoutStrategy.swift in Sources */,
+				DADD60271A6E1A7300F16FB3 /* Gift.m in Sources */,
+				DADD60281A6E1A7300F16FB3 /* Index.swift in Sources */,
+				DADD60291A6E1A7300F16FB3 /* Reference.swift in Sources */,
+				DADD602A1A6E1A7300F16FB3 /* Repository.swift in Sources */,
+				DADD602B1A6E1A7300F16FB3 /* Repository+Index.swift in Sources */,
+				DADD602C1A6E1A7300F16FB3 /* Repository+Reference.swift in Sources */,
+				DADD602D1A6E1A7300F16FB3 /* Repository+Status.swift in Sources */,
+				DADD602E1A6E1A7300F16FB3 /* CloneOptions.swift in Sources */,
+				DADD602F1A6E1A7300F16FB3 /* CloneOptions+C.swift in Sources */,
+				DADD60301A6E1A7300F16FB3 /* CheckoutOptions.swift in Sources */,
+				DADD60311A6E1A7300F16FB3 /* CheckoutOptions+C.swift in Sources */,
+				DADD60321A6E1A7300F16FB3 /* CheckoutStrategy.swift in Sources */,
+				DADD60331A6E1A7300F16FB3 /* RemoteCallbacks.swift in Sources */,
+				DADD60341A6E1A7300F16FB3 /* RemoteCallbacks+C.swift in Sources */,
+				DADD60351A6E1A7300F16FB3 /* RepositoryInitializationOptions.swift in Sources */,
+				DADD60361A6E1A7300F16FB3 /* RepositoryInitializationOptions+C.swift in Sources */,
+				DADD60371A6E1A7300F16FB3 /* RepositoryInitializationOptionSet.swift in Sources */,
+				DADD60381A6E1A7300F16FB3 /* RepositoryInitializationMode.swift in Sources */,
+				DADD60391A6E1A7300F16FB3 /* Status.swift in Sources */,
+				DADD603A1A6E1A7300F16FB3 /* StatusDelta.swift in Sources */,
+				DADD603B1A6E1A7300F16FB3 /* FileDiff.swift in Sources */,
+				DADD603C1A6E1A7300F16FB3 /* StatusDeltaType.swift in Sources */,
+				DADD603D1A6E1A7300F16FB3 /* StatusOptions.swift in Sources */,
+				DADD603E1A6E1A7300F16FB3 /* StatusOptions+C.swift in Sources */,
+				DADD603F1A6E1A7300F16FB3 /* StatusShowOptions.swift in Sources */,
+				DADD60401A6E1A7300F16FB3 /* Error.swift in Sources */,
+				DADD60411A6E1A7300F16FB3 /* NSError+Domains.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,12 +739,69 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA3EDDE41A6DA1130027CEFB /* ReferenceSpec.swift in Sources */,
-				E1BE9F211A6C4C68003E87BB /* FilePathHelpers.swift in Sources */,
-				DAA283961A6D6E2100F7B4C3 /* Repository+StatusSpec.swift in Sources */,
-				DA3EDDE11A6DA08E0027CEFB /* IndexSpec.swift in Sources */,
-				E1BE9F1E1A6C4B7C003E87BB /* ResultMatchers.swift in Sources */,
-				E19F06011A6C3BC400EF5BFA /* RepositorySpec.swift in Sources */,
+				DADD60601A6E1E0200F16FB3 /* unzip.c in Sources */,
+				DADD60421A6E1A7E00F16FB3 /* FilePathHelpers.swift in Sources */,
+				DADD60431A6E1A7E00F16FB3 /* ResultMatchers.swift in Sources */,
+				DADD60621A6E1E0200F16FB3 /* zip.c in Sources */,
+				DADD605E1A6E1E0200F16FB3 /* mztools.c in Sources */,
+				DADD60441A6E1A7E00F16FB3 /* IndexSpec.swift in Sources */,
+				DADD60451A6E1A7E00F16FB3 /* ReferenceSpec.swift in Sources */,
+				DADD60461A6E1A7E00F16FB3 /* RepositorySpec.swift in Sources */,
+				DADD60471A6E1A7E00F16FB3 /* Repository+StatusSpec.swift in Sources */,
+				DADD605C1A6E1E0200F16FB3 /* ioapi.c in Sources */,
+				DADD60641A6E1E0200F16FB3 /* SSZipArchive.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DADD5F7F1A6E0CBA00F16FB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DADD60061A6E16AD00F16FB3 /* Gift.m in Sources */,
+				DADD60071A6E16AD00F16FB3 /* Index.swift in Sources */,
+				DADD60081A6E16AD00F16FB3 /* Reference.swift in Sources */,
+				DADD60091A6E16AD00F16FB3 /* Repository.swift in Sources */,
+				DADD600A1A6E16AD00F16FB3 /* Repository+Index.swift in Sources */,
+				DADD600B1A6E16AD00F16FB3 /* Repository+Reference.swift in Sources */,
+				DADD600C1A6E16AD00F16FB3 /* Repository+Status.swift in Sources */,
+				DADD600D1A6E16AD00F16FB3 /* CloneOptions.swift in Sources */,
+				DADD600E1A6E16AD00F16FB3 /* CloneOptions+C.swift in Sources */,
+				DADD600F1A6E16AD00F16FB3 /* CheckoutOptions.swift in Sources */,
+				DADD60101A6E16AD00F16FB3 /* CheckoutOptions+C.swift in Sources */,
+				DADD60111A6E16AD00F16FB3 /* CheckoutStrategy.swift in Sources */,
+				DADD60121A6E16AD00F16FB3 /* RemoteCallbacks.swift in Sources */,
+				DADD60131A6E16AD00F16FB3 /* RemoteCallbacks+C.swift in Sources */,
+				DADD60141A6E16AD00F16FB3 /* RepositoryInitializationOptions.swift in Sources */,
+				DADD60151A6E16AD00F16FB3 /* RepositoryInitializationOptions+C.swift in Sources */,
+				DADD60161A6E16AD00F16FB3 /* RepositoryInitializationOptionSet.swift in Sources */,
+				DADD60171A6E16AD00F16FB3 /* RepositoryInitializationMode.swift in Sources */,
+				DADD60181A6E16AD00F16FB3 /* Status.swift in Sources */,
+				DADD60191A6E16AD00F16FB3 /* StatusDelta.swift in Sources */,
+				DADD601A1A6E16AD00F16FB3 /* FileDiff.swift in Sources */,
+				DADD601B1A6E16AD00F16FB3 /* StatusDeltaType.swift in Sources */,
+				DADD601C1A6E16AD00F16FB3 /* StatusOptions.swift in Sources */,
+				DADD601D1A6E16AD00F16FB3 /* StatusOptions+C.swift in Sources */,
+				DADD601E1A6E16AD00F16FB3 /* StatusShowOptions.swift in Sources */,
+				DADD601F1A6E16AD00F16FB3 /* Error.swift in Sources */,
+				DADD60201A6E16AD00F16FB3 /* NSError+Domains.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DADD5F8A1A6E0CBA00F16FB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DADD60611A6E1E0200F16FB3 /* unzip.c in Sources */,
+				DADD60211A6E16BE00F16FB3 /* FilePathHelpers.swift in Sources */,
+				DADD60221A6E16BE00F16FB3 /* ResultMatchers.swift in Sources */,
+				DADD60631A6E1E0200F16FB3 /* zip.c in Sources */,
+				DADD605F1A6E1E0200F16FB3 /* mztools.c in Sources */,
+				DADD60231A6E16BE00F16FB3 /* IndexSpec.swift in Sources */,
+				DADD60241A6E16BE00F16FB3 /* ReferenceSpec.swift in Sources */,
+				DADD60251A6E16BE00F16FB3 /* RepositorySpec.swift in Sources */,
+				DADD60261A6E16BE00F16FB3 /* Repository+StatusSpec.swift in Sources */,
+				DADD605D1A6E1E0200F16FB3 /* ioapi.c in Sources */,
+				DADD60651A6E1E0200F16FB3 /* SSZipArchive.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +812,11 @@
 			isa = PBXTargetDependency;
 			target = DA9F36481A476AF7002F35D4 /* Gift-OSX */;
 			targetProxy = DA9F36561A476AF7002F35D4 /* PBXContainerItemProxy */;
+		};
+		DADD5F911A6E0CBA00F16FB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DADD5F831A6E0CBA00F16FB3 /* Gift-iOS */;
+			targetProxy = DADD5F901A6E0CBA00F16FB3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -684,6 +990,7 @@
 				INFOPLIST_FILE = GiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GiftTests/GiftTests-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -698,6 +1005,126 @@
 				INFOPLIST_FILE = GiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GiftTests/GiftTests-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		DADD5F971A6E0CBA00F16FB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					External/libgit2/include,
+					"External/libssh2-ios/include/libssh2",
+				);
+				INFOPLIST_FILE = Gift/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"External/libgit2-ios",
+					"External/ios-openssl/lib",
+					"External/libssh2-ios/lib",
+				);
+				MODULEMAP_FILE = Gift.modulemap;
+				OTHER_LDFLAGS = (
+					"-lgit2-ios",
+					"-all_load",
+				);
+				PRODUCT_NAME = Gift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DADD5F981A6E0CBA00F16FB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					External/libgit2/include,
+					"External/libssh2-ios/include/libssh2",
+				);
+				INFOPLIST_FILE = Gift/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"External/libgit2-ios",
+					"External/ios-openssl/lib",
+					"External/libssh2-ios/lib",
+				);
+				MODULEMAP_FILE = Gift.modulemap;
+				OTHER_LDFLAGS = (
+					"-lgit2-ios",
+					"-all_load",
+				);
+				PRODUCT_NAME = Gift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DADD5F991A6E0CBA00F16FB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/Developer/Library/Frameworks",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GiftTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "GiftTests/GiftTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DADD5F9A1A6E0CBA00F16FB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/Developer/Library/Frameworks",
+				);
+				INFOPLIST_FILE = GiftTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "GiftTests/GiftTests-Bridging-Header.h";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -730,6 +1157,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		DADD5F9B1A6E0CBA00F16FB3 /* Build configuration list for PBXNativeTarget "Gift-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DADD5F971A6E0CBA00F16FB3 /* Debug */,
+				DADD5F981A6E0CBA00F16FB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DADD5F9C1A6E0CBA00F16FB3 /* Build configuration list for PBXNativeTarget "Gift-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DADD5F991A6E0CBA00F16FB3 /* Debug */,
+				DADD5F9A1A6E0CBA00F16FB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

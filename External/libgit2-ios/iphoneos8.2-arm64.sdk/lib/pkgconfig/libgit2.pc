@@ -1,0 +1,10 @@
+libdir=/Users/bgesiak/GitHub/modocache/objective-git/External/libgit2-ios/iphoneos8.2-arm64.sdk/lib
+includedir=/Users/bgesiak/GitHub/modocache/objective-git/External/libgit2-ios/iphoneos8.2-arm64.sdk/include
+
+Name: libgit2
+Description: The git library, take 2
+Version: 0.21.0
+Requires.private:  openssl libssh2
+Libs.private:  -lz -L/Applications/Xcode-Beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.2.sdk/usr/lib -liconv
+Libs: -L${libdir} -lgit2
+Cflags: -I${includedir}

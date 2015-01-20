@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DA9F36481A476AF7002F35D4"
-               BuildableName = "Gift-OSX.framework"
+               BuildableName = "Gift.framework"
                BlueprintName = "Gift-OSX"
                ReferencedContainer = "container:Gift.xcodeproj">
             </BuildableReference>
@@ -57,7 +57,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DA9F36481A476AF7002F35D4"
-            BuildableName = "Gift-OSX.framework"
+            BuildableName = "Gift.framework"
             BlueprintName = "Gift-OSX"
             ReferencedContainer = "container:Gift.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DA9F36481A476AF7002F35D4"
-            BuildableName = "Gift-OSX.framework"
+            BuildableName = "Gift.framework"
             BlueprintName = "Gift-OSX"
             ReferencedContainer = "container:Gift.xcodeproj">
          </BuildableReference>
@@ -94,7 +94,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DA9F36481A476AF7002F35D4"
-            BuildableName = "Gift-OSX.framework"
+            BuildableName = "Gift.framework"
             BlueprintName = "Gift-OSX"
             ReferencedContainer = "container:Gift.xcodeproj">
          </BuildableReference>
