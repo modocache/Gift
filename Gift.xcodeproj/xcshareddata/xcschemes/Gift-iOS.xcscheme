@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DADD5F831A6E0CBA00F16FB3"
-               BuildableName = "Gift-iOS.framework"
+               BuildableName = "Gift.framework"
                BlueprintName = "Gift-iOS"
                ReferencedContainer = "container:Gift.xcodeproj">
             </BuildableReference>
@@ -57,7 +57,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DADD5F831A6E0CBA00F16FB3"
-            BuildableName = "Gift-iOS.framework"
+            BuildableName = "Gift.framework"
             BlueprintName = "Gift-iOS"
             ReferencedContainer = "container:Gift.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DADD5F831A6E0CBA00F16FB3"
-            BuildableName = "Gift-iOS.framework"
+            BuildableName = "Gift.framework"
             BlueprintName = "Gift-iOS"
             ReferencedContainer = "container:Gift.xcodeproj">
          </BuildableReference>
@@ -94,7 +94,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DADD5F831A6E0CBA00F16FB3"
-            BuildableName = "Gift-iOS.framework"
+            BuildableName = "Gift.framework"
             BlueprintName = "Gift-iOS"
             ReferencedContainer = "container:Gift.xcodeproj">
          </BuildableReference>
