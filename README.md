@@ -39,5 +39,5 @@ $ brew upgrade libssh2
 libssh2, and libgit2. Execute the following Rake task to build those libraries:
 
 ```
-$ rake dependencies:clean:openssl dependencies:build:openssl
+$ rake dependencies:build:libssh2
 ```
