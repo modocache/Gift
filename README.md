@@ -39,5 +39,5 @@ $ brew upgrade libssh2
 libssh2, and libgit2. Execute the following Rake task to build those libraries:
 
 ```
-$ rake dependencies:build:libssh2
+$ rake dependencies:build:libssh2 dependencies:build:libgit2
 ```

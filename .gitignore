@@ -26,4 +26,5 @@ GiftTests/Fixtures/Fixtures/ # Zipped to "GiftTests/Fixtures/Fixtures.zip"
 # libssh2, and libgit2. Rake tasks build these libraries to the following
 # directories:
 External/openssl-iOS/
+External/libgit2-iOS/
 
