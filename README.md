@@ -16,7 +16,15 @@ $ git submodule update --init --recursive
 
 `Gift-OSX` links libgit2.a as part of its build process.
 You'll need to build libgit2 in order to create the static library at
-the expected path:
+the expected path.
+
+In order to build libgit2, `cmake` is required.
+
+```
+$ brew install cmake
+```
+
+With `cmake` installed, run the following commands:
 
 ```
 $ cd External/libgit2
