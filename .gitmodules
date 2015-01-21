@@ -13,3 +13,6 @@
 [submodule "External/ssziparchive"]
 	path = External/ssziparchive
 	url = git@github.com:soffes/ssziparchive.git
+[submodule "External/openssl"]
+	path = External/openssl
+	url = https://github.com/openssl/openssl.git

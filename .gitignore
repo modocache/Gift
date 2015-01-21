@@ -22,3 +22,8 @@ DerivedData
 # control. The tests then unzip that zip file as needed.
 GiftTests/Fixtures/Fixtures/ # Zipped to "GiftTests/Fixtures/Fixtures.zip"
 
+# Gift-iOS requires fat libraries for OpenSSL (libcrypto.a and libssl.a),
+# libssh2, and libgit2. Rake tasks build these libraries to the following
+# directories:
+External/openssl-iOS/
+

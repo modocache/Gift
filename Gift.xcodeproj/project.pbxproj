@@ -1034,7 +1034,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"External/libgit2-ios",
-					"External/ios-openssl/lib",
+					"External/openssl-iOS/lib",
 					"External/libssh2-ios/lib",
 				);
 				MODULEMAP_FILE = Gift.modulemap;
@@ -1070,7 +1070,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"External/libgit2-ios",
-					"External/ios-openssl/lib",
+					"External/openssl-iOS/lib",
 					"External/libssh2-ios/lib",
 				);
 				MODULEMAP_FILE = Gift.modulemap;
@@ -1165,6 +1165,7 @@
 				DADD5F981A6E0CBA00F16FB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DADD5F9C1A6E0CBA00F16FB3 /* Build configuration list for PBXNativeTarget "Gift-iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -1173,6 +1174,7 @@
 				DADD5F9A1A6E0CBA00F16FB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

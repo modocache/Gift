@@ -6,7 +6,15 @@ progress!
 
 # How to Build
 
-`Gift.xcodeproj` links libgit2.a as part of its build process.
+First of all, no matter the platform, make sure you pull down all the necessary submodules:
+
+```
+$ git submodule update --init --recursive
+```
+
+## OS X
+
+`Gift-OSX` links libgit2.a as part of its build process.
 You'll need to build libgit2 in order to create the static library at
 the expected path:
 
@@ -23,4 +31,13 @@ You'll also need the latest version of libssh2:
 ```
 $ brew install libssh2
 $ brew upgrade libssh2
+```
+
+## iOS
+
+`Gift-iOS` requires fat libraries for OpenSSL (libcrypto.a and libssl.a),
+libssh2, and libgit2. Execute the following Rake task to build those libraries:
+
+```
+$ rake dependencies:clean:openssl dependencies:build:openssl
 ```
