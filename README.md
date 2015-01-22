@@ -12,7 +12,7 @@ follow the build instructions for each platform.
 ## iOS
 
 ```
-$ git submodule update --init recursive
+$ git submodule update --init --recursive
 $ rake build:ios:libssh2 build:ios:libgit2
 ```
 
