@@ -12,44 +12,6 @@
 		DA458B2D1A6F61200065F693 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA458B2A1A6F61200065F693 /* libcrypto.a */; };
 		DA458B2E1A6F61200065F693 /* libssh2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA458B2B1A6F61200065F693 /* libssh2.a */; };
 		DA458B2F1A6F61200065F693 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA458B2C1A6F61200065F693 /* libssl.a */; };
-		DA561CDB1A6F61C30031BC3A /* Gift.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC9DD0F1A4B0AD800436BA2 /* Gift.m */; };
-		DA561CDC1A6F61C30031BC3A /* Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000701A6B9B2D00F43D4F /* Index.swift */; };
-		DA561CDD1A6F61C30031BC3A /* Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90007B1A6B9B7900F43D4F /* Reference.swift */; };
-		DA561CDE1A6F61C30031BC3A /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90008C1A6B9B7900F43D4F /* Repository.swift */; };
-		DA561CDF1A6F61C30031BC3A /* Repository+Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000891A6B9B7900F43D4F /* Repository+Index.swift */; };
-		DA561CE01A6F61C30031BC3A /* Repository+Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90008A1A6B9B7900F43D4F /* Repository+Reference.swift */; };
-		DA561CE11A6F61C30031BC3A /* Repository+Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90008B1A6B9B7900F43D4F /* Repository+Status.swift */; };
-		DA561CE21A6F61C30031BC3A /* CloneOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000821A6B9B7900F43D4F /* CloneOptions.swift */; };
-		DA561CE31A6F61C30031BC3A /* CloneOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000811A6B9B7900F43D4F /* CloneOptions+C.swift */; };
-		DA561CE41A6F61C30031BC3A /* CheckoutOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90007F1A6B9B7900F43D4F /* CheckoutOptions.swift */; };
-		DA561CE51A6F61C30031BC3A /* CheckoutOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90007E1A6B9B7900F43D4F /* CheckoutOptions+C.swift */; };
-		DA561CE61A6F61C30031BC3A /* CheckoutStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000801A6B9B7900F43D4F /* CheckoutStrategy.swift */; };
-		DA561CE71A6F61C30031BC3A /* RemoteCallbacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000841A6B9B7900F43D4F /* RemoteCallbacks.swift */; };
-		DA561CE81A6F61C30031BC3A /* RemoteCallbacks+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000831A6B9B7900F43D4F /* RemoteCallbacks+C.swift */; };
-		DA561CE91A6F61C30031BC3A /* RepositoryInitializationOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000871A6B9B7900F43D4F /* RepositoryInitializationOptions.swift */; };
-		DA561CEA1A6F61C30031BC3A /* RepositoryInitializationOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000861A6B9B7900F43D4F /* RepositoryInitializationOptions+C.swift */; };
-		DA561CEB1A6F61C30031BC3A /* RepositoryInitializationOptionSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000881A6B9B7900F43D4F /* RepositoryInitializationOptionSet.swift */; };
-		DA561CEC1A6F61C30031BC3A /* RepositoryInitializationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000851A6B9B7900F43D4F /* RepositoryInitializationMode.swift */; };
-		DA561CED1A6F61C30031BC3A /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000741A6B9B7900F43D4F /* Status.swift */; };
-		DA561CEE1A6F61C30031BC3A /* StatusDelta.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000751A6B9B7900F43D4F /* StatusDelta.swift */; };
-		DA561CEF1A6F61C30031BC3A /* FileDiff.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000731A6B9B7900F43D4F /* FileDiff.swift */; };
-		DA561CF01A6F61C30031BC3A /* StatusDeltaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000761A6B9B7900F43D4F /* StatusDeltaType.swift */; };
-		DA561CF11A6F61C30031BC3A /* StatusOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000781A6B9B7900F43D4F /* StatusOptions.swift */; };
-		DA561CF21A6F61C30031BC3A /* StatusOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000771A6B9B7900F43D4F /* StatusOptions+C.swift */; };
-		DA561CF31A6F61C30031BC3A /* StatusShowOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000791A6B9B7900F43D4F /* StatusShowOptions.swift */; };
-		DA561CF41A6F61C30031BC3A /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA283931A6C5CE400F7B4C3 /* Error.swift */; };
-		DA561CF51A6F61C30031BC3A /* NSError+Domains.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11D6FDA1A6C6CB500F00863 /* NSError+Domains.swift */; };
-		DA561CF61A6F61D90031BC3A /* FilePathHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BE9F201A6C4C68003E87BB /* FilePathHelpers.swift */; };
-		DA561CF71A6F61D90031BC3A /* ResultMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BE9F1D1A6C4B7C003E87BB /* ResultMatchers.swift */; };
-		DA561CF81A6F61D90031BC3A /* IndexSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3EDDE01A6DA08E0027CEFB /* IndexSpec.swift */; };
-		DA561CF91A6F61D90031BC3A /* ReferenceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3EDDE31A6DA1130027CEFB /* ReferenceSpec.swift */; };
-		DA561CFA1A6F61D90031BC3A /* RepositorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19F06001A6C3BC400EF5BFA /* RepositorySpec.swift */; };
-		DA561CFB1A6F61D90031BC3A /* Repository+StatusSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA283951A6D6E2100F7B4C3 /* Repository+StatusSpec.swift */; };
-		DA561CFC1A6F61D90031BC3A /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = DADD60521A6E1E0200F16FB3 /* ioapi.c */; };
-		DA561CFD1A6F61D90031BC3A /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = DADD60541A6E1E0200F16FB3 /* mztools.c */; };
-		DA561CFE1A6F61D90031BC3A /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = DADD60561A6E1E0200F16FB3 /* unzip.c */; };
-		DA561CFF1A6F61D90031BC3A /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = DADD60581A6E1E0200F16FB3 /* zip.c */; };
-		DA561D001A6F61D90031BC3A /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = DADD605B1A6E1E0200F16FB3 /* SSZipArchive.m */; };
 		DA90006C1A6B9A4000F43D4F /* git2 in Copy git2 Headers */ = {isa = PBXBuildFile; fileRef = DADB27271A6B8F620036225C /* git2 */; };
 		DA90006E1A6B9A8700F43D4F /* git2 in Copy git2/sys Headers */ = {isa = PBXBuildFile; fileRef = DADB27271A6B8F620036225C /* git2 */; };
 		DA9876A61A4B791E0004AA17 /* LlamaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9876A51A4B791E0004AA17 /* LlamaKit.framework */; };
@@ -106,6 +68,44 @@
 		DADD60621A6E1E0200F16FB3 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = DADD60581A6E1E0200F16FB3 /* zip.c */; };
 		DADD60641A6E1E0200F16FB3 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = DADD605B1A6E1E0200F16FB3 /* SSZipArchive.m */; };
 		DADD60661A6E1E9C00F16FB3 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DA363DA51A6BAE1C0030BBCC /* libz.dylib */; };
+		DAFF69981A6F8F9800C95065 /* Gift.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC9DD0F1A4B0AD800436BA2 /* Gift.m */; };
+		DAFF69991A6F8F9800C95065 /* Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000701A6B9B2D00F43D4F /* Index.swift */; };
+		DAFF699A1A6F8F9800C95065 /* Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90007B1A6B9B7900F43D4F /* Reference.swift */; };
+		DAFF699B1A6F8F9800C95065 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90008C1A6B9B7900F43D4F /* Repository.swift */; };
+		DAFF699C1A6F8F9800C95065 /* Repository+Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000891A6B9B7900F43D4F /* Repository+Index.swift */; };
+		DAFF699D1A6F8F9800C95065 /* Repository+Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90008A1A6B9B7900F43D4F /* Repository+Reference.swift */; };
+		DAFF699E1A6F8F9800C95065 /* Repository+Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90008B1A6B9B7900F43D4F /* Repository+Status.swift */; };
+		DAFF699F1A6F8F9800C95065 /* CloneOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000821A6B9B7900F43D4F /* CloneOptions.swift */; };
+		DAFF69A01A6F8F9800C95065 /* CloneOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000811A6B9B7900F43D4F /* CloneOptions+C.swift */; };
+		DAFF69A11A6F8F9800C95065 /* CheckoutOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90007F1A6B9B7900F43D4F /* CheckoutOptions.swift */; };
+		DAFF69A21A6F8F9800C95065 /* CheckoutOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90007E1A6B9B7900F43D4F /* CheckoutOptions+C.swift */; };
+		DAFF69A31A6F8F9800C95065 /* CheckoutStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000801A6B9B7900F43D4F /* CheckoutStrategy.swift */; };
+		DAFF69A41A6F8F9800C95065 /* RemoteCallbacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000841A6B9B7900F43D4F /* RemoteCallbacks.swift */; };
+		DAFF69A51A6F8F9800C95065 /* RemoteCallbacks+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000831A6B9B7900F43D4F /* RemoteCallbacks+C.swift */; };
+		DAFF69A61A6F8F9800C95065 /* RepositoryInitializationOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000871A6B9B7900F43D4F /* RepositoryInitializationOptions.swift */; };
+		DAFF69A71A6F8F9800C95065 /* RepositoryInitializationOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000861A6B9B7900F43D4F /* RepositoryInitializationOptions+C.swift */; };
+		DAFF69A81A6F8F9800C95065 /* RepositoryInitializationOptionSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000881A6B9B7900F43D4F /* RepositoryInitializationOptionSet.swift */; };
+		DAFF69A91A6F8F9800C95065 /* RepositoryInitializationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000851A6B9B7900F43D4F /* RepositoryInitializationMode.swift */; };
+		DAFF69AA1A6F8F9800C95065 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000741A6B9B7900F43D4F /* Status.swift */; };
+		DAFF69AB1A6F8F9800C95065 /* StatusDelta.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000751A6B9B7900F43D4F /* StatusDelta.swift */; };
+		DAFF69AC1A6F8F9800C95065 /* FileDiff.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000731A6B9B7900F43D4F /* FileDiff.swift */; };
+		DAFF69AD1A6F8F9800C95065 /* StatusDeltaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000761A6B9B7900F43D4F /* StatusDeltaType.swift */; };
+		DAFF69AE1A6F8F9800C95065 /* StatusOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000781A6B9B7900F43D4F /* StatusOptions.swift */; };
+		DAFF69AF1A6F8F9800C95065 /* StatusOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000771A6B9B7900F43D4F /* StatusOptions+C.swift */; };
+		DAFF69B01A6F8F9800C95065 /* StatusShowOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000791A6B9B7900F43D4F /* StatusShowOptions.swift */; };
+		DAFF69B11A6F8F9800C95065 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA283931A6C5CE400F7B4C3 /* Error.swift */; };
+		DAFF69B21A6F8F9800C95065 /* NSError+Domains.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11D6FDA1A6C6CB500F00863 /* NSError+Domains.swift */; };
+		DAFF69B31A6F8FAC00C95065 /* FilePathHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BE9F201A6C4C68003E87BB /* FilePathHelpers.swift */; };
+		DAFF69B41A6F8FAC00C95065 /* ResultMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BE9F1D1A6C4B7C003E87BB /* ResultMatchers.swift */; };
+		DAFF69B51A6F8FAC00C95065 /* IndexSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3EDDE01A6DA08E0027CEFB /* IndexSpec.swift */; };
+		DAFF69B61A6F8FAC00C95065 /* ReferenceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3EDDE31A6DA1130027CEFB /* ReferenceSpec.swift */; };
+		DAFF69B71A6F8FAC00C95065 /* RepositorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19F06001A6C3BC400EF5BFA /* RepositorySpec.swift */; };
+		DAFF69B81A6F8FAC00C95065 /* Repository+StatusSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA283951A6D6E2100F7B4C3 /* Repository+StatusSpec.swift */; };
+		DAFF69B91A6F8FAC00C95065 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = DADD60521A6E1E0200F16FB3 /* ioapi.c */; };
+		DAFF69BA1A6F8FAC00C95065 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = DADD60541A6E1E0200F16FB3 /* mztools.c */; };
+		DAFF69BB1A6F8FAC00C95065 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = DADD60561A6E1E0200F16FB3 /* unzip.c */; };
+		DAFF69BC1A6F8FAC00C95065 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = DADD60581A6E1E0200F16FB3 /* zip.c */; };
+		DAFF69BD1A6F8FAC00C95065 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = DADD605B1A6E1E0200F16FB3 /* SSZipArchive.m */; };
 		E19F05FD1A6C39FC00EF5BFA /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E19F05FB1A6C39FC00EF5BFA /* Nimble.framework */; };
 		E19F05FE1A6C39FC00EF5BFA /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E19F05FC1A6C39FC00EF5BFA /* Quick.framework */; };
 /* End PBXBuildFile section */
@@ -277,11 +277,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA458B2D1A6F61200065F693 /* libcrypto.a in Frameworks */,
-				DA458B2E1A6F61200065F693 /* libssh2.a in Frameworks */,
-				DA458B2F1A6F61200065F693 /* libssl.a in Frameworks */,
 				DADD5FCD1A6E0FA800F16FB3 /* libiconv.dylib in Frameworks */,
 				DADD5FCF1A6E0FAF00F16FB3 /* libz.dylib in Frameworks */,
+				DA458B2F1A6F61200065F693 /* libssl.a in Frameworks */,
+				DA458B2D1A6F61200065F693 /* libcrypto.a in Frameworks */,
+				DA458B2E1A6F61200065F693 /* libssh2.a in Frameworks */,
 				DADD5FD51A6E116B00F16FB3 /* LlamaKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -764,33 +764,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA561CDB1A6F61C30031BC3A /* Gift.m in Sources */,
-				DA561CDC1A6F61C30031BC3A /* Index.swift in Sources */,
-				DA561CDD1A6F61C30031BC3A /* Reference.swift in Sources */,
-				DA561CDE1A6F61C30031BC3A /* Repository.swift in Sources */,
-				DA561CDF1A6F61C30031BC3A /* Repository+Index.swift in Sources */,
-				DA561CE01A6F61C30031BC3A /* Repository+Reference.swift in Sources */,
-				DA561CE11A6F61C30031BC3A /* Repository+Status.swift in Sources */,
-				DA561CE21A6F61C30031BC3A /* CloneOptions.swift in Sources */,
-				DA561CE31A6F61C30031BC3A /* CloneOptions+C.swift in Sources */,
-				DA561CE41A6F61C30031BC3A /* CheckoutOptions.swift in Sources */,
-				DA561CE51A6F61C30031BC3A /* CheckoutOptions+C.swift in Sources */,
-				DA561CE61A6F61C30031BC3A /* CheckoutStrategy.swift in Sources */,
-				DA561CE71A6F61C30031BC3A /* RemoteCallbacks.swift in Sources */,
-				DA561CE81A6F61C30031BC3A /* RemoteCallbacks+C.swift in Sources */,
-				DA561CE91A6F61C30031BC3A /* RepositoryInitializationOptions.swift in Sources */,
-				DA561CEA1A6F61C30031BC3A /* RepositoryInitializationOptions+C.swift in Sources */,
-				DA561CEB1A6F61C30031BC3A /* RepositoryInitializationOptionSet.swift in Sources */,
-				DA561CEC1A6F61C30031BC3A /* RepositoryInitializationMode.swift in Sources */,
-				DA561CED1A6F61C30031BC3A /* Status.swift in Sources */,
-				DA561CEE1A6F61C30031BC3A /* StatusDelta.swift in Sources */,
-				DA561CEF1A6F61C30031BC3A /* FileDiff.swift in Sources */,
-				DA561CF01A6F61C30031BC3A /* StatusDeltaType.swift in Sources */,
-				DA561CF11A6F61C30031BC3A /* StatusOptions.swift in Sources */,
-				DA561CF21A6F61C30031BC3A /* StatusOptions+C.swift in Sources */,
-				DA561CF31A6F61C30031BC3A /* StatusShowOptions.swift in Sources */,
-				DA561CF41A6F61C30031BC3A /* Error.swift in Sources */,
-				DA561CF51A6F61C30031BC3A /* NSError+Domains.swift in Sources */,
+				DAFF69981A6F8F9800C95065 /* Gift.m in Sources */,
+				DAFF69991A6F8F9800C95065 /* Index.swift in Sources */,
+				DAFF699A1A6F8F9800C95065 /* Reference.swift in Sources */,
+				DAFF699B1A6F8F9800C95065 /* Repository.swift in Sources */,
+				DAFF699C1A6F8F9800C95065 /* Repository+Index.swift in Sources */,
+				DAFF699D1A6F8F9800C95065 /* Repository+Reference.swift in Sources */,
+				DAFF699E1A6F8F9800C95065 /* Repository+Status.swift in Sources */,
+				DAFF699F1A6F8F9800C95065 /* CloneOptions.swift in Sources */,
+				DAFF69A01A6F8F9800C95065 /* CloneOptions+C.swift in Sources */,
+				DAFF69A11A6F8F9800C95065 /* CheckoutOptions.swift in Sources */,
+				DAFF69A21A6F8F9800C95065 /* CheckoutOptions+C.swift in Sources */,
+				DAFF69A31A6F8F9800C95065 /* CheckoutStrategy.swift in Sources */,
+				DAFF69A41A6F8F9800C95065 /* RemoteCallbacks.swift in Sources */,
+				DAFF69A51A6F8F9800C95065 /* RemoteCallbacks+C.swift in Sources */,
+				DAFF69A61A6F8F9800C95065 /* RepositoryInitializationOptions.swift in Sources */,
+				DAFF69A71A6F8F9800C95065 /* RepositoryInitializationOptions+C.swift in Sources */,
+				DAFF69A81A6F8F9800C95065 /* RepositoryInitializationOptionSet.swift in Sources */,
+				DAFF69A91A6F8F9800C95065 /* RepositoryInitializationMode.swift in Sources */,
+				DAFF69AA1A6F8F9800C95065 /* Status.swift in Sources */,
+				DAFF69AB1A6F8F9800C95065 /* StatusDelta.swift in Sources */,
+				DAFF69AC1A6F8F9800C95065 /* FileDiff.swift in Sources */,
+				DAFF69AD1A6F8F9800C95065 /* StatusDeltaType.swift in Sources */,
+				DAFF69AE1A6F8F9800C95065 /* StatusOptions.swift in Sources */,
+				DAFF69AF1A6F8F9800C95065 /* StatusOptions+C.swift in Sources */,
+				DAFF69B01A6F8F9800C95065 /* StatusShowOptions.swift in Sources */,
+				DAFF69B11A6F8F9800C95065 /* Error.swift in Sources */,
+				DAFF69B21A6F8F9800C95065 /* NSError+Domains.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -798,17 +798,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA561CF61A6F61D90031BC3A /* FilePathHelpers.swift in Sources */,
-				DA561CF71A6F61D90031BC3A /* ResultMatchers.swift in Sources */,
-				DA561CF81A6F61D90031BC3A /* IndexSpec.swift in Sources */,
-				DA561CF91A6F61D90031BC3A /* ReferenceSpec.swift in Sources */,
-				DA561CFA1A6F61D90031BC3A /* RepositorySpec.swift in Sources */,
-				DA561CFB1A6F61D90031BC3A /* Repository+StatusSpec.swift in Sources */,
-				DA561CFC1A6F61D90031BC3A /* ioapi.c in Sources */,
-				DA561CFD1A6F61D90031BC3A /* mztools.c in Sources */,
-				DA561CFE1A6F61D90031BC3A /* unzip.c in Sources */,
-				DA561CFF1A6F61D90031BC3A /* zip.c in Sources */,
-				DA561D001A6F61D90031BC3A /* SSZipArchive.m in Sources */,
+				DAFF69B31A6F8FAC00C95065 /* FilePathHelpers.swift in Sources */,
+				DAFF69B41A6F8FAC00C95065 /* ResultMatchers.swift in Sources */,
+				DAFF69B51A6F8FAC00C95065 /* IndexSpec.swift in Sources */,
+				DAFF69B61A6F8FAC00C95065 /* ReferenceSpec.swift in Sources */,
+				DAFF69B71A6F8FAC00C95065 /* RepositorySpec.swift in Sources */,
+				DAFF69B81A6F8FAC00C95065 /* Repository+StatusSpec.swift in Sources */,
+				DAFF69B91A6F8FAC00C95065 /* ioapi.c in Sources */,
+				DAFF69BA1A6F8FAC00C95065 /* mztools.c in Sources */,
+				DAFF69BB1A6F8FAC00C95065 /* unzip.c in Sources */,
+				DAFF69BC1A6F8FAC00C95065 /* zip.c in Sources */,
+				DAFF69BD1A6F8FAC00C95065 /* SSZipArchive.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1033,20 +1033,19 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					External/libgit2/include,
-					"External/libssh2-ios/include/libssh2",
+					"External/libssh2-for-iOS/include/libssh2",
 				);
 				INFOPLIST_FILE = Gift/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
-					"External/libgit2-ios",
-					"External/libssh2-for-iOS/lib",
-					"$(PROJECT_DIR)/External/libssh2-for-iOS/lib",
+					"$(PROJECT_DIR)/External/libssh2-for-iOS/lib/",
+					"$(PROJECT_DIR)/External/libgit2-iOS/",
 				);
 				MODULEMAP_FILE = Gift.modulemap;
 				OTHER_LDFLAGS = (
-					"-lgit2-ios",
+					"-lgit2-iOS",
 					"-all_load",
 				);
 				PRODUCT_NAME = Gift;
@@ -1069,20 +1068,19 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					External/libgit2/include,
-					"External/libssh2-ios/include/libssh2",
+					"External/libssh2-for-iOS/include/libssh2",
 				);
 				INFOPLIST_FILE = Gift/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
-					"External/libgit2-ios",
-					"External/libssh2-for-iOS/lib",
-					"$(PROJECT_DIR)/External/libssh2-for-iOS/lib",
+					"$(PROJECT_DIR)/External/libssh2-for-iOS/lib/",
+					"$(PROJECT_DIR)/External/libgit2-iOS/",
 				);
 				MODULEMAP_FILE = Gift.modulemap;
 				OTHER_LDFLAGS = (
-					"-lgit2-ios",
+					"-lgit2-iOS",
 					"-all_load",
 				);
 				PRODUCT_NAME = Gift;
