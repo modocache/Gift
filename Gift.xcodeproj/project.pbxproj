@@ -385,6 +385,7 @@
 				DA9F36581A476AF7002F35D4 /* GiftTests */,
 				DA9F364A1A476AF7002F35D4 /* Products */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
 		};
 		DA9F364A1A476AF7002F35D4 /* Products */ = {
