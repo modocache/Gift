@@ -6,13 +6,23 @@ progress!
 
 # How to Build
 
-First of all, no matter the platform, make sure you pull down all the necessary submodules:
+Before you can build the project and run the tests, you'll need to
+follow the build instructions for each platform.
+
+## iOS
+
+```
+$ git submodule update --init recursive
+$ rake build:ios:libssh2 build:ios:libgit2
+```
+
+## OS X
+
+First, pull down all the submodules:
 
 ```
 $ git submodule update --init --recursive
 ```
-
-## OS X
 
 `Gift-OSX` links libgit2.a as part of its build process.
 You'll need to build libgit2 in order to create the static library at
@@ -41,11 +51,3 @@ $ brew install libssh2
 $ brew upgrade libssh2
 ```
 
-## iOS
-
-`Gift-iOS` requires fat libraries for OpenSSL (libcrypto.a and libssl.a),
-libssh2, and libgit2. Execute the following Rake task to build those libraries:
-
-```
-$ rake dependencies:build:libssh2 dependencies:build:libgit2
-```

@@ -12,8 +12,8 @@ def sdk_root(arch)
   `xcodebuild -version -sdk 2> /dev/null | grep -i #{platform}8.2 | grep 'Path:' | awk '{ print $2 }'`.strip
 end
 
-namespace "dependencies" do
-  namespace "build" do
+namespace "build" do
+  namespace "ios" do
     desc "Build OpenSSL and libssh2 for iOS"
     task :libssh2 do
       run "cd External/libssh2-for-iOS && ./build-all.sh openssl"
