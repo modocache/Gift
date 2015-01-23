@@ -3,7 +3,7 @@ require_relative "helpers.rb"
 desc "Updates all the dependencies required to build libssh2 and libgit2"
 task :dependencies => ["dependencies:homebrew", "dependencies:cmake", "dependencies:submodules"]
 
-namespace "dependencies" do
+namespace :dependencies do
   desc "Update homebrew"
   task :homebrew do
     `brew update`
