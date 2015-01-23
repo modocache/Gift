@@ -13,3 +13,7 @@ installed, then just run:
 $ rake
 ```
 
+If it's your first time running the script, it'll take a while--it
+needs to build static libraries for OpenSSL, libssh2, and libgit2.
+And that's for both OS X _and_ iOS.
+
