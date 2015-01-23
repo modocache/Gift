@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "container:ExampleApp.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../Gift.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../External/LlamaKit/LlamaKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../External/Quick/Quick.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../External/Nimble/Nimble.xcodeproj">
+   </FileRef>
+</Workspace>

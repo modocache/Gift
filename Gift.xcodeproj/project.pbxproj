@@ -68,44 +68,44 @@
 		DADD60621A6E1E0200F16FB3 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = DADD60581A6E1E0200F16FB3 /* zip.c */; };
 		DADD60641A6E1E0200F16FB3 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = DADD605B1A6E1E0200F16FB3 /* SSZipArchive.m */; };
 		DADD60661A6E1E9C00F16FB3 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DA363DA51A6BAE1C0030BBCC /* libz.dylib */; };
-		DAFF69981A6F8F9800C95065 /* Gift.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC9DD0F1A4B0AD800436BA2 /* Gift.m */; };
-		DAFF69991A6F8F9800C95065 /* Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000701A6B9B2D00F43D4F /* Index.swift */; };
-		DAFF699A1A6F8F9800C95065 /* Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90007B1A6B9B7900F43D4F /* Reference.swift */; };
-		DAFF699B1A6F8F9800C95065 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90008C1A6B9B7900F43D4F /* Repository.swift */; };
-		DAFF699C1A6F8F9800C95065 /* Repository+Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000891A6B9B7900F43D4F /* Repository+Index.swift */; };
-		DAFF699D1A6F8F9800C95065 /* Repository+Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90008A1A6B9B7900F43D4F /* Repository+Reference.swift */; };
-		DAFF699E1A6F8F9800C95065 /* Repository+Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90008B1A6B9B7900F43D4F /* Repository+Status.swift */; };
-		DAFF699F1A6F8F9800C95065 /* CloneOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000821A6B9B7900F43D4F /* CloneOptions.swift */; };
-		DAFF69A01A6F8F9800C95065 /* CloneOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000811A6B9B7900F43D4F /* CloneOptions+C.swift */; };
-		DAFF69A11A6F8F9800C95065 /* CheckoutOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90007F1A6B9B7900F43D4F /* CheckoutOptions.swift */; };
-		DAFF69A21A6F8F9800C95065 /* CheckoutOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90007E1A6B9B7900F43D4F /* CheckoutOptions+C.swift */; };
-		DAFF69A31A6F8F9800C95065 /* CheckoutStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000801A6B9B7900F43D4F /* CheckoutStrategy.swift */; };
-		DAFF69A41A6F8F9800C95065 /* RemoteCallbacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000841A6B9B7900F43D4F /* RemoteCallbacks.swift */; };
-		DAFF69A51A6F8F9800C95065 /* RemoteCallbacks+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000831A6B9B7900F43D4F /* RemoteCallbacks+C.swift */; };
-		DAFF69A61A6F8F9800C95065 /* RepositoryInitializationOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000871A6B9B7900F43D4F /* RepositoryInitializationOptions.swift */; };
-		DAFF69A71A6F8F9800C95065 /* RepositoryInitializationOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000861A6B9B7900F43D4F /* RepositoryInitializationOptions+C.swift */; };
-		DAFF69A81A6F8F9800C95065 /* RepositoryInitializationOptionSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000881A6B9B7900F43D4F /* RepositoryInitializationOptionSet.swift */; };
-		DAFF69A91A6F8F9800C95065 /* RepositoryInitializationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000851A6B9B7900F43D4F /* RepositoryInitializationMode.swift */; };
-		DAFF69AA1A6F8F9800C95065 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000741A6B9B7900F43D4F /* Status.swift */; };
-		DAFF69AB1A6F8F9800C95065 /* StatusDelta.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000751A6B9B7900F43D4F /* StatusDelta.swift */; };
-		DAFF69AC1A6F8F9800C95065 /* FileDiff.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000731A6B9B7900F43D4F /* FileDiff.swift */; };
-		DAFF69AD1A6F8F9800C95065 /* StatusDeltaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000761A6B9B7900F43D4F /* StatusDeltaType.swift */; };
-		DAFF69AE1A6F8F9800C95065 /* StatusOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000781A6B9B7900F43D4F /* StatusOptions.swift */; };
-		DAFF69AF1A6F8F9800C95065 /* StatusOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000771A6B9B7900F43D4F /* StatusOptions+C.swift */; };
-		DAFF69B01A6F8F9800C95065 /* StatusShowOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000791A6B9B7900F43D4F /* StatusShowOptions.swift */; };
-		DAFF69B11A6F8F9800C95065 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA283931A6C5CE400F7B4C3 /* Error.swift */; };
-		DAFF69B21A6F8F9800C95065 /* NSError+Domains.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11D6FDA1A6C6CB500F00863 /* NSError+Domains.swift */; };
-		DAFF69B31A6F8FAC00C95065 /* FilePathHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BE9F201A6C4C68003E87BB /* FilePathHelpers.swift */; };
-		DAFF69B41A6F8FAC00C95065 /* ResultMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BE9F1D1A6C4B7C003E87BB /* ResultMatchers.swift */; };
-		DAFF69B51A6F8FAC00C95065 /* IndexSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3EDDE01A6DA08E0027CEFB /* IndexSpec.swift */; };
-		DAFF69B61A6F8FAC00C95065 /* ReferenceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3EDDE31A6DA1130027CEFB /* ReferenceSpec.swift */; };
-		DAFF69B71A6F8FAC00C95065 /* RepositorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19F06001A6C3BC400EF5BFA /* RepositorySpec.swift */; };
-		DAFF69B81A6F8FAC00C95065 /* Repository+StatusSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA283951A6D6E2100F7B4C3 /* Repository+StatusSpec.swift */; };
-		DAFF69B91A6F8FAC00C95065 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = DADD60521A6E1E0200F16FB3 /* ioapi.c */; };
-		DAFF69BA1A6F8FAC00C95065 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = DADD60541A6E1E0200F16FB3 /* mztools.c */; };
-		DAFF69BB1A6F8FAC00C95065 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = DADD60561A6E1E0200F16FB3 /* unzip.c */; };
-		DAFF69BC1A6F8FAC00C95065 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = DADD60581A6E1E0200F16FB3 /* zip.c */; };
-		DAFF69BD1A6F8FAC00C95065 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = DADD605B1A6E1E0200F16FB3 /* SSZipArchive.m */; };
+		DAF314601A7202580054CCDC /* Gift.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC9DD0F1A4B0AD800436BA2 /* Gift.m */; };
+		DAF314611A7202580054CCDC /* Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000701A6B9B2D00F43D4F /* Index.swift */; };
+		DAF314621A7202580054CCDC /* Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90007B1A6B9B7900F43D4F /* Reference.swift */; };
+		DAF314631A7202580054CCDC /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90008C1A6B9B7900F43D4F /* Repository.swift */; };
+		DAF314641A7202580054CCDC /* Repository+Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000891A6B9B7900F43D4F /* Repository+Index.swift */; };
+		DAF314651A7202580054CCDC /* Repository+Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90008A1A6B9B7900F43D4F /* Repository+Reference.swift */; };
+		DAF314661A7202580054CCDC /* Repository+Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90008B1A6B9B7900F43D4F /* Repository+Status.swift */; };
+		DAF314671A7202580054CCDC /* CloneOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000821A6B9B7900F43D4F /* CloneOptions.swift */; };
+		DAF314681A7202580054CCDC /* CloneOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000811A6B9B7900F43D4F /* CloneOptions+C.swift */; };
+		DAF314691A7202580054CCDC /* CheckoutOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90007F1A6B9B7900F43D4F /* CheckoutOptions.swift */; };
+		DAF3146A1A7202580054CCDC /* CheckoutOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90007E1A6B9B7900F43D4F /* CheckoutOptions+C.swift */; };
+		DAF3146B1A7202580054CCDC /* CheckoutStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000801A6B9B7900F43D4F /* CheckoutStrategy.swift */; };
+		DAF3146C1A7202580054CCDC /* RemoteCallbacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000841A6B9B7900F43D4F /* RemoteCallbacks.swift */; };
+		DAF3146D1A7202580054CCDC /* RemoteCallbacks+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000831A6B9B7900F43D4F /* RemoteCallbacks+C.swift */; };
+		DAF3146E1A7202580054CCDC /* RepositoryInitializationOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000871A6B9B7900F43D4F /* RepositoryInitializationOptions.swift */; };
+		DAF3146F1A7202580054CCDC /* RepositoryInitializationOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000861A6B9B7900F43D4F /* RepositoryInitializationOptions+C.swift */; };
+		DAF314701A7202580054CCDC /* RepositoryInitializationOptionSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000881A6B9B7900F43D4F /* RepositoryInitializationOptionSet.swift */; };
+		DAF314711A7202580054CCDC /* RepositoryInitializationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000851A6B9B7900F43D4F /* RepositoryInitializationMode.swift */; };
+		DAF314721A7202580054CCDC /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000741A6B9B7900F43D4F /* Status.swift */; };
+		DAF314731A7202580054CCDC /* StatusDelta.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000751A6B9B7900F43D4F /* StatusDelta.swift */; };
+		DAF314741A7202580054CCDC /* FileDiff.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000731A6B9B7900F43D4F /* FileDiff.swift */; };
+		DAF314751A7202580054CCDC /* StatusDeltaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000761A6B9B7900F43D4F /* StatusDeltaType.swift */; };
+		DAF314761A7202580054CCDC /* StatusOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000781A6B9B7900F43D4F /* StatusOptions.swift */; };
+		DAF314771A7202580054CCDC /* StatusOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000771A6B9B7900F43D4F /* StatusOptions+C.swift */; };
+		DAF314781A7202580054CCDC /* StatusShowOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000791A6B9B7900F43D4F /* StatusShowOptions.swift */; };
+		DAF314791A7202580054CCDC /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA283931A6C5CE400F7B4C3 /* Error.swift */; };
+		DAF3147A1A7202580054CCDC /* NSError+Domains.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11D6FDA1A6C6CB500F00863 /* NSError+Domains.swift */; };
+		DAF3147B1A7202720054CCDC /* FilePathHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BE9F201A6C4C68003E87BB /* FilePathHelpers.swift */; };
+		DAF3147C1A7202720054CCDC /* ResultMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BE9F1D1A6C4B7C003E87BB /* ResultMatchers.swift */; };
+		DAF3147D1A7202720054CCDC /* IndexSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3EDDE01A6DA08E0027CEFB /* IndexSpec.swift */; };
+		DAF3147E1A7202720054CCDC /* ReferenceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3EDDE31A6DA1130027CEFB /* ReferenceSpec.swift */; };
+		DAF3147F1A7202720054CCDC /* RepositorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19F06001A6C3BC400EF5BFA /* RepositorySpec.swift */; };
+		DAF314801A7202720054CCDC /* Repository+StatusSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA283951A6D6E2100F7B4C3 /* Repository+StatusSpec.swift */; };
+		DAF314811A7202720054CCDC /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = DADD60521A6E1E0200F16FB3 /* ioapi.c */; };
+		DAF314821A7202720054CCDC /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = DADD60541A6E1E0200F16FB3 /* mztools.c */; };
+		DAF314831A7202720054CCDC /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = DADD60561A6E1E0200F16FB3 /* unzip.c */; };
+		DAF314841A7202720054CCDC /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = DADD60581A6E1E0200F16FB3 /* zip.c */; };
+		DAF314851A7202720054CCDC /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = DADD605B1A6E1E0200F16FB3 /* SSZipArchive.m */; };
 		E19F05FD1A6C39FC00EF5BFA /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E19F05FB1A6C39FC00EF5BFA /* Nimble.framework */; };
 		E19F05FE1A6C39FC00EF5BFA /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E19F05FC1A6C39FC00EF5BFA /* Quick.framework */; };
 /* End PBXBuildFile section */
@@ -764,33 +764,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAFF69981A6F8F9800C95065 /* Gift.m in Sources */,
-				DAFF69991A6F8F9800C95065 /* Index.swift in Sources */,
-				DAFF699A1A6F8F9800C95065 /* Reference.swift in Sources */,
-				DAFF699B1A6F8F9800C95065 /* Repository.swift in Sources */,
-				DAFF699C1A6F8F9800C95065 /* Repository+Index.swift in Sources */,
-				DAFF699D1A6F8F9800C95065 /* Repository+Reference.swift in Sources */,
-				DAFF699E1A6F8F9800C95065 /* Repository+Status.swift in Sources */,
-				DAFF699F1A6F8F9800C95065 /* CloneOptions.swift in Sources */,
-				DAFF69A01A6F8F9800C95065 /* CloneOptions+C.swift in Sources */,
-				DAFF69A11A6F8F9800C95065 /* CheckoutOptions.swift in Sources */,
-				DAFF69A21A6F8F9800C95065 /* CheckoutOptions+C.swift in Sources */,
-				DAFF69A31A6F8F9800C95065 /* CheckoutStrategy.swift in Sources */,
-				DAFF69A41A6F8F9800C95065 /* RemoteCallbacks.swift in Sources */,
-				DAFF69A51A6F8F9800C95065 /* RemoteCallbacks+C.swift in Sources */,
-				DAFF69A61A6F8F9800C95065 /* RepositoryInitializationOptions.swift in Sources */,
-				DAFF69A71A6F8F9800C95065 /* RepositoryInitializationOptions+C.swift in Sources */,
-				DAFF69A81A6F8F9800C95065 /* RepositoryInitializationOptionSet.swift in Sources */,
-				DAFF69A91A6F8F9800C95065 /* RepositoryInitializationMode.swift in Sources */,
-				DAFF69AA1A6F8F9800C95065 /* Status.swift in Sources */,
-				DAFF69AB1A6F8F9800C95065 /* StatusDelta.swift in Sources */,
-				DAFF69AC1A6F8F9800C95065 /* FileDiff.swift in Sources */,
-				DAFF69AD1A6F8F9800C95065 /* StatusDeltaType.swift in Sources */,
-				DAFF69AE1A6F8F9800C95065 /* StatusOptions.swift in Sources */,
-				DAFF69AF1A6F8F9800C95065 /* StatusOptions+C.swift in Sources */,
-				DAFF69B01A6F8F9800C95065 /* StatusShowOptions.swift in Sources */,
-				DAFF69B11A6F8F9800C95065 /* Error.swift in Sources */,
-				DAFF69B21A6F8F9800C95065 /* NSError+Domains.swift in Sources */,
+				DAF314601A7202580054CCDC /* Gift.m in Sources */,
+				DAF314611A7202580054CCDC /* Index.swift in Sources */,
+				DAF314621A7202580054CCDC /* Reference.swift in Sources */,
+				DAF314631A7202580054CCDC /* Repository.swift in Sources */,
+				DAF314641A7202580054CCDC /* Repository+Index.swift in Sources */,
+				DAF314651A7202580054CCDC /* Repository+Reference.swift in Sources */,
+				DAF314661A7202580054CCDC /* Repository+Status.swift in Sources */,
+				DAF314671A7202580054CCDC /* CloneOptions.swift in Sources */,
+				DAF314681A7202580054CCDC /* CloneOptions+C.swift in Sources */,
+				DAF314691A7202580054CCDC /* CheckoutOptions.swift in Sources */,
+				DAF3146A1A7202580054CCDC /* CheckoutOptions+C.swift in Sources */,
+				DAF3146B1A7202580054CCDC /* CheckoutStrategy.swift in Sources */,
+				DAF3146C1A7202580054CCDC /* RemoteCallbacks.swift in Sources */,
+				DAF3146D1A7202580054CCDC /* RemoteCallbacks+C.swift in Sources */,
+				DAF3146E1A7202580054CCDC /* RepositoryInitializationOptions.swift in Sources */,
+				DAF3146F1A7202580054CCDC /* RepositoryInitializationOptions+C.swift in Sources */,
+				DAF314701A7202580054CCDC /* RepositoryInitializationOptionSet.swift in Sources */,
+				DAF314711A7202580054CCDC /* RepositoryInitializationMode.swift in Sources */,
+				DAF314721A7202580054CCDC /* Status.swift in Sources */,
+				DAF314731A7202580054CCDC /* StatusDelta.swift in Sources */,
+				DAF314741A7202580054CCDC /* FileDiff.swift in Sources */,
+				DAF314751A7202580054CCDC /* StatusDeltaType.swift in Sources */,
+				DAF314761A7202580054CCDC /* StatusOptions.swift in Sources */,
+				DAF314771A7202580054CCDC /* StatusOptions+C.swift in Sources */,
+				DAF314781A7202580054CCDC /* StatusShowOptions.swift in Sources */,
+				DAF314791A7202580054CCDC /* Error.swift in Sources */,
+				DAF3147A1A7202580054CCDC /* NSError+Domains.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -798,17 +798,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAFF69B31A6F8FAC00C95065 /* FilePathHelpers.swift in Sources */,
-				DAFF69B41A6F8FAC00C95065 /* ResultMatchers.swift in Sources */,
-				DAFF69B51A6F8FAC00C95065 /* IndexSpec.swift in Sources */,
-				DAFF69B61A6F8FAC00C95065 /* ReferenceSpec.swift in Sources */,
-				DAFF69B71A6F8FAC00C95065 /* RepositorySpec.swift in Sources */,
-				DAFF69B81A6F8FAC00C95065 /* Repository+StatusSpec.swift in Sources */,
-				DAFF69B91A6F8FAC00C95065 /* ioapi.c in Sources */,
-				DAFF69BA1A6F8FAC00C95065 /* mztools.c in Sources */,
-				DAFF69BB1A6F8FAC00C95065 /* unzip.c in Sources */,
-				DAFF69BC1A6F8FAC00C95065 /* zip.c in Sources */,
-				DAFF69BD1A6F8FAC00C95065 /* SSZipArchive.m in Sources */,
+				DAF3147B1A7202720054CCDC /* FilePathHelpers.swift in Sources */,
+				DAF3147C1A7202720054CCDC /* ResultMatchers.swift in Sources */,
+				DAF3147D1A7202720054CCDC /* IndexSpec.swift in Sources */,
+				DAF3147E1A7202720054CCDC /* ReferenceSpec.swift in Sources */,
+				DAF3147F1A7202720054CCDC /* RepositorySpec.swift in Sources */,
+				DAF314801A7202720054CCDC /* Repository+StatusSpec.swift in Sources */,
+				DAF314811A7202720054CCDC /* ioapi.c in Sources */,
+				DAF314821A7202720054CCDC /* mztools.c in Sources */,
+				DAF314831A7202720054CCDC /* unzip.c in Sources */,
+				DAF314841A7202720054CCDC /* zip.c in Sources */,
+				DAF314851A7202720054CCDC /* SSZipArchive.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
