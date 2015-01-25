@@ -10,7 +10,7 @@ class ReferenceSpec: QuickSpec {
     describe("name") {
       context("when the reference has a valid name") {
         beforeEach {
-          reference = openFixturesRepository("ReferenceSpec_Name").flatMap { $0.headReference }
+          reference = openFixturesRepository("Spec_EmptyRepository").flatMap { $0.headReference }
         }
         it("returns a successful result with the reference name") {
           expect(reference.flatMap { $0.name }).to(haveSucceeded("refs/heads/master"))

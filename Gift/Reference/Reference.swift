@@ -1,12 +1,12 @@
 import LlamaKit
 
 /**
-  References point to a particular commit, but have more semantically
-  meaningful names. A branch, for example, is a named reference
-  pointing to the latest commit in a series of work.
+  References point to an underlying Git object, but have more
+  semantically meaningful names. A branch, for example, is a named
+  reference pointing to the latest commit in a series of work.
 */
 public class Reference {
-  private let cReference: COpaquePointer
+  internal let cReference: COpaquePointer
 
   internal init(cReference: COpaquePointer) {
     self.cReference = cReference
