@@ -1,3 +1,4 @@
+import Foundation
 import LlamaKit
 
 internal extension Tag {
@@ -10,7 +11,7 @@ internal extension Tag {
     :returns: The result of the lookup: either a tag object, or a failure
               indicating what went wrong.
   */
-  internal class func lookup(objectID: UnsafeMutablePointer<git_oid>, cRepository: COpaquePointer) -> Result<Tag> {
+  internal class func lookup(objectID: UnsafeMutablePointer<git_oid>, cRepository: COpaquePointer) -> Result<Tag, NSError> {
     var out = COpaquePointer()
     let errorCode = git_tag_lookup(&out, cRepository, objectID)
     if errorCode == GIT_OK.value {

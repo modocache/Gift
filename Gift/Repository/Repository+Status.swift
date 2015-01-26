@@ -7,7 +7,7 @@ public extension Repository {
   /**
     TODO: Documentation.
   */
-  public func status(closure: StatusClosure, options: StatusOptions = StatusOptions()) -> Result<UInt> {
+  public func status(closure: StatusClosure, options: StatusOptions = StatusOptions()) -> Result<UInt, NSError> {
     var statusList = COpaquePointer()
     var cOptions = options.cOptions
     let errorCode = git_status_list_new(&statusList, cRepository, &cOptions)
@@ -50,7 +50,7 @@ public extension Repository {
     :returns: The result of the operation: either the status of the file in the
               index and working directories, or an error indicating what went wrong.
   */
-  public func status(path: String) -> Result<Status> {
+  public func status(path: String) -> Result<Status, NSError> {
     var statusFlags: UInt32 = 0
     let errorCode = git_status_file(&statusFlags, cRepository, path)
     if errorCode == GIT_OK.value {
@@ -67,7 +67,7 @@ public extension Repository {
     :returns: The result of the operation: either a boolean value indicating whether
               the file is ignored, or an error indicating what went wrong.
   */
-  public func shouldIgnore(path: String) -> Result<Bool> {
+  public func shouldIgnore(path: String) -> Result<Bool, NSError> {
     var ignored: Int32 = 0
     let errorCode = git_status_should_ignore(&ignored, cRepository, path)
     if errorCode == GIT_OK.value {

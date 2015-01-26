@@ -1,3 +1,4 @@
+import Foundation
 import LlamaKit
 
 public extension Index {
@@ -12,7 +13,7 @@ public extension Index {
     :returns: The result of the write operation: either the written tree
               object, or a failure indicating what went wrong.
   */
-  public func writeTree() -> Result<Tree> {
+  public func writeTree() -> Result<Tree, NSError> {
     var out = UnsafeMutablePointer<git_oid>.alloc(1)
     let errorCode = git_index_write_tree(out, cIndex)
     if errorCode == GIT_OK.value {

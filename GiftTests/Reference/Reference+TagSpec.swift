@@ -5,8 +5,8 @@ import Nimble
 
 class Reference_TagSpec: QuickSpec {
   override func spec() {
-    var repository: Result<Repository>!
-    var reference: Result<Reference>!
+    var repository: Result<Repository, NSError>!
+    var reference: Result<Reference, NSError>!
     beforeEach {
       repository = openFixturesRepository("Spec_EmptyRepository")
       reference = repository.flatMap { $0.headReference }

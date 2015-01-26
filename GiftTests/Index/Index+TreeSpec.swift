@@ -5,7 +5,7 @@ import Nimble
 
 class Index_TreeSpec: QuickSpec {
   override func spec() {
-    var index: Result<Index>!
+    var index: Result<Index, NSError>!
     beforeEach {
       index = openFixturesRepository("IndexSpec_EntryCount").flatMap { $0.index }
     }

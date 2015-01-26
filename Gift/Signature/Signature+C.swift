@@ -27,7 +27,7 @@ internal extension Signature {
     Creates a Signature object based on a git_signature C struct, or a failure
     indicating what went wrong when attempting to create the object.
   */
-  internal static func fromCSignature(cSignature: git_signature) -> Result<Signature> {
+  internal static func fromCSignature(cSignature: git_signature) -> Result<Signature, NSError> {
     if let signatureName = String.fromCString(cSignature.name) {
       if let signatureEmail = String.fromCString(cSignature.email) {
         return success(Signature(

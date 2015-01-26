@@ -1,3 +1,4 @@
+import Foundation
 import LlamaKit
 
 /**
@@ -21,7 +22,7 @@ public extension Reference {
   /**
     The name of the reference.
   */
-  public var name: Result<String> {
+  public var name: Result<String, NSError> {
     let referenceName = git_reference_name(cReference)
     if let name = String.fromCString(referenceName) {
       return success(name)
@@ -38,7 +39,7 @@ public extension Reference {
     algorithm to the contents of the reference. This is a string representation of the
     object ID.
   */
-  public var SHA: Result<String> {
+  public var SHA: Result<String, NSError> {
     return object.flatMap { objectIDSHA($0.objectID) }
   }
 

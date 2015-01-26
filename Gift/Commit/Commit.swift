@@ -1,3 +1,4 @@
+import Foundation
 import LlamaKit
 
 /**
@@ -27,7 +28,7 @@ public extension Commit {
     what went wrong when retrieving the message. The returned message
     will be slightly prettified by removing any potential leading newlines.
   */
-  public var message: Result<String> {
+  public var message: Result<String, NSError> {
     let cMessage = git_commit_message(cCommit)
     if let commitMessage = String.fromCString(cMessage) {
       return success(commitMessage)
@@ -43,7 +44,7 @@ public extension Commit {
     wrong when retrieving the signature. The author of a commit is the person who authored
     the changes in the commit.
   */
-  public var author: Result<Signature> {
+  public var author: Result<Signature, NSError> {
     return Signature.fromCSignature(git_commit_author(cCommit).memory)
   }
 
@@ -52,7 +53,7 @@ public extension Commit {
     wrong when retrieving the signature. The committer of a commit is the person who
     committed the code on behalf of the original author.
   */
-  public var committer: Result<Signature> {
+  public var committer: Result<Signature, NSError> {
     return Signature.fromCSignature(git_commit_committer(cCommit).memory)
   }
 }

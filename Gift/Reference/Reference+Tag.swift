@@ -1,3 +1,4 @@
+import Foundation
 import LlamaKit
 
 public extension Reference {
@@ -13,7 +14,7 @@ public extension Reference {
     :param: force Whether to overwrite any existing tags with the same name.
     :returns: Either a tag, or a failure message indicating why the tag couldn't be created.
   */
-  public func tag(name: String, message: String, signature: Signature, force: Bool = false) -> Result<Tag> {
+  public func tag(name: String, message: String, signature: Signature, force: Bool = false) -> Result<Tag, NSError> {
     return self.object.flatMap { (referenceObject: Object) in
       var out = UnsafeMutablePointer<git_oid>.alloc(1)
       var cSignature = signature.cSignature

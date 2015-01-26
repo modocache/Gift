@@ -5,9 +5,9 @@ import Nimble
 
 class Tree_CommitSpec: QuickSpec {
   override func spec() {
-    var repository: Result<Repository>!
-    var index: Result<Index>!
-    var tree: Result<Tree>!
+    var repository: Result<Repository, NSError>!
+    var index: Result<Index, NSError>!
+    var tree: Result<Tree, NSError>!
 
     describe("commit") {
       context("when the commit has no parents") {

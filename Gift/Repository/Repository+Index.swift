@@ -1,10 +1,11 @@
+import Foundation
 import LlamaKit
 
 public extension Repository {
   /**
     Creates and returns an index object for the repository.
   */
-  public var index: Result<Index> {
+  public var index: Result<Index, NSError> {
     var cIndex = COpaquePointer()
     let errorCode = git_repository_index(&cIndex, cRepository)
     if errorCode == GIT_OK.value {

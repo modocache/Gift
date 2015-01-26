@@ -1,10 +1,11 @@
+import Foundation
 import LlamaKit
 
 public extension Repository {
   /**
     Retrieves the reference pointed at by HEAD.
   */
-  public var headReference: Result<Reference> {
+  public var headReference: Result<Reference, NSError> {
     var out = COpaquePointer()
     let errorCode = git_repository_head(&out, cRepository)
 

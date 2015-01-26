@@ -12,7 +12,7 @@ import LlamaKit
             be used to store the data to the object store, or a failure indicating
             what went wrong.
 */
-internal func objectID(data: NSData, type: ObjectType) -> Result<UnsafeMutablePointer<git_oid>> {
+internal func objectID(data: NSData, type: ObjectType) -> Result<UnsafeMutablePointer<git_oid>, NSError> {
   var out = UnsafeMutablePointer<git_oid>.alloc(1)
   let errorCode = git_odb_hash(out, data.bytes, UInt(data.length), git_otype(type.rawValue))
   if errorCode == GIT_OK.value {
@@ -33,7 +33,7 @@ internal func objectID(data: NSData, type: ObjectType) -> Result<UnsafeMutablePo
             be used to store the data to the object store, or a failure indicating
             what went wrong.
 */
-internal func objectID(fileURL: NSURL, type: ObjectType) -> Result<UnsafeMutablePointer<git_oid>> {
+internal func objectID(fileURL: NSURL, type: ObjectType) -> Result<UnsafeMutablePointer<git_oid>, NSError> {
   if let path = fileURL.path {
     var out = UnsafeMutablePointer<git_oid>.alloc(1)
     let errorCode = git_odb_hashfile(out, path, git_otype(type.rawValue))
@@ -55,7 +55,7 @@ internal func objectID(fileURL: NSURL, type: ObjectType) -> Result<UnsafeMutable
   :returns: The result of the conversion: either a pointer to an objectID, or a failure
             indicating why the SHA string could not be converted.
 */
-internal func objectID(SHA: String) -> Result<UnsafeMutablePointer<git_oid>> {
+internal func objectID(SHA: String) -> Result<UnsafeMutablePointer<git_oid>, NSError> {
   var out = UnsafeMutablePointer<git_oid>.alloc(1)
   let errorCode = git_oid_fromstr(out, SHA)
   if errorCode == GIT_OK.value {
@@ -73,7 +73,7 @@ internal func objectID(SHA: String) -> Result<UnsafeMutablePointer<git_oid>> {
   :returns: The result of the conversion: either a string representation of the objectID,
             or a failure indicating why the objectID could not be converted.
 */
-internal func objectIDSHA(objectID: UnsafeMutablePointer<git_oid>) -> Result<String> {
+internal func objectIDSHA(objectID: UnsafeMutablePointer<git_oid>) -> Result<String, NSError> {
   let cString = git_oid_tostr_s(objectID)
   if let sha = String.fromCString(cString) {
     return success(sha)

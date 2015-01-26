@@ -1,3 +1,4 @@
+import Foundation
 import LlamaKit
 
 public extension Tree {
@@ -18,7 +19,7 @@ public extension Tree {
     :returns: The result of the commit operation: either the newly created commit object,
               or a failure indicating what went wrong.
   */
-  public func commit(message: String, updateReference: String = "HEAD", author: Signature, committer: Signature? = nil, parents: [Commit] = []) -> Result<Commit> {
+  public func commit(message: String, updateReference: String = "HEAD", author: Signature, committer: Signature? = nil, parents: [Commit] = []) -> Result<Commit, NSError> {
     var out = UnsafeMutablePointer<git_oid>.alloc(1)
     var authorSignature = author.cSignature
     var committerSignature = committer?.cSignature ?? author.cSignature

@@ -5,7 +5,7 @@ import Nimble
 
 class Repository_StatusSpec: QuickSpec {
   override func spec() {
-    var repository: Result<Repository>!
+    var repository: Result<Repository, NSError>!
     beforeEach {
       repository = openFixturesRepository("Repository+StatusSpec_AllStatusDeltas")
     }

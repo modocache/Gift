@@ -6,7 +6,7 @@ import Nimble
 class Repository_TagSpec: QuickSpec {
   override func spec() {
     describe("tagNames") {
-      var repository: Result<Repository>!
+      var repository: Result<Repository, NSError>!
 
       context("when the repository has no tags") {
         beforeEach {

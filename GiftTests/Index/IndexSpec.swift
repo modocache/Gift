@@ -5,7 +5,7 @@ import Nimble
 
 class IndexSpec: QuickSpec {
   override func spec() {
-    var index: Result<Index>!
+    var index: Result<Index, NSError>!
 
     describe("entryCount") {
       beforeEach {

@@ -26,7 +26,7 @@ public extension Repository {
     Returns the repository's .git directory's URL.
     TODO: Describe failure cases.
   */
-  public var gitDirectoryURL: Result<NSURL> {
+  public var gitDirectoryURL: Result<NSURL, NSError> {
     if let path = String.fromCString(git_repository_path(cRepository)) {
       if let url = NSURL(fileURLWithPath: path, isDirectory: true) {
         return success(url)
@@ -48,7 +48,7 @@ public extension Repository {
   :param: options A set of options used to customize the Git repository that is created.
   :returns: The result of the operation: either a newly created repository, or an error explaining what went wrong.
 */
-public func initializeEmptyRepository(directoryURL: NSURL, options: RepositoryInitializationOptions = RepositoryInitializationOptions()) -> Result<Repository> {
+public func initializeEmptyRepository(directoryURL: NSURL, options: RepositoryInitializationOptions = RepositoryInitializationOptions()) -> Result<Repository, NSError> {
   if let repoPath = directoryURL.path?.fileSystemRepresentation() {
     var out = COpaquePointer()
     var cOptions = options.cOptions
@@ -65,9 +65,13 @@ public func initializeEmptyRepository(directoryURL: NSURL, options: RepositoryIn
 }
 
 /**
-  TODO: Documentation.
+  Opens a Git repository at the given fileURL.
+
+  :param: fileURL The URL at which the Git repository is located.
+  :returns: The result of the operation: either a Repository object, or an error
+            indicating why the repository could not be opened.
 */
-public func openRepository(fileURL: NSURL) -> Result<Repository> {
+public func openRepository(fileURL: NSURL) -> Result<Repository, NSError> {
   if !fileURL.fileURL || fileURL.path == nil {
     return failure(NSError.giftError(.InvalidURI, description: "Invalid fileURL: '\(fileURL)'"))
   } else {
@@ -90,7 +94,7 @@ public func openRepository(fileURL: NSURL) -> Result<Repository> {
   :options: A set of options used to configure how the repository will be cloned.
   :returns: The result of the operation: either the cloned repository, or an error explaining what went wrong.
 */
-public func cloneRepository(originURL: NSURL, destinationWorkingDirectory: NSURL, options: CloneOptions = CloneOptions()) -> Result<Repository> {
+public func cloneRepository(originURL: NSURL, destinationWorkingDirectory: NSURL, options: CloneOptions = CloneOptions()) -> Result<Repository, NSError> {
   if let url = cPath(originURL) {
     if let localPath = destinationWorkingDirectory.path?.fileSystemRepresentation() {
       var out = COpaquePointer()

@@ -23,7 +23,7 @@ private extension Repository {
 class Repository_BranchSpec: QuickSpec {
   override func spec() {
     describe("branches") {
-      var repository: Result<Repository>!
+      var repository: Result<Repository, NSError>!
 
       context("when the repository contains several local branches") {
         beforeEach {

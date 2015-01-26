@@ -1,3 +1,4 @@
+import Foundation
 import LlamaKit
 
 public extension Repository {
@@ -10,7 +11,7 @@ public extension Repository {
                            is passed to the callback. Otherwise, a commit object is
                            passed to the callback.
   */
-  public func commits(sorting: CommitSorting = CommitSorting.Time, commitCallback: (Result<Commit>) -> ()) {
+  public func commits(sorting: CommitSorting = CommitSorting.Time, commitCallback: (Result<Commit, NSError>) -> ()) {
     var walker = COpaquePointer()
     let createWalkerErrorCode = git_revwalk_new(&walker, cRepository)
     if createWalkerErrorCode == GIT_OK.value {

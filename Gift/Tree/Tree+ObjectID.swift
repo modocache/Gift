@@ -1,3 +1,4 @@
+import Foundation
 import LlamaKit
 
 internal extension Tree {
@@ -10,7 +11,7 @@ internal extension Tree {
     :returns: The result of the lookup: either a tree object, or a failure
               indicating what went wrong.
   */
-  internal class func lookup(objectID: UnsafeMutablePointer<git_oid>, cRepository: COpaquePointer) -> Result<Tree> {
+  internal class func lookup(objectID: UnsafeMutablePointer<git_oid>, cRepository: COpaquePointer) -> Result<Tree, NSError> {
     var out = COpaquePointer()
     let errorCode = git_tree_lookup(&out, cRepository, objectID)
     if errorCode == GIT_OK.value {

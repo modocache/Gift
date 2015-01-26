@@ -36,7 +36,7 @@ internal func temporaryDirectoryURL() -> NSURL! {
   :returns: The result of opening the repository: either a Repository object, or a failure
             indicating what went wrong.
 */
-internal func openFixturesRepository(name: String) -> Result<Repository> {
+internal func openFixturesRepository(name: String) -> Result<Repository, NSError> {
   let source = NSBundle(forClass: TestBundleLocator.classForCoder()).pathForResource("Fixtures", ofType: "zip")
   let destination = temporaryDirectoryURL()
 

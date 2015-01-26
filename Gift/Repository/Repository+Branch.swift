@@ -1,5 +1,3 @@
-import LlamaKit
-
 public extension Repository {
   /**
     Enumerates references that refer to branches in a repository.

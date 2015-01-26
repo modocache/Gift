@@ -1,3 +1,4 @@
+import Foundation
 import LlamaKit
 
 /**
@@ -29,7 +30,7 @@ public extension Tag {
     Returns the name of the tag, or a failure indicating what
     may have gone wrong when retrieving the tag name.
   */
-  public var name: Result<String> {
+  public var name: Result<String, NSError> {
     let tagName = git_tag_name(cTag)
     if let nameString = String.fromCString(tagName) {
       return success(nameString)

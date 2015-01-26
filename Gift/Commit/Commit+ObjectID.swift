@@ -1,3 +1,4 @@
+import Foundation
 import LlamaKit
 
 internal extension Commit {
@@ -10,7 +11,7 @@ internal extension Commit {
     :returns: The result of the lookup: either a commit object, or a failure
               indicating what went wrong.
   */
-  internal class func lookup(objectID: UnsafeMutablePointer<git_oid>, cRepository: COpaquePointer) -> Result<Commit> {
+  internal class func lookup(objectID: UnsafeMutablePointer<git_oid>, cRepository: COpaquePointer) -> Result<Commit, NSError> {
     var out = COpaquePointer()
     let errorCode = git_commit_lookup(&out, cRepository, objectID)
     if errorCode == GIT_OK.value {

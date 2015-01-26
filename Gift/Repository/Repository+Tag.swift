@@ -1,3 +1,4 @@
+import Foundation
 import LlamaKit
 
 public extension Repository {
@@ -9,7 +10,7 @@ public extension Repository {
     :returns: Either a list of tag names matching the given pattern (if any),
               or a failure indicating what went wrong when retrieving the tags.
   */
-  public func tagNames(matchingPattern: String = "*") -> Result<[String]> {
+  public func tagNames(matchingPattern: String = "*") -> Result<[String], NSError> {
     var out = git_strarray(strings: nil, count: 0)
     let errorCode = git_tag_list_match(&out, matchingPattern, cRepository)
     if errorCode == GIT_OK.value {

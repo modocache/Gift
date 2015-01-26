@@ -1,3 +1,4 @@
+import Foundation
 import LlamaKit
 
 internal extension Reference {
@@ -6,7 +7,7 @@ internal extension Reference {
     or a failure indicating what went wrong when looking up that
     object.
   */
-  internal var object: Result<Object> {
+  internal var object: Result<Object, NSError> {
     var out = COpaquePointer()
     let errorCode = git_reference_peel(&out, cReference, git_otype(ObjectType.Any.rawValue))
     if errorCode == GIT_OK.value {
