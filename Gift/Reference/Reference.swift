@@ -33,8 +33,10 @@ public extension Reference {
   }
 
   /**
-    Returns the SHA of the reference, a unique name obtained by
-    applying SHA1 to the content pointed to by the reference.
+    Returns a 40-digit hexadecimal number string representation of the SHA1 of the
+    reference. The SHA1 is a unique name obtained by applying the SHA1 hashing
+    algorithm to the contents of the reference. This is a string representation of the
+    object ID.
   */
   public var SHA: Result<String> {
     return self.object.flatMap { (object: Object) in

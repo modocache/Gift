@@ -2,8 +2,9 @@ import LlamaKit
 
 /**
   A Git object can represent one of four types of data:
-  blobs, trees, commits, and annotated tags. Git stores
-  these objects in its database.
+  blobs (binary large objects), trees, commits, and annotated
+  tags. Git stores these objects in its object database, also
+  known as the object store.
 */
 internal class Object {
   internal let cObject: COpaquePointer

@@ -1,8 +1,13 @@
 import LlamaKit
 
 /**
-  A snapshot of the index at a given point in time.
-  These are used to record changes.
+  A commit object holds metadata for each change introduced into the
+  repository, including the author, committer, commit date, and log message.
+  Each commit points to a tree object that captures, in one complete snapshot,
+  the state of the repository at the time the commit was performed.
+
+  The initial commit, or root commit, has no parent. Most commits have one
+  commit parent, although it is possible to have more than one parent.
 */
 public class Commit {
   private let cCommit: COpaquePointer
