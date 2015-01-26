@@ -10,7 +10,7 @@ public extension Repository {
                            is passed to the callback. Otherwise, a commit object is
                            passed to the callback.
   */
-  public func commits(sorting: CommitSorting = CommitSorting.Time, commitCallback: (commit: Commit?, error: NSError?) -> ()) {
+  public func commits(sorting: CommitSorting = CommitSorting.Time, commitCallback: (Result<Commit>) -> ()) {
     var walker = COpaquePointer()
     let createWalkerErrorCode = git_revwalk_new(&walker, cRepository)
     if createWalkerErrorCode == GIT_OK.value {
@@ -19,20 +19,13 @@ public extension Repository {
         git_revwalk_sorting(walker, UInt32(sorting.rawValue))
         var objectID = UnsafeMutablePointer<git_oid>.alloc(1)
         while git_revwalk_next(objectID, walker) == GIT_OK.value {
-          var cCommit = COpaquePointer()
-          let lookupErrorCode = git_commit_lookup(&cCommit, cRepository, objectID)
-          if lookupErrorCode == GIT_OK.value {
-            let commit = Commit(cCommit: cCommit)
-            commitCallback(commit: commit, error: nil)
-          } else {
-            commitCallback(commit: nil, error: NSError.libGit2Error(lookupErrorCode, libGit2PointOfFailure: "git_commit_lookup"))
-          }
+          commitCallback(Commit.lookup(objectID, cRepository: cRepository))
         }
       } else {
-        commitCallback(commit: nil, error: NSError.libGit2Error(pushHeadErrorCode, libGit2PointOfFailure: "git_revwalk_push_head"))
+        commitCallback(failure(NSError.libGit2Error(pushHeadErrorCode, libGit2PointOfFailure: "git_revwalk_push_head")))
       }
     } else {
-      commitCallback(commit: nil, error: NSError.libGit2Error(createWalkerErrorCode, libGit2PointOfFailure: "git_revwalk_new"))
+      commitCallback(failure(NSError.libGit2Error(createWalkerErrorCode, libGit2PointOfFailure: "git_revwalk_new")))
     }
   }
 }

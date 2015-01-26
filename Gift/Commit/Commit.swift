@@ -10,7 +10,7 @@ import LlamaKit
   commit parent, although it is possible to have more than one parent.
 */
 public class Commit {
-  private let cCommit: COpaquePointer
+  internal let cCommit: COpaquePointer
 
   internal init(cCommit: COpaquePointer) {
     self.cCommit = cCommit

@@ -31,7 +31,8 @@ public extension Repository {
       if let url = NSURL(fileURLWithPath: path, isDirectory: true) {
         return success(url)
       } else {
-        return failure(NSError.giftError(.InvalidURI, description: "Could not create NSURL from path: \(path)"))
+        let description = "Could not create NSURL from path '\(path)', provided by git_repository_path."
+        return failure(NSError.giftError(.InvalidURI, description: description))
       }
     } else {
       return failure("libgit2 error: git_repository_path failed")
@@ -59,7 +60,7 @@ public func initializeEmptyRepository(directoryURL: NSURL, options: RepositoryIn
       return failure(NSError.libGit2Error(errorCode, libGit2PointOfFailure: "git_repository_init_ext"))
     }
   } else {
-    return failure(NSError.giftError(.InvalidURI, description: "Invalid directoryURL: \(directoryURL)"))
+    return failure(NSError.giftError(.InvalidURI, description: "Invalid directoryURL: '\(directoryURL)'"))
   }
 }
 
@@ -68,7 +69,7 @@ public func initializeEmptyRepository(directoryURL: NSURL, options: RepositoryIn
 */
 public func openRepository(fileURL: NSURL) -> Result<Repository> {
   if !fileURL.fileURL || fileURL.path == nil {
-    return failure(NSError.giftError(.InvalidURI, description: "Invalid fileURL: \(fileURL)"))
+    return failure(NSError.giftError(.InvalidURI, description: "Invalid fileURL: '\(fileURL)'"))
   } else {
     var out = COpaquePointer()
     let errorCode = git_repository_open(&out, fileURL.path!)

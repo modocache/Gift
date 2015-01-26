@@ -11,7 +11,7 @@
   committed.
 */
 public class Index {
-  private let cIndex: COpaquePointer
+  internal let cIndex: COpaquePointer
 
   internal init(cIndex: COpaquePointer) {
     self.cIndex = cIndex

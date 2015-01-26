@@ -15,20 +15,15 @@ public extension Reference {
   */
   public func tag(name: String, message: String, signature: Signature, force: Bool = false) -> Result<Tag> {
     return self.object.flatMap { (referenceObject: Object) in
-      var tagObjectID = UnsafeMutablePointer<git_oid>.alloc(1)
+      var out = UnsafeMutablePointer<git_oid>.alloc(1)
       var cSignature = signature.cSignature
-      let tagCreateErrorCode = git_tag_create(
-        tagObjectID, self.cRepository, name, referenceObject.cObject, &cSignature, message, force ? 1 : 0)
-      if tagCreateErrorCode == GIT_OK.value {
-        var tag = COpaquePointer()
-        let tagLookupErrorCode = git_tag_lookup(&tag, self.cRepository, tagObjectID)
-        if tagLookupErrorCode == GIT_OK.value {
-          return success(Tag(cTag: tag))
-        } else {
-          return failure(NSError.libGit2Error(tagLookupErrorCode, libGit2PointOfFailure: "git_tag_lookup"))
-        }
+      let errorCode = git_tag_create(
+        out, self.cRepository, name, referenceObject.cObject, &cSignature, message, force ? 1 : 0)
+
+      if errorCode == GIT_OK.value {
+        return Tag.lookup(out, cRepository: self.cRepository)
       } else {
-        return failure(NSError.libGit2Error(tagCreateErrorCode, libGit2PointOfFailure: "git_tag_create"))
+        return failure(NSError.libGit2Error(errorCode, libGit2PointOfFailure: "git_tag_create"))
       }
     }
   }

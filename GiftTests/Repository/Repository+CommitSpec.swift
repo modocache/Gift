@@ -13,14 +13,10 @@ class Repository_CommitSpec: QuickSpec {
     describe("commits") {
       it("enumerates the commits in the repository in the given sorting order") {
         var commits: [Commit] = []
-        var errors: [NSError] = []
-        repository.map { $0.commits { (walkedCommit: Commit?, walkedError: NSError?) in
-          if let commit = walkedCommit { commits.append(commit) }
-          if let error = walkedError { errors.append(error) }
+        repository.map { $0.commits { (commit: Result<Commit>) in
+          let _ = commit.map { commits.append($0) }
         }}
-
         expect(countElements(commits)).to(equal(4))
-        expect(errors).to(beEmpty())
       }
     }
   }
