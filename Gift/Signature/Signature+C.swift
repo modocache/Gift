@@ -1,4 +1,5 @@
 import Foundation
+import LlamaKit
 
 internal extension Signature {
   /**
@@ -20,5 +21,27 @@ internal extension Signature {
         offset: Int32(timeZone.secondsFromGMT / 60)
       )
     )
+  }
+
+  /**
+    Creates a Signature object based on a git_signature C struct, or a failure
+    indicating what went wrong when attempting to create the object.
+  */
+  internal static func fromCSignature(cSignature: git_signature) -> Result<Signature> {
+    if let signatureName = String.fromCString(cSignature.name) {
+      if let signatureEmail = String.fromCString(cSignature.email) {
+        return success(Signature(
+          name: signatureName,
+          email: signatureEmail,
+          date: NSDate(timeIntervalSince1970: NSTimeInterval(cSignature.when.time)),
+          timeZone: NSTimeZone(forSecondsFromGMT: Int(cSignature.when.offset) * 60)
+        ))
+      }
+    }
+
+    let description = "An error occurred when attempting to convert signature "
+                      + "name '\(cSignature.name)' and email '\(cSignature.email)' "
+                      + "to strings."
+    return failure(NSError.giftError(.StringConversionFailure, description: description))
   }
 }

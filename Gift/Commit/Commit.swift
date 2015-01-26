@@ -37,4 +37,22 @@ public extension Commit {
       return failure(NSError.giftError(.StringConversionFailure, description: description))
     }
   }
+
+  /**
+    Returns the author's signature for this commit, or a failure indicating what went
+    wrong when retrieving the signature. The author of a commit is the person who authored
+    the changes in the commit.
+  */
+  public var author: Result<Signature> {
+    return Signature.fromCSignature(git_commit_author(cCommit).memory)
+  }
+
+  /**
+    Returns the committer's signature for this commit, or a failure indicating what went
+    wrong when retrieving the signature. The committer of a commit is the person who
+    committed the code on behalf of the original author.
+  */
+  public var committer: Result<Signature> {
+    return Signature.fromCSignature(git_commit_committer(cCommit).memory)
+  }
 }
