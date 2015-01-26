@@ -11,9 +11,14 @@ public class Repository {
     self.cRepository = cRepository
   }
 
-  deinit {
-    git_repository_free(cRepository)
-  }
+  // TODO: When a repository object goes out of scope,
+  //       it frees the underlying C struct. This means
+  //       Gift cannot use repository objects when they
+  //       do not own the underlying struct. Currently,
+  //       however, it does.
+  // deinit {
+  //   git_repository_free(cRepository)
+  // }
 }
 
 public extension Repository {

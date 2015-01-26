@@ -33,6 +33,23 @@ public extension Reference {
   }
 
   /**
+    Returns the SHA of the reference, a unique name obtained by
+    applying SHA1 to the content pointed to by the reference.
+  */
+  public var SHA: Result<String> {
+    return self.object.flatMap { (object: Object) in
+      let id = git_object_id(object.cObject)
+      if let sha = String.fromCString(git_oid_tostr_s(id)) {
+        return success(sha)
+      } else {
+        let description = "An error occurred when attempting to convert SHA "
+                          + "provided by git_oid_tostr_s to a String."
+        return failure(NSError.giftError(.StringConversionFailure, description: description))
+      }
+    }
+  }
+
+  /**
     Whether or not the reference is to a remote tracking branch.
   */
   public var isRemote: Bool {

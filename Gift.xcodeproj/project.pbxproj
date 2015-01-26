@@ -62,8 +62,6 @@
 		DA8BDEC81A748B06002C469E /* BranchType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDEC61A748B06002C469E /* BranchType.swift */; };
 		DA8BDED11A74925E002C469E /* Reference+Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDED01A74925E002C469E /* Reference+Tag.swift */; };
 		DA8BDED21A74925E002C469E /* Reference+Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDED01A74925E002C469E /* Reference+Tag.swift */; };
-		DA8BDED51A749366002C469E /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDED41A749366002C469E /* Object.swift */; };
-		DA8BDED61A749366002C469E /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDED41A749366002C469E /* Object.swift */; };
 		DA8BDED81A749419002C469E /* Reference+Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDED71A749419002C469E /* Reference+Object.swift */; };
 		DA8BDED91A749419002C469E /* Reference+Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDED71A749419002C469E /* Reference+Object.swift */; };
 		DA8BDEDB1A749502002C469E /* ObjectType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDEDA1A749502002C469E /* ObjectType.swift */; };
@@ -78,6 +76,16 @@
 		DA8BDEF21A74AFA0002C469E /* Signature.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDEF01A74AFA0002C469E /* Signature.swift */; };
 		DA8BDEF41A74BFBC002C469E /* Signature+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDEF31A74BFBC002C469E /* Signature+C.swift */; };
 		DA8BDEF51A74BFBC002C469E /* Signature+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDEF31A74BFBC002C469E /* Signature+C.swift */; };
+		DA8BDEF71A74C8E9002C469E /* Repository+Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDEF61A74C8E9002C469E /* Repository+Commit.swift */; };
+		DA8BDEF81A74C8E9002C469E /* Repository+Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDEF61A74C8E9002C469E /* Repository+Commit.swift */; };
+		DA8BDF011A74D2D7002C469E /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDF001A74D2D7002C469E /* Object.swift */; };
+		DA8BDF021A74D2D7002C469E /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDF001A74D2D7002C469E /* Object.swift */; };
+		DA8BDF0C1A757890002C469E /* Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDF0B1A757890002C469E /* Commit.swift */; };
+		DA8BDF0D1A757890002C469E /* Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDF0B1A757890002C469E /* Commit.swift */; };
+		DA8BDF1D1A757EF2002C469E /* Repository+CommitSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDF0E1A757959002C469E /* Repository+CommitSpec.swift */; };
+		DA8BDF1E1A757EF3002C469E /* Repository+CommitSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDF0E1A757959002C469E /* Repository+CommitSpec.swift */; };
+		DA8BDF321A75CF89002C469E /* CommitSorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDF311A75CF89002C469E /* CommitSorting.swift */; };
+		DA8BDF331A75CF89002C469E /* CommitSorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDF311A75CF89002C469E /* CommitSorting.swift */; };
 		DA90006C1A6B9A4000F43D4F /* git2 in Copy git2 Headers */ = {isa = PBXBuildFile; fileRef = DADB27271A6B8F620036225C /* git2 */; };
 		DA90006E1A6B9A8700F43D4F /* git2 in Copy git2/sys Headers */ = {isa = PBXBuildFile; fileRef = DADB27271A6B8F620036225C /* git2 */; };
 		DA9876A61A4B791E0004AA17 /* LlamaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9876A51A4B791E0004AA17 /* LlamaKit.framework */; };
@@ -216,7 +224,6 @@
 		DA72FFD61A74478E003C5A20 /* Repository+TagSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Repository+TagSpec.swift"; sourceTree = "<group>"; };
 		DA8BDEC61A748B06002C469E /* BranchType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BranchType.swift; sourceTree = "<group>"; };
 		DA8BDED01A74925E002C469E /* Reference+Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reference+Tag.swift"; sourceTree = "<group>"; };
-		DA8BDED41A749366002C469E /* Object.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
 		DA8BDED71A749419002C469E /* Reference+Object.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reference+Object.swift"; sourceTree = "<group>"; };
 		DA8BDEDA1A749502002C469E /* ObjectType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectType.swift; sourceTree = "<group>"; };
 		DA8BDEDD1A74976E002C469E /* Reference+Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reference+Repository.swift"; sourceTree = "<group>"; };
@@ -224,6 +231,11 @@
 		DA8BDEE41A749BFA002C469E /* Reference+TagSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reference+TagSpec.swift"; sourceTree = "<group>"; };
 		DA8BDEF01A74AFA0002C469E /* Signature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signature.swift; sourceTree = "<group>"; };
 		DA8BDEF31A74BFBC002C469E /* Signature+C.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Signature+C.swift"; sourceTree = "<group>"; };
+		DA8BDEF61A74C8E9002C469E /* Repository+Commit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Repository+Commit.swift"; sourceTree = "<group>"; };
+		DA8BDF001A74D2D7002C469E /* Object.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
+		DA8BDF0B1A757890002C469E /* Commit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Commit.swift; sourceTree = "<group>"; };
+		DA8BDF0E1A757959002C469E /* Repository+CommitSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Repository+CommitSpec.swift"; sourceTree = "<group>"; };
+		DA8BDF311A75CF89002C469E /* CommitSorting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommitSorting.swift; sourceTree = "<group>"; };
 		DA9000701A6B9B2D00F43D4F /* Index.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Index.swift; sourceTree = "<group>"; };
 		DA9000731A6B9B7900F43D4F /* FileDiff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileDiff.swift; sourceTree = "<group>"; };
 		DA9000741A6B9B7900F43D4F /* Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
@@ -370,7 +382,7 @@
 		DA8BDED31A74935C002C469E /* Object */ = {
 			isa = PBXGroup;
 			children = (
-				DA8BDED41A749366002C469E /* Object.swift */,
+				DA8BDF001A74D2D7002C469E /* Object.swift */,
 				DA8BDEDA1A749502002C469E /* ObjectType.swift */,
 			);
 			path = Object;
@@ -391,6 +403,15 @@
 				DA8BDEF31A74BFBC002C469E /* Signature+C.swift */,
 			);
 			path = Signature;
+			sourceTree = "<group>";
+		};
+		DA8BDF0A1A757884002C469E /* Commit */ = {
+			isa = PBXGroup;
+			children = (
+				DA8BDF0B1A757890002C469E /* Commit.swift */,
+				DA8BDF311A75CF89002C469E /* CommitSorting.swift */,
+			);
+			path = Commit;
 			sourceTree = "<group>";
 		};
 		DA90006F1A6B9B2D00F43D4F /* Index */ = {
@@ -431,6 +452,7 @@
 			children = (
 				DA90008C1A6B9B7900F43D4F /* Repository.swift */,
 				DA7200051A74787E003C5A20 /* Repository+Branch.swift */,
+				DA8BDEF61A74C8E9002C469E /* Repository+Commit.swift */,
 				DA9000891A6B9B7900F43D4F /* Repository+Index.swift */,
 				DA90008A1A6B9B7900F43D4F /* Repository+Reference.swift */,
 				DA90008B1A6B9B7900F43D4F /* Repository+Status.swift */,
@@ -487,6 +509,7 @@
 				DA9F364E1A476AF7002F35D4 /* Gift.h */,
 				DAC9DD0F1A4B0AD800436BA2 /* Gift.m */,
 				DA8BDEC51A748AFA002C469E /* Branch */,
+				DA8BDF0A1A757884002C469E /* Commit */,
 				DA90006F1A6B9B2D00F43D4F /* Index */,
 				DA8BDED31A74935C002C469E /* Object */,
 				DA90007A1A6B9B7900F43D4F /* Reference */,
@@ -615,6 +638,7 @@
 			isa = PBXGroup;
 			children = (
 				E19F06001A6C3BC400EF5BFA /* RepositorySpec.swift */,
+				DA8BDF0E1A757959002C469E /* Repository+CommitSpec.swift */,
 				DAA283951A6D6E2100F7B4C3 /* Repository+StatusSpec.swift */,
 				DA72FFD61A74478E003C5A20 /* Repository+TagSpec.swift */,
 				DA7200081A74799A003C5A20 /* Repository+BranchSpec.swift */,
@@ -804,6 +828,7 @@
 				DADD60281A6E1A7300F16FB3 /* Index.swift in Sources */,
 				DADD60291A6E1A7300F16FB3 /* Reference.swift in Sources */,
 				DA8BDED81A749419002C469E /* Reference+Object.swift in Sources */,
+				DA8BDEF71A74C8E9002C469E /* Repository+Commit.swift in Sources */,
 				DADD602A1A6E1A7300F16FB3 /* Repository.swift in Sources */,
 				DADD602B1A6E1A7300F16FB3 /* Repository+Index.swift in Sources */,
 				DADD602C1A6E1A7300F16FB3 /* Repository+Reference.swift in Sources */,
@@ -814,6 +839,7 @@
 				DADD60301A6E1A7300F16FB3 /* CheckoutOptions.swift in Sources */,
 				DADD60311A6E1A7300F16FB3 /* CheckoutOptions+C.swift in Sources */,
 				DADD60321A6E1A7300F16FB3 /* CheckoutStrategy.swift in Sources */,
+				DA8BDF0C1A757890002C469E /* Commit.swift in Sources */,
 				DADD60331A6E1A7300F16FB3 /* RemoteCallbacks.swift in Sources */,
 				DADD60341A6E1A7300F16FB3 /* RemoteCallbacks+C.swift in Sources */,
 				DA7200061A74787E003C5A20 /* Repository+Branch.swift in Sources */,
@@ -826,8 +852,10 @@
 				DADD603A1A6E1A7300F16FB3 /* StatusDelta.swift in Sources */,
 				DADD603B1A6E1A7300F16FB3 /* FileDiff.swift in Sources */,
 				DA8BDEE21A749A43002C469E /* Tag.swift in Sources */,
+				DA8BDF321A75CF89002C469E /* CommitSorting.swift in Sources */,
 				DADD603C1A6E1A7300F16FB3 /* StatusDeltaType.swift in Sources */,
 				DADD603D1A6E1A7300F16FB3 /* StatusOptions.swift in Sources */,
+				DA8BDF011A74D2D7002C469E /* Object.swift in Sources */,
 				DA8BDEF11A74AFA0002C469E /* Signature.swift in Sources */,
 				DADD603E1A6E1A7300F16FB3 /* StatusOptions+C.swift in Sources */,
 				DA8BDED11A74925E002C469E /* Reference+Tag.swift in Sources */,
@@ -835,7 +863,6 @@
 				DADD603F1A6E1A7300F16FB3 /* StatusShowOptions.swift in Sources */,
 				DADD60401A6E1A7300F16FB3 /* Error.swift in Sources */,
 				DA3E3AEC1A742FBE00BA7AB6 /* Repository+Tag.swift in Sources */,
-				DA8BDED51A749366002C469E /* Object.swift in Sources */,
 				DA8BDEDB1A749502002C469E /* ObjectType.swift in Sources */,
 				DADD60411A6E1A7300F16FB3 /* NSError+Domains.swift in Sources */,
 			);
@@ -855,6 +882,7 @@
 				DA8BDEE71A749BFF002C469E /* Reference+TagSpec.swift in Sources */,
 				DA72000B1A7479A5003C5A20 /* Repository+BranchSpec.swift in Sources */,
 				DADD60451A6E1A7E00F16FB3 /* ReferenceSpec.swift in Sources */,
+				DA8BDF1D1A757EF2002C469E /* Repository+CommitSpec.swift in Sources */,
 				DADD60461A6E1A7E00F16FB3 /* RepositorySpec.swift in Sources */,
 				DADD60471A6E1A7E00F16FB3 /* Repository+StatusSpec.swift in Sources */,
 				DADD605C1A6E1E0200F16FB3 /* ioapi.c in Sources */,
@@ -870,6 +898,7 @@
 				DA72FFDA1A74495E003C5A20 /* Index.swift in Sources */,
 				DA72FFDD1A74495E003C5A20 /* Reference.swift in Sources */,
 				DA8BDED91A749419002C469E /* Reference+Object.swift in Sources */,
+				DA8BDEF81A74C8E9002C469E /* Repository+Commit.swift in Sources */,
 				DA72FFDE1A74495E003C5A20 /* Repository.swift in Sources */,
 				DA72FFDF1A74495E003C5A20 /* Repository+Index.swift in Sources */,
 				DA72FFE11A74495E003C5A20 /* Repository+Reference.swift in Sources */,
@@ -880,6 +909,7 @@
 				DA72FFE51A74495E003C5A20 /* CloneOptions+C.swift in Sources */,
 				DA72FFE61A74495E003C5A20 /* CheckoutOptions.swift in Sources */,
 				DA72FFE71A74495E003C5A20 /* CheckoutOptions+C.swift in Sources */,
+				DA8BDF0D1A757890002C469E /* Commit.swift in Sources */,
 				DA72FFE81A74495E003C5A20 /* CheckoutStrategy.swift in Sources */,
 				DA72FFE91A74495E003C5A20 /* RemoteCallbacks.swift in Sources */,
 				DA72FFEA1A74495E003C5A20 /* RemoteCallbacks+C.swift in Sources */,
@@ -892,8 +922,10 @@
 				DA72FFF01A74495E003C5A20 /* StatusDelta.swift in Sources */,
 				DA72FFF11A74495E003C5A20 /* FileDiff.swift in Sources */,
 				DA8BDEE31A749A43002C469E /* Tag.swift in Sources */,
+				DA8BDF331A75CF89002C469E /* CommitSorting.swift in Sources */,
 				DA7200071A74787E003C5A20 /* Repository+Branch.swift in Sources */,
 				DA72FFF21A74495E003C5A20 /* StatusDeltaType.swift in Sources */,
+				DA8BDF021A74D2D7002C469E /* Object.swift in Sources */,
 				DA8BDEF21A74AFA0002C469E /* Signature.swift in Sources */,
 				DA72FFF31A74495E003C5A20 /* StatusOptions.swift in Sources */,
 				DA8BDED21A74925E002C469E /* Reference+Tag.swift in Sources */,
@@ -901,7 +933,6 @@
 				DA72FFF41A74495E003C5A20 /* StatusOptions+C.swift in Sources */,
 				DA72FFF51A74495E003C5A20 /* StatusShowOptions.swift in Sources */,
 				DA72FFF71A74495E003C5A20 /* Error.swift in Sources */,
-				DA8BDED61A749366002C469E /* Object.swift in Sources */,
 				DA8BDEDC1A749502002C469E /* ObjectType.swift in Sources */,
 				DA72FFF81A74495E003C5A20 /* NSError+Domains.swift in Sources */,
 			);
@@ -921,6 +952,7 @@
 				DA8BDEE81A749C00002C469E /* Reference+TagSpec.swift in Sources */,
 				DA72FFFF1A74497D003C5A20 /* Repository+TagSpec.swift in Sources */,
 				DA7200001A74497D003C5A20 /* ioapi.c in Sources */,
+				DA8BDF1E1A757EF3002C469E /* Repository+CommitSpec.swift in Sources */,
 				DA7200011A74497D003C5A20 /* mztools.c in Sources */,
 				DA7200021A74497D003C5A20 /* unzip.c in Sources */,
 				DA7200031A74497D003C5A20 /* zip.c in Sources */,
