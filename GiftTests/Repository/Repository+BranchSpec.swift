@@ -1,7 +1,18 @@
 import Gift
 import LlamaKit
+import ReactiveCocoa
 import Quick
 import Nimble
+
+/**
+  Given an array of results, return an array of successful values,
+  discarding any results that were unsuccessful.
+*/
+private func compact<T, U>(results: [Result<T, U>]) -> [T] {
+  var compacted: [T] = []
+  results.map { $0.map { compacted.append($0) } }
+  return compacted
+}
 
 private extension Repository {
   /**
@@ -12,11 +23,8 @@ private extension Repository {
     :returns: A list of branch names in the order in which they were enumerated.
   */
   private func branchNames(type: BranchType) -> [String] {
-    var names: [String] = []
-    branches(type: type) { (reference: Reference) in
-      let _ = reference.name.map { names.append($0) }
-    }
-    return names
+    let branchReferences = branches(type: type).toArray() as [Reference]
+    return compact(branchReferences.map { $0.name })
   }
 }
 

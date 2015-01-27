@@ -5,6 +5,9 @@
       location = "group:Gift.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:External/ReactiveCocoa/ReactiveCocoa.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:External/LlamaKit/LlamaKit.xcodeproj">
    </FileRef>
    <FileRef
