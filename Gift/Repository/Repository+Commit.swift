@@ -13,7 +13,7 @@ public extension Repository {
     return RACSignal.createSignal { (subscriber: RACSubscriber!) -> RACDisposable! in
       let disposable = RACDisposable()
 
-      var out = COpaquePointer()
+      var out = COpaquePointer.null()
       let errorCode = git_revwalk_new(&out, self.cRepository)
       if errorCode == GIT_OK.value {
         CommitWalker(cWalker: out, cRepository: self.cRepository, sorting: sorting)

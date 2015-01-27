@@ -12,7 +12,7 @@ internal extension Tag {
               indicating what went wrong.
   */
   internal class func lookup(objectID: UnsafeMutablePointer<git_oid>, cRepository: COpaquePointer) -> Result<Tag, NSError> {
-    var out = COpaquePointer()
+    var out = COpaquePointer.null()
     let errorCode = git_tag_lookup(&out, cRepository, objectID)
     if errorCode == GIT_OK.value {
       return success(Tag(cTag: out))

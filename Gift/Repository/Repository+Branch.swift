@@ -16,7 +16,7 @@ public extension Repository {
 
       // Create a branch iterator. If this fails, notify the subscriber
       // of an error and exit early.
-      var out = COpaquePointer()
+      var out = COpaquePointer.null()
       let errorCode = git_branch_iterator_new(&out, self.cRepository, git_branch_t(type.rawValue))
       if errorCode == GIT_OK.value {
         let iterator = BranchIterator(cBranchIterator: out)

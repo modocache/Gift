@@ -25,7 +25,7 @@ internal extension BranchIterator {
               branch type (if it exists).
   */
   internal func next() -> (errorCode: Int32, cReference: COpaquePointer, branchType: git_branch_t) {
-    var cReference = COpaquePointer()
+    var cReference = COpaquePointer.null()
     var branchType = git_branch_t(0)
     let errorCode = git_branch_next(&cReference, &branchType, cBranchIterator)
     return (Int32(errorCode), cReference, branchType)

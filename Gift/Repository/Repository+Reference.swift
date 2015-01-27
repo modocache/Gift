@@ -6,7 +6,7 @@ public extension Repository {
     Retrieves the reference pointed at by HEAD.
   */
   public var headReference: Result<Reference, NSError> {
-    var out = COpaquePointer()
+    var out = COpaquePointer.null()
     let errorCode = git_repository_head(&out, cRepository)
 
     if errorCode == GIT_OK.value {

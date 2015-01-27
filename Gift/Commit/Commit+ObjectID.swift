@@ -12,7 +12,7 @@ internal extension Commit {
               indicating what went wrong.
   */
   internal class func lookup(objectID: UnsafeMutablePointer<git_oid>, cRepository: COpaquePointer) -> Result<Commit, NSError> {
-    var out = COpaquePointer()
+    var out = COpaquePointer.null()
     let errorCode = git_commit_lookup(&out, cRepository, objectID)
     if errorCode == GIT_OK.value {
       return success(Commit(cCommit: out))

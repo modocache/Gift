@@ -12,7 +12,7 @@ internal extension Tree {
               indicating what went wrong.
   */
   internal class func lookup(objectID: UnsafeMutablePointer<git_oid>, cRepository: COpaquePointer) -> Result<Tree, NSError> {
-    var out = COpaquePointer()
+    var out = COpaquePointer.null()
     let errorCode = git_tree_lookup(&out, cRepository, objectID)
     if errorCode == GIT_OK.value {
       return success(Tree(cTree: out))

@@ -50,7 +50,7 @@ public extension Repository {
 */
 public func initializeEmptyRepository(directoryURL: NSURL, options: RepositoryInitializationOptions = RepositoryInitializationOptions()) -> Result<Repository, NSError> {
   if let repoPath = directoryURL.path?.fileSystemRepresentation() {
-    var out = COpaquePointer()
+    var out = COpaquePointer.null()
     var cOptions = options.cOptions
     let errorCode = git_repository_init_ext(&out, repoPath, &cOptions)
 
@@ -75,7 +75,7 @@ public func openRepository(fileURL: NSURL) -> Result<Repository, NSError> {
   if !fileURL.fileURL || fileURL.path == nil {
     return failure(NSError.giftError(.InvalidURI, description: "Invalid fileURL: '\(fileURL)'"))
   } else {
-    var out = COpaquePointer()
+    var out = COpaquePointer.null()
     let errorCode = git_repository_open(&out, fileURL.path!)
     if errorCode == GIT_OK.value {
       return success(Repository(cRepository: out))
@@ -97,7 +97,7 @@ public func openRepository(fileURL: NSURL) -> Result<Repository, NSError> {
 public func cloneRepository(originURL: NSURL, destinationWorkingDirectory: NSURL, options: CloneOptions = CloneOptions()) -> Result<Repository, NSError> {
   if let url = cPath(originURL) {
     if let localPath = destinationWorkingDirectory.path?.fileSystemRepresentation() {
-      var out = COpaquePointer()
+      var out = COpaquePointer.null()
       var cOptions = options.cOptions
       let errorCode = git_clone(&out, url, localPath, &cOptions)
 

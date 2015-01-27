@@ -8,7 +8,7 @@ public extension Repository {
     TODO: Documentation.
   */
   public func status(closure: StatusClosure, options: StatusOptions = StatusOptions()) -> Result<UInt, NSError> {
-    var statusList = COpaquePointer()
+    var statusList = COpaquePointer.null()
     var cOptions = options.cOptions
     let errorCode = git_status_list_new(&statusList, cRepository, &cOptions)
     if errorCode == GIT_OK.value {

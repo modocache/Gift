@@ -8,7 +8,7 @@ public extension Reference {
     retrieve that commit.
   */
   public var commit: Result<Commit, NSError> {
-    var out = COpaquePointer()
+    var out = COpaquePointer.null()
     let errorCode = git_reference_peel(&out, cReference, git_otype(ObjectType.Commit.rawValue))
     if errorCode == GIT_OK.value {
       return success(Commit(cCommit: out))

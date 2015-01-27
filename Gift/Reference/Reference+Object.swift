@@ -8,7 +8,7 @@ internal extension Reference {
     object.
   */
   internal var object: Result<Object, NSError> {
-    var out = COpaquePointer()
+    var out = COpaquePointer.null()
     let errorCode = git_reference_peel(&out, cReference, git_otype(ObjectType.Any.rawValue))
     if errorCode == GIT_OK.value {
       return success(Object(cObject: out))
