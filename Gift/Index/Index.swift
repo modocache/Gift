@@ -51,7 +51,7 @@ public extension Index {
 
     var stringArray = git_strarray(strings: cPaths, count: UInt(count))
     let errorCode = git_index_add_all(cIndex, &stringArray, UInt32(options.rawValue), nil, nil)
-    cPaths.dealloc(count)
+    git_strarray_free(&stringArray)
 
     if errorCode == GIT_OK.value {
       return success(self)
