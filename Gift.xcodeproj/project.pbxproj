@@ -104,6 +104,8 @@
 		DA4483241A772DC400FE74A2 /* CommitWalker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4483221A772DC400FE74A2 /* CommitWalker.swift */; };
 		DA4483261A77358300FE74A2 /* CommitWalker+RAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4483251A77358300FE74A2 /* CommitWalker+RAC.swift */; };
 		DA4483271A77358300FE74A2 /* CommitWalker+RAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4483251A77358300FE74A2 /* CommitWalker+RAC.swift */; };
+		DA44832B1A77EE0700FE74A2 /* IndexAddOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA44832A1A77EE0700FE74A2 /* IndexAddOptions.swift */; };
+		DA44832C1A77EE0700FE74A2 /* IndexAddOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA44832A1A77EE0700FE74A2 /* IndexAddOptions.swift */; };
 		DA458B2D1A6F61200065F693 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA458B2A1A6F61200065F693 /* libcrypto.a */; };
 		DA458B2E1A6F61200065F693 /* libssh2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA458B2B1A6F61200065F693 /* libssh2.a */; };
 		DA458B2F1A6F61200065F693 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA458B2C1A6F61200065F693 /* libssl.a */; };
@@ -273,6 +275,7 @@
 		DA44831F1A77274D00FE74A2 /* Reference+CommitSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reference+CommitSpec.swift"; sourceTree = "<group>"; };
 		DA4483221A772DC400FE74A2 /* CommitWalker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommitWalker.swift; sourceTree = "<group>"; };
 		DA4483251A77358300FE74A2 /* CommitWalker+RAC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CommitWalker+RAC.swift"; sourceTree = "<group>"; };
+		DA44832A1A77EE0700FE74A2 /* IndexAddOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexAddOptions.swift; sourceTree = "<group>"; };
 		DA458B2A1A6F61200065F693 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = "../External/libssh2-for-iOS/lib/libcrypto.a"; sourceTree = "<group>"; };
 		DA458B2B1A6F61200065F693 /* libssh2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssh2.a; path = "../External/libssh2-for-iOS/lib/libssh2.a"; sourceTree = "<group>"; };
 		DA458B2C1A6F61200065F693 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = "../External/libssh2-for-iOS/lib/libssl.a"; sourceTree = "<group>"; };
@@ -451,6 +454,14 @@
 			path = Reference;
 			sourceTree = "<group>";
 		};
+		DA4483291A77EDFB00FE74A2 /* Options */ = {
+			isa = PBXGroup;
+			children = (
+				DA44832A1A77EE0700FE74A2 /* IndexAddOptions.swift */,
+			);
+			path = Options;
+			sourceTree = "<group>";
+		};
 		DA8BDEC51A748AFA002C469E /* Branch */ = {
 			isa = PBXGroup;
 			children = (
@@ -507,6 +518,7 @@
 				DA9000701A6B9B2D00F43D4F /* Index.swift */,
 				DA1387ED1A76B18A009B9C66 /* Index+Repository.swift */,
 				DA1387EA1A76B06E009B9C66 /* Index+Tree.swift */,
+				DA4483291A77EDFB00FE74A2 /* Options */,
 			);
 			path = Index;
 			sourceTree = "<group>";
@@ -927,6 +939,7 @@
 				DADD602A1A6E1A7300F16FB3 /* Repository.swift in Sources */,
 				DADD602B1A6E1A7300F16FB3 /* Repository+Index.swift in Sources */,
 				DADD602C1A6E1A7300F16FB3 /* Repository+Reference.swift in Sources */,
+				DA44832B1A77EE0700FE74A2 /* IndexAddOptions.swift in Sources */,
 				DADD602D1A6E1A7300F16FB3 /* Repository+Status.swift in Sources */,
 				DADD602E1A6E1A7300F16FB3 /* CloneOptions.swift in Sources */,
 				DA1388141A76C72B009B9C66 /* Domain.swift in Sources */,
@@ -1015,6 +1028,7 @@
 				DA4482D71A770E2600FE74A2 /* Index+Repository.swift in Sources */,
 				DA4482D81A770E2600FE74A2 /* Index+Tree.swift in Sources */,
 				DA4482D91A770E2600FE74A2 /* Object.swift in Sources */,
+				DA44832C1A77EE0700FE74A2 /* IndexAddOptions.swift in Sources */,
 				DA4482DA1A770E2600FE74A2 /* Object+ObjectID.swift in Sources */,
 				DA4482DB1A770E2600FE74A2 /* ObjectType.swift in Sources */,
 				DA4482DC1A770E2600FE74A2 /* ObjectID.swift in Sources */,
