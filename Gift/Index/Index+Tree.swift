@@ -17,7 +17,9 @@ public extension Index {
     var out = UnsafeMutablePointer<git_oid>.alloc(1)
     let errorCode = git_index_write_tree(out, cIndex)
     if errorCode == GIT_OK.value {
-      return Tree.lookup(out, cRepository: cRepository)
+      let tree = Tree.lookup(out, cRepository: cRepository)
+      out.dealloc(1)
+      return tree
     } else {
       return failure(NSError.libGit2Error(errorCode, libGit2PointOfFailure: "git_index_write_tree"))
     }

@@ -25,7 +25,8 @@ public extension Tree {
     var committerSignature = committer?.cSignature ?? author.cSignature
     var cParents = parents.map { $0.cCommit }
     let errorCode = git_commit_create(
-      out, cRepository,
+      out,
+      cRepository,
       updateReference,
       &authorSignature,
       &committerSignature,
@@ -37,7 +38,9 @@ public extension Tree {
     )
 
     if errorCode == GIT_OK.value {
-      return Commit.lookup(out, cRepository: cRepository)
+      let commit = Commit.lookup(out, cRepository: cRepository)
+      out.dealloc(1)
+      return commit
     } else {
       return failure(NSError.libGit2Error(errorCode, libGit2PointOfFailure: "git_commit_create"))
     }

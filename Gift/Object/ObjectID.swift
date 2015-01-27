@@ -6,13 +6,16 @@ import LlamaKit
   The object ID returned would be the ID used if the data were
   written to the object store.
 
+  The object ID returned by this function must be deallocated,
+  otherwise it is never freed.
+
   :param: data The data for which an object ID is to be generated.
   :param: type The type of the object to be written.
   :returns: The result of the hashing operation: either the object ID that would
             be used to store the data to the object store, or a failure indicating
             what went wrong.
 */
-internal func objectID(data: NSData, type: ObjectType) -> Result<UnsafeMutablePointer<git_oid>, NSError> {
+internal func allocateObjectID(data: NSData, type: ObjectType) -> Result<UnsafeMutablePointer<git_oid>, NSError> {
   var out = UnsafeMutablePointer<git_oid>.alloc(1)
   let errorCode = git_odb_hash(out, data.bytes, UInt(data.length), git_otype(type.rawValue))
   if errorCode == GIT_OK.value {
@@ -27,13 +30,16 @@ internal func objectID(data: NSData, type: ObjectType) -> Result<UnsafeMutablePo
   hashing. The object ID returned would be the ID used if the data were
   written to the object store.
 
+  The object ID returned by this function must be deallocated,
+  otherwise it is never freed.
+
   :param: fileURL The URL of the file.
   :param: type The type of the object to be written.
   :returns: The result of the hashing operation: either the object ID that would
             be used to store the data to the object store, or a failure indicating
             what went wrong.
 */
-internal func objectID(fileURL: NSURL, type: ObjectType) -> Result<UnsafeMutablePointer<git_oid>, NSError> {
+internal func allocateObjectID(fileURL: NSURL, type: ObjectType) -> Result<UnsafeMutablePointer<git_oid>, NSError> {
   if let path = fileURL.path {
     var out = UnsafeMutablePointer<git_oid>.alloc(1)
     let errorCode = git_odb_hashfile(out, path, git_otype(type.rawValue))
@@ -51,11 +57,14 @@ internal func objectID(fileURL: NSURL, type: ObjectType) -> Result<UnsafeMutable
   Converts a 40-digit hexadecimal string representation of an object ID
   (a SHA1 hash of the object's contents) to an object ID.
 
+  The object ID returned by this function must be deallocated,
+  otherwise it is never freed.
+
   :param: SHA A string representation of an object ID.
   :returns: The result of the conversion: either a pointer to an objectID, or a failure
             indicating why the SHA string could not be converted.
 */
-internal func objectID(SHA: String) -> Result<UnsafeMutablePointer<git_oid>, NSError> {
+internal func allocateObjectID(SHA: String) -> Result<UnsafeMutablePointer<git_oid>, NSError> {
   var out = UnsafeMutablePointer<git_oid>.alloc(1)
   let errorCode = git_oid_fromstr(out, SHA)
   if errorCode == GIT_OK.value {

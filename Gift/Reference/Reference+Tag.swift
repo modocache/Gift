@@ -22,7 +22,9 @@ public extension Reference {
         out, self.cRepository, name, referenceObject.cObject, &cSignature, message, force ? 1 : 0)
 
       if errorCode == GIT_OK.value {
-        return Tag.lookup(out, cRepository: self.cRepository)
+        let tag = Tag.lookup(out, cRepository: self.cRepository)
+        out.dealloc(1)
+        return tag
       } else {
         return failure(NSError.libGit2Error(errorCode, libGit2PointOfFailure: "git_tag_create"))
       }

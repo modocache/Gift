@@ -26,6 +26,7 @@ internal extension CommitWalker {
       // For each commit, check if the signal has been disposed of. If it has,
       // return immediately.
       if disposable.disposed {
+        objectID.dealloc(1)
         return
       }
 
@@ -38,6 +39,7 @@ internal extension CommitWalker {
         subscriber.sendNext(boxedCommit.unbox)
       case .Failure(let boxedError):
         subscriber.sendError(boxedError.unbox)
+        objectID.dealloc(1)
         return
       }
 
@@ -46,6 +48,7 @@ internal extension CommitWalker {
     }
 
     // Iteration completion means one of two things:
+    objectID.dealloc(1)
     if errorCode == GIT_ITEROVER.value {
       // 1. There are no more commits to iterate over, i.e.: GIT_ITEROVER.
       //    If that's the case, notify the subsciber that the signal has completed.
