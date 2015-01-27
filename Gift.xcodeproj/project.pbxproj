@@ -96,6 +96,14 @@
 		DA4483151A770E4500FE74A2 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = DADD605B1A6E1E0200F16FB3 /* SSZipArchive.m */; };
 		DA44831A1A77163900FE74A2 /* BranchIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4483191A77163900FE74A2 /* BranchIterator.swift */; };
 		DA44831B1A77163900FE74A2 /* BranchIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4483191A77163900FE74A2 /* BranchIterator.swift */; };
+		DA44831D1A77265C00FE74A2 /* Reference+Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA44831C1A77265C00FE74A2 /* Reference+Commit.swift */; };
+		DA44831E1A77265C00FE74A2 /* Reference+Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA44831C1A77265C00FE74A2 /* Reference+Commit.swift */; };
+		DA4483201A77274D00FE74A2 /* Reference+CommitSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA44831F1A77274D00FE74A2 /* Reference+CommitSpec.swift */; };
+		DA4483211A77274D00FE74A2 /* Reference+CommitSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA44831F1A77274D00FE74A2 /* Reference+CommitSpec.swift */; };
+		DA4483231A772DC400FE74A2 /* CommitWalker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4483221A772DC400FE74A2 /* CommitWalker.swift */; };
+		DA4483241A772DC400FE74A2 /* CommitWalker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4483221A772DC400FE74A2 /* CommitWalker.swift */; };
+		DA4483261A77358300FE74A2 /* CommitWalker+RAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4483251A77358300FE74A2 /* CommitWalker+RAC.swift */; };
+		DA4483271A77358300FE74A2 /* CommitWalker+RAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4483251A77358300FE74A2 /* CommitWalker+RAC.swift */; };
 		DA458B2D1A6F61200065F693 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA458B2A1A6F61200065F693 /* libcrypto.a */; };
 		DA458B2E1A6F61200065F693 /* libssh2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA458B2B1A6F61200065F693 /* libssh2.a */; };
 		DA458B2F1A6F61200065F693 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA458B2C1A6F61200065F693 /* libssl.a */; };
@@ -261,6 +269,10 @@
 		DA3EDDE31A6DA1130027CEFB /* ReferenceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferenceSpec.swift; sourceTree = "<group>"; };
 		DA4482CD1A77076200FE74A2 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Gift-dgwchahhdqnxcmclexmexcticalo/Build/Products/Debug/ReactiveCocoa.framework"; sourceTree = "<group>"; };
 		DA4483191A77163900FE74A2 /* BranchIterator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BranchIterator.swift; sourceTree = "<group>"; };
+		DA44831C1A77265C00FE74A2 /* Reference+Commit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reference+Commit.swift"; sourceTree = "<group>"; };
+		DA44831F1A77274D00FE74A2 /* Reference+CommitSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reference+CommitSpec.swift"; sourceTree = "<group>"; };
+		DA4483221A772DC400FE74A2 /* CommitWalker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommitWalker.swift; sourceTree = "<group>"; };
+		DA4483251A77358300FE74A2 /* CommitWalker+RAC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CommitWalker+RAC.swift"; sourceTree = "<group>"; };
 		DA458B2A1A6F61200065F693 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = "../External/libssh2-for-iOS/lib/libcrypto.a"; sourceTree = "<group>"; };
 		DA458B2B1A6F61200065F693 /* libssh2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssh2.a; path = "../External/libssh2-for-iOS/lib/libssh2.a"; sourceTree = "<group>"; };
 		DA458B2C1A6F61200065F693 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = "../External/libssh2-for-iOS/lib/libssl.a"; sourceTree = "<group>"; };
@@ -433,6 +445,7 @@
 			isa = PBXGroup;
 			children = (
 				DA3EDDE31A6DA1130027CEFB /* ReferenceSpec.swift */,
+				DA44831F1A77274D00FE74A2 /* Reference+CommitSpec.swift */,
 				DA8BDEE41A749BFA002C469E /* Reference+TagSpec.swift */,
 			);
 			path = Reference;
@@ -481,6 +494,8 @@
 			children = (
 				DA8BDF0B1A757890002C469E /* Commit.swift */,
 				DA1388061A76BB0E009B9C66 /* Commit+ObjectID.swift */,
+				DA4483221A772DC400FE74A2 /* CommitWalker.swift */,
+				DA4483251A77358300FE74A2 /* CommitWalker+RAC.swift */,
 				DA8BDF311A75CF89002C469E /* CommitSorting.swift */,
 			);
 			path = Commit;
@@ -514,6 +529,7 @@
 			isa = PBXGroup;
 			children = (
 				DA90007B1A6B9B7900F43D4F /* Reference.swift */,
+				DA44831C1A77265C00FE74A2 /* Reference+Commit.swift */,
 				DA8BDED71A749419002C469E /* Reference+Object.swift */,
 				DA8BDEDD1A74976E002C469E /* Reference+Repository.swift */,
 				DA8BDED01A74925E002C469E /* Reference+Tag.swift */,
@@ -932,9 +948,12 @@
 				DA8BDEDE1A74976E002C469E /* Reference+Repository.swift in Sources */,
 				DADD60371A6E1A7300F16FB3 /* RepositoryInitializationOptionSet.swift in Sources */,
 				DADD60381A6E1A7300F16FB3 /* RepositoryInitializationMode.swift in Sources */,
+				DA44831D1A77265C00FE74A2 /* Reference+Commit.swift in Sources */,
 				DADD60391A6E1A7300F16FB3 /* Status.swift in Sources */,
 				DADD603A1A6E1A7300F16FB3 /* StatusDelta.swift in Sources */,
+				DA4483261A77358300FE74A2 /* CommitWalker+RAC.swift in Sources */,
 				DADD603B1A6E1A7300F16FB3 /* FileDiff.swift in Sources */,
+				DA4483231A772DC400FE74A2 /* CommitWalker.swift in Sources */,
 				DA8BDEE21A749A43002C469E /* Tag.swift in Sources */,
 				DA1387F81A76B4F0009B9C66 /* Tree+Commit.swift in Sources */,
 				DA1388111A76C396009B9C66 /* ObjectID.swift in Sources */,
@@ -965,6 +984,7 @@
 				DADD60601A6E1E0200F16FB3 /* unzip.c in Sources */,
 				DADD60421A6E1A7E00F16FB3 /* FilePathHelpers.swift in Sources */,
 				DADD60431A6E1A7E00F16FB3 /* ResultMatchers.swift in Sources */,
+				DA4483201A77274D00FE74A2 /* Reference+CommitSpec.swift in Sources */,
 				DA72000D1A7479AF003C5A20 /* Repository+TagSpec.swift in Sources */,
 				DADD60621A6E1E0200F16FB3 /* zip.c in Sources */,
 				DADD605E1A6E1E0200F16FB3 /* mztools.c in Sources */,
@@ -1016,9 +1036,12 @@
 				DA4482EC1A770E2600FE74A2 /* CheckoutStrategy.swift in Sources */,
 				DA4482ED1A770E2600FE74A2 /* RemoteCallbacks.swift in Sources */,
 				DA4482EE1A770E2600FE74A2 /* RemoteCallbacks+C.swift in Sources */,
+				DA44831E1A77265C00FE74A2 /* Reference+Commit.swift in Sources */,
 				DA4482EF1A770E2600FE74A2 /* RepositoryInitializationOptions.swift in Sources */,
 				DA4482F01A770E2600FE74A2 /* RepositoryInitializationOptions+C.swift in Sources */,
+				DA4483271A77358300FE74A2 /* CommitWalker+RAC.swift in Sources */,
 				DA4482F11A770E2600FE74A2 /* RepositoryInitializationOptionSet.swift in Sources */,
+				DA4483241A772DC400FE74A2 /* CommitWalker.swift in Sources */,
 				DA4482F21A770E2600FE74A2 /* RepositoryInitializationMode.swift in Sources */,
 				DA4482F31A770E2600FE74A2 /* Signature.swift in Sources */,
 				DA4482F41A770E2600FE74A2 /* Signature+C.swift in Sources */,
@@ -1049,6 +1072,7 @@
 				DA4483051A770E4500FE74A2 /* FilePathHelpers.swift in Sources */,
 				DA4483061A770E4500FE74A2 /* ResultMatchers.swift in Sources */,
 				DA4483071A770E4500FE74A2 /* IndexSpec.swift in Sources */,
+				DA4483211A77274D00FE74A2 /* Reference+CommitSpec.swift in Sources */,
 				DA4483081A770E4500FE74A2 /* Index+TreeSpec.swift in Sources */,
 				DA4483091A770E4500FE74A2 /* ReferenceSpec.swift in Sources */,
 				DA44830A1A770E4500FE74A2 /* Reference+TagSpec.swift in Sources */,

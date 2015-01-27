@@ -1,32 +1,28 @@
-import Foundation
-import LlamaKit
+import ReactiveCocoa
 
 public extension Repository {
   /**
     Enumerates the commits in a repository in the given order.
   
     :param: sorting The sorting rules to use when ordering commits to enumerate.
-    :param: commitCallback A callback that is called at each step of the enumeration.
-                           If an error occurs before or during enumeration, an error
-                           is passed to the callback. Otherwise, a commit object is
-                           passed to the callback.
+    :returns: A signal that will notify subscribers of commits as they are
+              enumerated. Dispose of the signal in order to discontinue
+              the enueration.
   */
-  public func commits(sorting: CommitSorting = CommitSorting.Time, commitCallback: (Result<Commit, NSError>) -> ()) {
-    var walker = COpaquePointer()
-    let createWalkerErrorCode = git_revwalk_new(&walker, cRepository)
-    if createWalkerErrorCode == GIT_OK.value {
-      let pushHeadErrorCode = git_revwalk_push_head(walker)
-      if pushHeadErrorCode == GIT_OK.value {
-        git_revwalk_sorting(walker, UInt32(sorting.rawValue))
-        var objectID = UnsafeMutablePointer<git_oid>.alloc(1)
-        while git_revwalk_next(objectID, walker) == GIT_OK.value {
-          commitCallback(Commit.lookup(objectID, cRepository: cRepository))
-        }
+  public func commits(sorting: CommitSorting = CommitSorting.Time) -> RACSignal {
+    return RACSignal.createSignal { (subscriber: RACSubscriber!) -> RACDisposable! in
+      let disposable = RACDisposable()
+
+      var out = COpaquePointer()
+      let errorCode = git_revwalk_new(&out, self.cRepository)
+      if errorCode == GIT_OK.value {
+        CommitWalker(cWalker: out, cRepository: self.cRepository, sorting: sorting)
+          .walk(subscriber, disposable: disposable)
       } else {
-        commitCallback(failure(NSError.libGit2Error(pushHeadErrorCode, libGit2PointOfFailure: "git_revwalk_push_head")))
+        subscriber.sendError(NSError.libGit2Error(errorCode, libGit2PointOfFailure: "git_revwalk_new"))
       }
-    } else {
-      commitCallback(failure(NSError.libGit2Error(createWalkerErrorCode, libGit2PointOfFailure: "git_revwalk_new")))
+
+      return disposable
     }
   }
 }
