@@ -134,6 +134,16 @@
 		DA93AF001A785935009E95F0 /* Commit+Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AEFE1A785935009E95F0 /* Commit+Repository.swift */; };
 		DA93AF031A786CBB009E95F0 /* Commit+BranchSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF021A786CBB009E95F0 /* Commit+BranchSpec.swift */; };
 		DA93AF041A786CBB009E95F0 /* Commit+BranchSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF021A786CBB009E95F0 /* Commit+BranchSpec.swift */; };
+		DA93AF091A787204009E95F0 /* Commit+MergeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF081A787204009E95F0 /* Commit+MergeSpec.swift */; };
+		DA93AF0A1A787204009E95F0 /* Commit+MergeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF081A787204009E95F0 /* Commit+MergeSpec.swift */; };
+		DA93AF0B1A787233009E95F0 /* Commit+Merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF051A7871F2009E95F0 /* Commit+Merge.swift */; };
+		DA93AF0C1A787234009E95F0 /* Commit+Merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF051A7871F2009E95F0 /* Commit+Merge.swift */; };
+		DA93AF0F1A787D6F009E95F0 /* MergeOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF0E1A787D6F009E95F0 /* MergeOptions.swift */; };
+		DA93AF101A787D6F009E95F0 /* MergeOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF0E1A787D6F009E95F0 /* MergeOptions.swift */; };
+		DA93AF121A787DBD009E95F0 /* MergeOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF111A787DBD009E95F0 /* MergeOptions+C.swift */; };
+		DA93AF131A787DBD009E95F0 /* MergeOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF111A787DBD009E95F0 /* MergeOptions+C.swift */; };
+		DA93AF151A7883DA009E95F0 /* MergeStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF141A7883DA009E95F0 /* MergeStrategy.swift */; };
+		DA93AF161A7883DA009E95F0 /* MergeStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF141A7883DA009E95F0 /* MergeStrategy.swift */; };
 		DA9876A61A4B791E0004AA17 /* LlamaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9876A51A4B791E0004AA17 /* LlamaKit.framework */; };
 		DA9F364F1A476AF7002F35D4 /* Gift.h in Headers */ = {isa = PBXBuildFile; fileRef = DA9F364E1A476AF7002F35D4 /* Gift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA9F36551A476AF7002F35D4 /* Gift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9F36491A476AF7002F35D4 /* Gift.framework */; };
@@ -330,6 +340,11 @@
 		DA93AEFB1A7858E6009E95F0 /* Commit+Branch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Commit+Branch.swift"; sourceTree = "<group>"; };
 		DA93AEFE1A785935009E95F0 /* Commit+Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Commit+Repository.swift"; sourceTree = "<group>"; };
 		DA93AF021A786CBB009E95F0 /* Commit+BranchSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Commit+BranchSpec.swift"; sourceTree = "<group>"; };
+		DA93AF051A7871F2009E95F0 /* Commit+Merge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Commit+Merge.swift"; sourceTree = "<group>"; };
+		DA93AF081A787204009E95F0 /* Commit+MergeSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Commit+MergeSpec.swift"; sourceTree = "<group>"; };
+		DA93AF0E1A787D6F009E95F0 /* MergeOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MergeOptions.swift; sourceTree = "<group>"; };
+		DA93AF111A787DBD009E95F0 /* MergeOptions+C.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MergeOptions+C.swift"; sourceTree = "<group>"; };
+		DA93AF141A7883DA009E95F0 /* MergeStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MergeStrategy.swift; sourceTree = "<group>"; };
 		DA9876A51A4B791E0004AA17 /* LlamaKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LlamaKit.framework; path = ../External/LlamaKit/build/Debug/LlamaKit.framework; sourceTree = "<group>"; };
 		DA9E6F9A1A6B9016001C5F7F /* Gift.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = Gift.modulemap; sourceTree = "<group>"; };
 		DA9F36491A476AF7002F35D4 /* Gift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Gift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -519,6 +534,8 @@
 				DA4483221A772DC400FE74A2 /* CommitWalker.swift */,
 				DA4483251A77358300FE74A2 /* CommitWalker+RAC.swift */,
 				DA8BDF311A75CF89002C469E /* CommitSorting.swift */,
+				DA93AF051A7871F2009E95F0 /* Commit+Merge.swift */,
+				DA93AF0D1A787D5E009E95F0 /* Options */,
 			);
 			path = Commit;
 			sourceTree = "<group>";
@@ -597,8 +614,19 @@
 			isa = PBXGroup;
 			children = (
 				DA93AF021A786CBB009E95F0 /* Commit+BranchSpec.swift */,
+				DA93AF081A787204009E95F0 /* Commit+MergeSpec.swift */,
 			);
 			path = Commit;
+			sourceTree = "<group>";
+		};
+		DA93AF0D1A787D5E009E95F0 /* Options */ = {
+			isa = PBXGroup;
+			children = (
+				DA93AF0E1A787D6F009E95F0 /* MergeOptions.swift */,
+				DA93AF111A787DBD009E95F0 /* MergeOptions+C.swift */,
+				DA93AF141A7883DA009E95F0 /* MergeStrategy.swift */,
+			);
+			path = Options;
 			sourceTree = "<group>";
 		};
 		DA9F363F1A476AF7002F35D4 = {
@@ -959,10 +987,12 @@
 				DADD602A1A6E1A7300F16FB3 /* Repository.swift in Sources */,
 				DADD602B1A6E1A7300F16FB3 /* Repository+Index.swift in Sources */,
 				DADD602C1A6E1A7300F16FB3 /* Repository+Reference.swift in Sources */,
+				DA93AF151A7883DA009E95F0 /* MergeStrategy.swift in Sources */,
 				DA44832B1A77EE0700FE74A2 /* IndexAddOptions.swift in Sources */,
 				DADD602D1A6E1A7300F16FB3 /* Repository+Status.swift in Sources */,
 				DADD602E1A6E1A7300F16FB3 /* CloneOptions.swift in Sources */,
 				DA1388141A76C72B009B9C66 /* Domain.swift in Sources */,
+				DA93AF0B1A787233009E95F0 /* Commit+Merge.swift in Sources */,
 				DADD602F1A6E1A7300F16FB3 /* CloneOptions+C.swift in Sources */,
 				DA8BDEF41A74BFBC002C469E /* Signature+C.swift in Sources */,
 				DADD60301A6E1A7300F16FB3 /* CheckoutOptions.swift in Sources */,
@@ -977,6 +1007,7 @@
 				DA13880E1A76C318009B9C66 /* Object+ObjectID.swift in Sources */,
 				DA1387EE1A76B18A009B9C66 /* Index+Repository.swift in Sources */,
 				DA7200061A74787E003C5A20 /* Repository+Branch.swift in Sources */,
+				DA93AF0F1A787D6F009E95F0 /* MergeOptions.swift in Sources */,
 				DADD60351A6E1A7300F16FB3 /* RepositoryInitializationOptions.swift in Sources */,
 				DADD60361A6E1A7300F16FB3 /* RepositoryInitializationOptions+C.swift in Sources */,
 				DA8BDEDE1A74976E002C469E /* Reference+Repository.swift in Sources */,
@@ -1005,6 +1036,7 @@
 				DADD60401A6E1A7300F16FB3 /* Error.swift in Sources */,
 				DA1387FB1A76B596009B9C66 /* Tree+Repository.swift in Sources */,
 				DA3E3AEC1A742FBE00BA7AB6 /* Repository+Tag.swift in Sources */,
+				DA93AF121A787DBD009E95F0 /* MergeOptions+C.swift in Sources */,
 				DA8BDEDB1A749502002C469E /* ObjectType.swift in Sources */,
 				DA44831A1A77163900FE74A2 /* BranchIterator.swift in Sources */,
 				DA1387EB1A76B06E009B9C66 /* Index+Tree.swift in Sources */,
@@ -1029,6 +1061,7 @@
 				DADD60451A6E1A7E00F16FB3 /* ReferenceSpec.swift in Sources */,
 				DA8BDF1D1A757EF2002C469E /* Repository+CommitSpec.swift in Sources */,
 				DADD60461A6E1A7E00F16FB3 /* RepositorySpec.swift in Sources */,
+				DA93AF091A787204009E95F0 /* Commit+MergeSpec.swift in Sources */,
 				DADD60471A6E1A7E00F16FB3 /* Repository+StatusSpec.swift in Sources */,
 				DA1387F51A76B359009B9C66 /* Index+TreeSpec.swift in Sources */,
 				DADD605C1A6E1E0200F16FB3 /* ioapi.c in Sources */,
@@ -1051,10 +1084,12 @@
 				DA4482D71A770E2600FE74A2 /* Index+Repository.swift in Sources */,
 				DA4482D81A770E2600FE74A2 /* Index+Tree.swift in Sources */,
 				DA4482D91A770E2600FE74A2 /* Object.swift in Sources */,
+				DA93AF161A7883DA009E95F0 /* MergeStrategy.swift in Sources */,
 				DA44832C1A77EE0700FE74A2 /* IndexAddOptions.swift in Sources */,
 				DA4482DA1A770E2600FE74A2 /* Object+ObjectID.swift in Sources */,
 				DA4482DB1A770E2600FE74A2 /* ObjectType.swift in Sources */,
 				DA4482DC1A770E2600FE74A2 /* ObjectID.swift in Sources */,
+				DA93AF0C1A787234009E95F0 /* Commit+Merge.swift in Sources */,
 				DA4482DD1A770E2600FE74A2 /* Reference.swift in Sources */,
 				DA4482DE1A770E2600FE74A2 /* Reference+Object.swift in Sources */,
 				DA4482DF1A770E2600FE74A2 /* Reference+Repository.swift in Sources */,
@@ -1069,6 +1104,7 @@
 				DA4482E71A770E2600FE74A2 /* Repository+Tag.swift in Sources */,
 				DA4482E81A770E2600FE74A2 /* CloneOptions.swift in Sources */,
 				DA4482E91A770E2600FE74A2 /* CloneOptions+C.swift in Sources */,
+				DA93AF101A787D6F009E95F0 /* MergeOptions.swift in Sources */,
 				DA4482EA1A770E2600FE74A2 /* CheckoutOptions.swift in Sources */,
 				DA4482EB1A770E2600FE74A2 /* CheckoutOptions+C.swift in Sources */,
 				DA4482EC1A770E2600FE74A2 /* CheckoutStrategy.swift in Sources */,
@@ -1097,6 +1133,7 @@
 				DA4482FF1A770E2600FE74A2 /* Tree+Commit.swift in Sources */,
 				DA4483001A770E2600FE74A2 /* Tree+ObjectID.swift in Sources */,
 				DA4483011A770E2600FE74A2 /* Tree+Repository.swift in Sources */,
+				DA93AF131A787DBD009E95F0 /* MergeOptions+C.swift in Sources */,
 				DA4483021A770E2600FE74A2 /* Error.swift in Sources */,
 				DA44831B1A77163900FE74A2 /* BranchIterator.swift in Sources */,
 				DA4483031A770E2600FE74A2 /* Domain.swift in Sources */,
@@ -1121,6 +1158,7 @@
 				DA44830E1A770E4500FE74A2 /* Repository+TagSpec.swift in Sources */,
 				DA44830F1A770E4500FE74A2 /* Repository+BranchSpec.swift in Sources */,
 				DA4483101A770E4500FE74A2 /* Tree+CommitSpec.swift in Sources */,
+				DA93AF0A1A787204009E95F0 /* Commit+MergeSpec.swift in Sources */,
 				DA4483111A770E4500FE74A2 /* ioapi.c in Sources */,
 				DA4483121A770E4500FE74A2 /* mztools.c in Sources */,
 				DA4483131A770E4500FE74A2 /* unzip.c in Sources */,

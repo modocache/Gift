@@ -1,4 +1,5 @@
 import ReactiveCocoa
+import LlamaKit
 
 public extension Repository {
   /**
@@ -49,6 +50,25 @@ public extension Repository {
       }
 
       return disposable
+    }
+  }
+
+  /**
+    Looks up a branch by a given name.
+
+    :param: name The name of the branch to look up.
+    :param: branchType A classier specifying whether to include results from
+                       local branches, remote branches, or both.
+    :returns: The result of the lookup: either a reference to a
+              branch or an error indicating what went wrong.
+  */
+  public func lookupBranch(name: String, branchType: BranchType = .Local) -> Result<Reference, NSError> {
+    var out = COpaquePointer.null()
+    let errorCode = git_branch_lookup(&out, cRepository, name, git_branch_t(branchType.rawValue))
+    if errorCode == GIT_OK.value {
+      return success(Reference(cReference: out))
+    } else {
+      return failure(NSError.libGit2Error(errorCode, libGit2PointOfFailure: "git_branch_lookup"))
     }
   }
 }
