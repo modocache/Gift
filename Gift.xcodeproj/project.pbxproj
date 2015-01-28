@@ -48,17 +48,6 @@
 		DA4482E51A770E2600FE74A2 /* Repository+Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90008A1A6B9B7900F43D4F /* Repository+Reference.swift */; };
 		DA4482E61A770E2600FE74A2 /* Repository+Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90008B1A6B9B7900F43D4F /* Repository+Status.swift */; };
 		DA4482E71A770E2600FE74A2 /* Repository+Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3E3AEB1A742FBE00BA7AB6 /* Repository+Tag.swift */; };
-		DA4482E81A770E2600FE74A2 /* CloneOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000821A6B9B7900F43D4F /* CloneOptions.swift */; };
-		DA4482E91A770E2600FE74A2 /* CloneOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000811A6B9B7900F43D4F /* CloneOptions+C.swift */; };
-		DA4482EA1A770E2600FE74A2 /* CheckoutOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90007F1A6B9B7900F43D4F /* CheckoutOptions.swift */; };
-		DA4482EB1A770E2600FE74A2 /* CheckoutOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90007E1A6B9B7900F43D4F /* CheckoutOptions+C.swift */; };
-		DA4482EC1A770E2600FE74A2 /* CheckoutStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000801A6B9B7900F43D4F /* CheckoutStrategy.swift */; };
-		DA4482ED1A770E2600FE74A2 /* RemoteCallbacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000841A6B9B7900F43D4F /* RemoteCallbacks.swift */; };
-		DA4482EE1A770E2600FE74A2 /* RemoteCallbacks+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000831A6B9B7900F43D4F /* RemoteCallbacks+C.swift */; };
-		DA4482EF1A770E2600FE74A2 /* RepositoryInitializationOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000871A6B9B7900F43D4F /* RepositoryInitializationOptions.swift */; };
-		DA4482F01A770E2600FE74A2 /* RepositoryInitializationOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000861A6B9B7900F43D4F /* RepositoryInitializationOptions+C.swift */; };
-		DA4482F11A770E2600FE74A2 /* RepositoryInitializationOptionSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000881A6B9B7900F43D4F /* RepositoryInitializationOptionSet.swift */; };
-		DA4482F21A770E2600FE74A2 /* RepositoryInitializationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000851A6B9B7900F43D4F /* RepositoryInitializationMode.swift */; };
 		DA4482F31A770E2600FE74A2 /* Signature.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDEF01A74AFA0002C469E /* Signature.swift */; };
 		DA4482F41A770E2600FE74A2 /* Signature+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDEF31A74BFBC002C469E /* Signature+C.swift */; };
 		DA4482F51A770E2600FE74A2 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000741A6B9B7900F43D4F /* Status.swift */; };
@@ -146,6 +135,32 @@
 		DA93AF161A7883DA009E95F0 /* MergeStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF141A7883DA009E95F0 /* MergeStrategy.swift */; };
 		DA93AF181A788C1E009E95F0 /* Repository+ReferenceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF171A788C1E009E95F0 /* Repository+ReferenceSpec.swift */; };
 		DA93AF191A788C1E009E95F0 /* Repository+ReferenceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF171A788C1E009E95F0 /* Repository+ReferenceSpec.swift */; };
+		DA93AF321A78ACE2009E95F0 /* CheckoutOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF221A78ACE2009E95F0 /* CheckoutOptions+C.swift */; };
+		DA93AF331A78ACE2009E95F0 /* CheckoutOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF221A78ACE2009E95F0 /* CheckoutOptions+C.swift */; };
+		DA93AF341A78ACE2009E95F0 /* CheckoutOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF231A78ACE2009E95F0 /* CheckoutOptions.swift */; };
+		DA93AF351A78ACE2009E95F0 /* CheckoutOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF231A78ACE2009E95F0 /* CheckoutOptions.swift */; };
+		DA93AF361A78ACE2009E95F0 /* CheckoutStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF241A78ACE2009E95F0 /* CheckoutStrategy.swift */; };
+		DA93AF371A78ACE2009E95F0 /* CheckoutStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF241A78ACE2009E95F0 /* CheckoutStrategy.swift */; };
+		DA93AF381A78ACE2009E95F0 /* GIFTCheckoutOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = DA93AF251A78ACE2009E95F0 /* GIFTCheckoutOptions.h */; };
+		DA93AF391A78ACE2009E95F0 /* GIFTCheckoutOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = DA93AF251A78ACE2009E95F0 /* GIFTCheckoutOptions.h */; };
+		DA93AF3A1A78ACE2009E95F0 /* GIFTCheckoutOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF261A78ACE2009E95F0 /* GIFTCheckoutOptions.m */; };
+		DA93AF3B1A78ACE2009E95F0 /* GIFTCheckoutOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF261A78ACE2009E95F0 /* GIFTCheckoutOptions.m */; };
+		DA93AF3C1A78ACE2009E95F0 /* CloneOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF281A78ACE2009E95F0 /* CloneOptions+C.swift */; };
+		DA93AF3D1A78ACE2009E95F0 /* CloneOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF281A78ACE2009E95F0 /* CloneOptions+C.swift */; };
+		DA93AF3E1A78ACE2009E95F0 /* CloneOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF291A78ACE2009E95F0 /* CloneOptions.swift */; };
+		DA93AF3F1A78ACE2009E95F0 /* CloneOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF291A78ACE2009E95F0 /* CloneOptions.swift */; };
+		DA93AF401A78ACE2009E95F0 /* RepositoryInitializationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF2B1A78ACE2009E95F0 /* RepositoryInitializationMode.swift */; };
+		DA93AF411A78ACE2009E95F0 /* RepositoryInitializationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF2B1A78ACE2009E95F0 /* RepositoryInitializationMode.swift */; };
+		DA93AF421A78ACE2009E95F0 /* RepositoryInitializationOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF2C1A78ACE2009E95F0 /* RepositoryInitializationOptions+C.swift */; };
+		DA93AF431A78ACE2009E95F0 /* RepositoryInitializationOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF2C1A78ACE2009E95F0 /* RepositoryInitializationOptions+C.swift */; };
+		DA93AF441A78ACE2009E95F0 /* RepositoryInitializationOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF2D1A78ACE2009E95F0 /* RepositoryInitializationOptions.swift */; };
+		DA93AF451A78ACE2009E95F0 /* RepositoryInitializationOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF2D1A78ACE2009E95F0 /* RepositoryInitializationOptions.swift */; };
+		DA93AF461A78ACE2009E95F0 /* RepositoryInitializationOptionSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF2E1A78ACE2009E95F0 /* RepositoryInitializationOptionSet.swift */; };
+		DA93AF471A78ACE2009E95F0 /* RepositoryInitializationOptionSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF2E1A78ACE2009E95F0 /* RepositoryInitializationOptionSet.swift */; };
+		DA93AF481A78ACE2009E95F0 /* RemoteCallbacks+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF301A78ACE2009E95F0 /* RemoteCallbacks+C.swift */; };
+		DA93AF491A78ACE2009E95F0 /* RemoteCallbacks+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF301A78ACE2009E95F0 /* RemoteCallbacks+C.swift */; };
+		DA93AF4A1A78ACE2009E95F0 /* RemoteCallbacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF311A78ACE2009E95F0 /* RemoteCallbacks.swift */; };
+		DA93AF4B1A78ACE2009E95F0 /* RemoteCallbacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF311A78ACE2009E95F0 /* RemoteCallbacks.swift */; };
 		DA9876A61A4B791E0004AA17 /* LlamaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9876A51A4B791E0004AA17 /* LlamaKit.framework */; };
 		DA9F364F1A476AF7002F35D4 /* Gift.h in Headers */ = {isa = PBXBuildFile; fileRef = DA9F364E1A476AF7002F35D4 /* Gift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA9F36551A476AF7002F35D4 /* Gift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9F36491A476AF7002F35D4 /* Gift.framework */; };
@@ -167,17 +182,6 @@
 		DADD602B1A6E1A7300F16FB3 /* Repository+Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000891A6B9B7900F43D4F /* Repository+Index.swift */; };
 		DADD602C1A6E1A7300F16FB3 /* Repository+Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90008A1A6B9B7900F43D4F /* Repository+Reference.swift */; };
 		DADD602D1A6E1A7300F16FB3 /* Repository+Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90008B1A6B9B7900F43D4F /* Repository+Status.swift */; };
-		DADD602E1A6E1A7300F16FB3 /* CloneOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000821A6B9B7900F43D4F /* CloneOptions.swift */; };
-		DADD602F1A6E1A7300F16FB3 /* CloneOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000811A6B9B7900F43D4F /* CloneOptions+C.swift */; };
-		DADD60301A6E1A7300F16FB3 /* CheckoutOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90007F1A6B9B7900F43D4F /* CheckoutOptions.swift */; };
-		DADD60311A6E1A7300F16FB3 /* CheckoutOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90007E1A6B9B7900F43D4F /* CheckoutOptions+C.swift */; };
-		DADD60321A6E1A7300F16FB3 /* CheckoutStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000801A6B9B7900F43D4F /* CheckoutStrategy.swift */; };
-		DADD60331A6E1A7300F16FB3 /* RemoteCallbacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000841A6B9B7900F43D4F /* RemoteCallbacks.swift */; };
-		DADD60341A6E1A7300F16FB3 /* RemoteCallbacks+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000831A6B9B7900F43D4F /* RemoteCallbacks+C.swift */; };
-		DADD60351A6E1A7300F16FB3 /* RepositoryInitializationOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000871A6B9B7900F43D4F /* RepositoryInitializationOptions.swift */; };
-		DADD60361A6E1A7300F16FB3 /* RepositoryInitializationOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000861A6B9B7900F43D4F /* RepositoryInitializationOptions+C.swift */; };
-		DADD60371A6E1A7300F16FB3 /* RepositoryInitializationOptionSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000881A6B9B7900F43D4F /* RepositoryInitializationOptionSet.swift */; };
-		DADD60381A6E1A7300F16FB3 /* RepositoryInitializationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000851A6B9B7900F43D4F /* RepositoryInitializationMode.swift */; };
 		DADD60391A6E1A7300F16FB3 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000741A6B9B7900F43D4F /* Status.swift */; };
 		DADD603A1A6E1A7300F16FB3 /* StatusDelta.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000751A6B9B7900F43D4F /* StatusDelta.swift */; };
 		DADD603B1A6E1A7300F16FB3 /* FileDiff.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000731A6B9B7900F43D4F /* FileDiff.swift */; };
@@ -323,17 +327,6 @@
 		DA9000781A6B9B7900F43D4F /* StatusOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusOptions.swift; sourceTree = "<group>"; };
 		DA9000791A6B9B7900F43D4F /* StatusShowOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusShowOptions.swift; sourceTree = "<group>"; };
 		DA90007B1A6B9B7900F43D4F /* Reference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reference.swift; sourceTree = "<group>"; };
-		DA90007E1A6B9B7900F43D4F /* CheckoutOptions+C.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CheckoutOptions+C.swift"; sourceTree = "<group>"; };
-		DA90007F1A6B9B7900F43D4F /* CheckoutOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutOptions.swift; sourceTree = "<group>"; };
-		DA9000801A6B9B7900F43D4F /* CheckoutStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutStrategy.swift; sourceTree = "<group>"; };
-		DA9000811A6B9B7900F43D4F /* CloneOptions+C.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CloneOptions+C.swift"; sourceTree = "<group>"; };
-		DA9000821A6B9B7900F43D4F /* CloneOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloneOptions.swift; sourceTree = "<group>"; };
-		DA9000831A6B9B7900F43D4F /* RemoteCallbacks+C.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RemoteCallbacks+C.swift"; sourceTree = "<group>"; };
-		DA9000841A6B9B7900F43D4F /* RemoteCallbacks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteCallbacks.swift; sourceTree = "<group>"; };
-		DA9000851A6B9B7900F43D4F /* RepositoryInitializationMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryInitializationMode.swift; sourceTree = "<group>"; };
-		DA9000861A6B9B7900F43D4F /* RepositoryInitializationOptions+C.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RepositoryInitializationOptions+C.swift"; sourceTree = "<group>"; };
-		DA9000871A6B9B7900F43D4F /* RepositoryInitializationOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryInitializationOptions.swift; sourceTree = "<group>"; };
-		DA9000881A6B9B7900F43D4F /* RepositoryInitializationOptionSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryInitializationOptionSet.swift; sourceTree = "<group>"; };
 		DA9000891A6B9B7900F43D4F /* Repository+Index.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Repository+Index.swift"; sourceTree = "<group>"; };
 		DA90008A1A6B9B7900F43D4F /* Repository+Reference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Repository+Reference.swift"; sourceTree = "<group>"; };
 		DA90008B1A6B9B7900F43D4F /* Repository+Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Repository+Status.swift"; sourceTree = "<group>"; };
@@ -348,6 +341,19 @@
 		DA93AF111A787DBD009E95F0 /* MergeOptions+C.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MergeOptions+C.swift"; sourceTree = "<group>"; };
 		DA93AF141A7883DA009E95F0 /* MergeStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MergeStrategy.swift; sourceTree = "<group>"; };
 		DA93AF171A788C1E009E95F0 /* Repository+ReferenceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Repository+ReferenceSpec.swift"; sourceTree = "<group>"; };
+		DA93AF221A78ACE2009E95F0 /* CheckoutOptions+C.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CheckoutOptions+C.swift"; sourceTree = "<group>"; };
+		DA93AF231A78ACE2009E95F0 /* CheckoutOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutOptions.swift; sourceTree = "<group>"; };
+		DA93AF241A78ACE2009E95F0 /* CheckoutStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutStrategy.swift; sourceTree = "<group>"; };
+		DA93AF251A78ACE2009E95F0 /* GIFTCheckoutOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIFTCheckoutOptions.h; sourceTree = "<group>"; };
+		DA93AF261A78ACE2009E95F0 /* GIFTCheckoutOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFTCheckoutOptions.m; sourceTree = "<group>"; };
+		DA93AF281A78ACE2009E95F0 /* CloneOptions+C.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CloneOptions+C.swift"; sourceTree = "<group>"; };
+		DA93AF291A78ACE2009E95F0 /* CloneOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloneOptions.swift; sourceTree = "<group>"; };
+		DA93AF2B1A78ACE2009E95F0 /* RepositoryInitializationMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryInitializationMode.swift; sourceTree = "<group>"; };
+		DA93AF2C1A78ACE2009E95F0 /* RepositoryInitializationOptions+C.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RepositoryInitializationOptions+C.swift"; sourceTree = "<group>"; };
+		DA93AF2D1A78ACE2009E95F0 /* RepositoryInitializationOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryInitializationOptions.swift; sourceTree = "<group>"; };
+		DA93AF2E1A78ACE2009E95F0 /* RepositoryInitializationOptionSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryInitializationOptionSet.swift; sourceTree = "<group>"; };
+		DA93AF301A78ACE2009E95F0 /* RemoteCallbacks+C.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RemoteCallbacks+C.swift"; sourceTree = "<group>"; };
+		DA93AF311A78ACE2009E95F0 /* RemoteCallbacks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteCallbacks.swift; sourceTree = "<group>"; };
 		DA9876A51A4B791E0004AA17 /* LlamaKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LlamaKit.framework; path = ../External/LlamaKit/build/Debug/LlamaKit.framework; sourceTree = "<group>"; };
 		DA9E6F9A1A6B9016001C5F7F /* Gift.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = Gift.modulemap; sourceTree = "<group>"; };
 		DA9F36491A476AF7002F35D4 /* Gift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Gift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -598,17 +604,10 @@
 		DA90007D1A6B9B7900F43D4F /* Options */ = {
 			isa = PBXGroup;
 			children = (
-				DA9000821A6B9B7900F43D4F /* CloneOptions.swift */,
-				DA9000811A6B9B7900F43D4F /* CloneOptions+C.swift */,
-				DA90007F1A6B9B7900F43D4F /* CheckoutOptions.swift */,
-				DA90007E1A6B9B7900F43D4F /* CheckoutOptions+C.swift */,
-				DA9000801A6B9B7900F43D4F /* CheckoutStrategy.swift */,
-				DA9000841A6B9B7900F43D4F /* RemoteCallbacks.swift */,
-				DA9000831A6B9B7900F43D4F /* RemoteCallbacks+C.swift */,
-				DA9000871A6B9B7900F43D4F /* RepositoryInitializationOptions.swift */,
-				DA9000861A6B9B7900F43D4F /* RepositoryInitializationOptions+C.swift */,
-				DA9000881A6B9B7900F43D4F /* RepositoryInitializationOptionSet.swift */,
-				DA9000851A6B9B7900F43D4F /* RepositoryInitializationMode.swift */,
+				DA93AF211A78ACE2009E95F0 /* Checkout */,
+				DA93AF271A78ACE2009E95F0 /* Clone */,
+				DA93AF2A1A78ACE2009E95F0 /* Initialization */,
+				DA93AF2F1A78ACE2009E95F0 /* RemoteCallbacks */,
 			);
 			path = Options;
 			sourceTree = "<group>";
@@ -630,6 +629,47 @@
 				DA93AF141A7883DA009E95F0 /* MergeStrategy.swift */,
 			);
 			path = Options;
+			sourceTree = "<group>";
+		};
+		DA93AF211A78ACE2009E95F0 /* Checkout */ = {
+			isa = PBXGroup;
+			children = (
+				DA93AF221A78ACE2009E95F0 /* CheckoutOptions+C.swift */,
+				DA93AF231A78ACE2009E95F0 /* CheckoutOptions.swift */,
+				DA93AF241A78ACE2009E95F0 /* CheckoutStrategy.swift */,
+				DA93AF251A78ACE2009E95F0 /* GIFTCheckoutOptions.h */,
+				DA93AF261A78ACE2009E95F0 /* GIFTCheckoutOptions.m */,
+			);
+			path = Checkout;
+			sourceTree = "<group>";
+		};
+		DA93AF271A78ACE2009E95F0 /* Clone */ = {
+			isa = PBXGroup;
+			children = (
+				DA93AF281A78ACE2009E95F0 /* CloneOptions+C.swift */,
+				DA93AF291A78ACE2009E95F0 /* CloneOptions.swift */,
+			);
+			path = Clone;
+			sourceTree = "<group>";
+		};
+		DA93AF2A1A78ACE2009E95F0 /* Initialization */ = {
+			isa = PBXGroup;
+			children = (
+				DA93AF2B1A78ACE2009E95F0 /* RepositoryInitializationMode.swift */,
+				DA93AF2C1A78ACE2009E95F0 /* RepositoryInitializationOptions+C.swift */,
+				DA93AF2D1A78ACE2009E95F0 /* RepositoryInitializationOptions.swift */,
+				DA93AF2E1A78ACE2009E95F0 /* RepositoryInitializationOptionSet.swift */,
+			);
+			path = Initialization;
+			sourceTree = "<group>";
+		};
+		DA93AF2F1A78ACE2009E95F0 /* RemoteCallbacks */ = {
+			isa = PBXGroup;
+			children = (
+				DA93AF301A78ACE2009E95F0 /* RemoteCallbacks+C.swift */,
+				DA93AF311A78ACE2009E95F0 /* RemoteCallbacks.swift */,
+			);
+			path = RemoteCallbacks;
 			sourceTree = "<group>";
 		};
 		DA9F363F1A476AF7002F35D4 = {
@@ -828,6 +868,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA9F364F1A476AF7002F35D4 /* Gift.h in Headers */,
+				DA93AF381A78ACE2009E95F0 /* GIFTCheckoutOptions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -836,6 +877,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DADD5F9D1A6E0D2F00F16FB3 /* Gift.h in Headers */,
+				DA93AF391A78ACE2009E95F0 /* GIFTCheckoutOptions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -994,46 +1036,43 @@
 				DA93AF151A7883DA009E95F0 /* MergeStrategy.swift in Sources */,
 				DA44832B1A77EE0700FE74A2 /* IndexAddOptions.swift in Sources */,
 				DADD602D1A6E1A7300F16FB3 /* Repository+Status.swift in Sources */,
-				DADD602E1A6E1A7300F16FB3 /* CloneOptions.swift in Sources */,
 				DA1388141A76C72B009B9C66 /* Domain.swift in Sources */,
 				DA93AF0B1A787233009E95F0 /* Commit+Merge.swift in Sources */,
-				DADD602F1A6E1A7300F16FB3 /* CloneOptions+C.swift in Sources */,
 				DA8BDEF41A74BFBC002C469E /* Signature+C.swift in Sources */,
-				DADD60301A6E1A7300F16FB3 /* CheckoutOptions.swift in Sources */,
-				DADD60311A6E1A7300F16FB3 /* CheckoutOptions+C.swift in Sources */,
-				DADD60321A6E1A7300F16FB3 /* CheckoutStrategy.swift in Sources */,
 				DA93AEFF1A785935009E95F0 /* Commit+Repository.swift in Sources */,
+				DA93AF481A78ACE2009E95F0 /* RemoteCallbacks+C.swift in Sources */,
+				DA93AF3E1A78ACE2009E95F0 /* CloneOptions.swift in Sources */,
 				DA1387FE1A76B8F8009B9C66 /* Tree+ObjectID.swift in Sources */,
 				DA8BDF0C1A757890002C469E /* Commit.swift in Sources */,
 				DA1387F21A76B27F009B9C66 /* Tree.swift in Sources */,
-				DADD60331A6E1A7300F16FB3 /* RemoteCallbacks.swift in Sources */,
-				DADD60341A6E1A7300F16FB3 /* RemoteCallbacks+C.swift in Sources */,
 				DA13880E1A76C318009B9C66 /* Object+ObjectID.swift in Sources */,
 				DA1387EE1A76B18A009B9C66 /* Index+Repository.swift in Sources */,
 				DA7200061A74787E003C5A20 /* Repository+Branch.swift in Sources */,
+				DA93AF441A78ACE2009E95F0 /* RepositoryInitializationOptions.swift in Sources */,
+				DA93AF341A78ACE2009E95F0 /* CheckoutOptions.swift in Sources */,
 				DA93AF0F1A787D6F009E95F0 /* MergeOptions.swift in Sources */,
-				DADD60351A6E1A7300F16FB3 /* RepositoryInitializationOptions.swift in Sources */,
-				DADD60361A6E1A7300F16FB3 /* RepositoryInitializationOptions+C.swift in Sources */,
 				DA8BDEDE1A74976E002C469E /* Reference+Repository.swift in Sources */,
-				DADD60371A6E1A7300F16FB3 /* RepositoryInitializationOptionSet.swift in Sources */,
-				DADD60381A6E1A7300F16FB3 /* RepositoryInitializationMode.swift in Sources */,
+				DA93AF4A1A78ACE2009E95F0 /* RemoteCallbacks.swift in Sources */,
 				DA44831D1A77265C00FE74A2 /* Reference+Commit.swift in Sources */,
 				DADD60391A6E1A7300F16FB3 /* Status.swift in Sources */,
 				DADD603A1A6E1A7300F16FB3 /* StatusDelta.swift in Sources */,
 				DA4483261A77358300FE74A2 /* CommitWalker+RAC.swift in Sources */,
 				DADD603B1A6E1A7300F16FB3 /* FileDiff.swift in Sources */,
 				DA4483231A772DC400FE74A2 /* CommitWalker.swift in Sources */,
+				DA93AF461A78ACE2009E95F0 /* RepositoryInitializationOptionSet.swift in Sources */,
 				DA8BDEE21A749A43002C469E /* Tag.swift in Sources */,
 				DA1387F81A76B4F0009B9C66 /* Tree+Commit.swift in Sources */,
 				DA1388111A76C396009B9C66 /* ObjectID.swift in Sources */,
 				DA8BDF321A75CF89002C469E /* CommitSorting.swift in Sources */,
 				DADD603C1A6E1A7300F16FB3 /* StatusDeltaType.swift in Sources */,
+				DA93AF3C1A78ACE2009E95F0 /* CloneOptions+C.swift in Sources */,
 				DADD603D1A6E1A7300F16FB3 /* StatusOptions.swift in Sources */,
 				DA8BDF011A74D2D7002C469E /* Object.swift in Sources */,
 				DA93AEFC1A7858E6009E95F0 /* Commit+Branch.swift in Sources */,
 				DA8BDEF11A74AFA0002C469E /* Signature.swift in Sources */,
 				DA1388071A76BB0E009B9C66 /* Commit+ObjectID.swift in Sources */,
 				DADD603E1A6E1A7300F16FB3 /* StatusOptions+C.swift in Sources */,
+				DA93AF361A78ACE2009E95F0 /* CheckoutStrategy.swift in Sources */,
 				DA8BDED11A74925E002C469E /* Reference+Tag.swift in Sources */,
 				DA8BDEC71A748B06002C469E /* BranchType.swift in Sources */,
 				DADD603F1A6E1A7300F16FB3 /* StatusShowOptions.swift in Sources */,
@@ -1042,6 +1081,10 @@
 				DA3E3AEC1A742FBE00BA7AB6 /* Repository+Tag.swift in Sources */,
 				DA93AF121A787DBD009E95F0 /* MergeOptions+C.swift in Sources */,
 				DA8BDEDB1A749502002C469E /* ObjectType.swift in Sources */,
+				DA93AF321A78ACE2009E95F0 /* CheckoutOptions+C.swift in Sources */,
+				DA93AF3A1A78ACE2009E95F0 /* GIFTCheckoutOptions.m in Sources */,
+				DA93AF401A78ACE2009E95F0 /* RepositoryInitializationMode.swift in Sources */,
+				DA93AF421A78ACE2009E95F0 /* RepositoryInitializationOptions+C.swift in Sources */,
 				DA44831A1A77163900FE74A2 /* BranchIterator.swift in Sources */,
 				DA1387EB1A76B06E009B9C66 /* Index+Tree.swift in Sources */,
 				DADD60411A6E1A7300F16FB3 /* NSError+Domain.swift in Sources */,
@@ -1096,42 +1139,39 @@
 				DA4482DC1A770E2600FE74A2 /* ObjectID.swift in Sources */,
 				DA93AF0C1A787234009E95F0 /* Commit+Merge.swift in Sources */,
 				DA4482DD1A770E2600FE74A2 /* Reference.swift in Sources */,
+				DA93AF491A78ACE2009E95F0 /* RemoteCallbacks+C.swift in Sources */,
+				DA93AF3F1A78ACE2009E95F0 /* CloneOptions.swift in Sources */,
 				DA4482DE1A770E2600FE74A2 /* Reference+Object.swift in Sources */,
 				DA4482DF1A770E2600FE74A2 /* Reference+Repository.swift in Sources */,
 				DA4482E01A770E2600FE74A2 /* Reference+Tag.swift in Sources */,
 				DA4482E11A770E2600FE74A2 /* Repository.swift in Sources */,
 				DA93AF001A785935009E95F0 /* Commit+Repository.swift in Sources */,
 				DA4482E21A770E2600FE74A2 /* Repository+Branch.swift in Sources */,
+				DA93AF451A78ACE2009E95F0 /* RepositoryInitializationOptions.swift in Sources */,
+				DA93AF351A78ACE2009E95F0 /* CheckoutOptions.swift in Sources */,
 				DA4482E31A770E2600FE74A2 /* Repository+Commit.swift in Sources */,
 				DA4482E41A770E2600FE74A2 /* Repository+Index.swift in Sources */,
+				DA93AF4B1A78ACE2009E95F0 /* RemoteCallbacks.swift in Sources */,
 				DA4482E51A770E2600FE74A2 /* Repository+Reference.swift in Sources */,
 				DA4482E61A770E2600FE74A2 /* Repository+Status.swift in Sources */,
 				DA4482E71A770E2600FE74A2 /* Repository+Tag.swift in Sources */,
-				DA4482E81A770E2600FE74A2 /* CloneOptions.swift in Sources */,
-				DA4482E91A770E2600FE74A2 /* CloneOptions+C.swift in Sources */,
 				DA93AF101A787D6F009E95F0 /* MergeOptions.swift in Sources */,
-				DA4482EA1A770E2600FE74A2 /* CheckoutOptions.swift in Sources */,
-				DA4482EB1A770E2600FE74A2 /* CheckoutOptions+C.swift in Sources */,
-				DA4482EC1A770E2600FE74A2 /* CheckoutStrategy.swift in Sources */,
-				DA4482ED1A770E2600FE74A2 /* RemoteCallbacks.swift in Sources */,
-				DA4482EE1A770E2600FE74A2 /* RemoteCallbacks+C.swift in Sources */,
 				DA44831E1A77265C00FE74A2 /* Reference+Commit.swift in Sources */,
-				DA4482EF1A770E2600FE74A2 /* RepositoryInitializationOptions.swift in Sources */,
-				DA4482F01A770E2600FE74A2 /* RepositoryInitializationOptions+C.swift in Sources */,
 				DA4483271A77358300FE74A2 /* CommitWalker+RAC.swift in Sources */,
-				DA4482F11A770E2600FE74A2 /* RepositoryInitializationOptionSet.swift in Sources */,
+				DA93AF471A78ACE2009E95F0 /* RepositoryInitializationOptionSet.swift in Sources */,
 				DA4483241A772DC400FE74A2 /* CommitWalker.swift in Sources */,
-				DA4482F21A770E2600FE74A2 /* RepositoryInitializationMode.swift in Sources */,
 				DA4482F31A770E2600FE74A2 /* Signature.swift in Sources */,
 				DA4482F41A770E2600FE74A2 /* Signature+C.swift in Sources */,
 				DA4482F51A770E2600FE74A2 /* Status.swift in Sources */,
 				DA4482F61A770E2600FE74A2 /* StatusDelta.swift in Sources */,
+				DA93AF3D1A78ACE2009E95F0 /* CloneOptions+C.swift in Sources */,
 				DA4482F71A770E2600FE74A2 /* FileDiff.swift in Sources */,
 				DA4482F81A770E2600FE74A2 /* StatusDeltaType.swift in Sources */,
 				DA93AEFD1A7858E6009E95F0 /* Commit+Branch.swift in Sources */,
 				DA4482F91A770E2600FE74A2 /* StatusOptions.swift in Sources */,
 				DA4482FA1A770E2600FE74A2 /* StatusOptions+C.swift in Sources */,
 				DA4482FB1A770E2600FE74A2 /* StatusShowOptions.swift in Sources */,
+				DA93AF371A78ACE2009E95F0 /* CheckoutStrategy.swift in Sources */,
 				DA4482FC1A770E2600FE74A2 /* Tag.swift in Sources */,
 				DA4482FD1A770E2600FE74A2 /* Tag+ObjectID.swift in Sources */,
 				DA4482FE1A770E2600FE74A2 /* Tree.swift in Sources */,
@@ -1140,6 +1180,10 @@
 				DA4483011A770E2600FE74A2 /* Tree+Repository.swift in Sources */,
 				DA93AF131A787DBD009E95F0 /* MergeOptions+C.swift in Sources */,
 				DA4483021A770E2600FE74A2 /* Error.swift in Sources */,
+				DA93AF331A78ACE2009E95F0 /* CheckoutOptions+C.swift in Sources */,
+				DA93AF3B1A78ACE2009E95F0 /* GIFTCheckoutOptions.m in Sources */,
+				DA93AF411A78ACE2009E95F0 /* RepositoryInitializationMode.swift in Sources */,
+				DA93AF431A78ACE2009E95F0 /* RepositoryInitializationOptions+C.swift in Sources */,
 				DA44831B1A77163900FE74A2 /* BranchIterator.swift in Sources */,
 				DA4483031A770E2600FE74A2 /* Domain.swift in Sources */,
 				DA4483041A770E2600FE74A2 /* NSError+Domain.swift in Sources */,

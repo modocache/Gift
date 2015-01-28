@@ -7,8 +7,13 @@
 */
 public struct CheckoutOptions {
   internal let strategy: CheckoutStrategy
+  internal let progressCallback: GIFTCheckoutProgressCallback!
 
-  public init(strategy: CheckoutStrategy) {
+  public init(
+    strategy: CheckoutStrategy,
+    progressCallback: GIFTCheckoutProgressCallback! = nil
+  ) {
     self.strategy = strategy
+    self.progressCallback = progressCallback
   }
 }

@@ -17,9 +17,10 @@ class RepositorySpec: QuickSpec {
     }
 
     describe("cloneRepository") {
+      var remoteURL: NSURL!
+      var destinationURL: NSURL!
+
       context("on the local filesystem") {
-        var remoteURL: NSURL!
-        var destinationURL: NSURL!
         beforeEach {
           remoteURL = temporaryDirectoryURL().URLByAppendingPathComponent("park-slope")
           destinationURL = temporaryDirectoryURL().URLByAppendingPathComponent("sunset-park")
@@ -27,7 +28,7 @@ class RepositorySpec: QuickSpec {
 
         context("but the remote does not exist") {
           it("fails") {
-            let repository = cloneRepository(remoteURL, destinationURL)
+            let repository = cloneRepository(remoteURL,destinationURL)
             let path = remoteURL.path!.stringByResolvingSymlinksInPath
             let faiureMessage = "Failed to resolve path '\(path)': No such file or directory"
             expect(repository).to(haveFailed(localizedDescription: faiureMessage))
@@ -41,6 +42,32 @@ class RepositorySpec: QuickSpec {
 
           it("is succesful") {
             expect(cloneRepository(remoteURL, destinationURL)).to(haveSucceeded())
+          }
+        }
+      }
+
+      xcontext("from a remote URL") {
+        beforeEach {
+          remoteURL = NSURL(string: "git://git.libssh2.org/libssh2.git")
+          destinationURL = temporaryDirectoryURL().URLByAppendingPathComponent("libssh2")
+        }
+
+        context("and the remote exists") {
+          it("is succesful") {
+            let options = CloneOptions(
+              checkoutOptions: CheckoutOptions(
+                strategy: CheckoutStrategy.SafeCreate,
+                progressCallback: { (path: String!, completedSteps: UInt, totalSteps: UInt) in
+                  println("path '\(path != nil ? path : nil)', "
+                          + "completedSteps '\(completedSteps)', "
+                          + "totalSteps '\(totalSteps)'")
+                }
+              ),
+              remoteCallbacks: RemoteCallbacks()
+            )
+
+            expect(cloneRepository(remoteURL, destinationURL, options: options))
+              .to(haveSucceeded())
           }
         }
       }
