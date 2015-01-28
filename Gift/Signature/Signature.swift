@@ -23,3 +23,9 @@ public struct Signature {
     self.timeZone = timeZone
   }
 }
+
+/**
+  A signature used by Gift when updating the reflog and the
+  user has not provided a signature of their own.
+*/
+internal let giftSignature = Signature(name: "com.libgit2.Gift", email: "")

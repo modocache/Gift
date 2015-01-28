@@ -144,6 +144,8 @@
 		DA93AF131A787DBD009E95F0 /* MergeOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF111A787DBD009E95F0 /* MergeOptions+C.swift */; };
 		DA93AF151A7883DA009E95F0 /* MergeStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF141A7883DA009E95F0 /* MergeStrategy.swift */; };
 		DA93AF161A7883DA009E95F0 /* MergeStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF141A7883DA009E95F0 /* MergeStrategy.swift */; };
+		DA93AF181A788C1E009E95F0 /* Repository+ReferenceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF171A788C1E009E95F0 /* Repository+ReferenceSpec.swift */; };
+		DA93AF191A788C1E009E95F0 /* Repository+ReferenceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF171A788C1E009E95F0 /* Repository+ReferenceSpec.swift */; };
 		DA9876A61A4B791E0004AA17 /* LlamaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9876A51A4B791E0004AA17 /* LlamaKit.framework */; };
 		DA9F364F1A476AF7002F35D4 /* Gift.h in Headers */ = {isa = PBXBuildFile; fileRef = DA9F364E1A476AF7002F35D4 /* Gift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA9F36551A476AF7002F35D4 /* Gift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9F36491A476AF7002F35D4 /* Gift.framework */; };
@@ -345,6 +347,7 @@
 		DA93AF0E1A787D6F009E95F0 /* MergeOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MergeOptions.swift; sourceTree = "<group>"; };
 		DA93AF111A787DBD009E95F0 /* MergeOptions+C.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MergeOptions+C.swift"; sourceTree = "<group>"; };
 		DA93AF141A7883DA009E95F0 /* MergeStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MergeStrategy.swift; sourceTree = "<group>"; };
+		DA93AF171A788C1E009E95F0 /* Repository+ReferenceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Repository+ReferenceSpec.swift"; sourceTree = "<group>"; };
 		DA9876A51A4B791E0004AA17 /* LlamaKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LlamaKit.framework; path = ../External/LlamaKit/build/Debug/LlamaKit.framework; sourceTree = "<group>"; };
 		DA9E6F9A1A6B9016001C5F7F /* Gift.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = Gift.modulemap; sourceTree = "<group>"; };
 		DA9F36491A476AF7002F35D4 /* Gift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Gift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -794,6 +797,7 @@
 				E19F06001A6C3BC400EF5BFA /* RepositorySpec.swift */,
 				DA7200081A74799A003C5A20 /* Repository+BranchSpec.swift */,
 				DA8BDF0E1A757959002C469E /* Repository+CommitSpec.swift */,
+				DA93AF171A788C1E009E95F0 /* Repository+ReferenceSpec.swift */,
 				DAA283951A6D6E2100F7B4C3 /* Repository+StatusSpec.swift */,
 				DA72FFD61A74478E003C5A20 /* Repository+TagSpec.swift */,
 			);
@@ -1055,6 +1059,7 @@
 				DA72000D1A7479AF003C5A20 /* Repository+TagSpec.swift in Sources */,
 				DADD60621A6E1E0200F16FB3 /* zip.c in Sources */,
 				DADD605E1A6E1E0200F16FB3 /* mztools.c in Sources */,
+				DA93AF181A788C1E009E95F0 /* Repository+ReferenceSpec.swift in Sources */,
 				DADD60441A6E1A7E00F16FB3 /* IndexSpec.swift in Sources */,
 				DA8BDEE71A749BFF002C469E /* Reference+TagSpec.swift in Sources */,
 				DA72000B1A7479A5003C5A20 /* Repository+BranchSpec.swift in Sources */,
@@ -1152,6 +1157,7 @@
 				DA4483081A770E4500FE74A2 /* Index+TreeSpec.swift in Sources */,
 				DA4483091A770E4500FE74A2 /* ReferenceSpec.swift in Sources */,
 				DA44830A1A770E4500FE74A2 /* Reference+TagSpec.swift in Sources */,
+				DA93AF191A788C1E009E95F0 /* Repository+ReferenceSpec.swift in Sources */,
 				DA44830B1A770E4500FE74A2 /* RepositorySpec.swift in Sources */,
 				DA44830C1A770E4500FE74A2 /* Repository+CommitSpec.swift in Sources */,
 				DA44830D1A770E4500FE74A2 /* Repository+StatusSpec.swift in Sources */,

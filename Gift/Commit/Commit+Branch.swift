@@ -14,7 +14,7 @@ public extension Commit {
     :returns: The result of the operation: either a reference to the newly created
               branch, or an error indicating what went wrong.
   */
-  public func createBranch(name: String, signature: Signature = Signature(name: "com.libgit2.Gift", email: ""), force: Bool = false) -> Result<Reference, NSError> {
+  public func createBranch(name: String, signature: Signature = giftSignature, force: Bool = false) -> Result<Reference, NSError> {
     var out = COpaquePointer.null()
     var cSignature = signature.cSignature
     let cForce: Int32 = force ? 1 : 0
