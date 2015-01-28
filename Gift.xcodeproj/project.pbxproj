@@ -128,6 +128,12 @@
 		DA8BDF321A75CF89002C469E /* CommitSorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDF311A75CF89002C469E /* CommitSorting.swift */; };
 		DA90006C1A6B9A4000F43D4F /* git2 in Copy git2 Headers */ = {isa = PBXBuildFile; fileRef = DADB27271A6B8F620036225C /* git2 */; };
 		DA90006E1A6B9A8700F43D4F /* git2 in Copy git2/sys Headers */ = {isa = PBXBuildFile; fileRef = DADB27271A6B8F620036225C /* git2 */; };
+		DA93AEFC1A7858E6009E95F0 /* Commit+Branch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AEFB1A7858E6009E95F0 /* Commit+Branch.swift */; };
+		DA93AEFD1A7858E6009E95F0 /* Commit+Branch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AEFB1A7858E6009E95F0 /* Commit+Branch.swift */; };
+		DA93AEFF1A785935009E95F0 /* Commit+Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AEFE1A785935009E95F0 /* Commit+Repository.swift */; };
+		DA93AF001A785935009E95F0 /* Commit+Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AEFE1A785935009E95F0 /* Commit+Repository.swift */; };
+		DA93AF031A786CBB009E95F0 /* Commit+BranchSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF021A786CBB009E95F0 /* Commit+BranchSpec.swift */; };
+		DA93AF041A786CBB009E95F0 /* Commit+BranchSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF021A786CBB009E95F0 /* Commit+BranchSpec.swift */; };
 		DA9876A61A4B791E0004AA17 /* LlamaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9876A51A4B791E0004AA17 /* LlamaKit.framework */; };
 		DA9F364F1A476AF7002F35D4 /* Gift.h in Headers */ = {isa = PBXBuildFile; fileRef = DA9F364E1A476AF7002F35D4 /* Gift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA9F36551A476AF7002F35D4 /* Gift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9F36491A476AF7002F35D4 /* Gift.framework */; };
@@ -321,6 +327,9 @@
 		DA90008B1A6B9B7900F43D4F /* Repository+Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Repository+Status.swift"; sourceTree = "<group>"; };
 		DA90008C1A6B9B7900F43D4F /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		DA9000A41A6B9C5300F43D4F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DA93AEFB1A7858E6009E95F0 /* Commit+Branch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Commit+Branch.swift"; sourceTree = "<group>"; };
+		DA93AEFE1A785935009E95F0 /* Commit+Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Commit+Repository.swift"; sourceTree = "<group>"; };
+		DA93AF021A786CBB009E95F0 /* Commit+BranchSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Commit+BranchSpec.swift"; sourceTree = "<group>"; };
 		DA9876A51A4B791E0004AA17 /* LlamaKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LlamaKit.framework; path = ../External/LlamaKit/build/Debug/LlamaKit.framework; sourceTree = "<group>"; };
 		DA9E6F9A1A6B9016001C5F7F /* Gift.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = Gift.modulemap; sourceTree = "<group>"; };
 		DA9F36491A476AF7002F35D4 /* Gift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Gift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -504,7 +513,9 @@
 			isa = PBXGroup;
 			children = (
 				DA8BDF0B1A757890002C469E /* Commit.swift */,
+				DA93AEFB1A7858E6009E95F0 /* Commit+Branch.swift */,
 				DA1388061A76BB0E009B9C66 /* Commit+ObjectID.swift */,
+				DA93AEFE1A785935009E95F0 /* Commit+Repository.swift */,
 				DA4483221A772DC400FE74A2 /* CommitWalker.swift */,
 				DA4483251A77358300FE74A2 /* CommitWalker+RAC.swift */,
 				DA8BDF311A75CF89002C469E /* CommitSorting.swift */,
@@ -582,6 +593,14 @@
 			path = Options;
 			sourceTree = "<group>";
 		};
+		DA93AF011A785C41009E95F0 /* Commit */ = {
+			isa = PBXGroup;
+			children = (
+				DA93AF021A786CBB009E95F0 /* Commit+BranchSpec.swift */,
+			);
+			path = Commit;
+			sourceTree = "<group>";
+		};
 		DA9F363F1A476AF7002F35D4 = {
 			isa = PBXGroup;
 			children = (
@@ -649,6 +668,7 @@
 				DAA283971A6D7A7E00F7B4C3 /* Fixtures */,
 				E1BE9F1F1A6C4C13003E87BB /* Helpers */,
 				E1BE9F1C1A6C4B6C003E87BB /* Matchers */,
+				DA93AF011A785C41009E95F0 /* Commit */,
 				DA3EDDDF1A6DA08E0027CEFB /* Index */,
 				DA3EDDE21A6DA0FF0027CEFB /* Reference */,
 				E19F05FF1A6C3BA700EF5BFA /* Repository */,
@@ -948,6 +968,7 @@
 				DADD60301A6E1A7300F16FB3 /* CheckoutOptions.swift in Sources */,
 				DADD60311A6E1A7300F16FB3 /* CheckoutOptions+C.swift in Sources */,
 				DADD60321A6E1A7300F16FB3 /* CheckoutStrategy.swift in Sources */,
+				DA93AEFF1A785935009E95F0 /* Commit+Repository.swift in Sources */,
 				DA1387FE1A76B8F8009B9C66 /* Tree+ObjectID.swift in Sources */,
 				DA8BDF0C1A757890002C469E /* Commit.swift in Sources */,
 				DA1387F21A76B27F009B9C66 /* Tree.swift in Sources */,
@@ -974,6 +995,7 @@
 				DADD603C1A6E1A7300F16FB3 /* StatusDeltaType.swift in Sources */,
 				DADD603D1A6E1A7300F16FB3 /* StatusOptions.swift in Sources */,
 				DA8BDF011A74D2D7002C469E /* Object.swift in Sources */,
+				DA93AEFC1A7858E6009E95F0 /* Commit+Branch.swift in Sources */,
 				DA8BDEF11A74AFA0002C469E /* Signature.swift in Sources */,
 				DA1388071A76BB0E009B9C66 /* Commit+ObjectID.swift in Sources */,
 				DADD603E1A6E1A7300F16FB3 /* StatusOptions+C.swift in Sources */,
@@ -1011,6 +1033,7 @@
 				DA1387F51A76B359009B9C66 /* Index+TreeSpec.swift in Sources */,
 				DADD605C1A6E1E0200F16FB3 /* ioapi.c in Sources */,
 				DA13880B1A76BDE8009B9C66 /* Tree+CommitSpec.swift in Sources */,
+				DA93AF031A786CBB009E95F0 /* Commit+BranchSpec.swift in Sources */,
 				DADD60641A6E1E0200F16FB3 /* SSZipArchive.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1037,6 +1060,7 @@
 				DA4482DF1A770E2600FE74A2 /* Reference+Repository.swift in Sources */,
 				DA4482E01A770E2600FE74A2 /* Reference+Tag.swift in Sources */,
 				DA4482E11A770E2600FE74A2 /* Repository.swift in Sources */,
+				DA93AF001A785935009E95F0 /* Commit+Repository.swift in Sources */,
 				DA4482E21A770E2600FE74A2 /* Repository+Branch.swift in Sources */,
 				DA4482E31A770E2600FE74A2 /* Repository+Commit.swift in Sources */,
 				DA4482E41A770E2600FE74A2 /* Repository+Index.swift in Sources */,
@@ -1063,6 +1087,7 @@
 				DA4482F61A770E2600FE74A2 /* StatusDelta.swift in Sources */,
 				DA4482F71A770E2600FE74A2 /* FileDiff.swift in Sources */,
 				DA4482F81A770E2600FE74A2 /* StatusDeltaType.swift in Sources */,
+				DA93AEFD1A7858E6009E95F0 /* Commit+Branch.swift in Sources */,
 				DA4482F91A770E2600FE74A2 /* StatusOptions.swift in Sources */,
 				DA4482FA1A770E2600FE74A2 /* StatusOptions+C.swift in Sources */,
 				DA4482FB1A770E2600FE74A2 /* StatusShowOptions.swift in Sources */,
@@ -1100,6 +1125,7 @@
 				DA4483121A770E4500FE74A2 /* mztools.c in Sources */,
 				DA4483131A770E4500FE74A2 /* unzip.c in Sources */,
 				DA4483141A770E4500FE74A2 /* zip.c in Sources */,
+				DA93AF041A786CBB009E95F0 /* Commit+BranchSpec.swift in Sources */,
 				DA4483151A770E4500FE74A2 /* SSZipArchive.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
