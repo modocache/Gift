@@ -22,6 +22,14 @@
 		DA1388141A76C72B009B9C66 /* Domain.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1388131A76C72B009B9C66 /* Domain.swift */; };
 		DA18C1421A7B20FC0039EFB7 /* ResetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18C1411A7B20FC0039EFB7 /* ResetType.swift */; };
 		DA18C1431A7B20FC0039EFB7 /* ResetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18C1411A7B20FC0039EFB7 /* ResetType.swift */; };
+		DA18C1481A7B40020039EFB7 /* GIFTTagForEach.h in Headers */ = {isa = PBXBuildFile; fileRef = DA18C1461A7B40020039EFB7 /* GIFTTagForEach.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA18C1491A7B40020039EFB7 /* GIFTTagForEach.h in Headers */ = {isa = PBXBuildFile; fileRef = DA18C1461A7B40020039EFB7 /* GIFTTagForEach.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA18C14A1A7B40020039EFB7 /* GIFTTagForEach.m in Sources */ = {isa = PBXBuildFile; fileRef = DA18C1471A7B40020039EFB7 /* GIFTTagForEach.m */; };
+		DA18C14B1A7B40020039EFB7 /* GIFTTagForEach.m in Sources */ = {isa = PBXBuildFile; fileRef = DA18C1471A7B40020039EFB7 /* GIFTTagForEach.m */; };
+		DA18C14D1A7B49340039EFB7 /* Reference+ObjectID.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18C14C1A7B49340039EFB7 /* Reference+ObjectID.swift */; };
+		DA18C14E1A7B49340039EFB7 /* Reference+ObjectID.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18C14C1A7B49340039EFB7 /* Reference+ObjectID.swift */; };
+		DA18C1521A7B4F640039EFB7 /* Result+Compact.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18C14F1A7B4F220039EFB7 /* Result+Compact.swift */; };
+		DA18C1531A7B4F650039EFB7 /* Result+Compact.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18C14F1A7B4F220039EFB7 /* Result+Compact.swift */; };
 		DA363DA41A6BAE160030BBCC /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DA363DA31A6BAE160030BBCC /* libiconv.dylib */; };
 		DA363DA61A6BAE1C0030BBCC /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DA363DA51A6BAE1C0030BBCC /* libz.dylib */; };
 		DA3E3AEC1A742FBE00BA7AB6 /* Repository+Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3E3AEB1A742FBE00BA7AB6 /* Repository+Tag.swift */; };
@@ -289,6 +297,10 @@
 		DA1388101A76C396009B9C66 /* ObjectID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectID.swift; sourceTree = "<group>"; };
 		DA1388131A76C72B009B9C66 /* Domain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Domain.swift; sourceTree = "<group>"; };
 		DA18C1411A7B20FC0039EFB7 /* ResetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetType.swift; sourceTree = "<group>"; };
+		DA18C1461A7B40020039EFB7 /* GIFTTagForEach.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIFTTagForEach.h; sourceTree = "<group>"; };
+		DA18C1471A7B40020039EFB7 /* GIFTTagForEach.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFTTagForEach.m; sourceTree = "<group>"; };
+		DA18C14C1A7B49340039EFB7 /* Reference+ObjectID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reference+ObjectID.swift"; sourceTree = "<group>"; };
+		DA18C14F1A7B4F220039EFB7 /* Result+Compact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Result+Compact.swift"; sourceTree = "<group>"; };
 		DA363DA31A6BAE160030BBCC /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 		DA363DA51A6BAE1C0030BBCC /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		DA3E3AEB1A742FBE00BA7AB6 /* Repository+Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Repository+Tag.swift"; sourceTree = "<group>"; };
@@ -479,6 +491,15 @@
 			path = Reset;
 			sourceTree = "<group>";
 		};
+		DA18C1451A7B3F8B0039EFB7 /* Tag */ = {
+			isa = PBXGroup;
+			children = (
+				DA18C1461A7B40020039EFB7 /* GIFTTagForEach.h */,
+				DA18C1471A7B40020039EFB7 /* GIFTTagForEach.m */,
+			);
+			path = Tag;
+			sourceTree = "<group>";
+		};
 		DA3EDDDF1A6DA08E0027CEFB /* Index */ = {
 			isa = PBXGroup;
 			children = (
@@ -591,6 +612,7 @@
 				DA90007B1A6B9B7900F43D4F /* Reference.swift */,
 				DA44831C1A77265C00FE74A2 /* Reference+Commit.swift */,
 				DA8BDED71A749419002C469E /* Reference+Object.swift */,
+				DA18C14C1A7B49340039EFB7 /* Reference+ObjectID.swift */,
 				DA8BDEDD1A74976E002C469E /* Reference+Repository.swift */,
 				DA8BDED01A74925E002C469E /* Reference+Tag.swift */,
 			);
@@ -620,6 +642,7 @@
 				DA93AF2A1A78ACE2009E95F0 /* Initialization */,
 				DA93AF2F1A78ACE2009E95F0 /* RemoteCallbacks */,
 				DA18C1401A7B20A00039EFB7 /* Reset */,
+				DA18C1451A7B3F8B0039EFB7 /* Tag */,
 			);
 			path = Options;
 			sourceTree = "<group>";
@@ -868,6 +891,7 @@
 			isa = PBXGroup;
 			children = (
 				E1BE9F201A6C4C68003E87BB /* FilePathHelpers.swift */,
+				DA18C14F1A7B4F220039EFB7 /* Result+Compact.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -881,6 +905,7 @@
 			files = (
 				DA9F364F1A476AF7002F35D4 /* Gift.h in Headers */,
 				DA93AF381A78ACE2009E95F0 /* GIFTCheckoutOptions.h in Headers */,
+				DA18C1481A7B40020039EFB7 /* GIFTTagForEach.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -890,6 +915,7 @@
 			files = (
 				DADD5F9D1A6E0D2F00F16FB3 /* Gift.h in Headers */,
 				DA93AF391A78ACE2009E95F0 /* GIFTCheckoutOptions.h in Headers */,
+				DA18C1491A7B40020039EFB7 /* GIFTTagForEach.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1036,6 +1062,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA18C14A1A7B40020039EFB7 /* GIFTTagForEach.m in Sources */,
 				DA1388041A76BA66009B9C66 /* Tag+ObjectID.swift in Sources */,
 				DADD60271A6E1A7300F16FB3 /* Gift.m in Sources */,
 				DADD60281A6E1A7300F16FB3 /* Index.swift in Sources */,
@@ -1092,6 +1119,7 @@
 				DADD60401A6E1A7300F16FB3 /* Error.swift in Sources */,
 				DA1387FB1A76B596009B9C66 /* Tree+Repository.swift in Sources */,
 				DA3E3AEC1A742FBE00BA7AB6 /* Repository+Tag.swift in Sources */,
+				DA18C14D1A7B49340039EFB7 /* Reference+ObjectID.swift in Sources */,
 				DA93AF121A787DBD009E95F0 /* MergeOptions+C.swift in Sources */,
 				DA8BDEDB1A749502002C469E /* ObjectType.swift in Sources */,
 				DA93AF321A78ACE2009E95F0 /* CheckoutOptions+C.swift in Sources */,
@@ -1114,6 +1142,7 @@
 				DA4483201A77274D00FE74A2 /* Reference+CommitSpec.swift in Sources */,
 				DA72000D1A7479AF003C5A20 /* Repository+TagSpec.swift in Sources */,
 				DADD60621A6E1E0200F16FB3 /* zip.c in Sources */,
+				DA18C1521A7B4F640039EFB7 /* Result+Compact.swift in Sources */,
 				DADD605E1A6E1E0200F16FB3 /* mztools.c in Sources */,
 				DA93AF181A788C1E009E95F0 /* Repository+ReferenceSpec.swift in Sources */,
 				DADD60441A6E1A7E00F16FB3 /* IndexSpec.swift in Sources */,
@@ -1136,6 +1165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA18C14B1A7B40020039EFB7 /* GIFTTagForEach.m in Sources */,
 				DA4482D11A770E2600FE74A2 /* Gift.m in Sources */,
 				DA4482D21A770E2600FE74A2 /* BranchType.swift in Sources */,
 				DA4482D31A770E2600FE74A2 /* Commit.swift in Sources */,
@@ -1192,6 +1222,7 @@
 				DA4482FF1A770E2600FE74A2 /* Tree+Commit.swift in Sources */,
 				DA4483001A770E2600FE74A2 /* Tree+ObjectID.swift in Sources */,
 				DA4483011A770E2600FE74A2 /* Tree+Repository.swift in Sources */,
+				DA18C14E1A7B49340039EFB7 /* Reference+ObjectID.swift in Sources */,
 				DA93AF131A787DBD009E95F0 /* MergeOptions+C.swift in Sources */,
 				DA4483021A770E2600FE74A2 /* Error.swift in Sources */,
 				DA93AF331A78ACE2009E95F0 /* CheckoutOptions+C.swift in Sources */,
@@ -1214,6 +1245,7 @@
 				DA4483211A77274D00FE74A2 /* Reference+CommitSpec.swift in Sources */,
 				DA4483081A770E4500FE74A2 /* Index+TreeSpec.swift in Sources */,
 				DA4483091A770E4500FE74A2 /* ReferenceSpec.swift in Sources */,
+				DA18C1531A7B4F650039EFB7 /* Result+Compact.swift in Sources */,
 				DA44830A1A770E4500FE74A2 /* Reference+TagSpec.swift in Sources */,
 				DA93AF191A788C1E009E95F0 /* Repository+ReferenceSpec.swift in Sources */,
 				DA44830B1A770E4500FE74A2 /* RepositorySpec.swift in Sources */,

@@ -4,16 +4,6 @@ import ReactiveCocoa
 import Quick
 import Nimble
 
-/**
-  Given an array of results, return an array of successful values,
-  discarding any results that were unsuccessful.
-*/
-private func compact<T, U>(results: [Result<T, U>]) -> [T] {
-  var compacted: [T] = []
-  results.map { $0.map { compacted.append($0) } }
-  return compacted
-}
-
 private extension Repository {
   /**
     Maps each branch reference to a name and returns a list of names.

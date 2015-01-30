@@ -5,9 +5,27 @@ import Nimble
 
 class Repository_TagSpec: QuickSpec {
   override func spec() {
-    describe("tagNames") {
-      var repository: Result<Repository, NSError>!
+    var repository: Result<Repository, NSError>!
 
+    describe("tags") {
+      context("when the repository has tags") {
+        beforeEach {
+          repository = openFixturesRepository("Repository+TagSpec_ThreeTags")
+        }
+
+        it("enumerates them") {
+          let references = repository.map { $0.tags().toArray() as [Reference] }
+          let names = references.map { compact($0.map { $0.name }) }.map { $0 as NSArray }
+          expect(names).to(haveSucceeded([
+            "refs/tags/first",
+            "refs/tags/second",
+            "refs/tags/third",
+          ]))
+        }
+      }
+    }
+
+    describe("tagNames") {
       context("when the repository has no tags") {
         beforeEach {
           repository = openFixturesRepository("Repository+TagSpec_NoTags")

@@ -28,4 +28,10 @@ public enum GiftErrorCode: Int {
     a Gift enum value.
   */
   case EnumConversionFailure = 3
+
+  /**
+    An error occurred when attempting to pass a Swift closure through to a
+    C callback function used by libgit2.
+  */
+  case CFunctionCallbackConversionFailure = 4
 }
