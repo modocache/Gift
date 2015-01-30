@@ -20,6 +20,8 @@
 		DA13880E1A76C318009B9C66 /* Object+ObjectID.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA13880D1A76C318009B9C66 /* Object+ObjectID.swift */; };
 		DA1388111A76C396009B9C66 /* ObjectID.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1388101A76C396009B9C66 /* ObjectID.swift */; };
 		DA1388141A76C72B009B9C66 /* Domain.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1388131A76C72B009B9C66 /* Domain.swift */; };
+		DA18C1421A7B20FC0039EFB7 /* ResetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18C1411A7B20FC0039EFB7 /* ResetType.swift */; };
+		DA18C1431A7B20FC0039EFB7 /* ResetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18C1411A7B20FC0039EFB7 /* ResetType.swift */; };
 		DA363DA41A6BAE160030BBCC /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DA363DA31A6BAE160030BBCC /* libiconv.dylib */; };
 		DA363DA61A6BAE1C0030BBCC /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DA363DA51A6BAE1C0030BBCC /* libz.dylib */; };
 		DA3E3AEC1A742FBE00BA7AB6 /* Repository+Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3E3AEB1A742FBE00BA7AB6 /* Repository+Tag.swift */; };
@@ -286,6 +288,7 @@
 		DA13880D1A76C318009B9C66 /* Object+ObjectID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Object+ObjectID.swift"; sourceTree = "<group>"; };
 		DA1388101A76C396009B9C66 /* ObjectID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectID.swift; sourceTree = "<group>"; };
 		DA1388131A76C72B009B9C66 /* Domain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Domain.swift; sourceTree = "<group>"; };
+		DA18C1411A7B20FC0039EFB7 /* ResetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetType.swift; sourceTree = "<group>"; };
 		DA363DA31A6BAE160030BBCC /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 		DA363DA51A6BAE1C0030BBCC /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		DA3E3AEB1A742FBE00BA7AB6 /* Repository+Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Repository+Tag.swift"; sourceTree = "<group>"; };
@@ -468,6 +471,14 @@
 			path = Tree;
 			sourceTree = "<group>";
 		};
+		DA18C1401A7B20A00039EFB7 /* Reset */ = {
+			isa = PBXGroup;
+			children = (
+				DA18C1411A7B20FC0039EFB7 /* ResetType.swift */,
+			);
+			path = Reset;
+			sourceTree = "<group>";
+		};
 		DA3EDDDF1A6DA08E0027CEFB /* Index */ = {
 			isa = PBXGroup;
 			children = (
@@ -608,6 +619,7 @@
 				DA93AF271A78ACE2009E95F0 /* Clone */,
 				DA93AF2A1A78ACE2009E95F0 /* Initialization */,
 				DA93AF2F1A78ACE2009E95F0 /* RemoteCallbacks */,
+				DA18C1401A7B20A00039EFB7 /* Reset */,
 			);
 			path = Options;
 			sourceTree = "<group>";
@@ -1028,6 +1040,7 @@
 				DADD60271A6E1A7300F16FB3 /* Gift.m in Sources */,
 				DADD60281A6E1A7300F16FB3 /* Index.swift in Sources */,
 				DADD60291A6E1A7300F16FB3 /* Reference.swift in Sources */,
+				DA18C1421A7B20FC0039EFB7 /* ResetType.swift in Sources */,
 				DA8BDED81A749419002C469E /* Reference+Object.swift in Sources */,
 				DA8BDEF71A74C8E9002C469E /* Repository+Commit.swift in Sources */,
 				DADD602A1A6E1A7300F16FB3 /* Repository.swift in Sources */,
@@ -1127,6 +1140,7 @@
 				DA4482D21A770E2600FE74A2 /* BranchType.swift in Sources */,
 				DA4482D31A770E2600FE74A2 /* Commit.swift in Sources */,
 				DA4482D41A770E2600FE74A2 /* Commit+ObjectID.swift in Sources */,
+				DA18C1431A7B20FC0039EFB7 /* ResetType.swift in Sources */,
 				DA4482D51A770E2600FE74A2 /* CommitSorting.swift in Sources */,
 				DA4482D61A770E2600FE74A2 /* Index.swift in Sources */,
 				DA4482D71A770E2600FE74A2 /* Index+Repository.swift in Sources */,
