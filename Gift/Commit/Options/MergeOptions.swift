@@ -27,8 +27,8 @@ public struct MergeOptions {
     renameTargetLimit: UInt32 = 200,
     strategy: MergeStrategy = MergeStrategy.Normal
   ) {
-      self.renameThreshold = renameThreshold
-      self.renameTargetLimit = renameTargetLimit
-      self.strategy = strategy
+    self.renameThreshold = renameThreshold
+    self.renameTargetLimit = renameTargetLimit
+    self.strategy = strategy
   }
 }

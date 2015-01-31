@@ -29,9 +29,7 @@ class Repository_StatusSpec: QuickSpec {
           "head_to_index_deleted.txt": StatusDeltaType.Deleted,
           "head_to_index_modified.txt": StatusDeltaType.Modified,
           "head_to_index_modified+index_to_working_directory_modified.txt": StatusDeltaType.Modified,
-          // TODO: These two should be a StatusDeltaType.Renamed--not sure why they're reported this way.
-          "head_to_index_named.txt": StatusDeltaType.Deleted,
-          "head_to_index_renamed.txt": StatusDeltaType.Added
+          "head_to_index_named.txt": StatusDeltaType.Renamed,
         ]))
         expect(indexToWorkingDirectories.deltas).to(equal([
           ".DS_Store": StatusDeltaType.Ignored,
@@ -54,14 +52,14 @@ class Repository_StatusSpec: QuickSpec {
       context("when the file exists and has a single status") {
         it("returns a successful result with that status") {
           expect(repository.flatMap { $0.status("head_to_index_unmodified.txt") })
-            .to(haveSucceeded(Status.Current))
+            .to(haveSucceeded(EntryStatus.Current))
         }
       }
 
       context("when the file exists and has a set of statuses") {
         it("returns a successful result with multiple statuses") {
           expect(repository.flatMap { $0.status("head_to_index_modified+index_to_working_directory_modified.txt") })
-            .to(haveSucceeded(Status.IndexModified | Status.WorkingDirectoryModified))
+            .to(haveSucceeded(EntryStatus.IndexModified | EntryStatus.WorkingDirectoryModified))
         }
       }
     }
@@ -97,7 +95,7 @@ private struct FileDeltas {
   private var deltas: [String: StatusDeltaType] = [:]
   private mutating func addDelta(statusDelta: StatusDelta?) {
     if let delta = statusDelta {
-      deltas[delta.newFileDiff.path] = delta.type
+      deltas[delta.oldStatus.path] = delta.type
     }
   }
 }

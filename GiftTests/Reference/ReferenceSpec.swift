@@ -18,7 +18,7 @@ class ReferenceSpec: QuickSpec {
       }
 
       xcontext("when the reference doesn't have a valid name") {
-        // TODO: Not sure under what conditions this may happen.
+        // Not sure under when, if ever, this may occur.
         it("returns a failing result") {}
       }
     }

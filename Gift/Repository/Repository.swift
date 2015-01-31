@@ -23,8 +23,8 @@ public class Repository {
 
 public extension Repository {
   /**
-    Returns the repository's .git directory's URL.
-    TODO: Describe failure cases.
+    Returns either the repository's .git directory's URL, or an error
+    indicating what went wrong.
   */
   public var gitDirectoryURL: Result<NSURL, NSError> {
     if let path = String.fromCString(git_repository_path(cRepository)) {

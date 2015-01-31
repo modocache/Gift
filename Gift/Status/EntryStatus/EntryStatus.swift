@@ -5,12 +5,8 @@
   Otherwise, it may have changed in the index, working directory,
   or both. It may also be ignored.
 */
-public struct Status : RawOptionSetType, BooleanType {
+public struct EntryStatus : RawOptionSetType, BooleanType {
   private let value: UInt = 0
-
-  internal init(cStatus: git_status_t) {
-    self.init(rawValue: UInt(cStatus.value))
-  }
 
   // MARK: NilLiteralConvertible Protocol Methods
 
@@ -30,7 +26,7 @@ public struct Status : RawOptionSetType, BooleanType {
 
   // MARK: BitwiseOperationsType Protocol Methods
 
-  public static var allZeros: Status {
+  public static var allZeros: EntryStatus {
     return self(rawValue: 0)
   }
 
@@ -43,30 +39,30 @@ public struct Status : RawOptionSetType, BooleanType {
   // MARK: Enum Values
 
   /** No changes have been made to the entry. */
-  public static var Current: Status { return self(rawValue: 0b0) }
+  public static var Current: EntryStatus { return self(rawValue: 0b0) }
 
   /** The entry has been newly added since HEAD, and has been staged in the index. */
-  public static var IndexNew: Status { return self(rawValue: 0b1) }
+  public static var IndexNew: EntryStatus { return self(rawValue: 0b1) }
   /** The entry has been modified since HEAD, and has been staged in the index. */
-  public static var IndexModified: Status { return self(rawValue: 0b10) }
+  public static var IndexModified: EntryStatus { return self(rawValue: 0b10) }
   /** The entry has been deleted since HEAD, and has been staged in the index. */
-  public static var IndexDeleted: Status { return self(rawValue: 0b100) }
+  public static var IndexDeleted: EntryStatus { return self(rawValue: 0b100) }
   /** The entry has been renamed since HEAD, and has been staged in the index. */
-  public static var IndexRenamed: Status { return self(rawValue: 0b1000) }
+  public static var IndexRenamed: EntryStatus { return self(rawValue: 0b1000) }
   /** The entry has had its type changed since HEAD, and has been staged in the index. */
-  public static var IndexTypeChanged: Status { return self(rawValue: 0b10000) }
+  public static var IndexTypeChanged: EntryStatus { return self(rawValue: 0b10000) }
 
   /** The entry has been newly added when compared to the index and HEAD. */
-  public static var WorkingDirectoryNew: Status { return self(rawValue: 0b10000000) }
+  public static var WorkingDirectoryNew: EntryStatus { return self(rawValue: 0b10000000) }
   /** The entry has been modified when compared to the index and HEAD. */
-  public static var WorkingDirectoryModified: Status { return self(rawValue: 0b100000000) }
+  public static var WorkingDirectoryModified: EntryStatus { return self(rawValue: 0b100000000) }
   /** The entry has been newly deleted when compared to the index and HEAD. */
-  public static var WorkingDirectoryDeleted: Status { return self(rawValue: 0b1000000000) }
+  public static var WorkingDirectoryDeleted: EntryStatus { return self(rawValue: 0b1000000000) }
   /** The entry has had its type changed when compared to the index and HEAD. */
-  public static var WorkingDirectoryTypeChanged: Status { return self(rawValue: 0b10000000000) }
+  public static var WorkingDirectoryTypeChanged: EntryStatus { return self(rawValue: 0b10000000000) }
   /** The entry has been renamed when compared to the index and HEAD. */
-  public static var WorkingDirectoryRenamed: Status { return self(rawValue: 0b100000000000) }
+  public static var WorkingDirectoryRenamed: EntryStatus { return self(rawValue: 0b100000000000) }
 
   /** The entry is ignored. */
-  public static var Ignored: Status { return self(rawValue: 0b10000000000000) }
+  public static var Ignored: EntryStatus { return self(rawValue: 0b10000000000000) }
 }

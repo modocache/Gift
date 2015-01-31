@@ -7,7 +7,7 @@ public extension Repository {
   /**
     TODO: Documentation.
   */
-  public func status(closure: StatusClosure, options: StatusOptions = StatusOptions()) -> Result<UInt, NSError> {
+  public func status(closure: StatusClosure, options: StatusDeltaOptions = StatusDeltaOptions()) -> Result<UInt, NSError> {
     var statusList = COpaquePointer.null()
     var cOptions = options.cOptions
     let errorCode = git_status_list_new(&statusList, cRepository, &cOptions)
@@ -22,11 +22,11 @@ public extension Repository {
           if entry != nil {
             var headToIndex: StatusDelta?
             if entry.memory.head_to_index != nil {
-              headToIndex = StatusDelta(cStatusDelta: entry.memory.head_to_index.memory)
+              headToIndex = StatusDelta(cDiffDelta: entry.memory.head_to_index.memory)
             }
             var indexToWorkingDirectory: StatusDelta?
             if entry.memory.index_to_workdir != nil {
-              indexToWorkingDirectory = StatusDelta(cStatusDelta: entry.memory.index_to_workdir.memory)
+              indexToWorkingDirectory = StatusDelta(cDiffDelta: entry.memory.index_to_workdir.memory)
             }
             if closure(headToIndex: headToIndex, indexToWorkingDirectory: indexToWorkingDirectory) {
               git_status_list_free(statusList)
@@ -44,17 +44,17 @@ public extension Repository {
   }
 
   /**
-    Returns the status of the file at the given path.
+    Returns the status of the entry at the given path.
 
-    :param: path The path of the file.
-    :returns: The result of the operation: either the status of the file in the
+    :param: path The path to the entry relative to the working directory.
+    :returns: The result of the operation: either the status of the entry in the
               index and working directories, or an error indicating what went wrong.
   */
-  public func status(path: String) -> Result<Status, NSError> {
+  public func status(path: String) -> Result<EntryStatus, NSError> {
     var statusFlags: UInt32 = 0
     let errorCode = git_status_file(&statusFlags, cRepository, path)
     if errorCode == GIT_OK.value {
-      return success(Status(cStatus: git_status_t(statusFlags)))
+      return success(EntryStatus(rawValue: UInt(statusFlags)))
     } else {
       return failure(NSError.libGit2Error(errorCode, libGit2PointOfFailure: "git_status_file"))
     }
@@ -75,26 +75,5 @@ public extension Repository {
     } else {
       return failure(NSError.libGit2Error(errorCode, libGit2PointOfFailure: "git_status_should_ignore"))
     }
-  }
-}
-
-// MARK: Private
-
-private extension StatusDelta {
-  /**
-    Marking this extension and its initializer as internal or public
-    causes a segmentation fault in the Swift compiler. In fact, any
-    internal or public initializer that references a C struct type causes
-    segfaults.
-
-    TODO: File Apple Radar.
-  */
-  private init(cStatusDelta: git_diff_delta) {
-    self.init(
-      oldFileDiff: FileDiff(cFileDiff: cStatusDelta.old_file),
-      newFileDiff: FileDiff(cFileDiff: cStatusDelta.new_file),
-      type: StatusDeltaType(rawValue: cStatusDelta.status.value)!,
-      similarity: Double(cStatusDelta.similarity)/100.0
-    )
   }
 }
