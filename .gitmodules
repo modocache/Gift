@@ -18,4 +18,4 @@
 	url = git@github.com:x2on/libssh2-for-iOS.git
 [submodule "External/ReactiveCocoa"]
 	path = External/ReactiveCocoa
-	url = https://github.com/ReactiveCocoa/ReactiveCocoa.git
+	url = git@github.com:ReactiveCocoa/ReactiveCocoa.git

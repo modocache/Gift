@@ -1,4 +1,5 @@
 import Gift
+import ReactiveCocoa
 import LlamaKit
 import Quick
 import Nimble
@@ -14,7 +15,7 @@ class Repository_TagSpec: QuickSpec {
         }
 
         it("enumerates them") {
-          let references = repository.map { $0.tags().toArray() as [Reference] }
+          let references = repository.flatMap { ($0.tags() |> scan([]) { $0 + [$1] } |> first)! }
           let names = references.map { compact($0.map { $0.name }) }.map { $0 as NSArray }
           expect(names).to(haveSucceeded([
             "refs/tags/first",

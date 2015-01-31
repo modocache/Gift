@@ -12,8 +12,8 @@ public extension Repository {
               enumerated, or an error to indicate what went wrong during
               the enumeration.
   */
-  public func tags() -> RACSignal! {
-    return RACSignal.createSignal { (subscriber: RACSubscriber!) -> RACDisposable! in
+  public func tags() -> SignalProducer<Reference, NSError> {
+    return SignalProducer { (sink, disposable) in
       let disposable = RACDisposable()
 
       let errorCode = gift_tagForEach(self.cRepository) { (referenceName, referenceObjectID) in
@@ -24,24 +24,22 @@ public extension Repository {
         let reference = Reference.lookup(referenceName, cRepository: self.cRepository)
         switch reference {
           case .Success(let boxedReference):
-            subscriber.sendNext(boxedReference.unbox)
+            sendNext(sink, boxedReference.unbox)
             return GIT_OK.value
           case .Failure(let boxedError):
-            subscriber.sendError(boxedError.unbox)
+            sendError(sink, boxedError.unbox)
             return tagEnumerationOver
         }
       }
 
       if errorCode == GIT_OK.value {
-        subscriber.sendCompleted()
+        sendCompleted(sink)
       } else if errorCode == GIFTTagForEachCallbackPayloadError {
         let description = "An error occurred when attempting to enumerate tags in a repository."
-        subscriber.sendError(NSError.giftError(.CFunctionCallbackConversionFailure, description: description))
+        sendError(sink, NSError.giftError(.CFunctionCallbackConversionFailure, description: description))
       } else if errorCode != tagEnumerationOver {
-        subscriber.sendError(NSError.libGit2Error(errorCode, libGit2PointOfFailure: "git_tag_foreach"))
+        sendError(sink, NSError.libGit2Error(errorCode, libGit2PointOfFailure: "git_tag_foreach"))
       }
-
-      return disposable
     }
   }
 
