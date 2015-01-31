@@ -1,45 +1,40 @@
 import Foundation
 import LlamaKit
-
-public typealias StatusClosure = (headToIndex: StatusDelta?, indexToWorkingDirectory: StatusDelta?) -> Bool
+import ReactiveCocoa
 
 public extension Repository {
   /**
-    TODO: Documentation.
+    Enumerates over all status deltas in a repository.
+
+    :param: options Options for enumerating status deltas. Use this to control whether
+                    unmodified files are included in the enumeration, whether to detect
+                    renames, and more.
+    :returns: A signal that sends subscribers status deltas as they're
+              enumerated, or an error to indicate what went wrong during
+              the enumeration.
   */
-  public func status(closure: StatusClosure, options: StatusDeltaOptions = StatusDeltaOptions()) -> Result<UInt, NSError> {
-    var statusList = COpaquePointer.null()
-    var cOptions = options.cOptions
-    let errorCode = git_status_list_new(&statusList, cRepository, &cOptions)
-    if errorCode == GIT_OK.value {
-      let statusCount = git_status_list_entrycount(statusList)
-      if statusCount < 1 {
-        git_status_list_free(statusList)
-        return success(statusCount)
-      } else {
+  public func status(options: StatusDeltaOptions = StatusDeltaOptions()) -> RACSignal {
+    return RACSignal.createSignal { (subscriber: RACSubscriber!) -> RACDisposable! in
+      let disposable = RACDisposable()
+
+      var statusList = COpaquePointer.null()
+      var cOptions = options.cOptions
+      let errorCode = git_status_list_new(&statusList, self.cRepository, &cOptions)
+      if errorCode == GIT_OK.value {
+        let statusCount = git_status_list_entrycount(statusList)
         for statusIndex in 0..<statusCount {
           let entry = git_status_byindex(statusList, statusIndex)
           if entry != nil {
-            var headToIndex: StatusDelta?
-            if entry.memory.head_to_index != nil {
-              headToIndex = StatusDelta(cDiffDelta: entry.memory.head_to_index.memory)
-            }
-            var indexToWorkingDirectory: StatusDelta?
-            if entry.memory.index_to_workdir != nil {
-              indexToWorkingDirectory = StatusDelta(cDiffDelta: entry.memory.index_to_workdir.memory)
-            }
-            if closure(headToIndex: headToIndex, indexToWorkingDirectory: indexToWorkingDirectory) {
-              git_status_list_free(statusList)
-              return success(statusIndex + 1)
-            }
+            subscriber.sendNext(StatusDeltas(cEntry: entry))
           }
         }
-        git_status_list_free(statusList)
-        return success(statusCount)
+        subscriber.sendCompleted()
+      } else {
+        subscriber.sendError(NSError.libGit2Error(errorCode, libGit2PointOfFailure: "git_status_list_new"))
       }
-    } else {
+
       git_status_list_free(statusList)
-      return failure(NSError.libGit2Error(errorCode, libGit2PointOfFailure: "git_status_list_new"))
+      return disposable
     }
   }
 

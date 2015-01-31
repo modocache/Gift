@@ -195,6 +195,8 @@
 		DA39DEF51A7D6C240080FB88 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = DADD60561A6E1E0200F16FB3 /* unzip.c */; };
 		DA39DEF61A7D6C240080FB88 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = DADD60581A6E1E0200F16FB3 /* zip.c */; };
 		DA39DEF71A7D6C240080FB88 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = DADD605B1A6E1E0200F16FB3 /* SSZipArchive.m */; };
+		DA39DEF91A7D73C30080FB88 /* StatusDeltas.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA39DEF81A7D73C30080FB88 /* StatusDeltas.swift */; };
+		DA39DEFA1A7D73C30080FB88 /* StatusDeltas.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA39DEF81A7D73C30080FB88 /* StatusDeltas.swift */; };
 		DA4482CF1A77076F00FE74A2 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4482CD1A77076200FE74A2 /* ReactiveCocoa.framework */; };
 		DA4482D01A77077800FE74A2 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4482CD1A77076200FE74A2 /* ReactiveCocoa.framework */; };
 		DA458B2D1A6F61200065F693 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA458B2A1A6F61200065F693 /* libcrypto.a */; };
@@ -316,6 +318,7 @@
 		DA18C14F1A7B4F220039EFB7 /* Result+Compact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Result+Compact.swift"; sourceTree = "<group>"; };
 		DA363DA31A6BAE160030BBCC /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 		DA363DA51A6BAE1C0030BBCC /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		DA39DEF81A7D73C30080FB88 /* StatusDeltas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusDeltas.swift; sourceTree = "<group>"; };
 		DA3E3AEB1A742FBE00BA7AB6 /* Repository+Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Repository+Tag.swift"; sourceTree = "<group>"; };
 		DA3EDDE01A6DA08E0027CEFB /* IndexSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexSpec.swift; sourceTree = "<group>"; };
 		DA3EDDE31A6DA1130027CEFB /* ReferenceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferenceSpec.swift; sourceTree = "<group>"; };
@@ -481,6 +484,7 @@
 		DA0FDFE41A7D5B9E00C48B86 /* StatusDelta */ = {
 			isa = PBXGroup;
 			children = (
+				DA39DEF81A7D73C30080FB88 /* StatusDeltas.swift */,
 				DA0FDFE61A7D5B9E00C48B86 /* StatusDelta.swift */,
 				DA0FDFE71A7D5B9E00C48B86 /* StatusDeltaType.swift */,
 				DA0FDFE51A7D5B9E00C48B86 /* Status.swift */,
@@ -1160,6 +1164,7 @@
 				DA39DE7C1A7D6AA00080FB88 /* Tree+Commit.swift in Sources */,
 				DA39DE7D1A7D6AA00080FB88 /* Tree+ObjectID.swift in Sources */,
 				DA39DE7E1A7D6AA00080FB88 /* Tree+Repository.swift in Sources */,
+				DA39DEF91A7D73C30080FB88 /* StatusDeltas.swift in Sources */,
 				DA39DE7F1A7D6AA00080FB88 /* Error.swift in Sources */,
 				DA39DE801A7D6AA00080FB88 /* Domain.swift in Sources */,
 				DA39DE811A7D6AA00080FB88 /* NSError+Domain.swift in Sources */,
@@ -1265,6 +1270,7 @@
 				DA39DEDC1A7D6BF60080FB88 /* Tree+Commit.swift in Sources */,
 				DA39DEDD1A7D6BF60080FB88 /* Tree+ObjectID.swift in Sources */,
 				DA39DEDE1A7D6BF60080FB88 /* Tree+Repository.swift in Sources */,
+				DA39DEFA1A7D73C30080FB88 /* StatusDeltas.swift in Sources */,
 				DA39DEDF1A7D6BF60080FB88 /* Error.swift in Sources */,
 				DA39DEE01A7D6BF60080FB88 /* Domain.swift in Sources */,
 				DA39DEE11A7D6BF60080FB88 /* NSError+Domain.swift in Sources */,

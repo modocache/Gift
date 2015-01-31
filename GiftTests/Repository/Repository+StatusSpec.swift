@@ -17,11 +17,12 @@ class Repository_StatusSpec: QuickSpec {
         var indexToWorkingDirectories = FileDeltas()
 
         // Act: Iterate over status deltas, storing them in data structures.
-        repository.flatMap { $0.status { (headToIndex: StatusDelta?, indexToWorkingDirectory: StatusDelta?) in
-          headToIndexes.addDelta(headToIndex)
-          indexToWorkingDirectories.addDelta(indexToWorkingDirectory)
-          return false
-        }}
+        if repository.isSuccess {
+          for deltas in (repository.value!.status().toArray() as [StatusDeltas]) {
+            headToIndexes.addDelta(deltas.headToIndex)
+            indexToWorkingDirectories.addDelta(deltas.indexToWorkingDirectory)
+          }
+        }
 
         // Assert: Deltas are correctly reported.
         expect(headToIndexes.deltas).to(equal([
