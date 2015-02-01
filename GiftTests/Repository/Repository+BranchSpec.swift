@@ -13,7 +13,7 @@ private extension Repository {
     :returns: A list of branch names in the order in which they were enumerated.
   */
   private func branchNames(type: BranchType) -> [String] {
-    let branchReferences = branches(type: type).toArray() as [Reference]
+    let branchReferences = branches(type: type).array
     return compact(branchReferences.map { $0.name })
   }
 }

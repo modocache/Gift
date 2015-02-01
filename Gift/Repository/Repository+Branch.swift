@@ -11,10 +11,8 @@ public extension Repository {
               enumerated. Dispose of the signal in order to discontinue
               the enueration.
   */
-  public func branches(type: BranchType = .Local) -> RACSignal {
-    return RACSignal.createSignal { (subscriber: RACSubscriber!) -> RACDisposable! in
-      let disposable = RACDisposable()
-
+  public func branches(type: BranchType = .Local) -> SignalProducer<Reference, NSError> {
+    return SignalProducer { (sink, disposable) in
       // Create a branch iterator. If this fails, notify the subscriber
       // of an error and exit early.
       var out = COpaquePointer.null()
@@ -28,10 +26,10 @@ public extension Repository {
           // For each reference, check if the signal has been disposed of.
           // If so, cancel early.
           if disposable.disposed {
-            return disposable
+            return
           }
           // Otherwise, continue sending the subscriber references.
-          subscriber.sendNext(Reference(cReference: next.cReference))
+          sendNext(sink, Reference(cReference: next.cReference))
           next = iterator.next()
         }
 
@@ -39,17 +37,15 @@ public extension Repository {
         if next.errorCode == GIT_ITEROVER.value {
           // 1. There are no branch references to iterate over, i.e.: GIT_ITEROVER.
           //    If that's the case, notify the subsciber that the signal has completed.
-          subscriber.sendCompleted()
+          sendCompleted(sink)
         } else {
           // 2. An error occurred while iterating. If that's the case, notify the
           //    subscriber of the error.
-          subscriber.sendError(NSError.libGit2Error(next.errorCode, libGit2PointOfFailure: iterator.pointOfFailure))
+          sendError(sink, NSError.libGit2Error(next.errorCode, libGit2PointOfFailure: iterator.pointOfFailure))
         }
       } else {
-        subscriber.sendError(NSError.libGit2Error(errorCode, libGit2PointOfFailure: "git_branch_iterator_new"))
+        sendError(sink, NSError.libGit2Error(errorCode, libGit2PointOfFailure: "git_branch_iterator_new"))
       }
-
-      return disposable
     }
   }
 
