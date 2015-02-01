@@ -58,12 +58,20 @@ class RepositorySpec: QuickSpec {
               checkoutOptions: CheckoutOptions(
                 strategy: CheckoutStrategy.SafeCreate,
                 progressCallback: { (path: String!, completedSteps: UInt, totalSteps: UInt) in
-                  println("path '\(path != nil ? path : nil)', "
+                  println("path '\(path)', "
                           + "completedSteps '\(completedSteps)', "
                           + "totalSteps '\(totalSteps)'")
                 }
               ),
-              remoteCallbacks: RemoteCallbacks()
+              remoteCallbacks: RemoteCallbacks(
+                transportMessageCallback: { (message) in
+                  println("transportMessageCallback: \(message)")
+                  return false
+                },
+                transferProgressCallback: { (progress) in
+                  println("transferProgressCallback bytes: \(progress.receivedBytes)")
+                  return false
+                })
             )
 
             expect(cloneRepository(remoteURL, destinationURL, options: options))

@@ -10,12 +10,15 @@
 public struct CloneOptions {
   internal let checkoutOptions: CheckoutOptions
   internal let remoteCallbacks: RemoteCallbacks
+  internal let localCloneBehavior: LocalCloneBehavior
 
   public init(
     checkoutOptions: CheckoutOptions = CheckoutOptions(strategy: CheckoutStrategy.SafeCreate),
-    remoteCallbacks: RemoteCallbacks = RemoteCallbacks()
+    remoteCallbacks: RemoteCallbacks = RemoteCallbacks(),
+    localCloneBehavior: LocalCloneBehavior = .Automatic
   ) {
     self.checkoutOptions = checkoutOptions
     self.remoteCallbacks = remoteCallbacks
+    self.localCloneBehavior = localCloneBehavior
   }
 }

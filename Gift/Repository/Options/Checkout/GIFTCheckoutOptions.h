@@ -21,6 +21,7 @@ typedef void (^GIFTCheckoutProgressCallback)(NSString *checkedOutFilePath,
 
 /**
  Returns a set of checkout options with the given paramters.
+ This function is used internally by Gift.
 
  @warning This function is necessary in order to allow a Swift closure
           to be used as a progress callback. It is impossible to

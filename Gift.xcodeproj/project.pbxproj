@@ -199,6 +199,18 @@
 		DA39DEFA1A7D73C30080FB88 /* StatusDeltas.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA39DEF81A7D73C30080FB88 /* StatusDeltas.swift */; };
 		DA39DEFF1A7E9C520080FB88 /* SignalProducer+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA39DEFE1A7E9C520080FB88 /* SignalProducer+Array.swift */; };
 		DA39DF001A7E9C520080FB88 /* SignalProducer+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA39DEFE1A7E9C520080FB88 /* SignalProducer+Array.swift */; };
+		DA39DF021A7EACBE0080FB88 /* LocalCloneBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA39DF011A7EACBE0080FB88 /* LocalCloneBehavior.swift */; };
+		DA39DF031A7EACBE0080FB88 /* LocalCloneBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA39DF011A7EACBE0080FB88 /* LocalCloneBehavior.swift */; };
+		DA39DF091A7EBECB0080FB88 /* GIFTRemoteCallbacks.h in Headers */ = {isa = PBXBuildFile; fileRef = DA39DF071A7EBECB0080FB88 /* GIFTRemoteCallbacks.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA39DF0A1A7EBECB0080FB88 /* GIFTRemoteCallbacks.h in Headers */ = {isa = PBXBuildFile; fileRef = DA39DF071A7EBECB0080FB88 /* GIFTRemoteCallbacks.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA39DF0B1A7EBECB0080FB88 /* GIFTRemoteCallbacks.m in Sources */ = {isa = PBXBuildFile; fileRef = DA39DF081A7EBECB0080FB88 /* GIFTRemoteCallbacks.m */; };
+		DA39DF0C1A7EBECB0080FB88 /* GIFTRemoteCallbacks.m in Sources */ = {isa = PBXBuildFile; fileRef = DA39DF081A7EBECB0080FB88 /* GIFTRemoteCallbacks.m */; };
+		DA39DF0F1A7EC7400080FB88 /* GIFTRemoteCallbacksPayload.h in Headers */ = {isa = PBXBuildFile; fileRef = DA39DF0D1A7EC7400080FB88 /* GIFTRemoteCallbacksPayload.h */; };
+		DA39DF101A7EC7400080FB88 /* GIFTRemoteCallbacksPayload.h in Headers */ = {isa = PBXBuildFile; fileRef = DA39DF0D1A7EC7400080FB88 /* GIFTRemoteCallbacksPayload.h */; };
+		DA39DF111A7EC7400080FB88 /* GIFTRemoteCallbacksPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = DA39DF0E1A7EC7400080FB88 /* GIFTRemoteCallbacksPayload.m */; };
+		DA39DF121A7EC7400080FB88 /* GIFTRemoteCallbacksPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = DA39DF0E1A7EC7400080FB88 /* GIFTRemoteCallbacksPayload.m */; };
+		DA39DF151A7EC7CD0080FB88 /* GIFTTransferProgress.h in Headers */ = {isa = PBXBuildFile; fileRef = DA39DF131A7EC7CD0080FB88 /* GIFTTransferProgress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA39DF161A7EC7CD0080FB88 /* GIFTTransferProgress.h in Headers */ = {isa = PBXBuildFile; fileRef = DA39DF131A7EC7CD0080FB88 /* GIFTTransferProgress.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA4482CF1A77076F00FE74A2 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4482CD1A77076200FE74A2 /* ReactiveCocoa.framework */; };
 		DA4482D01A77077800FE74A2 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4482CD1A77076200FE74A2 /* ReactiveCocoa.framework */; };
 		DA458B2D1A6F61200065F693 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA458B2A1A6F61200065F693 /* libcrypto.a */; };
@@ -322,6 +334,12 @@
 		DA363DA51A6BAE1C0030BBCC /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		DA39DEF81A7D73C30080FB88 /* StatusDeltas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusDeltas.swift; sourceTree = "<group>"; };
 		DA39DEFE1A7E9C520080FB88 /* SignalProducer+Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SignalProducer+Array.swift"; sourceTree = "<group>"; };
+		DA39DF011A7EACBE0080FB88 /* LocalCloneBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalCloneBehavior.swift; sourceTree = "<group>"; };
+		DA39DF071A7EBECB0080FB88 /* GIFTRemoteCallbacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIFTRemoteCallbacks.h; sourceTree = "<group>"; };
+		DA39DF081A7EBECB0080FB88 /* GIFTRemoteCallbacks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFTRemoteCallbacks.m; sourceTree = "<group>"; };
+		DA39DF0D1A7EC7400080FB88 /* GIFTRemoteCallbacksPayload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIFTRemoteCallbacksPayload.h; sourceTree = "<group>"; };
+		DA39DF0E1A7EC7400080FB88 /* GIFTRemoteCallbacksPayload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFTRemoteCallbacksPayload.m; sourceTree = "<group>"; };
+		DA39DF131A7EC7CD0080FB88 /* GIFTTransferProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIFTTransferProgress.h; sourceTree = "<group>"; };
 		DA3E3AEB1A742FBE00BA7AB6 /* Repository+Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Repository+Tag.swift"; sourceTree = "<group>"; };
 		DA3EDDE01A6DA08E0027CEFB /* IndexSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexSpec.swift; sourceTree = "<group>"; };
 		DA3EDDE31A6DA1130027CEFB /* ReferenceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferenceSpec.swift; sourceTree = "<group>"; };
@@ -708,8 +726,8 @@
 		DA93AF211A78ACE2009E95F0 /* Checkout */ = {
 			isa = PBXGroup;
 			children = (
-				DA93AF221A78ACE2009E95F0 /* CheckoutOptions+C.swift */,
 				DA93AF231A78ACE2009E95F0 /* CheckoutOptions.swift */,
+				DA93AF221A78ACE2009E95F0 /* CheckoutOptions+C.swift */,
 				DA93AF241A78ACE2009E95F0 /* CheckoutStrategy.swift */,
 				DA93AF251A78ACE2009E95F0 /* GIFTCheckoutOptions.h */,
 				DA93AF261A78ACE2009E95F0 /* GIFTCheckoutOptions.m */,
@@ -720,8 +738,9 @@
 		DA93AF271A78ACE2009E95F0 /* Clone */ = {
 			isa = PBXGroup;
 			children = (
-				DA93AF281A78ACE2009E95F0 /* CloneOptions+C.swift */,
 				DA93AF291A78ACE2009E95F0 /* CloneOptions.swift */,
+				DA93AF281A78ACE2009E95F0 /* CloneOptions+C.swift */,
+				DA39DF011A7EACBE0080FB88 /* LocalCloneBehavior.swift */,
 			);
 			path = Clone;
 			sourceTree = "<group>";
@@ -729,10 +748,10 @@
 		DA93AF2A1A78ACE2009E95F0 /* Initialization */ = {
 			isa = PBXGroup;
 			children = (
-				DA93AF2B1A78ACE2009E95F0 /* RepositoryInitializationMode.swift */,
-				DA93AF2C1A78ACE2009E95F0 /* RepositoryInitializationOptions+C.swift */,
 				DA93AF2D1A78ACE2009E95F0 /* RepositoryInitializationOptions.swift */,
+				DA93AF2C1A78ACE2009E95F0 /* RepositoryInitializationOptions+C.swift */,
 				DA93AF2E1A78ACE2009E95F0 /* RepositoryInitializationOptionSet.swift */,
+				DA93AF2B1A78ACE2009E95F0 /* RepositoryInitializationMode.swift */,
 			);
 			path = Initialization;
 			sourceTree = "<group>";
@@ -740,8 +759,13 @@
 		DA93AF2F1A78ACE2009E95F0 /* RemoteCallbacks */ = {
 			isa = PBXGroup;
 			children = (
-				DA93AF301A78ACE2009E95F0 /* RemoteCallbacks+C.swift */,
 				DA93AF311A78ACE2009E95F0 /* RemoteCallbacks.swift */,
+				DA93AF301A78ACE2009E95F0 /* RemoteCallbacks+C.swift */,
+				DA39DF071A7EBECB0080FB88 /* GIFTRemoteCallbacks.h */,
+				DA39DF081A7EBECB0080FB88 /* GIFTRemoteCallbacks.m */,
+				DA39DF131A7EC7CD0080FB88 /* GIFTTransferProgress.h */,
+				DA39DF0D1A7EC7400080FB88 /* GIFTRemoteCallbacksPayload.h */,
+				DA39DF0E1A7EC7400080FB88 /* GIFTRemoteCallbacksPayload.m */,
 			);
 			path = RemoteCallbacks;
 			sourceTree = "<group>";
@@ -944,7 +968,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA39DE821A7D6AB10080FB88 /* Gift.h in Headers */,
+				DA39DF091A7EBECB0080FB88 /* GIFTRemoteCallbacks.h in Headers */,
+				DA39DF151A7EC7CD0080FB88 /* GIFTTransferProgress.h in Headers */,
 				DA39DE831A7D6AB10080FB88 /* GIFTCheckoutOptions.h in Headers */,
+				DA39DF0F1A7EC7400080FB88 /* GIFTRemoteCallbacksPayload.h in Headers */,
 				DA39DE841A7D6AB10080FB88 /* GIFTTagForEach.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -954,7 +981,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DADD5F9D1A6E0D2F00F16FB3 /* Gift.h in Headers */,
+				DA39DF0A1A7EBECB0080FB88 /* GIFTRemoteCallbacks.h in Headers */,
+				DA39DF161A7EC7CD0080FB88 /* GIFTTransferProgress.h in Headers */,
 				DA93AF391A78ACE2009E95F0 /* GIFTCheckoutOptions.h in Headers */,
+				DA39DF101A7EC7400080FB88 /* GIFTRemoteCallbacksPayload.h in Headers */,
 				DA18C1491A7B40020039EFB7 /* GIFTTagForEach.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1105,6 +1135,7 @@
 				DA39DE3B1A7D6A9F0080FB88 /* Gift.m in Sources */,
 				DA39DE3C1A7D6A9F0080FB88 /* BranchIterator.swift in Sources */,
 				DA39DE3D1A7D6A9F0080FB88 /* BranchType.swift in Sources */,
+				DA39DF021A7EACBE0080FB88 /* LocalCloneBehavior.swift in Sources */,
 				DA39DE3E1A7D6A9F0080FB88 /* Commit.swift in Sources */,
 				DA39DE3F1A7D6A9F0080FB88 /* Commit+Branch.swift in Sources */,
 				DA39DE401A7D6A9F0080FB88 /* Commit+ObjectID.swift in Sources */,
@@ -1117,6 +1148,7 @@
 				DA39DE471A7D6A9F0080FB88 /* MergeOptions+C.swift in Sources */,
 				DA39DE481A7D6A9F0080FB88 /* MergeStrategy.swift in Sources */,
 				DA39DE491A7D6A9F0080FB88 /* Index.swift in Sources */,
+				DA39DF111A7EC7400080FB88 /* GIFTRemoteCallbacksPayload.m in Sources */,
 				DA39DE4A1A7D6A9F0080FB88 /* Index+Repository.swift in Sources */,
 				DA39DE4B1A7D6A9F0080FB88 /* Index+Tree.swift in Sources */,
 				DA39DE4C1A7D6A9F0080FB88 /* IndexAddOptions.swift in Sources */,
@@ -1124,6 +1156,7 @@
 				DA39DE4E1A7D6A9F0080FB88 /* Object+ObjectID.swift in Sources */,
 				DA39DE4F1A7D6A9F0080FB88 /* ObjectType.swift in Sources */,
 				DA39DE501A7D6A9F0080FB88 /* ObjectID.swift in Sources */,
+				DA39DF0B1A7EBECB0080FB88 /* GIFTRemoteCallbacks.m in Sources */,
 				DA39DE511A7D6A9F0080FB88 /* Reference.swift in Sources */,
 				DA39DE521A7D6A9F0080FB88 /* Reference+Commit.swift in Sources */,
 				DA39DE531A7D6A9F0080FB88 /* Reference+Object.swift in Sources */,
@@ -1212,6 +1245,7 @@
 				DA39DE9B1A7D6BF60080FB88 /* Gift.m in Sources */,
 				DA39DE9C1A7D6BF60080FB88 /* BranchIterator.swift in Sources */,
 				DA39DE9D1A7D6BF60080FB88 /* BranchType.swift in Sources */,
+				DA39DF031A7EACBE0080FB88 /* LocalCloneBehavior.swift in Sources */,
 				DA39DE9E1A7D6BF60080FB88 /* Commit.swift in Sources */,
 				DA39DE9F1A7D6BF60080FB88 /* Commit+Branch.swift in Sources */,
 				DA39DEA01A7D6BF60080FB88 /* Commit+ObjectID.swift in Sources */,
@@ -1224,6 +1258,7 @@
 				DA39DEA71A7D6BF60080FB88 /* MergeOptions+C.swift in Sources */,
 				DA39DEA81A7D6BF60080FB88 /* MergeStrategy.swift in Sources */,
 				DA39DEA91A7D6BF60080FB88 /* Index.swift in Sources */,
+				DA39DF121A7EC7400080FB88 /* GIFTRemoteCallbacksPayload.m in Sources */,
 				DA39DEAA1A7D6BF60080FB88 /* Index+Repository.swift in Sources */,
 				DA39DEAB1A7D6BF60080FB88 /* Index+Tree.swift in Sources */,
 				DA39DEAC1A7D6BF60080FB88 /* IndexAddOptions.swift in Sources */,
@@ -1231,6 +1266,7 @@
 				DA39DEAE1A7D6BF60080FB88 /* Object+ObjectID.swift in Sources */,
 				DA39DEAF1A7D6BF60080FB88 /* ObjectType.swift in Sources */,
 				DA39DEB01A7D6BF60080FB88 /* ObjectID.swift in Sources */,
+				DA39DF0C1A7EBECB0080FB88 /* GIFTRemoteCallbacks.m in Sources */,
 				DA39DEB11A7D6BF60080FB88 /* Reference.swift in Sources */,
 				DA39DEB21A7D6BF60080FB88 /* Reference+Commit.swift in Sources */,
 				DA39DEB31A7D6BF60080FB88 /* Reference+Object.swift in Sources */,

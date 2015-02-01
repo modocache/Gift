@@ -7,4 +7,5 @@ FOUNDATION_EXPORT double GiftVersionNumber;
 FOUNDATION_EXPORT const unsigned char GiftVersionString[];
 
 #import <Gift/GIFTCheckoutOptions.h>
+#import <Gift/GIFTRemoteCallbacks.h>
 #import <Gift/GIFTTagForEach.h>

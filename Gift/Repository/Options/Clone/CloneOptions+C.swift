@@ -9,7 +9,7 @@ extension CloneOptions {
       checkout_opts: checkoutOptions.cOptions,
       remote_callbacks: remoteCallbacks.cCallbacks,
       bare: 0,
-      local: GIT_CLONE_LOCAL_AUTO,
+      local: git_clone_local_t(localCloneBehavior.rawValue),
       checkout_branch: nil,
       signature: nil,
       repository_cb: nil,
