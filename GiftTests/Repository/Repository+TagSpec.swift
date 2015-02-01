@@ -15,8 +15,9 @@ class Repository_TagSpec: QuickSpec {
         }
 
         it("enumerates them") {
-          let references = repository.flatMap { ($0.tags() |> scan([]) { $0 + [$1] } |> first)! }
-          let names = references.map { compact($0.map { $0.name }) }.map { $0 as NSArray }
+          let names = repository
+            .map { compact($0.tags().array.map { $0.name }) }
+            .map { $0 as NSArray }
           expect(names).to(haveSucceeded([
             "refs/tags/first",
             "refs/tags/second",

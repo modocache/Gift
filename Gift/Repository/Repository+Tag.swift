@@ -14,8 +14,6 @@ public extension Repository {
   */
   public func tags() -> SignalProducer<Reference, NSError> {
     return SignalProducer { (sink, disposable) in
-      let disposable = RACDisposable()
-
       let errorCode = gift_tagForEach(self.cRepository) { (referenceName, referenceObjectID) in
         if disposable.disposed {
           return tagEnumerationOver
