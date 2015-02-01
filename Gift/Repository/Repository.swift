@@ -3,6 +3,20 @@ import LlamaKit
 
 /**
   A data structure representing a Git repository.
+
+  A warning when using this class: when a repository object
+  goes out of scope, and its deinitializer is called, it frees
+  the underlying C struct representing the repository.
+
+  If this is done prematurely, it may cause undefined behavior
+  and even crashes. For example, many methods provided by an
+  index object (`Gift.Index`) require that the repository backing
+  that index still exist. If the repository goes out of scope,
+  but the index is still used, Gift may crash.
+
+  To avoid these pitfalls, make sure you maintain a reference to
+  a repository object as long as you continue to use objects
+  that rely on that repository.
 */
 public class Repository {
   internal let cRepository: COpaquePointer
@@ -11,14 +25,9 @@ public class Repository {
     self.cRepository = cRepository
   }
 
-  // TODO: When a repository object goes out of scope,
-  //       it frees the underlying C struct. This means
-  //       Gift cannot use repository objects when they
-  //       do not own the underlying struct. Currently,
-  //       however, it does.
-  // deinit {
-  //   git_repository_free(cRepository)
-  // }
+   deinit {
+     git_repository_free(cRepository)
+   }
 }
 
 public extension Repository {

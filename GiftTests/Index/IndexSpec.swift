@@ -5,11 +5,13 @@ import Nimble
 
 class IndexSpec: QuickSpec {
   override func spec() {
+    var repository: Result<Repository, NSError>!
     var index: Result<Index, NSError>!
 
     describe("entryCount") {
       beforeEach {
-        index = openFixturesRepository("IndexSpec_EntryCount").flatMap { $0.index }
+        repository = openFixturesRepository("IndexSpec_EntryCount")
+        index = repository.flatMap { $0.index }
       }
 
       it("returns the number of entries in the index") {
@@ -20,7 +22,8 @@ class IndexSpec: QuickSpec {
     describe("add") {
       context("when there are unstaged entries") {
         beforeEach {
-          index = openFixturesRepository("IndexSpec_Add_TwoUnstagedEntries").flatMap { $0.index }
+          repository = openFixturesRepository("IndexSpec_Add_TwoUnstagedEntries")
+          index = repository.flatMap { $0.index }
         }
 
         it("adds all of them using the default parameters") {

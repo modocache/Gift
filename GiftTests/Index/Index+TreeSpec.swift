@@ -5,9 +5,11 @@ import Nimble
 
 class Index_TreeSpec: QuickSpec {
   override func spec() {
+    var repository: Result<Repository, NSError>!
     var index: Result<Index, NSError>!
     beforeEach {
-      index = openFixturesRepository("IndexSpec_EntryCount").flatMap { $0.index }
+      repository = openFixturesRepository("IndexSpec_EntryCount")
+      index = repository.flatMap { $0.index }
     }
 
     describe("writeTree") {

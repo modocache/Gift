@@ -5,9 +5,11 @@ import Nimble
 
 class ReferenceSpec: QuickSpec {
   override func spec() {
+    var repository: Result<Repository, NSError>!
     var reference: Result<Reference, NSError>!
     beforeEach {
-      reference = openFixturesRepository("Spec_EmptyRepository").flatMap { $0.headReference }
+      repository = openFixturesRepository("Spec_EmptyRepository")
+      reference = repository.flatMap { $0.headReference }
     }
 
     describe("name") {
