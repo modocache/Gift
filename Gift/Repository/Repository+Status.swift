@@ -13,10 +13,8 @@ public extension Repository {
               enumerated, or an error to indicate what went wrong during
               the enumeration.
   */
-  public func status(options: StatusDeltaOptions = StatusDeltaOptions()) -> RACSignal {
-    return RACSignal.createSignal { (subscriber: RACSubscriber!) -> RACDisposable! in
-      let disposable = RACDisposable()
-
+  public func status(options: StatusDeltaOptions = StatusDeltaOptions()) -> SignalProducer<StatusDeltas, NSError> {
+    return SignalProducer { (sink, disposable) in
       var statusList = COpaquePointer.null()
       var cOptions = options.cOptions
       let errorCode = git_status_list_new(&statusList, self.cRepository, &cOptions)
@@ -25,16 +23,15 @@ public extension Repository {
         for statusIndex in 0..<statusCount {
           let entry = git_status_byindex(statusList, statusIndex)
           if entry != nil {
-            subscriber.sendNext(StatusDeltas(cEntry: entry))
+            sendNext(sink, StatusDeltas(cEntry: entry))
           }
         }
-        subscriber.sendCompleted()
+        sendCompleted(sink)
       } else {
-        subscriber.sendError(NSError.libGit2Error(errorCode, libGit2PointOfFailure: "git_status_list_new"))
+        sendError(sink, NSError.libGit2Error(errorCode, libGit2PointOfFailure: "git_status_list_new"))
       }
 
       git_status_list_free(statusList)
-      return disposable
     }
   }
 

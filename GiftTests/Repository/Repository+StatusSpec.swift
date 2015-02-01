@@ -18,7 +18,7 @@ class Repository_StatusSpec: QuickSpec {
 
         // Act: Iterate over status deltas, storing them in data structures.
         if repository.isSuccess {
-          for deltas in (repository.value!.status().toArray() as [StatusDeltas]) {
+          for deltas in (repository.value!.status().array) {
             headToIndexes.addDelta(deltas.headToIndex)
             indexToWorkingDirectories.addDelta(deltas.indexToWorkingDirectory)
           }
