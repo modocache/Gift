@@ -11,20 +11,16 @@ public extension Repository {
               enumerated. Dispose of the signal in order to discontinue
               the enueration.
   */
-  public func commits(sorting: CommitSorting = CommitSorting.Time) -> RACSignal {
-    return RACSignal.createSignal { (subscriber: RACSubscriber!) -> RACDisposable! in
-      let disposable = RACDisposable()
-
+  public func commits(sorting: CommitSorting = CommitSorting.Time) -> SignalProducer<Commit, NSError> {
+    return SignalProducer { (sink, disposable) in
       var out = COpaquePointer.null()
       let errorCode = git_revwalk_new(&out, self.cRepository)
       if errorCode == GIT_OK.value {
         CommitWalker(cWalker: out, cRepository: self.cRepository, sorting: sorting)
-          .walk(subscriber, disposable: disposable)
+          .walk(sink, disposable: disposable)
       } else {
-        subscriber.sendError(NSError.libGit2Error(errorCode, libGit2PointOfFailure: "git_revwalk_new"))
+        sendError(sink, NSError.libGit2Error(errorCode, libGit2PointOfFailure: "git_revwalk_new"))
       }
-
-      return disposable
     }
   }
 

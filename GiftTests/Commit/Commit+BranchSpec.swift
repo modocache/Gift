@@ -9,7 +9,7 @@ class Commit_BranchSpec: QuickSpec {
       var commit: Result<Commit, NSError>!
       beforeEach {
         commit = openFixturesRepository("Commit+BranchSpec_OneBranchBesidesMaster")
-          .map { $0.commits().toArray()[0] as Commit }
+          .map { $0.commits().array[0] }
       }
 
       context("when a branch doesn't already exist with the given name") {

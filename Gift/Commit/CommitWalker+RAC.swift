@@ -8,14 +8,14 @@ internal extension CommitWalker {
                        as the walker iterates over commits.
     :param: disposable Used to cancel the walk operation.
   */
-  internal func walk(subscriber: RACSubscriber!, disposable: RACDisposable!) {
+  internal func walk(sink: SinkOf<Event<Commit, NSError>>, disposable: CompositeDisposable) {
     var errorCode: Int32
 
     // Begin walking from HEAD. If this operation fails, notify the subsciber
     // of an error and return immediately.
     errorCode = git_revwalk_push_head(cWalker)
     if errorCode != GIT_OK.value {
-      subscriber.sendError(NSError.libGit2Error(errorCode, libGit2PointOfFailure: "git_revwalk_push_head"))
+      sendError(sink, NSError.libGit2Error(errorCode, libGit2PointOfFailure: "git_revwalk_push_head"))
       return
     }
 
@@ -36,9 +36,9 @@ internal extension CommitWalker {
       let commit = Commit.lookup(objectID, cRepository: cRepository)
       switch commit {
       case .Success(let boxedCommit):
-        subscriber.sendNext(boxedCommit.unbox)
+        sendNext(sink, boxedCommit.unbox)
       case .Failure(let boxedError):
-        subscriber.sendError(boxedError.unbox)
+        sendError(sink, boxedError.unbox)
         objectID.dealloc(1)
         return
       }
@@ -52,11 +52,11 @@ internal extension CommitWalker {
     if errorCode == GIT_ITEROVER.value {
       // 1. There are no more commits to iterate over, i.e.: GIT_ITEROVER.
       //    If that's the case, notify the subsciber that the signal has completed.
-      subscriber.sendCompleted()
+      sendCompleted(sink)
     } else {
       // 2. An error occurred while iterating. If that's the case, notify the
       //    subscriber of the error.
-      subscriber.sendError(NSError.libGit2Error(errorCode, libGit2PointOfFailure: "git_revwalk_next"))
+      sendError(sink, NSError.libGit2Error(errorCode, libGit2PointOfFailure: "git_revwalk_next"))
     }
   }
 }

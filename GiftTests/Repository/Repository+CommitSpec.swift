@@ -12,7 +12,7 @@ class Repository_CommitSpec: QuickSpec {
 
     describe("commits") {
       it("enumerates the commits in the repository in the given sorting order") {
-        expect(repository.map { countElements($0.commits().toArray()) }).to(haveSucceeded(4))
+        expect(repository.map { countElements($0.commits().array) }).to(haveSucceeded(4))
       }
     }
 
@@ -27,7 +27,7 @@ class Repository_CommitSpec: QuickSpec {
 
         // Grab the first commit.
         let firstCommit = repository
-          .map { $0.commits(sorting: CommitSorting.Time | CommitSorting.Reverse).toArray().first as Commit }
+          .map { $0.commits(sorting: CommitSorting.Time | CommitSorting.Reverse).array.first! }
 
         // Reset HEAD to the first commit, then grab that commit.
         let resetHeadCommit: Result<Commit, NSError> = firstCommit.flatMap { (commit: Commit) in
