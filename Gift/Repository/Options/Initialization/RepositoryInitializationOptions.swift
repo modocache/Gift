@@ -1,9 +1,6 @@
 /**
   A set of options used to initialize a Git repository.
   The designated initializer provides a set of reasonable defaults.
-
-  TODO: These options are incomplete; they do not yet cover the full
-        range of options made possible by git_repository_init_options.
 */
 public struct RepositoryInitializationOptions {
   /**
