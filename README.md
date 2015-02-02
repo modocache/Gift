@@ -1,8 +1,93 @@
 # Gift
 
 Gift provides Swift bindings to the
-[libgit2](https://github.com/libgit2/libgit2) library. It's a work in
-progress!
+[libgit2](https://github.com/libgit2/libgit2) library.
+
+That means you can clone a Git repository, list its commits,
+or even make a commit of your own--all from within your Swift
+program.
+
+For example, we can grab the latest commit message of *this*
+repository:
+
+```swift
+let url = NSURL(fileURLWithPath: "/Users/modocache/Gift")!
+let latestCommitMessage = openRepository(url)
+  .flatMap { $0.headReference }
+  .flatMap { $0.commit }
+  .flatMap { $0.message }
+```
+
+Gift returns result objects for any operation that might fail. The type
+of `lastCommitMessage` above is `Result<String, NSError>`. If every
+operation succeeded, you can access the commit message `String`. But if
+any of the operations failed, you'll have an `NSError` that describes
+what went wrong.
+
+# Features
+
+You can list all branches in a repository. Gift uses ReactiveCocoa to
+represent a sequence of values:
+
+```swift
+repository.branches().start(next: { (reference) in
+  println("Branch name: \(reference.name)")
+})
+```
+
+You can list commits as well:
+
+```swift
+repository.commits().start { (commit) in
+  println("Commit message: \(commit.message)")
+}
+```
+
+You can order the commits as you please, of course:
+
+```swift
+let commits = repository.commits(sorting: CommitSorting.Time | CommitSorting.Reverse)
+```
+
+You can *make* a commit, too:
+
+```swift
+let tree = repository.index
+  .flatMap { $0.add() }        // Add entries to the index
+  .flatMap { $0.writeTree() }  // Grab a tree representing the changeset
+  .flatMap { $0.commit("💥") }  // Commit
+```
+
+Swift allows Gift to provide default parameters. If you want to use the
+default behavior, you can easily clone a remote repository:
+
+```swift
+let remoteURL = NSURL(string: "git://git.libssh2.org/libssh2.git")!
+let destinationURL = NSURL(fileURLWithPath: "/Users/modocache/libssh2")!
+let repository = cloneRepository(remoteURL, destinationURL)
+```
+
+But you can also customize that behavior and have Gift issue download
+progress updates:
+
+```swift
+let options = CloneOptions(
+  checkoutOptions: CheckoutOptions(
+    strategy: CheckoutStrategy.SafeCreate,
+    progressCallback: { (path, completedSteps, totalSteps) in
+      // ...do something with checkout progress.
+    }
+  ),
+  remoteCallbacks: RemoteCallbacks(
+    transportMessageCallback: { (message) in
+      // ...do something with messages from remote, like "Compressing objects: 1% (47/4619)"
+    },
+    transferProgressCallback: { (progress) in
+      // ...do something with progress (bytes received, etc.) updates.
+    })
+)
+let repository = cloneRepository(remoteURL, destinationURL, options: options)
+```
 
 # How to Build
 
