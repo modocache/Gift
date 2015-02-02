@@ -14,7 +14,7 @@ public extension Repository {
               the enumeration.
   */
   public func status(options: StatusDeltaOptions = StatusDeltaOptions()) -> SignalProducer<StatusDeltas, NSError> {
-    return SignalProducer { (sink, disposable) in
+    return SignalProducer { (observer, disposable) in
       var statusList = COpaquePointer.null()
       var cOptions = options.cOptions
       let errorCode = git_status_list_new(&statusList, self.cRepository, &cOptions)
@@ -23,12 +23,12 @@ public extension Repository {
         for statusIndex in 0..<statusCount {
           let entry = git_status_byindex(statusList, statusIndex)
           if entry != nil {
-            sendNext(sink, StatusDeltas(cEntry: entry))
+            sendNext(observer, StatusDeltas(cEntry: entry))
           }
         }
-        sendCompleted(sink)
+        sendCompleted(observer)
       } else {
-        sendError(sink, NSError.libGit2Error(errorCode, libGit2PointOfFailure: "git_status_list_new"))
+        sendError(observer, NSError.libGit2Error(errorCode, libGit2PointOfFailure: "git_status_list_new"))
       }
 
       git_status_list_free(statusList)

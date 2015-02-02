@@ -12,7 +12,7 @@ public extension Repository {
               the enueration.
   */
   public func branches(type: BranchType = .Local) -> SignalProducer<Reference, NSError> {
-    return SignalProducer { (sink, disposable) in
+    return SignalProducer { (observer, disposable) in
       // Create a branch iterator. If this fails, notify the subscriber
       // of an error and exit early.
       var out = COpaquePointer.null()
@@ -29,7 +29,7 @@ public extension Repository {
             return
           }
           // Otherwise, continue sending the subscriber references.
-          sendNext(sink, Reference(cReference: next.cReference))
+          sendNext(observer, Reference(cReference: next.cReference))
           next = iterator.next()
         }
 
@@ -37,14 +37,14 @@ public extension Repository {
         if next.errorCode == GIT_ITEROVER.value {
           // 1. There are no branch references to iterate over, i.e.: GIT_ITEROVER.
           //    If that's the case, notify the subsciber that the signal has completed.
-          sendCompleted(sink)
+          sendCompleted(observer)
         } else {
           // 2. An error occurred while iterating. If that's the case, notify the
           //    subscriber of the error.
-          sendError(sink, NSError.libGit2Error(next.errorCode, libGit2PointOfFailure: iterator.pointOfFailure))
+          sendError(observer, NSError.libGit2Error(next.errorCode, libGit2PointOfFailure: iterator.pointOfFailure))
         }
       } else {
-        sendError(sink, NSError.libGit2Error(errorCode, libGit2PointOfFailure: "git_branch_iterator_new"))
+        sendError(observer, NSError.libGit2Error(errorCode, libGit2PointOfFailure: "git_branch_iterator_new"))
       }
     }
   }

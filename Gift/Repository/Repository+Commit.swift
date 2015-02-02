@@ -12,14 +12,14 @@ public extension Repository {
               the enueration.
   */
   public func commits(sorting: CommitSorting = CommitSorting.Time) -> SignalProducer<Commit, NSError> {
-    return SignalProducer { (sink, disposable) in
+    return SignalProducer { (observer, disposable) in
       var out = COpaquePointer.null()
       let errorCode = git_revwalk_new(&out, self.cRepository)
       if errorCode == GIT_OK.value {
         CommitWalker(cWalker: out, cRepository: self.cRepository, sorting: sorting)
-          .walk(sink, disposable: disposable)
+          .walk(observer, disposable: disposable)
       } else {
-        sendError(sink, NSError.libGit2Error(errorCode, libGit2PointOfFailure: "git_revwalk_new"))
+        sendError(observer, NSError.libGit2Error(errorCode, libGit2PointOfFailure: "git_revwalk_new"))
       }
     }
   }

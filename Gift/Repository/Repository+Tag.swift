@@ -13,7 +13,7 @@ public extension Repository {
               the enumeration.
   */
   public func tags() -> SignalProducer<Reference, NSError> {
-    return SignalProducer { (sink, disposable) in
+    return SignalProducer { (observer, disposable) in
       let errorCode = gift_tagForEach(self.cRepository) { (referenceName, referenceObjectID) in
         if disposable.disposed {
           return tagEnumerationOver
@@ -22,21 +22,21 @@ public extension Repository {
         let reference = Reference.lookup(referenceName, cRepository: self.cRepository)
         switch reference {
           case .Success(let boxedReference):
-            sendNext(sink, boxedReference.unbox)
+            sendNext(observer, boxedReference.unbox)
             return GIT_OK.value
           case .Failure(let boxedError):
-            sendError(sink, boxedError.unbox)
+            sendError(observer, boxedError.unbox)
             return tagEnumerationOver
         }
       }
 
       if errorCode == GIT_OK.value {
-        sendCompleted(sink)
+        sendCompleted(observer)
       } else if errorCode == GIFTTagForEachCallbackPayloadError {
         let description = "An error occurred when attempting to enumerate tags in a repository."
-        sendError(sink, NSError.giftError(.CFunctionCallbackConversionFailure, description: description))
+        sendError(observer, NSError.giftError(.CFunctionCallbackConversionFailure, description: description))
       } else if errorCode != tagEnumerationOver {
-        sendError(sink, NSError.libGit2Error(errorCode, libGit2PointOfFailure: "git_tag_foreach"))
+        sendError(observer, NSError.libGit2Error(errorCode, libGit2PointOfFailure: "git_tag_foreach"))
       }
     }
   }
