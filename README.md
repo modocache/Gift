@@ -52,10 +52,10 @@ let commits = repository.commits(sorting: CommitSorting.Time | CommitSorting.Rev
 You can *make* a commit, too:
 
 ```swift
-let tree = repository.index
-  .flatMap { $0.add() }        // Add entries to the index
-  .flatMap { $0.writeTree() }  // Grab a tree representing the changeset
-  .flatMap { $0.commit("💥") }  // Commit
+let tree = repository.index        // Grab the index for the repository
+  .flatMap { $0.add() }            // Add any modified entries to that index
+  .flatMap { $0.writeTree() }      // Grab a tree representing the changeset
+  .flatMap { $0.commit("Zing!") }  // Commit
 ```
 
 Swift allows Gift to provide default parameters. If you want to use the
@@ -92,7 +92,13 @@ let repository = cloneRepository(remoteURL, destinationURL, options: options)
 # How to Build
 
 You'll need to have [homebrew](https://github.com/Homebrew/homebrew/)
-installed, then just run:
+installed. If you don't already have CMake installed, run:
+
+```
+$ brew install cmake
+```
+
+Then, to build the dependencies for Gift, just run:
 
 ```
 $ rake dependencies build
