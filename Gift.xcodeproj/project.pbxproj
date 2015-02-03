@@ -7,106 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		29928B781A805692001729C3 /* BranchType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDEC61A748B06002C469E /* BranchType.swift */; };
-		29928B791A805692001729C3 /* Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDF0B1A757890002C469E /* Commit.swift */; };
-		29928B7A1A805692001729C3 /* Commit+Branch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AEFB1A7858E6009E95F0 /* Commit+Branch.swift */; };
-		29928B7B1A805692001729C3 /* Commit+ObjectID.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1388061A76BB0E009B9C66 /* Commit+ObjectID.swift */; };
-		29928B7C1A805692001729C3 /* Commit+Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AEFE1A785935009E95F0 /* Commit+Repository.swift */; };
-		29928B7D1A805692001729C3 /* CommitWalker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4483221A772DC400FE74A2 /* CommitWalker.swift */; };
-		29928B7E1A805692001729C3 /* CommitWalker+RAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4483251A77358300FE74A2 /* CommitWalker+RAC.swift */; };
-		29928B7F1A805692001729C3 /* CommitSorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDF311A75CF89002C469E /* CommitSorting.swift */; };
-		29928B801A805692001729C3 /* Commit+Merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF051A7871F2009E95F0 /* Commit+Merge.swift */; };
-		29928B811A805692001729C3 /* MergeOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF0E1A787D6F009E95F0 /* MergeOptions.swift */; };
-		29928B821A805692001729C3 /* MergeOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF111A787DBD009E95F0 /* MergeOptions+C.swift */; };
-		29928B831A805692001729C3 /* MergeStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF141A7883DA009E95F0 /* MergeStrategy.swift */; };
-		29928B841A805692001729C3 /* Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000701A6B9B2D00F43D4F /* Index.swift */; };
-		29928B851A805692001729C3 /* Index+Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1387ED1A76B18A009B9C66 /* Index+Repository.swift */; };
-		29928B861A805692001729C3 /* Index+Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1387EA1A76B06E009B9C66 /* Index+Tree.swift */; };
-		29928B871A805692001729C3 /* IndexAddOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA44832A1A77EE0700FE74A2 /* IndexAddOptions.swift */; };
-		29928B881A805692001729C3 /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDF001A74D2D7002C469E /* Object.swift */; };
-		29928B891A805692001729C3 /* Object+ObjectID.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA13880D1A76C318009B9C66 /* Object+ObjectID.swift */; };
-		29928B8A1A805692001729C3 /* ObjectType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDEDA1A749502002C469E /* ObjectType.swift */; };
-		29928B8B1A805692001729C3 /* ObjectID.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1388101A76C396009B9C66 /* ObjectID.swift */; };
-		29928B8C1A805692001729C3 /* Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90007B1A6B9B7900F43D4F /* Reference.swift */; };
-		29928B8D1A805692001729C3 /* Reference+Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA44831C1A77265C00FE74A2 /* Reference+Commit.swift */; };
-		29928B8E1A805692001729C3 /* Reference+Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDED71A749419002C469E /* Reference+Object.swift */; };
-		29928B8F1A805692001729C3 /* Reference+ObjectID.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18C14C1A7B49340039EFB7 /* Reference+ObjectID.swift */; };
-		29928B901A805692001729C3 /* Reference+Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDEDD1A74976E002C469E /* Reference+Repository.swift */; };
-		29928B911A805692001729C3 /* Reference+Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDED01A74925E002C469E /* Reference+Tag.swift */; };
-		29928B921A805692001729C3 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90008C1A6B9B7900F43D4F /* Repository.swift */; };
-		29928B931A805692001729C3 /* Repository+Branch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7200051A74787E003C5A20 /* Repository+Branch.swift */; };
-		29928B941A805692001729C3 /* Repository+Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDEF61A74C8E9002C469E /* Repository+Commit.swift */; };
-		29928B951A805692001729C3 /* Repository+Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000891A6B9B7900F43D4F /* Repository+Index.swift */; };
-		29928B961A805692001729C3 /* Repository+Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90008A1A6B9B7900F43D4F /* Repository+Reference.swift */; };
-		29928B971A805692001729C3 /* Repository+Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90008B1A6B9B7900F43D4F /* Repository+Status.swift */; };
-		29928B981A805692001729C3 /* Repository+Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3E3AEB1A742FBE00BA7AB6 /* Repository+Tag.swift */; };
-		29928B991A805692001729C3 /* CheckoutOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF231A78ACE2009E95F0 /* CheckoutOptions.swift */; };
-		29928B9A1A805692001729C3 /* CheckoutOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF221A78ACE2009E95F0 /* CheckoutOptions+C.swift */; };
-		29928B9B1A805692001729C3 /* CheckoutStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF241A78ACE2009E95F0 /* CheckoutStrategy.swift */; };
-		29928B9C1A805692001729C3 /* GIFTCheckoutOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF261A78ACE2009E95F0 /* GIFTCheckoutOptions.m */; };
-		29928B9D1A805692001729C3 /* CloneOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF291A78ACE2009E95F0 /* CloneOptions.swift */; };
-		29928B9E1A805692001729C3 /* CloneOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF281A78ACE2009E95F0 /* CloneOptions+C.swift */; };
-		29928B9F1A805692001729C3 /* LocalCloneBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA39DF011A7EACBE0080FB88 /* LocalCloneBehavior.swift */; };
-		29928BA01A805692001729C3 /* RepositoryInitializationOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF2D1A78ACE2009E95F0 /* RepositoryInitializationOptions.swift */; };
-		29928BA11A805692001729C3 /* RepositoryInitializationOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF2C1A78ACE2009E95F0 /* RepositoryInitializationOptions+C.swift */; };
-		29928BA21A805692001729C3 /* RepositoryInitializationOptionSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF2E1A78ACE2009E95F0 /* RepositoryInitializationOptionSet.swift */; };
-		29928BA31A805692001729C3 /* RepositoryInitializationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF2B1A78ACE2009E95F0 /* RepositoryInitializationMode.swift */; };
-		29928BA41A805692001729C3 /* RemoteCallbacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF311A78ACE2009E95F0 /* RemoteCallbacks.swift */; };
-		29928BA51A805692001729C3 /* RemoteCallbacks+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF301A78ACE2009E95F0 /* RemoteCallbacks+C.swift */; };
-		29928BA61A805692001729C3 /* GIFTRemoteCallbacks.m in Sources */ = {isa = PBXBuildFile; fileRef = DA39DF081A7EBECB0080FB88 /* GIFTRemoteCallbacks.m */; };
-		29928BA71A805692001729C3 /* GIFTRemoteCallbacksPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = DA39DF0E1A7EC7400080FB88 /* GIFTRemoteCallbacksPayload.m */; };
-		29928BA81A805692001729C3 /* ResetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18C1411A7B20FC0039EFB7 /* ResetType.swift */; };
-		29928BA91A805692001729C3 /* Signature+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDEF31A74BFBC002C469E /* Signature+C.swift */; };
-		29928BAA1A805692001729C3 /* EntryStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0FDFE31A7D5B9E00C48B86 /* EntryStatus.swift */; };
-		29928BAB1A805692001729C3 /* StatusDeltas.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA39DEF81A7D73C30080FB88 /* StatusDeltas.swift */; };
-		29928BAC1A805692001729C3 /* StatusDelta.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0FDFE61A7D5B9E00C48B86 /* StatusDelta.swift */; };
-		29928BAD1A805692001729C3 /* StatusDeltaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0FDFE71A7D5B9E00C48B86 /* StatusDeltaType.swift */; };
-		29928BAE1A805692001729C3 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0FDFE51A7D5B9E00C48B86 /* Status.swift */; };
-		29928BAF1A805692001729C3 /* StatusDescriptorSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0FDFE81A7D5B9E00C48B86 /* StatusDescriptorSet.swift */; };
-		29928BB01A805692001729C3 /* StatusDeltaOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0FDFF61A7D5BE000C48B86 /* StatusDeltaOptions.swift */; };
-		29928BB11A805692001729C3 /* StatusDeltaOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0FDFF51A7D5BE000C48B86 /* StatusDeltaOptions+C.swift */; };
-		29928BB21A805692001729C3 /* StatusDeltaBetween.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0FDFF71A7D5BE000C48B86 /* StatusDeltaBetween.swift */; };
-		29928BB31A805692001729C3 /* StatusDeltaBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0FDFFB1A7D5E4700C48B86 /* StatusDeltaBehavior.swift */; };
-		29928BB41A805692001729C3 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDEE11A749A43002C469E /* Tag.swift */; };
-		29928BB51A805692001729C3 /* Tag+ObjectID.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1388031A76BA66009B9C66 /* Tag+ObjectID.swift */; };
-		29928BB61A805692001729C3 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1387F11A76B27F009B9C66 /* Tree.swift */; };
-		29928BB71A805692001729C3 /* Tree+Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1387F71A76B4F0009B9C66 /* Tree+Commit.swift */; };
-		29928BB81A805692001729C3 /* Tree+ObjectID.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1387FD1A76B8F8009B9C66 /* Tree+ObjectID.swift */; };
-		29928BB91A805692001729C3 /* Tree+Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1387FA1A76B596009B9C66 /* Tree+Repository.swift */; };
-		29928BBA1A805692001729C3 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA283931A6C5CE400F7B4C3 /* Error.swift */; };
-		29928BBB1A805692001729C3 /* Domain.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1388131A76C72B009B9C66 /* Domain.swift */; };
-		29928BBC1A805692001729C3 /* NSError+Domain.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11D6FDA1A6C6CB500F00863 /* NSError+Domain.swift */; };
-		29928BBD1A8056AD001729C3 /* Gift.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC9DD0F1A4B0AD800436BA2 /* Gift.m */; };
-		29928BBE1A8056AD001729C3 /* BranchIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4483191A77163900FE74A2 /* BranchIterator.swift */; };
-		29928BBF1A8056AD001729C3 /* GIFTTagForEach.m in Sources */ = {isa = PBXBuildFile; fileRef = DA18C1471A7B40020039EFB7 /* GIFTTagForEach.m */; };
-		29928BC01A8056B3001729C3 /* Signature.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDEF01A74AFA0002C469E /* Signature.swift */; };
-		29928BC11A8056EF001729C3 /* FilePathHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BE9F201A6C4C68003E87BB /* FilePathHelpers.swift */; };
-		29928BC21A8056EF001729C3 /* Result+Compact.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18C14F1A7B4F220039EFB7 /* Result+Compact.swift */; };
-		29928BC31A8056EF001729C3 /* SignalProducer+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA39DEFE1A7E9C520080FB88 /* SignalProducer+Array.swift */; };
-		29928BC41A8056EF001729C3 /* ResultMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BE9F1D1A6C4B7C003E87BB /* ResultMatchers.swift */; };
-		29928BC51A8056EF001729C3 /* Commit+BranchSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF021A786CBB009E95F0 /* Commit+BranchSpec.swift */; };
-		29928BC61A8056EF001729C3 /* Commit+MergeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF081A787204009E95F0 /* Commit+MergeSpec.swift */; };
-		29928BC71A8056EF001729C3 /* IndexSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3EDDE01A6DA08E0027CEFB /* IndexSpec.swift */; };
-		29928BC81A8056EF001729C3 /* Index+TreeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1387F41A76B359009B9C66 /* Index+TreeSpec.swift */; };
-		29928BC91A8056EF001729C3 /* ReferenceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3EDDE31A6DA1130027CEFB /* ReferenceSpec.swift */; };
-		29928BCA1A8056EF001729C3 /* Reference+CommitSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA44831F1A77274D00FE74A2 /* Reference+CommitSpec.swift */; };
-		29928BCB1A8056EF001729C3 /* Reference+TagSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDEE41A749BFA002C469E /* Reference+TagSpec.swift */; };
-		29928BCC1A8056EF001729C3 /* RepositorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19F06001A6C3BC400EF5BFA /* RepositorySpec.swift */; };
-		29928BCD1A8056EF001729C3 /* Repository+BranchSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7200081A74799A003C5A20 /* Repository+BranchSpec.swift */; };
-		29928BCE1A8056EF001729C3 /* Repository+CommitSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDF0E1A757959002C469E /* Repository+CommitSpec.swift */; };
-		29928BCF1A8056EF001729C3 /* Repository+ReferenceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF171A788C1E009E95F0 /* Repository+ReferenceSpec.swift */; };
-		29928BD01A8056EF001729C3 /* Repository+StatusSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA283951A6D6E2100F7B4C3 /* Repository+StatusSpec.swift */; };
-		29928BD11A8056EF001729C3 /* Repository+TagSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA72FFD61A74478E003C5A20 /* Repository+TagSpec.swift */; };
-		29928BD21A8056EF001729C3 /* Tree+CommitSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA13880A1A76BDE8009B9C66 /* Tree+CommitSpec.swift */; };
-		29928BD31A8056EF001729C3 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = DADD60521A6E1E0200F16FB3 /* ioapi.c */; };
-		29928BD41A8056EF001729C3 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = DADD60541A6E1E0200F16FB3 /* mztools.c */; };
-		29928BD51A8056EF001729C3 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = DADD60561A6E1E0200F16FB3 /* unzip.c */; };
-		29928BD61A8056EF001729C3 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = DADD60581A6E1E0200F16FB3 /* zip.c */; };
-		29928BD71A8056EF001729C3 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = DADD605B1A6E1E0200F16FB3 /* SSZipArchive.m */; };
-		29928BD91A805984001729C3 /* Repository+Stash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29928BD81A805984001729C3 /* Repository+Stash.swift */; };
-		29928BDA1A805984001729C3 /* Repository+Stash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29928BD81A805984001729C3 /* Repository+Stash.swift */; };
-		29928BDE1A8059AF001729C3 /* Repository+StashSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29928BDB1A8059A8001729C3 /* Repository+StashSpec.swift */; };
-		29928BDF1A8059B1001729C3 /* Repository+StashSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29928BDB1A8059A8001729C3 /* Repository+StashSpec.swift */; };
 		DA18C1491A7B40020039EFB7 /* GIFTTagForEach.h in Headers */ = {isa = PBXBuildFile; fileRef = DA18C1461A7B40020039EFB7 /* GIFTTagForEach.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA363DA41A6BAE160030BBCC /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DA363DA31A6BAE160030BBCC /* libiconv.dylib */; };
 		DA363DA61A6BAE1C0030BBCC /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DA363DA51A6BAE1C0030BBCC /* libz.dylib */; };
@@ -204,15 +104,111 @@
 		DA39DE981A7D6B980080FB88 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = DADD60561A6E1E0200F16FB3 /* unzip.c */; };
 		DA39DE991A7D6B980080FB88 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = DADD60581A6E1E0200F16FB3 /* zip.c */; };
 		DA39DE9A1A7D6B980080FB88 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = DADD605B1A6E1E0200F16FB3 /* SSZipArchive.m */; };
+		DA39DE9B1A7D6BF60080FB88 /* Gift.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC9DD0F1A4B0AD800436BA2 /* Gift.m */; };
+		DA39DE9C1A7D6BF60080FB88 /* BranchIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4483191A77163900FE74A2 /* BranchIterator.swift */; };
+		DA39DE9D1A7D6BF60080FB88 /* BranchType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDEC61A748B06002C469E /* BranchType.swift */; };
+		DA39DE9E1A7D6BF60080FB88 /* Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDF0B1A757890002C469E /* Commit.swift */; };
+		DA39DE9F1A7D6BF60080FB88 /* Commit+Branch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AEFB1A7858E6009E95F0 /* Commit+Branch.swift */; };
+		DA39DEA01A7D6BF60080FB88 /* Commit+ObjectID.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1388061A76BB0E009B9C66 /* Commit+ObjectID.swift */; };
+		DA39DEA11A7D6BF60080FB88 /* Commit+Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AEFE1A785935009E95F0 /* Commit+Repository.swift */; };
+		DA39DEA21A7D6BF60080FB88 /* CommitWalker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4483221A772DC400FE74A2 /* CommitWalker.swift */; };
+		DA39DEA31A7D6BF60080FB88 /* CommitWalker+RAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4483251A77358300FE74A2 /* CommitWalker+RAC.swift */; };
+		DA39DEA41A7D6BF60080FB88 /* CommitSorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDF311A75CF89002C469E /* CommitSorting.swift */; };
+		DA39DEA51A7D6BF60080FB88 /* Commit+Merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF051A7871F2009E95F0 /* Commit+Merge.swift */; };
+		DA39DEA61A7D6BF60080FB88 /* MergeOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF0E1A787D6F009E95F0 /* MergeOptions.swift */; };
+		DA39DEA71A7D6BF60080FB88 /* MergeOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF111A787DBD009E95F0 /* MergeOptions+C.swift */; };
+		DA39DEA81A7D6BF60080FB88 /* MergeStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF141A7883DA009E95F0 /* MergeStrategy.swift */; };
+		DA39DEA91A7D6BF60080FB88 /* Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000701A6B9B2D00F43D4F /* Index.swift */; };
+		DA39DEAA1A7D6BF60080FB88 /* Index+Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1387ED1A76B18A009B9C66 /* Index+Repository.swift */; };
+		DA39DEAB1A7D6BF60080FB88 /* Index+Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1387EA1A76B06E009B9C66 /* Index+Tree.swift */; };
+		DA39DEAC1A7D6BF60080FB88 /* IndexAddOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA44832A1A77EE0700FE74A2 /* IndexAddOptions.swift */; };
+		DA39DEAD1A7D6BF60080FB88 /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDF001A74D2D7002C469E /* Object.swift */; };
+		DA39DEAE1A7D6BF60080FB88 /* Object+ObjectID.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA13880D1A76C318009B9C66 /* Object+ObjectID.swift */; };
+		DA39DEAF1A7D6BF60080FB88 /* ObjectType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDEDA1A749502002C469E /* ObjectType.swift */; };
+		DA39DEB01A7D6BF60080FB88 /* ObjectID.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1388101A76C396009B9C66 /* ObjectID.swift */; };
+		DA39DEB11A7D6BF60080FB88 /* Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90007B1A6B9B7900F43D4F /* Reference.swift */; };
+		DA39DEB21A7D6BF60080FB88 /* Reference+Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA44831C1A77265C00FE74A2 /* Reference+Commit.swift */; };
+		DA39DEB31A7D6BF60080FB88 /* Reference+Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDED71A749419002C469E /* Reference+Object.swift */; };
+		DA39DEB41A7D6BF60080FB88 /* Reference+ObjectID.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18C14C1A7B49340039EFB7 /* Reference+ObjectID.swift */; };
+		DA39DEB51A7D6BF60080FB88 /* Reference+Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDEDD1A74976E002C469E /* Reference+Repository.swift */; };
+		DA39DEB61A7D6BF60080FB88 /* Reference+Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDED01A74925E002C469E /* Reference+Tag.swift */; };
+		DA39DEB71A7D6BF60080FB88 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90008C1A6B9B7900F43D4F /* Repository.swift */; };
+		DA39DEB81A7D6BF60080FB88 /* Repository+Branch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7200051A74787E003C5A20 /* Repository+Branch.swift */; };
+		DA39DEB91A7D6BF60080FB88 /* Repository+Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDEF61A74C8E9002C469E /* Repository+Commit.swift */; };
+		DA39DEBA1A7D6BF60080FB88 /* Repository+Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000891A6B9B7900F43D4F /* Repository+Index.swift */; };
+		DA39DEBB1A7D6BF60080FB88 /* Repository+Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90008A1A6B9B7900F43D4F /* Repository+Reference.swift */; };
+		DA39DEBC1A7D6BF60080FB88 /* Repository+Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90008B1A6B9B7900F43D4F /* Repository+Status.swift */; };
+		DA39DEBD1A7D6BF60080FB88 /* Repository+Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3E3AEB1A742FBE00BA7AB6 /* Repository+Tag.swift */; };
+		DA39DEBE1A7D6BF60080FB88 /* CheckoutOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF221A78ACE2009E95F0 /* CheckoutOptions+C.swift */; };
+		DA39DEBF1A7D6BF60080FB88 /* CheckoutOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF231A78ACE2009E95F0 /* CheckoutOptions.swift */; };
+		DA39DEC01A7D6BF60080FB88 /* CheckoutStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF241A78ACE2009E95F0 /* CheckoutStrategy.swift */; };
+		DA39DEC21A7D6BF60080FB88 /* GIFTCheckoutOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF261A78ACE2009E95F0 /* GIFTCheckoutOptions.m */; };
+		DA39DEC31A7D6BF60080FB88 /* CloneOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF281A78ACE2009E95F0 /* CloneOptions+C.swift */; };
+		DA39DEC41A7D6BF60080FB88 /* CloneOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF291A78ACE2009E95F0 /* CloneOptions.swift */; };
+		DA39DEC51A7D6BF60080FB88 /* RepositoryInitializationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF2B1A78ACE2009E95F0 /* RepositoryInitializationMode.swift */; };
+		DA39DEC61A7D6BF60080FB88 /* RepositoryInitializationOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF2C1A78ACE2009E95F0 /* RepositoryInitializationOptions+C.swift */; };
+		DA39DEC71A7D6BF60080FB88 /* RepositoryInitializationOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF2D1A78ACE2009E95F0 /* RepositoryInitializationOptions.swift */; };
+		DA39DEC81A7D6BF60080FB88 /* RepositoryInitializationOptionSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF2E1A78ACE2009E95F0 /* RepositoryInitializationOptionSet.swift */; };
+		DA39DEC91A7D6BF60080FB88 /* RemoteCallbacks+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF301A78ACE2009E95F0 /* RemoteCallbacks+C.swift */; };
+		DA39DECA1A7D6BF60080FB88 /* RemoteCallbacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF311A78ACE2009E95F0 /* RemoteCallbacks.swift */; };
+		DA39DECB1A7D6BF60080FB88 /* ResetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18C1411A7B20FC0039EFB7 /* ResetType.swift */; };
+		DA39DECD1A7D6BF60080FB88 /* GIFTTagForEach.m in Sources */ = {isa = PBXBuildFile; fileRef = DA18C1471A7B40020039EFB7 /* GIFTTagForEach.m */; };
+		DA39DECE1A7D6BF60080FB88 /* Signature.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDEF01A74AFA0002C469E /* Signature.swift */; };
+		DA39DECF1A7D6BF60080FB88 /* Signature+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDEF31A74BFBC002C469E /* Signature+C.swift */; };
+		DA39DED01A7D6BF60080FB88 /* EntryStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0FDFE31A7D5B9E00C48B86 /* EntryStatus.swift */; };
+		DA39DED11A7D6BF60080FB88 /* StatusDelta.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0FDFE61A7D5B9E00C48B86 /* StatusDelta.swift */; };
+		DA39DED21A7D6BF60080FB88 /* StatusDeltaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0FDFE71A7D5B9E00C48B86 /* StatusDeltaType.swift */; };
+		DA39DED31A7D6BF60080FB88 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0FDFE51A7D5B9E00C48B86 /* Status.swift */; };
+		DA39DED41A7D6BF60080FB88 /* StatusDescriptorSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0FDFE81A7D5B9E00C48B86 /* StatusDescriptorSet.swift */; };
+		DA39DED51A7D6BF60080FB88 /* StatusDeltaOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0FDFF61A7D5BE000C48B86 /* StatusDeltaOptions.swift */; };
+		DA39DED61A7D6BF60080FB88 /* StatusDeltaOptions+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0FDFF51A7D5BE000C48B86 /* StatusDeltaOptions+C.swift */; };
+		DA39DED71A7D6BF60080FB88 /* StatusDeltaBetween.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0FDFF71A7D5BE000C48B86 /* StatusDeltaBetween.swift */; };
+		DA39DED81A7D6BF60080FB88 /* StatusDeltaBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0FDFFB1A7D5E4700C48B86 /* StatusDeltaBehavior.swift */; };
+		DA39DED91A7D6BF60080FB88 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDEE11A749A43002C469E /* Tag.swift */; };
+		DA39DEDA1A7D6BF60080FB88 /* Tag+ObjectID.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1388031A76BA66009B9C66 /* Tag+ObjectID.swift */; };
+		DA39DEDB1A7D6BF60080FB88 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1387F11A76B27F009B9C66 /* Tree.swift */; };
+		DA39DEDC1A7D6BF60080FB88 /* Tree+Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1387F71A76B4F0009B9C66 /* Tree+Commit.swift */; };
+		DA39DEDD1A7D6BF60080FB88 /* Tree+ObjectID.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1387FD1A76B8F8009B9C66 /* Tree+ObjectID.swift */; };
+		DA39DEDE1A7D6BF60080FB88 /* Tree+Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1387FA1A76B596009B9C66 /* Tree+Repository.swift */; };
+		DA39DEDF1A7D6BF60080FB88 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA283931A6C5CE400F7B4C3 /* Error.swift */; };
+		DA39DEE01A7D6BF60080FB88 /* Domain.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1388131A76C72B009B9C66 /* Domain.swift */; };
+		DA39DEE11A7D6BF60080FB88 /* NSError+Domain.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11D6FDA1A6C6CB500F00863 /* NSError+Domain.swift */; };
+		DA39DEE21A7D6C240080FB88 /* FilePathHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BE9F201A6C4C68003E87BB /* FilePathHelpers.swift */; };
+		DA39DEE31A7D6C240080FB88 /* Result+Compact.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18C14F1A7B4F220039EFB7 /* Result+Compact.swift */; };
+		DA39DEE41A7D6C240080FB88 /* ResultMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BE9F1D1A6C4B7C003E87BB /* ResultMatchers.swift */; };
+		DA39DEE51A7D6C240080FB88 /* Commit+BranchSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF021A786CBB009E95F0 /* Commit+BranchSpec.swift */; };
+		DA39DEE61A7D6C240080FB88 /* Commit+MergeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF081A787204009E95F0 /* Commit+MergeSpec.swift */; };
+		DA39DEE71A7D6C240080FB88 /* IndexSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3EDDE01A6DA08E0027CEFB /* IndexSpec.swift */; };
+		DA39DEE81A7D6C240080FB88 /* Index+TreeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1387F41A76B359009B9C66 /* Index+TreeSpec.swift */; };
+		DA39DEE91A7D6C240080FB88 /* ReferenceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3EDDE31A6DA1130027CEFB /* ReferenceSpec.swift */; };
+		DA39DEEA1A7D6C240080FB88 /* Reference+CommitSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA44831F1A77274D00FE74A2 /* Reference+CommitSpec.swift */; };
+		DA39DEEB1A7D6C240080FB88 /* Reference+TagSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDEE41A749BFA002C469E /* Reference+TagSpec.swift */; };
+		DA39DEEC1A7D6C240080FB88 /* RepositorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19F06001A6C3BC400EF5BFA /* RepositorySpec.swift */; };
+		DA39DEED1A7D6C240080FB88 /* Repository+BranchSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7200081A74799A003C5A20 /* Repository+BranchSpec.swift */; };
+		DA39DEEE1A7D6C240080FB88 /* Repository+CommitSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BDF0E1A757959002C469E /* Repository+CommitSpec.swift */; };
+		DA39DEEF1A7D6C240080FB88 /* Repository+ReferenceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AF171A788C1E009E95F0 /* Repository+ReferenceSpec.swift */; };
+		DA39DEF01A7D6C240080FB88 /* Repository+StatusSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA283951A6D6E2100F7B4C3 /* Repository+StatusSpec.swift */; };
+		DA39DEF11A7D6C240080FB88 /* Repository+TagSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA72FFD61A74478E003C5A20 /* Repository+TagSpec.swift */; };
+		DA39DEF21A7D6C240080FB88 /* Tree+CommitSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA13880A1A76BDE8009B9C66 /* Tree+CommitSpec.swift */; };
+		DA39DEF31A7D6C240080FB88 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = DADD60521A6E1E0200F16FB3 /* ioapi.c */; };
+		DA39DEF41A7D6C240080FB88 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = DADD60541A6E1E0200F16FB3 /* mztools.c */; };
+		DA39DEF51A7D6C240080FB88 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = DADD60561A6E1E0200F16FB3 /* unzip.c */; };
+		DA39DEF61A7D6C240080FB88 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = DADD60581A6E1E0200F16FB3 /* zip.c */; };
+		DA39DEF71A7D6C240080FB88 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = DADD605B1A6E1E0200F16FB3 /* SSZipArchive.m */; };
 		DA39DEF91A7D73C30080FB88 /* StatusDeltas.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA39DEF81A7D73C30080FB88 /* StatusDeltas.swift */; };
+		DA39DEFA1A7D73C30080FB88 /* StatusDeltas.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA39DEF81A7D73C30080FB88 /* StatusDeltas.swift */; };
 		DA39DEFF1A7E9C520080FB88 /* SignalProducer+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA39DEFE1A7E9C520080FB88 /* SignalProducer+Array.swift */; };
+		DA39DF001A7E9C520080FB88 /* SignalProducer+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA39DEFE1A7E9C520080FB88 /* SignalProducer+Array.swift */; };
 		DA39DF021A7EACBE0080FB88 /* LocalCloneBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA39DF011A7EACBE0080FB88 /* LocalCloneBehavior.swift */; };
+		DA39DF031A7EACBE0080FB88 /* LocalCloneBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA39DF011A7EACBE0080FB88 /* LocalCloneBehavior.swift */; };
 		DA39DF091A7EBECB0080FB88 /* GIFTRemoteCallbacks.h in Headers */ = {isa = PBXBuildFile; fileRef = DA39DF071A7EBECB0080FB88 /* GIFTRemoteCallbacks.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA39DF0A1A7EBECB0080FB88 /* GIFTRemoteCallbacks.h in Headers */ = {isa = PBXBuildFile; fileRef = DA39DF071A7EBECB0080FB88 /* GIFTRemoteCallbacks.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA39DF0B1A7EBECB0080FB88 /* GIFTRemoteCallbacks.m in Sources */ = {isa = PBXBuildFile; fileRef = DA39DF081A7EBECB0080FB88 /* GIFTRemoteCallbacks.m */; };
+		DA39DF0C1A7EBECB0080FB88 /* GIFTRemoteCallbacks.m in Sources */ = {isa = PBXBuildFile; fileRef = DA39DF081A7EBECB0080FB88 /* GIFTRemoteCallbacks.m */; };
 		DA39DF0F1A7EC7400080FB88 /* GIFTRemoteCallbacksPayload.h in Headers */ = {isa = PBXBuildFile; fileRef = DA39DF0D1A7EC7400080FB88 /* GIFTRemoteCallbacksPayload.h */; };
 		DA39DF101A7EC7400080FB88 /* GIFTRemoteCallbacksPayload.h in Headers */ = {isa = PBXBuildFile; fileRef = DA39DF0D1A7EC7400080FB88 /* GIFTRemoteCallbacksPayload.h */; };
 		DA39DF111A7EC7400080FB88 /* GIFTRemoteCallbacksPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = DA39DF0E1A7EC7400080FB88 /* GIFTRemoteCallbacksPayload.m */; };
+		DA39DF121A7EC7400080FB88 /* GIFTRemoteCallbacksPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = DA39DF0E1A7EC7400080FB88 /* GIFTRemoteCallbacksPayload.m */; };
 		DA39DF151A7EC7CD0080FB88 /* GIFTTransferProgress.h in Headers */ = {isa = PBXBuildFile; fileRef = DA39DF131A7EC7CD0080FB88 /* GIFTTransferProgress.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA39DF161A7EC7CD0080FB88 /* GIFTTransferProgress.h in Headers */ = {isa = PBXBuildFile; fileRef = DA39DF131A7EC7CD0080FB88 /* GIFTTransferProgress.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA4482CF1A77076F00FE74A2 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4482CD1A77076200FE74A2 /* ReactiveCocoa.framework */; };
@@ -226,6 +222,10 @@
 		DA9876A61A4B791E0004AA17 /* LlamaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9876A51A4B791E0004AA17 /* LlamaKit.framework */; };
 		DA9F36551A476AF7002F35D4 /* Gift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9F36491A476AF7002F35D4 /* Gift.framework */; };
 		DAA283A51A6D7A7E00F7B4C3 /* Fixtures.zip in Resources */ = {isa = PBXBuildFile; fileRef = DAA2839F1A6D7A7E00F7B4C3 /* Fixtures.zip */; };
+		DAA6063C1A809641008C1919 /* Repository+Stash.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA6063B1A809641008C1919 /* Repository+Stash.swift */; };
+		DAA6063D1A809641008C1919 /* Repository+Stash.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA6063B1A809641008C1919 /* Repository+Stash.swift */; };
+		DAA6063F1A80974F008C1919 /* Repository+StashSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA6063E1A80974F008C1919 /* Repository+StashSpec.swift */; };
+		DAA606401A80974F008C1919 /* Repository+StashSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA6063E1A80974F008C1919 /* Repository+StashSpec.swift */; };
 		DADD5F8F1A6E0CBA00F16FB3 /* Gift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADD5F841A6E0CBA00F16FB3 /* Gift.framework */; };
 		DADD5F9D1A6E0D2F00F16FB3 /* Gift.h in Headers */ = {isa = PBXBuildFile; fileRef = DA9F364E1A476AF7002F35D4 /* Gift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DADD5FC71A6E0E7600F16FB3 /* git2 in Copy git2 Headers */ = {isa = PBXBuildFile; fileRef = DADB27271A6B8F620036225C /* git2 */; };
@@ -307,8 +307,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		29928BD81A805984001729C3 /* Repository+Stash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Repository+Stash.swift"; sourceTree = "<group>"; };
-		29928BDB1A8059A8001729C3 /* Repository+StashSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Repository+StashSpec.swift"; sourceTree = "<group>"; };
 		DA0FDFE31A7D5B9E00C48B86 /* EntryStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryStatus.swift; sourceTree = "<group>"; };
 		DA0FDFE51A7D5B9E00C48B86 /* Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		DA0FDFE61A7D5B9E00C48B86 /* StatusDelta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusDelta.swift; sourceTree = "<group>"; };
@@ -415,6 +413,8 @@
 		DAA283931A6C5CE400F7B4C3 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		DAA283951A6D6E2100F7B4C3 /* Repository+StatusSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Repository+StatusSpec.swift"; sourceTree = "<group>"; };
 		DAA2839F1A6D7A7E00F7B4C3 /* Fixtures.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = Fixtures.zip; sourceTree = "<group>"; };
+		DAA6063B1A809641008C1919 /* Repository+Stash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Repository+Stash.swift"; sourceTree = "<group>"; };
+		DAA6063E1A80974F008C1919 /* Repository+StashSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Repository+StashSpec.swift"; sourceTree = "<group>"; };
 		DAC9DD0F1A4B0AD800436BA2 /* Gift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gift.m; sourceTree = "<group>"; };
 		DADB27271A6B8F620036225C /* git2 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = git2; path = External/libgit2/include/git2; sourceTree = SOURCE_ROOT; };
 		DADB27281A6B8F620036225C /* git2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = git2.h; path = External/libgit2/include/git2.h; sourceTree = SOURCE_ROOT; };
@@ -690,7 +690,7 @@
 				DA8BDEF61A74C8E9002C469E /* Repository+Commit.swift */,
 				DA9000891A6B9B7900F43D4F /* Repository+Index.swift */,
 				DA90008A1A6B9B7900F43D4F /* Repository+Reference.swift */,
-				29928BD81A805984001729C3 /* Repository+Stash.swift */,
+				DAA6063B1A809641008C1919 /* Repository+Stash.swift */,
 				DA90008B1A6B9B7900F43D4F /* Repository+Status.swift */,
 				DA3E3AEB1A742FBE00BA7AB6 /* Repository+Tag.swift */,
 				DA90007D1A6B9B7900F43D4F /* Options */,
@@ -943,7 +943,7 @@
 				DA7200081A74799A003C5A20 /* Repository+BranchSpec.swift */,
 				DA8BDF0E1A757959002C469E /* Repository+CommitSpec.swift */,
 				DA93AF171A788C1E009E95F0 /* Repository+ReferenceSpec.swift */,
-				29928BDB1A8059A8001729C3 /* Repository+StashSpec.swift */,
+				DAA6063E1A80974F008C1919 /* Repository+StashSpec.swift */,
 				DAA283951A6D6E2100F7B4C3 /* Repository+StatusSpec.swift */,
 				DA72FFD61A74478E003C5A20 /* Repository+TagSpec.swift */,
 			);
@@ -1163,7 +1163,7 @@
 				DA39DE4D1A7D6A9F0080FB88 /* Object.swift in Sources */,
 				DA39DE4E1A7D6A9F0080FB88 /* Object+ObjectID.swift in Sources */,
 				DA39DE4F1A7D6A9F0080FB88 /* ObjectType.swift in Sources */,
-				29928BD91A805984001729C3 /* Repository+Stash.swift in Sources */,
+				DAA6063C1A809641008C1919 /* Repository+Stash.swift in Sources */,
 				DA39DE501A7D6A9F0080FB88 /* ObjectID.swift in Sources */,
 				DA39DF0B1A7EBECB0080FB88 /* GIFTRemoteCallbacks.m in Sources */,
 				DA39DE511A7D6A9F0080FB88 /* Reference.swift in Sources */,
@@ -1235,7 +1235,7 @@
 				DA39DE8F1A7D6B980080FB88 /* RepositorySpec.swift in Sources */,
 				DA39DE901A7D6B980080FB88 /* Repository+BranchSpec.swift in Sources */,
 				DA39DE911A7D6B980080FB88 /* Repository+CommitSpec.swift in Sources */,
-				29928BDF1A8059B1001729C3 /* Repository+StashSpec.swift in Sources */,
+				DAA6063F1A80974F008C1919 /* Repository+StashSpec.swift in Sources */,
 				DA39DE921A7D6B980080FB88 /* Repository+ReferenceSpec.swift in Sources */,
 				DA39DE931A7D6B980080FB88 /* Repository+StatusSpec.swift in Sources */,
 				DA39DE941A7D6B980080FB88 /* Repository+TagSpec.swift in Sources */,
@@ -1252,80 +1252,80 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29928BC01A8056B3001729C3 /* Signature.swift in Sources */,
-				29928BBD1A8056AD001729C3 /* Gift.m in Sources */,
-				29928BBE1A8056AD001729C3 /* BranchIterator.swift in Sources */,
-				29928BBF1A8056AD001729C3 /* GIFTTagForEach.m in Sources */,
-				29928B781A805692001729C3 /* BranchType.swift in Sources */,
-				29928B791A805692001729C3 /* Commit.swift in Sources */,
-				29928B7A1A805692001729C3 /* Commit+Branch.swift in Sources */,
-				29928B7B1A805692001729C3 /* Commit+ObjectID.swift in Sources */,
-				29928B7C1A805692001729C3 /* Commit+Repository.swift in Sources */,
-				29928B7D1A805692001729C3 /* CommitWalker.swift in Sources */,
-				29928B7E1A805692001729C3 /* CommitWalker+RAC.swift in Sources */,
-				29928B7F1A805692001729C3 /* CommitSorting.swift in Sources */,
-				29928B801A805692001729C3 /* Commit+Merge.swift in Sources */,
-				29928B811A805692001729C3 /* MergeOptions.swift in Sources */,
-				29928B821A805692001729C3 /* MergeOptions+C.swift in Sources */,
-				29928B831A805692001729C3 /* MergeStrategy.swift in Sources */,
-				29928B841A805692001729C3 /* Index.swift in Sources */,
-				29928B851A805692001729C3 /* Index+Repository.swift in Sources */,
-				29928B861A805692001729C3 /* Index+Tree.swift in Sources */,
-				29928B871A805692001729C3 /* IndexAddOptions.swift in Sources */,
-				29928B881A805692001729C3 /* Object.swift in Sources */,
-				29928B891A805692001729C3 /* Object+ObjectID.swift in Sources */,
-				29928B8A1A805692001729C3 /* ObjectType.swift in Sources */,
-				29928BDA1A805984001729C3 /* Repository+Stash.swift in Sources */,
-				29928B8B1A805692001729C3 /* ObjectID.swift in Sources */,
-				29928B8C1A805692001729C3 /* Reference.swift in Sources */,
-				29928B8D1A805692001729C3 /* Reference+Commit.swift in Sources */,
-				29928B8E1A805692001729C3 /* Reference+Object.swift in Sources */,
-				29928B8F1A805692001729C3 /* Reference+ObjectID.swift in Sources */,
-				29928B901A805692001729C3 /* Reference+Repository.swift in Sources */,
-				29928B911A805692001729C3 /* Reference+Tag.swift in Sources */,
-				29928B921A805692001729C3 /* Repository.swift in Sources */,
-				29928B931A805692001729C3 /* Repository+Branch.swift in Sources */,
-				29928B941A805692001729C3 /* Repository+Commit.swift in Sources */,
-				29928B951A805692001729C3 /* Repository+Index.swift in Sources */,
-				29928B961A805692001729C3 /* Repository+Reference.swift in Sources */,
-				29928B971A805692001729C3 /* Repository+Status.swift in Sources */,
-				29928B981A805692001729C3 /* Repository+Tag.swift in Sources */,
-				29928B991A805692001729C3 /* CheckoutOptions.swift in Sources */,
-				29928B9A1A805692001729C3 /* CheckoutOptions+C.swift in Sources */,
-				29928B9B1A805692001729C3 /* CheckoutStrategy.swift in Sources */,
-				29928B9C1A805692001729C3 /* GIFTCheckoutOptions.m in Sources */,
-				29928B9D1A805692001729C3 /* CloneOptions.swift in Sources */,
-				29928B9E1A805692001729C3 /* CloneOptions+C.swift in Sources */,
-				29928B9F1A805692001729C3 /* LocalCloneBehavior.swift in Sources */,
-				29928BA01A805692001729C3 /* RepositoryInitializationOptions.swift in Sources */,
-				29928BA11A805692001729C3 /* RepositoryInitializationOptions+C.swift in Sources */,
-				29928BA21A805692001729C3 /* RepositoryInitializationOptionSet.swift in Sources */,
-				29928BA31A805692001729C3 /* RepositoryInitializationMode.swift in Sources */,
-				29928BA41A805692001729C3 /* RemoteCallbacks.swift in Sources */,
-				29928BA51A805692001729C3 /* RemoteCallbacks+C.swift in Sources */,
-				29928BA61A805692001729C3 /* GIFTRemoteCallbacks.m in Sources */,
-				29928BA71A805692001729C3 /* GIFTRemoteCallbacksPayload.m in Sources */,
-				29928BA81A805692001729C3 /* ResetType.swift in Sources */,
-				29928BA91A805692001729C3 /* Signature+C.swift in Sources */,
-				29928BAA1A805692001729C3 /* EntryStatus.swift in Sources */,
-				29928BAB1A805692001729C3 /* StatusDeltas.swift in Sources */,
-				29928BAC1A805692001729C3 /* StatusDelta.swift in Sources */,
-				29928BAD1A805692001729C3 /* StatusDeltaType.swift in Sources */,
-				29928BAE1A805692001729C3 /* Status.swift in Sources */,
-				29928BAF1A805692001729C3 /* StatusDescriptorSet.swift in Sources */,
-				29928BB01A805692001729C3 /* StatusDeltaOptions.swift in Sources */,
-				29928BB11A805692001729C3 /* StatusDeltaOptions+C.swift in Sources */,
-				29928BB21A805692001729C3 /* StatusDeltaBetween.swift in Sources */,
-				29928BB31A805692001729C3 /* StatusDeltaBehavior.swift in Sources */,
-				29928BB41A805692001729C3 /* Tag.swift in Sources */,
-				29928BB51A805692001729C3 /* Tag+ObjectID.swift in Sources */,
-				29928BB61A805692001729C3 /* Tree.swift in Sources */,
-				29928BB71A805692001729C3 /* Tree+Commit.swift in Sources */,
-				29928BB81A805692001729C3 /* Tree+ObjectID.swift in Sources */,
-				29928BB91A805692001729C3 /* Tree+Repository.swift in Sources */,
-				29928BBA1A805692001729C3 /* Error.swift in Sources */,
-				29928BBB1A805692001729C3 /* Domain.swift in Sources */,
-				29928BBC1A805692001729C3 /* NSError+Domain.swift in Sources */,
+				DA39DE9B1A7D6BF60080FB88 /* Gift.m in Sources */,
+				DA39DE9C1A7D6BF60080FB88 /* BranchIterator.swift in Sources */,
+				DA39DE9D1A7D6BF60080FB88 /* BranchType.swift in Sources */,
+				DA39DF031A7EACBE0080FB88 /* LocalCloneBehavior.swift in Sources */,
+				DA39DE9E1A7D6BF60080FB88 /* Commit.swift in Sources */,
+				DA39DE9F1A7D6BF60080FB88 /* Commit+Branch.swift in Sources */,
+				DA39DEA01A7D6BF60080FB88 /* Commit+ObjectID.swift in Sources */,
+				DA39DEA11A7D6BF60080FB88 /* Commit+Repository.swift in Sources */,
+				DA39DEA21A7D6BF60080FB88 /* CommitWalker.swift in Sources */,
+				DA39DEA31A7D6BF60080FB88 /* CommitWalker+RAC.swift in Sources */,
+				DA39DEA41A7D6BF60080FB88 /* CommitSorting.swift in Sources */,
+				DA39DEA51A7D6BF60080FB88 /* Commit+Merge.swift in Sources */,
+				DA39DEA61A7D6BF60080FB88 /* MergeOptions.swift in Sources */,
+				DA39DEA71A7D6BF60080FB88 /* MergeOptions+C.swift in Sources */,
+				DA39DEA81A7D6BF60080FB88 /* MergeStrategy.swift in Sources */,
+				DA39DEA91A7D6BF60080FB88 /* Index.swift in Sources */,
+				DA39DF121A7EC7400080FB88 /* GIFTRemoteCallbacksPayload.m in Sources */,
+				DA39DEAA1A7D6BF60080FB88 /* Index+Repository.swift in Sources */,
+				DA39DEAB1A7D6BF60080FB88 /* Index+Tree.swift in Sources */,
+				DA39DEAC1A7D6BF60080FB88 /* IndexAddOptions.swift in Sources */,
+				DA39DEAD1A7D6BF60080FB88 /* Object.swift in Sources */,
+				DA39DEAE1A7D6BF60080FB88 /* Object+ObjectID.swift in Sources */,
+				DA39DEAF1A7D6BF60080FB88 /* ObjectType.swift in Sources */,
+				DAA6063D1A809641008C1919 /* Repository+Stash.swift in Sources */,
+				DA39DEB01A7D6BF60080FB88 /* ObjectID.swift in Sources */,
+				DA39DF0C1A7EBECB0080FB88 /* GIFTRemoteCallbacks.m in Sources */,
+				DA39DEB11A7D6BF60080FB88 /* Reference.swift in Sources */,
+				DA39DEB21A7D6BF60080FB88 /* Reference+Commit.swift in Sources */,
+				DA39DEB31A7D6BF60080FB88 /* Reference+Object.swift in Sources */,
+				DA39DEB41A7D6BF60080FB88 /* Reference+ObjectID.swift in Sources */,
+				DA39DEB51A7D6BF60080FB88 /* Reference+Repository.swift in Sources */,
+				DA39DEB61A7D6BF60080FB88 /* Reference+Tag.swift in Sources */,
+				DA39DEB71A7D6BF60080FB88 /* Repository.swift in Sources */,
+				DA39DEB81A7D6BF60080FB88 /* Repository+Branch.swift in Sources */,
+				DA39DEB91A7D6BF60080FB88 /* Repository+Commit.swift in Sources */,
+				DA39DEBA1A7D6BF60080FB88 /* Repository+Index.swift in Sources */,
+				DA39DEBB1A7D6BF60080FB88 /* Repository+Reference.swift in Sources */,
+				DA39DEBC1A7D6BF60080FB88 /* Repository+Status.swift in Sources */,
+				DA39DEBD1A7D6BF60080FB88 /* Repository+Tag.swift in Sources */,
+				DA39DEBE1A7D6BF60080FB88 /* CheckoutOptions+C.swift in Sources */,
+				DA39DEBF1A7D6BF60080FB88 /* CheckoutOptions.swift in Sources */,
+				DA39DEC01A7D6BF60080FB88 /* CheckoutStrategy.swift in Sources */,
+				DA39DEC21A7D6BF60080FB88 /* GIFTCheckoutOptions.m in Sources */,
+				DA39DEC31A7D6BF60080FB88 /* CloneOptions+C.swift in Sources */,
+				DA39DEC41A7D6BF60080FB88 /* CloneOptions.swift in Sources */,
+				DA39DEC51A7D6BF60080FB88 /* RepositoryInitializationMode.swift in Sources */,
+				DA39DEC61A7D6BF60080FB88 /* RepositoryInitializationOptions+C.swift in Sources */,
+				DA39DEC71A7D6BF60080FB88 /* RepositoryInitializationOptions.swift in Sources */,
+				DA39DEC81A7D6BF60080FB88 /* RepositoryInitializationOptionSet.swift in Sources */,
+				DA39DEC91A7D6BF60080FB88 /* RemoteCallbacks+C.swift in Sources */,
+				DA39DECA1A7D6BF60080FB88 /* RemoteCallbacks.swift in Sources */,
+				DA39DECB1A7D6BF60080FB88 /* ResetType.swift in Sources */,
+				DA39DECD1A7D6BF60080FB88 /* GIFTTagForEach.m in Sources */,
+				DA39DECE1A7D6BF60080FB88 /* Signature.swift in Sources */,
+				DA39DECF1A7D6BF60080FB88 /* Signature+C.swift in Sources */,
+				DA39DED01A7D6BF60080FB88 /* EntryStatus.swift in Sources */,
+				DA39DED11A7D6BF60080FB88 /* StatusDelta.swift in Sources */,
+				DA39DED21A7D6BF60080FB88 /* StatusDeltaType.swift in Sources */,
+				DA39DED31A7D6BF60080FB88 /* Status.swift in Sources */,
+				DA39DED41A7D6BF60080FB88 /* StatusDescriptorSet.swift in Sources */,
+				DA39DED51A7D6BF60080FB88 /* StatusDeltaOptions.swift in Sources */,
+				DA39DED61A7D6BF60080FB88 /* StatusDeltaOptions+C.swift in Sources */,
+				DA39DED71A7D6BF60080FB88 /* StatusDeltaBetween.swift in Sources */,
+				DA39DED81A7D6BF60080FB88 /* StatusDeltaBehavior.swift in Sources */,
+				DA39DED91A7D6BF60080FB88 /* Tag.swift in Sources */,
+				DA39DEDA1A7D6BF60080FB88 /* Tag+ObjectID.swift in Sources */,
+				DA39DEDB1A7D6BF60080FB88 /* Tree.swift in Sources */,
+				DA39DEDC1A7D6BF60080FB88 /* Tree+Commit.swift in Sources */,
+				DA39DEDD1A7D6BF60080FB88 /* Tree+ObjectID.swift in Sources */,
+				DA39DEDE1A7D6BF60080FB88 /* Tree+Repository.swift in Sources */,
+				DA39DEFA1A7D73C30080FB88 /* StatusDeltas.swift in Sources */,
+				DA39DEDF1A7D6BF60080FB88 /* Error.swift in Sources */,
+				DA39DEE01A7D6BF60080FB88 /* Domain.swift in Sources */,
+				DA39DEE11A7D6BF60080FB88 /* NSError+Domain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1333,30 +1333,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29928BC11A8056EF001729C3 /* FilePathHelpers.swift in Sources */,
-				29928BC21A8056EF001729C3 /* Result+Compact.swift in Sources */,
-				29928BC31A8056EF001729C3 /* SignalProducer+Array.swift in Sources */,
-				29928BC41A8056EF001729C3 /* ResultMatchers.swift in Sources */,
-				29928BC51A8056EF001729C3 /* Commit+BranchSpec.swift in Sources */,
-				29928BC61A8056EF001729C3 /* Commit+MergeSpec.swift in Sources */,
-				29928BC71A8056EF001729C3 /* IndexSpec.swift in Sources */,
-				29928BC81A8056EF001729C3 /* Index+TreeSpec.swift in Sources */,
-				29928BC91A8056EF001729C3 /* ReferenceSpec.swift in Sources */,
-				29928BCA1A8056EF001729C3 /* Reference+CommitSpec.swift in Sources */,
-				29928BCB1A8056EF001729C3 /* Reference+TagSpec.swift in Sources */,
-				29928BCC1A8056EF001729C3 /* RepositorySpec.swift in Sources */,
-				29928BCD1A8056EF001729C3 /* Repository+BranchSpec.swift in Sources */,
-				29928BCE1A8056EF001729C3 /* Repository+CommitSpec.swift in Sources */,
-				29928BDE1A8059AF001729C3 /* Repository+StashSpec.swift in Sources */,
-				29928BCF1A8056EF001729C3 /* Repository+ReferenceSpec.swift in Sources */,
-				29928BD01A8056EF001729C3 /* Repository+StatusSpec.swift in Sources */,
-				29928BD11A8056EF001729C3 /* Repository+TagSpec.swift in Sources */,
-				29928BD21A8056EF001729C3 /* Tree+CommitSpec.swift in Sources */,
-				29928BD31A8056EF001729C3 /* ioapi.c in Sources */,
-				29928BD41A8056EF001729C3 /* mztools.c in Sources */,
-				29928BD51A8056EF001729C3 /* unzip.c in Sources */,
-				29928BD61A8056EF001729C3 /* zip.c in Sources */,
-				29928BD71A8056EF001729C3 /* SSZipArchive.m in Sources */,
+				DA39DEE21A7D6C240080FB88 /* FilePathHelpers.swift in Sources */,
+				DA39DEE31A7D6C240080FB88 /* Result+Compact.swift in Sources */,
+				DA39DF001A7E9C520080FB88 /* SignalProducer+Array.swift in Sources */,
+				DA39DEE41A7D6C240080FB88 /* ResultMatchers.swift in Sources */,
+				DA39DEE51A7D6C240080FB88 /* Commit+BranchSpec.swift in Sources */,
+				DA39DEE61A7D6C240080FB88 /* Commit+MergeSpec.swift in Sources */,
+				DA39DEE71A7D6C240080FB88 /* IndexSpec.swift in Sources */,
+				DA39DEE81A7D6C240080FB88 /* Index+TreeSpec.swift in Sources */,
+				DA39DEE91A7D6C240080FB88 /* ReferenceSpec.swift in Sources */,
+				DA39DEEA1A7D6C240080FB88 /* Reference+CommitSpec.swift in Sources */,
+				DA39DEEB1A7D6C240080FB88 /* Reference+TagSpec.swift in Sources */,
+				DA39DEEC1A7D6C240080FB88 /* RepositorySpec.swift in Sources */,
+				DA39DEED1A7D6C240080FB88 /* Repository+BranchSpec.swift in Sources */,
+				DA39DEEE1A7D6C240080FB88 /* Repository+CommitSpec.swift in Sources */,
+				DAA606401A80974F008C1919 /* Repository+StashSpec.swift in Sources */,
+				DA39DEEF1A7D6C240080FB88 /* Repository+ReferenceSpec.swift in Sources */,
+				DA39DEF01A7D6C240080FB88 /* Repository+StatusSpec.swift in Sources */,
+				DA39DEF11A7D6C240080FB88 /* Repository+TagSpec.swift in Sources */,
+				DA39DEF21A7D6C240080FB88 /* Tree+CommitSpec.swift in Sources */,
+				DA39DEF31A7D6C240080FB88 /* ioapi.c in Sources */,
+				DA39DEF41A7D6C240080FB88 /* mztools.c in Sources */,
+				DA39DEF51A7D6C240080FB88 /* unzip.c in Sources */,
+				DA39DEF61A7D6C240080FB88 /* zip.c in Sources */,
+				DA39DEF71A7D6C240080FB88 /* SSZipArchive.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
