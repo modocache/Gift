@@ -9,8 +9,13 @@ def sdk_root(arch)
   else
     platform = "iphoneos"
   end
-  `xcodebuild -version -sdk 2> /dev/null | grep -i #{platform}8.2 | grep 'Path:' | awk '{ print $2 }'`.strip
+  `xcodebuild -version -sdk 2> /dev/null | grep -i #{platform}#{sdk_version} | grep 'Path:' | awk '{ print $2 }'`.chomp
 end
+
+def sdk_version
+  `xcodebuild -version -sdk 2> /dev/null | grep SDKVersion | tail -n 1 |  awk '{ print $2 }'`.chomp
+end
+
 
 namespace "build" do
   desc "Build libssh2 and libgit2 for iOS"
@@ -48,7 +53,7 @@ namespace "build" do
         run <<-command
           cd External/libgit2/build && \\
           export IPHONEOS_DEPLOYMENT_TARGET=8.0 && \\
-          export SDKROOT=#{xcode_path}/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.2.sdk && \\
+          export SDKROOT=#{xcode_path}/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator#{sdk_version}.sdk && \\
           /usr/local/bin/cmake \\
                 -DCMAKE_C_COMPILER=clang \\
                 -DCMAKE_C_COMPILER_WORKS:BOOL=ON \\
