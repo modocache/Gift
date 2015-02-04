@@ -1,5 +1,8 @@
 # Gift
 
+[![Build
+Status](https://travis-ci.org/modocache/Gift.svg)](https://travis-ci.org/modocache/Gift)
+
 Gift provides Swift bindings to the
 [libgit2](https://github.com/libgit2/libgit2) library.
 

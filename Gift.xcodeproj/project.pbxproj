@@ -1004,10 +1004,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA9F365F1A476AF7002F35D4 /* Build configuration list for PBXNativeTarget "Gift-OSX" */;
 			buildPhases = (
-				DA9F36441A476AF7002F35D4 /* Sources */,
-				DA9F36451A476AF7002F35D4 /* Frameworks */,
 				DA90006B1A6B9A2400F43D4F /* Copy git2 Headers */,
 				DA90006D1A6B9A5100F43D4F /* Copy git2/sys Headers */,
+				DA9F36441A476AF7002F35D4 /* Sources */,
+				DA9F36451A476AF7002F35D4 /* Frameworks */,
 				DA9F36461A476AF7002F35D4 /* Headers */,
 			);
 			buildRules = (
@@ -1041,10 +1041,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DADD5F9B1A6E0CBA00F16FB3 /* Build configuration list for PBXNativeTarget "Gift-iOS" */;
 			buildPhases = (
-				DADD5F7F1A6E0CBA00F16FB3 /* Sources */,
-				DADD5F801A6E0CBA00F16FB3 /* Frameworks */,
 				DADD5FB91A6E0D7300F16FB3 /* Copy git2 Headers */,
 				DADD5FC01A6E0DF400F16FB3 /* Copy git2/sys Headers */,
+				DADD5F7F1A6E0CBA00F16FB3 /* Sources */,
+				DADD5F801A6E0CBA00F16FB3 /* Frameworks */,
 				DADD5F811A6E0CBA00F16FB3 /* Headers */,
 			);
 			buildRules = (
@@ -1587,7 +1587,7 @@
 				);
 				INFOPLIST_FILE = Gift/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/External/libssh2-for-iOS/lib/",
@@ -1622,7 +1622,7 @@
 				);
 				INFOPLIST_FILE = Gift/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/External/libssh2-for-iOS/lib/",
