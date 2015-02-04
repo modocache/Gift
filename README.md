@@ -92,6 +92,67 @@ let options = CloneOptions(
 let repository = cloneRepository(remoteURL, destinationURL, options: options)
 ```
 
+# Why Not ObjectiveGit?
+
+[ObjectiveGit](https://github.com/libgit2/objective-git) is the official
+set of Objective-C bindings to Git. It is maintained by the same people
+who develop [GitHub for Mac](https://mac.github.com/), so you can be
+sure it's solid. And you can use it from Swift!
+
+If, however, you're willing to tolerate a less stable set of bindings,
+Gift utilizes features of Swift to make certain aspects of interfacing
+with libgit2 easy. For example, take the following code, which prints
+the latest commit message in a repository:
+
+```swift
+let latestCommitMessage = openRepository(url)
+  .flatMap { $0.headReference }
+  .flatMap { $0.commit }
+  .flatMap { $0.message }
+println(latestCommitMessage) // Either prints commit or error
+```
+
+Because most Gift functions return `Result` objects, and because you can
+chain those `Result` objects, Gift makes it easy to display precise
+error information. To get an equivalent level of error handling in
+ObjectiveGit, you'd need to write the following:
+
+```objc
+NSError *repositoryError = nil;
+GTRepository *repository = [GTRepository repositoryWithURL:url error:&error];
+if (repositoryError != nil) {
+  NSLog(@"An error occurred: %@", repositoryError);
+  return;
+}
+
+NSError *headReferenceError = nil;
+GTReference *headReference = [repository headReferenceWithError:&headReferenceError];
+if (headReferenceError != nil) {
+  NSLog(@"An error occurred: %@", headReferenceError);
+  return;
+}
+
+NSError *lookupError = nil;
+GTCommit *commit = [repository lookupObjectByOID:headReference.OID
+                                      objectType:GTObjectTypeCommit
+                                           error:&lookupError];
+if (lookupError != nil) {
+  NSLog(@"An error occurred: %@", lookupError);
+  return;
+}
+
+NSString *message = commit.message;
+if (message == nil) {
+  NSLog(@"An error occurred");
+} else {
+  NSLog(@"Commit message: %@", message);
+}
+```
+
+As you can see, Gift requires significantly less code. ObjectiveGit is,
+however, far more mature. It's up to you to decide which is right for
+your project.
+
 # How to Build
 
 You'll need to have [homebrew](https://github.com/Homebrew/homebrew/)
