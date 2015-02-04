@@ -1,5 +1,5 @@
 language: objective-c
 
 before_install: "rake dependencies build:ios"
-script: "rake test:ios"
+script: "xcodebuild -workspace Gift.xcworkspace -scheme Gift-iOS"
 
