@@ -1,14 +1,5 @@
 language: objective-c
 
-# Building the static libraries Gift depends
-# upon--OpenSSL, libssh2, and libgit2--for iOS
-# takes a long time. Cache these directories to
-# speed up feedback from Travis CI.
-cache:
-  directories:
-  - External/libgit2-iOS
-  - External/libssh2-for-iOS/lib
-
 before_install: "rake dependencies build:ios"
-script: "xcodebuild -workspace Gift.xcworkspace -scheme Gift-iOS"
+script: "xcodebuild -workspace Gift.xcworkspace -scheme Gift-iOS test"
 
