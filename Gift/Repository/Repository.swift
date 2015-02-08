@@ -104,7 +104,7 @@ public func openRepository(fileURL: NSURL) -> Result<Repository, NSError> {
   :returns: The result of the operation: either the cloned repository, or an error explaining what went wrong.
 */
 public func cloneRepository(originURL: NSURL, destinationWorkingDirectory: NSURL, options: CloneOptions = CloneOptions()) -> Result<Repository, NSError> {
-  if let url = cPath(originURL) {
+  if let url = originURL.string {
     if let localPath = destinationWorkingDirectory.path?.fileSystemRepresentation() {
       var out = COpaquePointer.null()
       var cOptions = options.cOptions
@@ -120,15 +120,5 @@ public func cloneRepository(originURL: NSURL, destinationWorkingDirectory: NSURL
     }
   } else {
     return failure(NSError.giftError(.InvalidURI, description: "Invalid originURL: \(originURL)"))
-  }
-}
-
-// MARK: Internal
-
-private func cPath(url: NSURL) -> [CChar]? {
-  if url.isFileReferenceURL() {
-    return url.path?.fileSystemRepresentation()
-  } else {
-    return url.absoluteString?.cStringUsingEncoding(NSUTF8StringEncoding)
   }
 }

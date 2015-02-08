@@ -226,6 +226,16 @@
 		DAA6063D1A809641008C1919 /* Repository+Stash.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA6063B1A809641008C1919 /* Repository+Stash.swift */; };
 		DAA6063F1A80974F008C1919 /* Repository+StashSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA6063E1A80974F008C1919 /* Repository+StashSpec.swift */; };
 		DAA606401A80974F008C1919 /* Repository+StashSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA6063E1A80974F008C1919 /* Repository+StashSpec.swift */; };
+		DAC614E81A86D8FA0026F168 /* Remote.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC614E71A86D8FA0026F168 /* Remote.swift */; };
+		DAC614E91A86D8FA0026F168 /* Remote.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC614E71A86D8FA0026F168 /* Remote.swift */; };
+		DAC614EB1A86DABD0026F168 /* Repository+Remote.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC614EA1A86DABD0026F168 /* Repository+Remote.swift */; };
+		DAC614EC1A86DABD0026F168 /* Repository+Remote.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC614EA1A86DABD0026F168 /* Repository+Remote.swift */; };
+		DAC614EE1A86E4FA0026F168 /* Repository+RemoteSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC614ED1A86E4FA0026F168 /* Repository+RemoteSpec.swift */; };
+		DAC614EF1A86E4FA0026F168 /* Repository+RemoteSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC614ED1A86E4FA0026F168 /* Repository+RemoteSpec.swift */; };
+		DAC614F21A86E67D0026F168 /* NSURL+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC614F11A86E67D0026F168 /* NSURL+String.swift */; };
+		DAC614F31A86E67D0026F168 /* NSURL+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC614F11A86E67D0026F168 /* NSURL+String.swift */; };
+		DAC614F61A86FC180026F168 /* String+GitStrArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC614F51A86FC180026F168 /* String+GitStrArray.swift */; };
+		DAC614F71A86FC180026F168 /* String+GitStrArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC614F51A86FC180026F168 /* String+GitStrArray.swift */; };
 		DADD5F8F1A6E0CBA00F16FB3 /* Gift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADD5F841A6E0CBA00F16FB3 /* Gift.framework */; };
 		DADD5F9D1A6E0D2F00F16FB3 /* Gift.h in Headers */ = {isa = PBXBuildFile; fileRef = DA9F364E1A476AF7002F35D4 /* Gift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DADD5FC71A6E0E7600F16FB3 /* git2 in Copy git2 Headers */ = {isa = PBXBuildFile; fileRef = DADB27271A6B8F620036225C /* git2 */; };
@@ -415,6 +425,11 @@
 		DAA2839F1A6D7A7E00F7B4C3 /* Fixtures.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = Fixtures.zip; sourceTree = "<group>"; };
 		DAA6063B1A809641008C1919 /* Repository+Stash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Repository+Stash.swift"; sourceTree = "<group>"; };
 		DAA6063E1A80974F008C1919 /* Repository+StashSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Repository+StashSpec.swift"; sourceTree = "<group>"; };
+		DAC614E71A86D8FA0026F168 /* Remote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Remote.swift; sourceTree = "<group>"; };
+		DAC614EA1A86DABD0026F168 /* Repository+Remote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Repository+Remote.swift"; sourceTree = "<group>"; };
+		DAC614ED1A86E4FA0026F168 /* Repository+RemoteSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Repository+RemoteSpec.swift"; sourceTree = "<group>"; };
+		DAC614F11A86E67D0026F168 /* NSURL+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSURL+String.swift"; sourceTree = "<group>"; };
+		DAC614F51A86FC180026F168 /* String+GitStrArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+GitStrArray.swift"; sourceTree = "<group>"; };
 		DAC9DD0F1A4B0AD800436BA2 /* Gift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gift.m; sourceTree = "<group>"; };
 		DADB27271A6B8F620036225C /* git2 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = git2; path = External/libgit2/include/git2; sourceTree = SOURCE_ROOT; };
 		DADB27281A6B8F620036225C /* git2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = git2.h; path = External/libgit2/include/git2.h; sourceTree = SOURCE_ROOT; };
@@ -690,6 +705,7 @@
 				DA8BDEF61A74C8E9002C469E /* Repository+Commit.swift */,
 				DA9000891A6B9B7900F43D4F /* Repository+Index.swift */,
 				DA90008A1A6B9B7900F43D4F /* Repository+Reference.swift */,
+				DAC614EA1A86DABD0026F168 /* Repository+Remote.swift */,
 				DAA6063B1A809641008C1919 /* Repository+Stash.swift */,
 				DA90008B1A6B9B7900F43D4F /* Repository+Status.swift */,
 				DA3E3AEB1A742FBE00BA7AB6 /* Repository+Tag.swift */,
@@ -810,12 +826,15 @@
 				DA90006F1A6B9B2D00F43D4F /* Index */,
 				DA8BDED31A74935C002C469E /* Object */,
 				DA90007A1A6B9B7900F43D4F /* Reference */,
+				DAC614E61A86D8EB0026F168 /* Remote */,
 				DA90007C1A6B9B7900F43D4F /* Repository */,
 				DA8BDEEF1A74AFA0002C469E /* Signature */,
 				DA9000721A6B9B7900F43D4F /* Status */,
+				DAC614F41A86FBFE0026F168 /* String */,
 				DA8BDEE01A749A38002C469E /* Tag */,
 				DA1387F01A76B270009B9C66 /* Tree */,
 				DAA283921A6C5CD500F7B4C3 /* Error */,
+				DAC614F01A86E65D0026F168 /* URL */,
 				DADB27261A6B8F470036225C /* Other Sources */,
 				DA9F364C1A476AF7002F35D4 /* Supporting Files */,
 			);
@@ -892,6 +911,30 @@
 			path = Fixtures;
 			sourceTree = "<group>";
 		};
+		DAC614E61A86D8EB0026F168 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				DAC614E71A86D8FA0026F168 /* Remote.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		DAC614F01A86E65D0026F168 /* URL */ = {
+			isa = PBXGroup;
+			children = (
+				DAC614F11A86E67D0026F168 /* NSURL+String.swift */,
+			);
+			path = URL;
+			sourceTree = "<group>";
+		};
+		DAC614F41A86FBFE0026F168 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				DAC614F51A86FC180026F168 /* String+GitStrArray.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
 		DADB27261A6B8F470036225C /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
@@ -943,6 +986,7 @@
 				DA7200081A74799A003C5A20 /* Repository+BranchSpec.swift */,
 				DA8BDF0E1A757959002C469E /* Repository+CommitSpec.swift */,
 				DA93AF171A788C1E009E95F0 /* Repository+ReferenceSpec.swift */,
+				DAC614ED1A86E4FA0026F168 /* Repository+RemoteSpec.swift */,
 				DAA6063E1A80974F008C1919 /* Repository+StashSpec.swift */,
 				DAA283951A6D6E2100F7B4C3 /* Repository+StatusSpec.swift */,
 				DA72FFD61A74478E003C5A20 /* Repository+TagSpec.swift */,
@@ -1145,12 +1189,15 @@
 				DA39DE3D1A7D6A9F0080FB88 /* BranchType.swift in Sources */,
 				DA39DF021A7EACBE0080FB88 /* LocalCloneBehavior.swift in Sources */,
 				DA39DE3E1A7D6A9F0080FB88 /* Commit.swift in Sources */,
+				DAC614EB1A86DABD0026F168 /* Repository+Remote.swift in Sources */,
 				DA39DE3F1A7D6A9F0080FB88 /* Commit+Branch.swift in Sources */,
 				DA39DE401A7D6A9F0080FB88 /* Commit+ObjectID.swift in Sources */,
 				DA39DE411A7D6A9F0080FB88 /* Commit+Repository.swift in Sources */,
 				DA39DE421A7D6A9F0080FB88 /* CommitWalker.swift in Sources */,
+				DAC614F21A86E67D0026F168 /* NSURL+String.swift in Sources */,
 				DA39DE431A7D6A9F0080FB88 /* CommitWalker+RAC.swift in Sources */,
 				DA39DE441A7D6A9F0080FB88 /* CommitSorting.swift in Sources */,
+				DAC614E81A86D8FA0026F168 /* Remote.swift in Sources */,
 				DA39DE451A7D6A9F0080FB88 /* Commit+Merge.swift in Sources */,
 				DA39DE461A7D6A9F0080FB88 /* MergeOptions.swift in Sources */,
 				DA39DE471A7D6A9F0080FB88 /* MergeOptions+C.swift in Sources */,
@@ -1204,6 +1251,7 @@
 				DA39DE761A7D6AA00080FB88 /* StatusDeltaOptions+C.swift in Sources */,
 				DA39DE771A7D6AA00080FB88 /* StatusDeltaBetween.swift in Sources */,
 				DA39DE781A7D6AA00080FB88 /* StatusDeltaBehavior.swift in Sources */,
+				DAC614F61A86FC180026F168 /* String+GitStrArray.swift in Sources */,
 				DA39DE791A7D6AA00080FB88 /* Tag.swift in Sources */,
 				DA39DE7A1A7D6AA00080FB88 /* Tag+ObjectID.swift in Sources */,
 				DA39DE7B1A7D6AA00080FB88 /* Tree.swift in Sources */,
@@ -1226,6 +1274,7 @@
 				DA39DEFF1A7E9C520080FB88 /* SignalProducer+Array.swift in Sources */,
 				DA39DE871A7D6B980080FB88 /* ResultMatchers.swift in Sources */,
 				DA39DE881A7D6B980080FB88 /* Commit+BranchSpec.swift in Sources */,
+				DAC614EE1A86E4FA0026F168 /* Repository+RemoteSpec.swift in Sources */,
 				DA39DE891A7D6B980080FB88 /* Commit+MergeSpec.swift in Sources */,
 				DA39DE8A1A7D6B980080FB88 /* IndexSpec.swift in Sources */,
 				DA39DE8B1A7D6B980080FB88 /* Index+TreeSpec.swift in Sources */,
@@ -1257,12 +1306,15 @@
 				DA39DE9D1A7D6BF60080FB88 /* BranchType.swift in Sources */,
 				DA39DF031A7EACBE0080FB88 /* LocalCloneBehavior.swift in Sources */,
 				DA39DE9E1A7D6BF60080FB88 /* Commit.swift in Sources */,
+				DAC614EC1A86DABD0026F168 /* Repository+Remote.swift in Sources */,
 				DA39DE9F1A7D6BF60080FB88 /* Commit+Branch.swift in Sources */,
 				DA39DEA01A7D6BF60080FB88 /* Commit+ObjectID.swift in Sources */,
 				DA39DEA11A7D6BF60080FB88 /* Commit+Repository.swift in Sources */,
 				DA39DEA21A7D6BF60080FB88 /* CommitWalker.swift in Sources */,
+				DAC614F31A86E67D0026F168 /* NSURL+String.swift in Sources */,
 				DA39DEA31A7D6BF60080FB88 /* CommitWalker+RAC.swift in Sources */,
 				DA39DEA41A7D6BF60080FB88 /* CommitSorting.swift in Sources */,
+				DAC614E91A86D8FA0026F168 /* Remote.swift in Sources */,
 				DA39DEA51A7D6BF60080FB88 /* Commit+Merge.swift in Sources */,
 				DA39DEA61A7D6BF60080FB88 /* MergeOptions.swift in Sources */,
 				DA39DEA71A7D6BF60080FB88 /* MergeOptions+C.swift in Sources */,
@@ -1316,6 +1368,7 @@
 				DA39DED61A7D6BF60080FB88 /* StatusDeltaOptions+C.swift in Sources */,
 				DA39DED71A7D6BF60080FB88 /* StatusDeltaBetween.swift in Sources */,
 				DA39DED81A7D6BF60080FB88 /* StatusDeltaBehavior.swift in Sources */,
+				DAC614F71A86FC180026F168 /* String+GitStrArray.swift in Sources */,
 				DA39DED91A7D6BF60080FB88 /* Tag.swift in Sources */,
 				DA39DEDA1A7D6BF60080FB88 /* Tag+ObjectID.swift in Sources */,
 				DA39DEDB1A7D6BF60080FB88 /* Tree.swift in Sources */,
@@ -1338,6 +1391,7 @@
 				DA39DF001A7E9C520080FB88 /* SignalProducer+Array.swift in Sources */,
 				DA39DEE41A7D6C240080FB88 /* ResultMatchers.swift in Sources */,
 				DA39DEE51A7D6C240080FB88 /* Commit+BranchSpec.swift in Sources */,
+				DAC614EF1A86E4FA0026F168 /* Repository+RemoteSpec.swift in Sources */,
 				DA39DEE61A7D6C240080FB88 /* Commit+MergeSpec.swift in Sources */,
 				DA39DEE71A7D6C240080FB88 /* IndexSpec.swift in Sources */,
 				DA39DEE81A7D6C240080FB88 /* Index+TreeSpec.swift in Sources */,

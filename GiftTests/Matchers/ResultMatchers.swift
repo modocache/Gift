@@ -30,7 +30,7 @@ public func haveSucceeded<T: Equatable>(value: T) -> MatcherFunc<Result<T, NSErr
 
 public func haveFailed<T>(domain: String? = nil, localizedDescription: String? = nil) -> MatcherFunc<Result<T, NSError>> {
   return MatcherFunc { actualExpression, failureMessage in
-    failureMessage.postfixMessage = "have failed with a localized description of \(localizedDescription)"
+    failureMessage.postfixMessage = "have failed"
     if let result = actualExpression.evaluate() {
       switch result {
       case .Success:
@@ -38,9 +38,11 @@ public func haveFailed<T>(domain: String? = nil, localizedDescription: String? =
       case .Failure(let error):
         var allEqualityChecksAreTrue = true
         if let someDomain = domain {
+          failureMessage.postfixMessage = "\(failureMessage.postfixMessage), with a domain of '\(someDomain)'"
           allEqualityChecksAreTrue = allEqualityChecksAreTrue && error.unbox.domain == someDomain
         }
         if let description = localizedDescription {
+          failureMessage.postfixMessage = "\(failureMessage.postfixMessage), with the description '\(description)'"
           allEqualityChecksAreTrue = allEqualityChecksAreTrue && error.unbox.localizedDescription == description
         }
         return allEqualityChecksAreTrue

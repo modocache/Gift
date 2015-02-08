@@ -43,6 +43,11 @@ class RepositorySpec: QuickSpec {
           it("is succesful") {
             expect(cloneRepository(remoteURL, destinationURL)).to(haveSucceeded())
           }
+
+          it("creates a remote named 'origin'") {
+            let repository = cloneRepository(remoteURL, destinationURL)
+            expect(repository.flatMap { $0.lookupRemote("origin") }).to(haveSucceeded())
+          }
         }
       }
 
