@@ -195,7 +195,7 @@ it builds, revert the removal of the files by running
 # How to Use Gift in Your iOS App
 
 You can find an example iOS app that uses Gift in the
-[`Examples`](https://github.com/Quick/Quick/tree/master/Examples) directory. Using Gift
+[`Examples`](https://github.com/modocache/Gift/tree/master/Examples/ExampleApp) directory. Using Gift
 is (sort of) easy:
 
 1. Drag `Gift.xcodeproj`, `LlamaKit.xcodeproj`, `Quick.xcodeproj`, and
