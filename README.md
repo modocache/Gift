@@ -1,7 +1,9 @@
-# Gift
+# Gift (Deprecated)
 
 [![Build
 Status](https://travis-ci.org/modocache/Gift.svg?branch=master)](https://travis-ci.org/modocache/Gift)
+
+**This library isn't really maintained anymore. You should use [SwiftGit2](https://github.com/SwiftGit2/SwiftGit2) instead.**
 
 Gift provides Swift bindings to the
 [libgit2](https://github.com/libgit2/libgit2) library.
